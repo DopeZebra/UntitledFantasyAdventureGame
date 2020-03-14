@@ -12,9 +12,3 @@ Saved
 *.suo
 *.xcodeproj
 *.xcworkspace
-
-# Ignore Wwise files
-/FCT/TempDefinitionFile.txt
-WwiseProject/.cache/
-WwiseProject/*.prof
-WwiseProject/*.validationcache
