@@ -14,7 +14,7 @@ Saved
 *.xcworkspace
 
 # Ignore Wwise files
-/FCT/TempDefinitionFile.txt
-WwiseProject/.cache/
-WwiseProject/*.prof
-WwiseProject/*.validationcache
+/UntitledFantasyAdventureGame/TempDefinitionFile.txt
+UntitledFantasyAdventureGame_WwiseProject/.cache/
+UntitledFantasyAdventureGame_WwiseProject/*.prof
+UntitledFantasyAdventureGame_WwiseProject/*.validationcache
