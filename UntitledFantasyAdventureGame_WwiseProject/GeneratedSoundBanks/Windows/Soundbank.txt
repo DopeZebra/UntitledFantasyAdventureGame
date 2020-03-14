@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4258653052	test_event			\Default Work Unit\test_event	
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	43011956	Modulator Envelope (Custom)				
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	1020055810	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\test\Wwise Synth One	
+
