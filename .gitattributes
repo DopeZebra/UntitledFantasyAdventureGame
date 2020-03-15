@@ -2,4 +2,6 @@ F:/Documents/GitHub/UntitledFantasyAdventureGame/Plugins/Wwise/ThirdParty/Mac/Pr
 F:/Documents/GitHub/UntitledFantasyAdventureGame/Plugins/Wwise/ThirdParty/Mac/Release/lib/libAkSoundEngine.a filter=lfs diff=lfs merge=lfs -text
 F:/Documents/GitHub/UntitledFantasyAdventureGame/Plugins/Wwise/ThirdParty/Mac/Debug/lib/libAkSoundEngine.a filter=lfs diff=lfs merge=lfs -text
 libAkSoundEngine.a filter=lfs diff=lfs merge=lfs -text
+HEAD
 .lib filter=lfs diff=lfs merge=lfs -text
+3ae6b62087af35bb8f53b6493789370481db3ee5
