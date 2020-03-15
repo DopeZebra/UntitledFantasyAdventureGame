@@ -23,6 +23,10 @@
 			"Name": "OptickPlugin",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/95c078f6fa924b2b82fd8f281e04850f"
+		},
+		{
+			"Name": "Niagara",
+			"Enabled": true
 		}
 	]
 }
