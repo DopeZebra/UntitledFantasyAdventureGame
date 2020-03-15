@@ -22,6 +22,7 @@
 			<Path>Soundbank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="393239870" Name="SFX" ObjectPath="\Events\Default Work Unit\SFX\SFX"/>
+				<Event Id="602065064" Name="SFX2" ObjectPath="\Events\Default Work Unit\SFX\SFX2"/>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="129" Name="MIDI note velocity" ObjectPath="MIDI\MIDI note velocity"/>

@@ -1,1 +1,2 @@
 Soundbank	"SFX"
+Soundbank	"SFX2"
