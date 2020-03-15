@@ -1,6 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\SFX\SFX	
-	602065064	SFX2			\Default Work Unit\SFX\SFX2	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	129	MIDI note velocity			\MIDI note velocity	
