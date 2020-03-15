@@ -21,23 +21,12 @@
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="602065064" Name="SFX2" ObjectPath="\Events\Default Work Unit\Interaction\SFX2"/>
-				<Event Id="4130026045" Name="time_change" ObjectPath="\Events\Default Work Unit\Interaction\time_change">
-					<SwitchContainers/>
-				</Event>
+				<Event Id="393239870" Name="SFX" ObjectPath="\Events\Default Work Unit\SFX\SFX"/>
+				<Event Id="602065064" Name="SFX2" ObjectPath="\Events\Default Work Unit\SFX\SFX2"/>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="129" Name="MIDI note velocity" ObjectPath="MIDI\MIDI note velocity"/>
 			</GameParameters>
-			<StateGroups>
-				<StateGroup Id="2654366170" Name="Time" ObjectPath="\States\Default Work Unit\Time">
-					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Time\None"/>
-						<State Id="1627031569" Name="Past" ObjectPath="\States\Default Work Unit\Time\Past"/>
-						<State Id="3524519058" Name="Present" ObjectPath="\States\Default Work Unit\Time\Present"/>
-					</States>
-				</StateGroup>
-			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
