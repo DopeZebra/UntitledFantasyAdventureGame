@@ -12,3 +12,14 @@ Saved
 *.suo
 *.xcodeproj
 *.xcworkspace
+
+# Ignore Wwise files
+TempDefinitionFile.txt
+*.akd
+*.wem
+*.prof
+IncrementalSoundBankData.xml
+Wwise/Tibessa/Tibessa.wproj
+Wwise/Tibessa/Tibessa.anton.wsettings
+Wwise/Tibessa/.cache/*
+Wwise/Tibessa/*.validationcache
