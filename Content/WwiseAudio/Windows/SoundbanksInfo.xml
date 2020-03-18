@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\</ProjectRoot>
+		<SourceFilesRoot>F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>F:\Git\GitHub\UntitledFantasyAdventureGame\Content\WwiseAudio\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1661994096" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank</ObjectPath>
+			<ShortName>Soundbank</ShortName>
+			<Path>Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="568249188" Name="EvilMusic" ObjectPath="\Events\Default Work Unit\Music\EvilMusic">
+					<IncludedMemoryFiles>
+						<File Id="964615147" Language="SFX">
+							<ShortName>Music\Evil Music.wav</ShortName>
+							<Path>SFX\Music\Evil Music_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4130026045" Name="time_change" ObjectPath="\Events\Default Work Unit\Interaction\time_change">
+					<SwitchContainers/>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="129" Name="MIDI note velocity" ObjectPath="MIDI\MIDI note velocity"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="2654366170" Name="Time" ObjectPath="\States\Default Work Unit\Time">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Time\None"/>
+						<State Id="1627031569" Name="Past" ObjectPath="\States\Default Work Unit\Time\Past"/>
+						<State Id="3524519058" Name="Present" ObjectPath="\States\Default Work Unit\Time\Present"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
