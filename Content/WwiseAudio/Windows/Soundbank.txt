@@ -1,0 +1,33 @@
+Event	ID	Name			Wwise Object Path	Notes
+	568249188	EvilMusic			\Default Work Unit\Music\EvilMusic	
+	4130026045	time_change			\Default Work Unit\Interaction\time_change	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2654366170	Time			\Default Work Unit\Time	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Time			
+	1627031569	Past	Time			
+	3524519058	Present	Time			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	129	MIDI note velocity			\MIDI note velocity	
+
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	891982363	Modulator LFO (Custom)				
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	260102189	Modulator Envelope (Custom)				
+	278598906	Modulator Envelope (Custom)				
+	506695838	Modulator Envelope (Custom)				
+	626577432	Modulator Envelope (Custom)				
+	884484006	Modulator Envelope (Custom)				
+	1063819344	Modulator Envelope (Custom)				
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	945803	WOOSH 01	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Time\Change Time\Time Switch\WOOSH 01\WOOSH 01	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
+	162601119	WOOSH 02	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Time\Change Time\Time Switch\WOOSH 02\WOOSH 02	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	964615147	Evil Music	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Evil Music_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Evil Music		17798468
+
