@@ -5,12 +5,12 @@
 			<ChildrenList>
 				<Folder Name="Music" ID="{D6AC7BC9-43C4-4D02-8B51-DD1CD1FAF0AE}" ShortID="282477926">
 					<ChildrenList>
-						<Event Name="EvilMusic" ID="{8FF6FB1B-DC44-48DB-8AED-6AB230C00B1F}">
+						<Event Name="music_brondan" ID="{8FF6FB1B-DC44-48DB-8AED-6AB230C00B1F}">
 							<ChildrenList>
 								<Action Name="" ID="{ACA48BC1-7D8B-4906-B015-0F548BBC4018}" ShortID="92363418">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Evil Music" ID="{CF02B4A2-E571-414E-8D3D-20BFD4AAFC4E}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+											<ObjectRef Name="Brondan" ID="{90C29165-6F98-493E-9C63-4F7671B021EF}" WorkUnitID="{C2974EF7-2154-4AFB-8D2A-D09C7AE9FAE4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

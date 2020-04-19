@@ -1,0 +1,49 @@
+Event	ID	Name			Wwise Object Path	Notes
+	332341687	music_brondan			\Default Work Unit\Music\music_brondan	
+	4130026045	time_change			\Default Work Unit\Interaction\time_change	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2654366170	Time			\Default Work Unit\Time	
+	2764240573	Combat			\Default Work Unit\Combat	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Time			
+	1627031569	Past	Time			
+	3524519058	Present	Time			
+	748895195	None	Combat			
+	2764240573	Combat	Combat			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	129	MIDI note velocity			\MIDI note velocity	
+
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	891982363	Modulator LFO (Custom)				
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	260102189	Modulator Envelope (Custom)				
+	278598906	Modulator Envelope (Custom)				
+	506695838	Modulator Envelope (Custom)				
+	626577432	Modulator Envelope (Custom)				
+	884484006	Modulator Envelope (Custom)				
+	1063819344	Modulator Envelope (Custom)				
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	945803	WOOSH 01	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Time\Change Time\Time Switch\WOOSH 01\WOOSH 01	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
+	162601119	WOOSH 02	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Time\Change Time\Time Switch\WOOSH 02\WOOSH 02	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	49078717	Broken Oath_BrondanIdle - Shakuhachi	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Shaku_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Oneshot_Shakuhachi\Broken Oath_BrondanIdle - Shakuhachi		2267340
+	50228522	Broken Oath_BrondanIdle - DarkDrone	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - DarkDrone(2)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Oneshot_DarkDrone\Broken Oath_BrondanIdle - DarkDrone		1349788
+	340995209	Broken Oath_BrondanIdle - Shakuhachi	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Shaku(3)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Oneshot_Shakuhachi\Broken Oath_BrondanIdle - Shakuhachi		2400064
+	342008685	Broken Oath_BrondanIdle - Screech	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Screech(3)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Oneshot_Screech\Broken Oath_BrondanIdle - Screech		2083504
+	404142544	Broken Oath_BrondanIdle - Screech	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Screech(2)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Oneshot_Screech\Broken Oath_BrondanIdle - Screech		2083384
+	406411715	Broken Oath_BrondanIdle - Screech	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Screech(4)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Oneshot_Screech\Broken Oath_BrondanIdle - Screech		1715816
+	409236990	Broken Oath_BrondanIdle - Ambience Loop(2)	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Ambience Loop(2)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Loop\Broken Oath_BrondanIdle - Ambience Loop(2)		8798176
+	417089424	Broken Oath_BrondanIdle - Ambience Loop	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Ambience Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Start\Broken Oath_BrondanIdle - Ambience Loop		9052384
+	470110550	Broken Oath_BrondanIdle - DarkDrone	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - DarkDrone_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Oneshot_DarkDrone\Broken Oath_BrondanIdle - DarkDrone		2329180
+	549857491	Broken Oath_BrondanIdle - Drums intro	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Drums intro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Start\Broken Oath_BrondanIdle - Drums intro		2451128
+	556890851	Broken Oath_BrondanIdle - Shakuhachi	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Shaku(2)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Oneshot_Shakuhachi\Broken Oath_BrondanIdle - Shakuhachi		2692072
+	634279464	Broken Oath_BrondanIdle - Screech	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Screech_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Oneshot_Screech\Broken Oath_BrondanIdle - Screech		1960956
+	745415054	Broken Oath_BrondanIdle - Sub	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Sub_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Oneshot_Sub\Broken Oath_BrondanIdle - Sub		1056064
+	946099972	Broken Oath_BrondanIdle - Ambience Loop Tail	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Ambience Loop Tail_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Loop\Broken Oath_BrondanIdle - Ambience Loop Tail		2196920
+

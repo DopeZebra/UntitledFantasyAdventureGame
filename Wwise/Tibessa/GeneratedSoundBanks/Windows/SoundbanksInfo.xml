@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>F:\Documents\WwiseProjects\Tibessa\</ProjectRoot>
-		<SourceFilesRoot>F:\Documents\WwiseProjects\Tibessa\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>F:\Documents\WwiseProjects\Tibessa\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\</ProjectRoot>
+		<SourceFilesRoot>F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>F:\Documents\WwiseProjects\Tibessa\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -20,6 +20,109 @@
 			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank</ObjectPath>
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="332341687" Name="music_brondan" ObjectPath="\Events\Default Work Unit\Music\music_brondan">
+					<IncludedMemoryFiles>
+						<File Id="49078717" Language="SFX">
+							<ShortName>Music\Broken Oath_BrondanIdle - Shaku.wav</ShortName>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Shaku_D79FB2B7.wem</Path>
+						</File>
+						<File Id="50228522" Language="SFX">
+							<ShortName>Music\Broken Oath_BrondanIdle - DarkDrone(2).wav</ShortName>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - DarkDrone(2)_D79FB2B7.wem</Path>
+						</File>
+						<File Id="340995209" Language="SFX">
+							<ShortName>Music\Broken Oath_BrondanIdle - Shaku(3).wav</ShortName>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Shaku(3)_D79FB2B7.wem</Path>
+						</File>
+						<File Id="342008685" Language="SFX">
+							<ShortName>Music\Broken Oath_BrondanIdle - Screech(3).wav</ShortName>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech(3)_D79FB2B7.wem</Path>
+						</File>
+						<File Id="404142544" Language="SFX">
+							<ShortName>Music\Broken Oath_BrondanIdle - Screech(2).wav</ShortName>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech(2)_D79FB2B7.wem</Path>
+						</File>
+						<File Id="406411715" Language="SFX">
+							<ShortName>Music\Broken Oath_BrondanIdle - Screech(4).wav</ShortName>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech(4)_D79FB2B7.wem</Path>
+						</File>
+						<File Id="409236990" Language="SFX">
+							<ShortName>Music\Broken Oath_BrondanIdle - Ambience Loop(2).wav</ShortName>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Ambience Loop(2)_D79FB2B7.wem</Path>
+						</File>
+						<File Id="417089424" Language="SFX">
+							<ShortName>Music\Broken Oath_BrondanIdle - Ambience Loop.wav</ShortName>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Ambience Loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="470110550" Language="SFX">
+							<ShortName>Music\Broken Oath_BrondanIdle - DarkDrone.wav</ShortName>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - DarkDrone_D79FB2B7.wem</Path>
+						</File>
+						<File Id="549857491" Language="SFX">
+							<ShortName>Music\Broken Oath_BrondanIdle - Drums intro.wav</ShortName>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Drums intro_D79FB2B7.wem</Path>
+						</File>
+						<File Id="556890851" Language="SFX">
+							<ShortName>Music\Broken Oath_BrondanIdle - Shaku(2).wav</ShortName>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Shaku(2)_D79FB2B7.wem</Path>
+						</File>
+						<File Id="634279464" Language="SFX">
+							<ShortName>Music\Broken Oath_BrondanIdle - Screech.wav</ShortName>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech_D79FB2B7.wem</Path>
+						</File>
+						<File Id="745415054" Language="SFX">
+							<ShortName>Music\Broken Oath_BrondanIdle - Sub.wav</ShortName>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Sub_D79FB2B7.wem</Path>
+						</File>
+						<File Id="946099972" Language="SFX">
+							<ShortName>Music\Broken Oath_BrondanIdle - Ambience Loop Tail.wav</ShortName>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Ambience Loop Tail_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{D40C4C9A-9821-4265-8C86-9856E21154E6}">
+							<Media>
+								<File Id="417089424"/>
+								<File Id="549857491"/>
+								<File Id="946099972"/>
+								<File Id="409236990"/>
+								<File Id="470110550"/>
+								<File Id="50228522"/>
+								<File Id="634279464"/>
+								<File Id="406411715"/>
+								<File Id="342008685"/>
+								<File Id="404142544"/>
+								<File Id="340995209"/>
+								<File Id="556890851"/>
+								<File Id="49078717"/>
+								<File Id="745415054"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="4130026045" Name="time_change" ObjectPath="\Events\Default Work Unit\Interaction\time_change">
+					<SwitchContainers/>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="129" Name="MIDI note velocity" ObjectPath="MIDI\MIDI note velocity"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="2654366170" Name="Time" ObjectPath="\States\Default Work Unit\Time">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Time\None"/>
+						<State Id="1627031569" Name="Past" ObjectPath="\States\Default Work Unit\Time\Past"/>
+						<State Id="3524519058" Name="Present" ObjectPath="\States\Default Work Unit\Time\Present"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2764240573" Name="Combat" ObjectPath="\States\Default Work Unit\Combat">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Combat\None"/>
+						<State Id="2764240573" Name="Combat" ObjectPath="\States\Default Work Unit\Combat\Combat"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
