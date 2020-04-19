@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6DC7A827-3638-4F84-B2DD-74F4E5C7DAF7}" SchemaVersion="97">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{6DC7A827-3638-4F84-B2DD-74F4E5C7DAF7}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Time" ID="{B14CCE9A-2207-43E0-8122-74FEC076D9E9}">
+					<ChildrenList>
+						<State Name="None" ID="{E9B8CC3F-C41E-4931-B0C5-35FC52CE61BF}"/>
+						<State Name="Past" ID="{FA47C1D9-24C5-4BF9-91E2-87D35BB11814}"/>
+						<State Name="Present" ID="{556F24BA-6297-4232-8F45-E8F06020063B}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
