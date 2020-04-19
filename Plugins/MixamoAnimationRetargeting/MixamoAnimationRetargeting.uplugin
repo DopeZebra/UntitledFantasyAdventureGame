@@ -1,0 +1,28 @@
+{
+	"FileVersion": 3,
+	"Version": 3,
+	"VersionName": "1.1.5",
+	"FriendlyName": "Mixamo Animation Retargeting",
+	"Description": "Editor plugin for precise and automated retargeting of skeletons, skeletal meshes and animations created with and exported from Mixamo tools (Auto-Rigger, 3D Characters, 3D Animations).",
+	"Category": "Editor",
+	"CreatedBy": "UNAmedia",
+	"CreatedByURL": "http://www.unamedia.com",
+	"DocsURL": "",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/7d332d8c59f743f4a068710ab88599f6",
+	"SupportURL": "http://www.unamedia.com/ue4-mixamo-plugin",
+	"EngineVersion": "4.24.0",
+	"CanContainContent": false,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "MixamoAnimationRetargeting",
+			"Type": "EditorNoCommandlet",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Win32",
+				"Mac"
+			]
+		}
+	]
+}
