@@ -21,8 +21,12 @@
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="332341687" Name="music_brondan" ObjectPath="\Events\Default Work Unit\Music\music_brondan">
+				<Event Id="3991942870" Name="music" ObjectPath="\Events\Default Work Unit\Music\music">
 					<IncludedMemoryFiles>
+						<File Id="449021" Language="SFX">
+							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat_1P - WildWind.wav</ShortName>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat_1P - WildWind_D79FB2B7.wem</Path>
+						</File>
 						<File Id="49078717" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Shaku.wav</ShortName>
 							<Path>SFX\Music\Broken Oath_BrondanIdle - Shaku_D79FB2B7.wem</Path>
@@ -31,6 +35,26 @@
 							<ShortName>Music\Broken Oath_BrondanIdle - DarkDrone(2).wav</ShortName>
 							<Path>SFX\Music\Broken Oath_BrondanIdle - DarkDrone(2)_D79FB2B7.wem</Path>
 						</File>
+						<File Id="80053009" Language="SFX">
+							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro.wav</ShortName>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro_D79FB2B7.wem</Path>
+						</File>
+						<File Id="98774313" Language="SFX">
+							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Percussion.wav</ShortName>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Percussion_D79FB2B7.wem</Path>
+						</File>
+						<File Id="195115677" Language="SFX">
+							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(4).wav</ShortName>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(4)_D79FB2B7.wem</Path>
+						</File>
+						<File Id="244481563" Language="SFX">
+							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro(2).wav</ShortName>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro(2)_D79FB2B7.wem</Path>
+						</File>
+						<File Id="308489943" Language="SFX">
+							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(2).wav</ShortName>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(2)_D79FB2B7.wem</Path>
+						</File>
 						<File Id="340995209" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Shaku(3).wav</ShortName>
 							<Path>SFX\Music\Broken Oath_BrondanIdle - Shaku(3)_D79FB2B7.wem</Path>
@@ -38,6 +62,14 @@
 						<File Id="342008685" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Screech(3).wav</ShortName>
 							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech(3)_D79FB2B7.wem</Path>
+						</File>
+						<File Id="362030614" Language="SFX">
+							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(6).wav</ShortName>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(6)_D79FB2B7.wem</Path>
+						</File>
+						<File Id="393441381" Language="SFX">
+							<ShortName>Music\BrondanCombat\BrokenOath_BrondanCombat_Pre.wav</ShortName>
+							<Path>SFX\Music\BrondanCombat\BrokenOath_BrondanCombat_Pre_D79FB2B7.wem</Path>
 						</File>
 						<File Id="404142544" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Screech(2).wav</ShortName>
@@ -51,9 +83,9 @@
 							<ShortName>Music\Broken Oath_BrondanIdle - Ambience Loop(2).wav</ShortName>
 							<Path>SFX\Music\Broken Oath_BrondanIdle - Ambience Loop(2)_D79FB2B7.wem</Path>
 						</File>
-						<File Id="417089424" Language="SFX">
-							<ShortName>Music\Broken Oath_BrondanIdle - Ambience Loop.wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Ambience Loop_D79FB2B7.wem</Path>
+						<File Id="431715203" Language="SFX">
+							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl.wav</ShortName>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl_D79FB2B7.wem</Path>
 						</File>
 						<File Id="470110550" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - DarkDrone.wav</ShortName>
@@ -71,6 +103,18 @@
 							<ShortName>Music\Broken Oath_BrondanIdle - Screech.wav</ShortName>
 							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech_D79FB2B7.wem</Path>
 						</File>
+						<File Id="647733899" Language="SFX">
+							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(3).wav</ShortName>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(3)_D79FB2B7.wem</Path>
+						</File>
+						<File Id="687515458" Language="SFX">
+							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro(3).wav</ShortName>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro(3)_D79FB2B7.wem</Path>
+						</File>
+						<File Id="716628419" Language="SFX">
+							<ShortName>Music\Tibessa_Past\Broken Oath_Tibessa_theme.wav</ShortName>
+							<Path>SFX\Music\Tibessa_Past\Broken Oath_Tibessa_theme_D79FB2B7.wem</Path>
+						</File>
 						<File Id="745415054" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Sub.wav</ShortName>
 							<Path>SFX\Music\Broken Oath_BrondanIdle - Sub_D79FB2B7.wem</Path>
@@ -79,24 +123,52 @@
 							<ShortName>Music\Broken Oath_BrondanIdle - Ambience Loop Tail.wav</ShortName>
 							<Path>SFX\Music\Broken Oath_BrondanIdle - Ambience Loop Tail_D79FB2B7.wem</Path>
 						</File>
+						<File Id="1054661302" Language="SFX">
+							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(5).wav</ShortName>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(5)_D79FB2B7.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{D40C4C9A-9821-4265-8C86-9856E21154E6}">
+						<SwitchContainer SwitchValue="{556F24BA-6297-4232-8F45-E8F06020063B}">
+							<Children>
+								<SwitchContainer SwitchValue="{00F90FE2-B726-4469-819A-14383CB04EC6}">
+									<Media>
+										<File Id="449021"/>
+										<File Id="98774313"/>
+										<File Id="80053009"/>
+										<File Id="244481563"/>
+										<File Id="687515458"/>
+										<File Id="308489943"/>
+										<File Id="647733899"/>
+										<File Id="195115677"/>
+										<File Id="1054661302"/>
+										<File Id="362030614"/>
+										<File Id="431715203"/>
+										<File Id="393441381"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{D40C4C9A-9821-4265-8C86-9856E21154E6}">
+									<Media>
+										<File Id="549857491"/>
+										<File Id="946099972"/>
+										<File Id="409236990"/>
+										<File Id="470110550"/>
+										<File Id="50228522"/>
+										<File Id="634279464"/>
+										<File Id="406411715"/>
+										<File Id="342008685"/>
+										<File Id="404142544"/>
+										<File Id="340995209"/>
+										<File Id="556890851"/>
+										<File Id="49078717"/>
+										<File Id="745415054"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{FA47C1D9-24C5-4BF9-91E2-87D35BB11814}">
 							<Media>
-								<File Id="417089424"/>
-								<File Id="549857491"/>
-								<File Id="946099972"/>
-								<File Id="409236990"/>
-								<File Id="470110550"/>
-								<File Id="50228522"/>
-								<File Id="634279464"/>
-								<File Id="406411715"/>
-								<File Id="342008685"/>
-								<File Id="404142544"/>
-								<File Id="340995209"/>
-								<File Id="556890851"/>
-								<File Id="49078717"/>
-								<File Id="745415054"/>
+								<File Id="716628419"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
