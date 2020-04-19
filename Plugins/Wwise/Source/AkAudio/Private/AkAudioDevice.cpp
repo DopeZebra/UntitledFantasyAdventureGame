@@ -63,13 +63,6 @@
 
 // Wwise plug-ins
 #include <AK/Plugin/AkVorbisDecoderFactory.h>
-#include <AK/Plugin/AkParametricEQFXFactory.h>
-#include <AK/Plugin/AkCompressorFXFactory.h>
-#include <AK/Plugin/AkMatrixReverbFXFactory.h>
-#include <AK/Plugin/AkSynthOneFactory.h>
-#include <AK/Plugin/AkTremoloFXFactory.h>
-#include <AK/Plugin/AkRoomVerbFXFactory.h>
-(...)
 
 #if AK_SUPPORT_OPUS
 #include <AK/Plugin/AkOpusDecoderFactory.h>

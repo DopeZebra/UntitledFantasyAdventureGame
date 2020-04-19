@@ -127,12 +127,6 @@ public class AkAudio : ModuleRules
 		"AkSpatialAudio",
 		"AkAudioInputSource",
 		"AkVorbisDecoder",
-        "AkSynthOne",
-        "AkRoomVerbFX",
-        "AkTremoloFX",
-        "AkCompressorFX",
-        "AkParametricEQFX",
-        "AkMatrixReverbFX",
 	};
 	
 	public AkAudio(ReadOnlyTargetRules Target) : base(Target)
