@@ -119,10 +119,6 @@
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(3).wav</ShortName>
 							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(3)_D79FB2B7.wem</Path>
 						</File>
-						<File Id="687515458" Language="SFX">
-							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro(3).wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro(3)_D79FB2B7.wem</Path>
-						</File>
 						<File Id="716628419" Language="SFX">
 							<ShortName>Music\Tibessa_Past\Broken Oath_Tibessa_theme.wav</ShortName>
 							<Path>SFX\Music\Tibessa_Past\Broken Oath_Tibessa_theme_D79FB2B7.wem</Path>
@@ -154,14 +150,9 @@
 									<Children>
 										<SwitchContainer SwitchValue="{00F90FE2-B726-4469-819A-14383CB04EC6}">
 											<Media>
-												<File Id="449021"/>
 												<File Id="393441381"/>
 												<File Id="98774313"/>
-												<File Id="98774313"/>
-												<File Id="244481563"/>
 												<File Id="80053009"/>
-												<File Id="687515458"/>
-												<File Id="244481563"/>
 												<File Id="308489943"/>
 												<File Id="647733899"/>
 												<File Id="195115677"/>
@@ -172,6 +163,11 @@
 												<File Id="346977009"/>
 												<File Id="568387146"/>
 												<File Id="725732600"/>
+												<File Id="449021"/>
+												<File Id="98774313"/>
+												<File Id="244481563"/>
+												<File Id="98774313"/>
+												<File Id="244481563"/>
 											</Media>
 										</SwitchContainer>
 										<SwitchContainer SwitchValue="{71BEBC05-1BFE-4CAB-B4F6-9B22A4AC1B5C}">

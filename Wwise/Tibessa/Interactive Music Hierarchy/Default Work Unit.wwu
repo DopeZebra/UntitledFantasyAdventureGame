@@ -668,7 +668,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="12500"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="5106.3829787234"/>
+																		<Property Name="PlayAt" Type="Real64" Value="6439.50995497676"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="Broken Oath_BrondanIdle - Shaku(3)" ID="{5B574342-7D9B-4AC1-83EC-6C99DAB5BD70}"/>
 																	<PropertyCurveList>
@@ -740,7 +740,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="14020.875"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="20445.7085661424"/>
+																		<Property Name="PlayAt" Type="Real64" Value="21778.8355423958"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="Broken Oath_BrondanIdle - Shaku(2)" ID="{7A945567-7B11-4624-BA47-5457490E57F9}"/>
 																	<PropertyCurveList>
@@ -812,7 +812,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="11808.7291666667"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="29418.2333592321"/>
+																		<Property Name="PlayAt" Type="Real64" Value="30751.3603354855"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="Broken Oath_BrondanIdle - Shaku" ID="{9EDE8671-D0E2-4171-98B6-0859E3F97D89}"/>
 																	<PropertyCurveList>
@@ -916,7 +916,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="5500.00000000002"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="15455.626143691"/>
+																		<Property Name="PlayAt" Type="Real64" Value="16788.7531199444"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="Broken Oath_BrondanIdle - Sub" ID="{108B118A-1614-4968-A873-0B1FE63BC163}"/>
 																	<PropertyCurveList>
@@ -1029,7 +1029,7 @@
 											<CueList>
 												<MusicCue Name="Entry Cue" ID="{9F587BE7-6EBD-4AD8-9881-F64A3EAFC279}">
 													<PropertyList>
-														<Property Name="TimeMs" Type="Real64" Value="1333.12697625335"/>
+														<Property Name="TimeMs" Type="Real64" Value="6439.50995497676"/>
 													</PropertyList>
 												</MusicCue>
 												<MusicCue Name="Exit Cue" ID="{B6049D28-281B-4A0C-B36A-6AE87F22B1D2}">
