@@ -10,13 +10,6 @@
 						<State Name="Present" ID="{556F24BA-6297-4232-8F45-E8F06020063B}"/>
 					</ChildrenList>
 				</StateGroup>
-				<StateGroup Name="Combat" ID="{A7D2DFA2-3E44-486E-B275-60B000C4C7F7}">
-					<ChildrenList>
-						<State Name="None" ID="{D40C4C9A-9821-4265-8C86-9856E21154E6}"/>
-						<State Name="Combat" ID="{00F90FE2-B726-4469-819A-14383CB04EC6}"/>
-						<State Name="Explore" ID="{71BEBC05-1BFE-4CAB-B4F6-9B22A4AC1B5C}"/>
-					</ChildrenList>
-				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
