@@ -19,7 +19,3 @@ TempDefinitionFile.txt
 *.wem
 *.prof
 IncrementalSoundBankData.xml
-Wwise/Tibessa/Tibessa.wproj
-Wwise/Tibessa/Tibessa.anton.wsettings
-Wwise/Tibessa/.cache/*
-Wwise/Tibessa/*.validationcache
