@@ -3,10 +3,41 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{1840D29A-E633-461B-972D-9E32208C8847}" PersistMode="Standalone">
 			<ChildrenList>
+				<ActorMixer Name="Music" ID="{D54D3242-F5CB-40C1-A276-9EA19BA7FF8D}" ShortID="109866296">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{1341993A-9A29-4750-AA61-9268EEFE8617}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Evil Music" ID="{CF02B4A2-E571-414E-8D3D-20BFD4AAFC4E}" ShortID="764180215">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Evil Music" ID="{5DBA83AD-FFF9-4B8B-B093-F2E45DDDF04E}">
+									<Language>SFX</Language>
+									<AudioFile>Music\Evil Music.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="964615147"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Evil Music" ID="{5DBA83AD-FFF9-4B8B-B093-F2E45DDDF04E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
 				<ActorMixer Name="Interaction" ID="{7568CB29-D999-4744-8E17-D4CCDF5643CD}" ShortID="1063751151">
-					<PropertyList>
-						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
@@ -564,9 +595,6 @@ Content provided by Vincent Gagnon
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Atmosphere" ID="{7BC9EC9F-D1B6-4F34-842F-059009CB5B44}" ShortID="440963598">
-					<PropertyList>
-						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
@@ -577,9 +605,6 @@ Content provided by Vincent Gagnon
 					</ReferenceList>
 				</ActorMixer>
 				<ActorMixer Name="Characters" ID="{BC06FD46-2E19-4E30-922C-D1746A2E3988}" ShortID="467436872">
-					<PropertyList>
-						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
