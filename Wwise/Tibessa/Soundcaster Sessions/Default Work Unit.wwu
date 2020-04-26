@@ -10,9 +10,18 @@
 							<Position X="3" Y="0"/>
 						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Stinger_sidechain" ID="{141EFA41-3746-4569-AF4A-51FD957C7293}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="PlayerHealth" ID="{4380712B-C9FB-49D5-87C6-DBDA6E73E056}"/>
+							<Value>100</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Present" ID="{556F24BA-6297-4232-8F45-E8F06020063B}"/>
+						<CurrentStateRef Name="Past" ID="{FA47C1D9-24C5-4BF9-91E2-87D35BB11814}"/>
 						<CurrentStateRef Name="Explore" ID="{71BEBC05-1BFE-4CAB-B4F6-9B22A4AC1B5C}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>

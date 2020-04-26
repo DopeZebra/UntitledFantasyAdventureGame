@@ -12,7 +12,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Music" ID="{1341993A-9A29-4750-AA61-9268EEFE8617}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+							<ObjectRef Name="Main" ID="{7695E774-DCB7-42B8-BD3E-B314301FFE2B}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -2770,13 +2770,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicPlaylistContainer Name="Past" ID="{053009C6-FED3-4546-907B-48927D961C9C}" ShortID="414019295">
+								<MusicPlaylistContainer Name="Explore" ID="{053009C6-FED3-4546-907B-48927D961C9C}" ShortID="414019295">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+											<ObjectRef Name="Explore" ID="{6A98E1B3-B32E-4B3C-9034-ED0B078D200D}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2915,7 +2918,7 @@
 							<EntryList>
 								<Entry>
 									<AudioNodeInfo>
-										<AudioNodeRef Name="Past" ID="{053009C6-FED3-4546-907B-48927D961C9C}" WorkUnitID="{C2974EF7-2154-4AFB-8D2A-D09C7AE9FAE4}" Platform="Linked"/>
+										<AudioNodeRef Name="Explore" ID="{053009C6-FED3-4546-907B-48927D961C9C}" WorkUnitID="{C2974EF7-2154-4AFB-8D2A-D09C7AE9FAE4}" Platform="Linked"/>
 									</AudioNodeInfo>
 								</Entry>
 							</EntryList>

@@ -10,13 +10,28 @@ State	ID	Name	State Group			Notes
 	748895195	None	Combat			
 	2764240573	Combat	Combat			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	151362964	PlayerHealth			\Default Work Unit\PlayerHealth	
+	4122641472	Stinger_sidechain			\Default Work Unit\Stinger_sidechain	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
-	579523862	Explore			\Default Work Unit\Master Audio Bus\Music\Explore	
+	579523862	Explore			\Default Work Unit\Master Audio Bus\Music\Main\Explore	
 	2145253833	Atmosphere			\Default Work Unit\Master Audio Bus\Atmosphere	
-	2764240573	Combat			\Default Work Unit\Master Audio Bus\Music\Combat	
+	2764240573	Combat			\Default Work Unit\Master Audio Bus\Music\Main\Combat	
+	2940432316	Stingers			\Default Work Unit\Master Audio Bus\Music\Stingers	
+	3161908922	Main			\Default Work Unit\Master Audio Bus\Music\Main	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
+Effect plug-ins	ID	Name	Type				Notes
+	38536357	Wwise Gain (Custom)	Wwise Gain			
+	46703073	Wwise Gain (Custom)	Wwise Gain			
+	647881068	Wwise Gain (Custom)	Wwise Gain			
+	720889453	Wwise Gain (Custom)	Wwise Gain			
+	730552204	Wwise_Meter_(Custom)	Wwise Meter			
+	2098638826	Underground_Parking1	Wwise Matrix Reverb			
+	3796564934	Hard_Knee_Minus_3dB_RMS	Wwise Compressor			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

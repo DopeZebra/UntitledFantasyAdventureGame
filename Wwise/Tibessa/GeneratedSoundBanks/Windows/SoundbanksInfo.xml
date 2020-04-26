@@ -15,6 +15,10 @@
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="151362964" Name="PlayerHealth" ObjectPath="\Game Parameters\Default Work Unit\PlayerHealth"/>
+				<GameParameter Id="4122641472" Name="Stinger_sidechain" ObjectPath="\Game Parameters\Default Work Unit\Stinger_sidechain"/>
+			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="1661994096" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank</ObjectPath>
