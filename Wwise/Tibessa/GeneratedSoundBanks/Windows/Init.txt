@@ -12,7 +12,9 @@ State	ID	Name	State Group			Notes
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	579523862	Explore			\Default Work Unit\Master Audio Bus\Music\Explore	
 	2145253833	Atmosphere			\Default Work Unit\Master Audio Bus\Atmosphere	
+	2764240573	Combat			\Default Work Unit\Master Audio Bus\Music\Combat	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
