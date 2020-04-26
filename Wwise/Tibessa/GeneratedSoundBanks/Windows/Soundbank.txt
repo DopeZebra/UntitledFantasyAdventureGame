@@ -1,0 +1,70 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3991942870	music			\Default Work Unit\Music\music	
+	4130026045	time_change			\Default Work Unit\Interaction\time_change	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2654366170	Time			\Default Work Unit\Time	
+	2764240573	Combat			\Default Work Unit\Combat	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Time			
+	1627031569	Past	Time			
+	3524519058	Present	Time			
+	579523862	Explore	Combat			
+	748895195	None	Combat			
+	2764240573	Combat	Combat			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	364235450	Explore	Combat	\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Combat\BrondanCombat2\Percussion		
+	514882493	Explore	Combat	\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Combat\BrondanCombat3\Percussion		
+	948205229	Explore	Combat	\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Combat\BrondanCombat4\Percussion		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	129	MIDI note velocity			\MIDI note velocity	
+
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	891982363	Modulator LFO (Custom)				
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	260102189	Modulator Envelope (Custom)				
+	278598906	Modulator Envelope (Custom)				
+	506695838	Modulator Envelope (Custom)				
+	626577432	Modulator Envelope (Custom)				
+	884484006	Modulator Envelope (Custom)				
+	1063819344	Modulator Envelope (Custom)				
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	945803	WOOSH 01	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Time\Change Time\Time Switch\WOOSH 01\WOOSH 01	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
+	162601119	WOOSH 02	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Time\Change Time\Time Switch\WOOSH 02\WOOSH 02	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	449021	Broken Oath_BrondanCombat_1P - WildWind	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat_1P - WildWind_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Combat\BrondanCombat1\Broken Oath_BrondanCombat_1P - WildWind		5392408
+	49078717	Broken Oath_BrondanIdle - Shakuhachi	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Shaku_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Idle\Broken Oath_BrondanIdle - Shakuhachi		2267340
+	50228522	Broken Oath_BrondanIdle - Oneshot sub	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - DarkDrone(2)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Idle\Broken Oath_BrondanIdle - Oneshot sub		1349788
+	80053009	PercHits	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Combat\BrondanCombat2\PercHits		857936
+	98774313	Percussion	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Percussion_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Combat\BrondanCombat2\Percussion		1960916
+	195115677	Combat_HowlStingers	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(4)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Combat\Stingers\Combat_HowlStingers		735374
+	244481563	PercHits	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro(2)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Combat\BrondanCombat4\PercHits		857936
+	251054655	BrokenOath_BrondanCombat_End	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\BrokenOath_BrondanCombat_End_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Combat\BrondanCombatEnd\BrokenOath_BrondanCombat_End		2941340
+	308489943	Combat_HowlStingers	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(2)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Combat\Stingers\Combat_HowlStingers		735384
+	339320626	Broken Oath_BrondanIdle - Ambience Loop	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Ambience Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Idle\Broken Oath_BrondanIdle - Ambience Loop		11388412
+	340995209	Broken Oath_BrondanIdle - Shakuhachi	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Shaku(3)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Idle\Broken Oath_BrondanIdle - Shakuhachi		2400064
+	342008685	Broken Oath_BrondanIdle - Screech	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Screech(3)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Idle\Broken Oath_BrondanIdle - Screech		2083504
+	346977009	Combat_ShakuStinger	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 5_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Combat\Stingers\Combat_ShakuStinger		1225596
+	362030614	Combat_HowlStingers	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(6)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Combat\Stingers\Combat_HowlStingers		490276
+	393441381	BrokenOath_BrondanCombat_Pre	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\BrokenOath_BrondanCombat_Pre_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Combat\BrondanCombat2\BrokenOath_BrondanCombat_Pre		980492
+	404142544	Broken Oath_BrondanIdle - Screech	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Screech(2)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Idle\Broken Oath_BrondanIdle - Screech		2083384
+	406411715	Broken Oath_BrondanIdle - Screech	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Screech(4)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Idle\Broken Oath_BrondanIdle - Screech		1715816
+	431715203	Combat_HowlStingers	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Combat\Stingers\Combat_HowlStingers		674106
+	470110550	Broken Oath_BrondanIdle - Oneshot sub	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - DarkDrone_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Idle\Broken Oath_BrondanIdle - Oneshot sub		2329180
+	549857491	Broken Oath_BrondanIdle - Drums intro	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Drums intro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Idle\Broken Oath_BrondanIdle - Drums intro		2451128
+	556890851	Broken Oath_BrondanIdle - Shakuhachi	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Shaku(2)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Idle\Broken Oath_BrondanIdle - Shakuhachi		2692072
+	568387146	Combat_ShakuStinger	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Combat\Stingers\Combat_ShakuStinger		1225596
+	634279464	Broken Oath_BrondanIdle - Screech	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Screech_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Idle\Broken Oath_BrondanIdle - Screech		1960956
+	647733899	Combat_HowlStingers	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(3)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Combat\Stingers\Combat_HowlStingers		735330
+	716628419	Broken Oath_Tibessa_theme	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Tibessa_Past\Broken Oath_Tibessa_theme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Past\Past\Broken Oath_Tibessa_theme\Broken Oath_Tibessa_theme		12521804
+	725732600	Combat_ShakuStinger	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 6_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Combat\Stingers\Combat_ShakuStinger		2206024
+	745415054	Broken Oath_BrondanIdle - Sub	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Sub_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Idle\Idle\Broken Oath_BrondanIdle - Sub		1056064
+	769371718	Combat_ShakuStinger	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 5(2)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Combat\Stingers\Combat_ShakuStinger		1225596
+	1054661302	Combat_HowlStingers	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(5)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Brondan\Combat\Stingers\Combat_HowlStingers		735384
+
