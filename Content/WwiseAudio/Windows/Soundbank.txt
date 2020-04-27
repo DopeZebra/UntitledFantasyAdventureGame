@@ -1,6 +1,23 @@
 Event	ID	Name			Wwise Object Path	Notes
+	331846928	pillar_lever_use			\Default Work Unit\Interaction\pillar_lever_use	
+	354526556	tibessa_normal_time			\Default Work Unit\Characters\tibessa_normal_time	
+	864184553	oxbaren_shockwave_charge			\Default Work Unit\Characters\oxbaren_shockwave_charge	
+	866567142	tibessa_slow_time			\Default Work Unit\Characters\tibessa_slow_time	
+	1189214292	pillar_triangle_rise			\Default Work Unit\Interaction\pillar_triangle_rise	
+	1268222929	time_crystal_nearby			\Default Work Unit\Interaction\time_crystal_nearby	
+	1379722170	oxbaren_explosion			\Default Work Unit\Characters\oxbaren_explosion	
+	2089460903	pillar_retract			\Default Work Unit\Interaction\pillar_retract	
+	2433708202	pillar_triangle_rotate			\Default Work Unit\Interaction\pillar_triangle_rotate	
+	2573489613	pillar_rotate			\Default Work Unit\Interaction\pillar_rotate	
+	2667003859	agnar_laser_charge			\Default Work Unit\Characters\agnar_laser_charge	
+	3312775127	tibessa_respawn			\Default Work Unit\Characters\tibessa_respawn	
+	3565352627	soul_charge			\Default Work Unit\Interaction\soul_charge	
+	3940617192	agnar_laser_shoot			\Default Work Unit\Characters\agnar_laser_shoot	
 	3991942870	music			\Default Work Unit\Music\music	
+	4036749982	pillar_lever_retract			\Default Work Unit\Interaction\pillar_lever_retract	
+	4057998772	oxbaren_shockwave_explode			\Default Work Unit\Characters\oxbaren_shockwave_explode	
 	4130026045	time_change			\Default Work Unit\Interaction\time_change	
+	4217865490	pillar_triangle_lower			\Default Work Unit\Interaction\pillar_triangle_lower	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	2654366170	Time			\Default Work Unit\Time	
@@ -35,6 +52,10 @@ Modulator Envelope	ID	Name			Wwise Object Path	Notes
 	913743021	Modulator Envelope (Custom)				
 	1063819344	Modulator Envelope (Custom)				
 
+Modulator Time	ID	Name			Wwise Object Path	Notes
+	422699685	Modulator Time (Custom)				
+	976365587	Modulator Time (Custom)				
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
@@ -55,13 +76,19 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	449021	Broken Oath_BrondanCombat_1P - WildWind	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat_1P - WildWind_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Combat\BrondanCombat1\Broken Oath_BrondanCombat_1P - WildWind		5392408
+	16413053	Krotos UI Chime Single Hit Mono-002	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-002_6F85AE67.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\ChimeHit\Krotos UI Chime Single Hit Mono-002		97728
 	49078717	Broken Oath_BrondanIdle - Shakuhachi	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Shaku_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Explore\Explore_main\Broken Oath_BrondanIdle - Shakuhachi		2267340
 	50228522	Broken Oath_BrondanIdle - Oneshot sub	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - DarkDrone(2)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Explore\Explore_main\Broken Oath_BrondanIdle - Oneshot sub		1349788
 	80053009	PercHits	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Combat\BrondanCombat2\PercHits		857936
 	98774313	Percussion	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Percussion_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Combat\BrondanCombat2\Percussion		1960916
+	117692380	MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Agnar\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02_AE7FA48A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Agnar\Laser Charge\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02		163010
+	149479780	Krotos UI Chime Single Hit Mono-003	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-003_81B1A628.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\ChimeHit\Krotos UI Chime Single Hit Mono-003		97592
+	159248114	Tension - sizzle drips 1	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Tension - sizzle drips 1_396958C3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\Tension - sizzle drips 1		312016
+	179580837	Krotos UI Chime Texture Magic Bending Mono-003 1	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Krotos UI Chime Texture Magic Bending Mono-003 1_F7E666B0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\Krotos UI Chime Texture Magic Bending Mono-003 1		153308
 	195115677	Combat_HowlStingers	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(4)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Combat\Stingers\Combat_HowlStingers		735374
 	244481563	PercHits	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro(2)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Combat\BrondanCombat4\PercHits		857936
 	251054655	BrokenOath_BrondanCombat_End	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\BrokenOath_BrondanCombat_End_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Combat\BrondanCombatEnd\BrokenOath_BrondanCombat_End		2941340
+	293740931	Ethereal Whoosh-002 2	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Ethereal Whoosh-002 2_5B26AAE5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\Ethereal Whoosh-002 2		419688
 	308489943	Combat_HowlStingers	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(2)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Combat\Stingers\Combat_HowlStingers		735384
 	339320626	Broken Oath_BrondanIdle - Ambience Loop	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Ambience Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Explore\Explore_main\Broken Oath_BrondanIdle - Ambience Loop		11388412
 	340995209	Broken Oath_BrondanIdle - Shakuhachi	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Shaku(3)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Explore\Explore_main\Broken Oath_BrondanIdle - Shakuhachi		2400064
@@ -72,15 +99,22 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	404142544	Broken Oath_BrondanIdle - Screech	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Screech(2)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Explore\Explore_main\Broken Oath_BrondanIdle - Screech		2083384
 	406411715	Broken Oath_BrondanIdle - Screech	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Screech(4)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Explore\Explore_main\Broken Oath_BrondanIdle - Screech		1715816
 	431715203	Combat_HowlStingers	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Combat\Stingers\Combat_HowlStingers		674106
+	445686762	Krotos UI Chime Single Hit Mono-001	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-001_EF2D6236.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\ChimeHit\Krotos UI Chime Single Hit Mono-001		102256
 	470110550	Broken Oath_BrondanIdle - Oneshot sub	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - DarkDrone_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Explore\Explore_main\Broken Oath_BrondanIdle - Oneshot sub		2329180
+	534062515	Charged Laser by LegoLunatic Id-151243_01	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_961011CA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Agnar\Laser Shoot\Charged Laser by LegoLunatic Id-151243_01		199192
 	549857491	Broken Oath_BrondanIdle - Drums intro	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Drums intro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Explore\Explore_intro\Broken Oath_BrondanIdle - Drums intro		2451128
 	556890851	Broken Oath_BrondanIdle - Shakuhachi	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Shaku(2)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Explore\Explore_main\Broken Oath_BrondanIdle - Shakuhachi		2692072
 	568387146	Combat_ShakuStinger	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Combat\Stingers\Combat_ShakuStinger		1225596
+	607903466	SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_E8D95FDA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Agnar\Laser Shoot\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1		77382
 	634279464	Broken Oath_BrondanIdle - Screech	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Screech_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Explore\Explore_main\Broken Oath_BrondanIdle - Screech		1960956
 	647733899	Combat_HowlStingers	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(3)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Combat\Stingers\Combat_HowlStingers		735330
+	701127015	SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_01	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_C5326A1F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Agnar\Laser Shoot\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_01		77382
 	716628419	Broken Oath_Tibessa_theme	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Tibessa_Past\Broken Oath_Tibessa_theme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Past\Explore\Broken Oath_Tibessa_theme\Broken Oath_Tibessa_theme		12521804
 	725732600	Combat_ShakuStinger	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 6_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Combat\Stingers\Combat_ShakuStinger		2206024
 	745415054	Broken Oath_BrondanIdle - Sub	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Sub_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Explore\Explore_main\Broken Oath_BrondanIdle - Sub		1056064
+	750396246	Slowdown by DarkoZL Id-101118	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118_D9462B16.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Slow Time\Slowdown by DarkoZL Id-101118		910400
 	769371718	Combat_ShakuStinger	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 5(2)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Combat\Stingers\Combat_ShakuStinger		1225596
+	818417696	Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065_43DC7D05.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065		444480
+	1028182275	Charged Laser by LegoLunatic Id-151243	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_A932B75F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Agnar\Laser Shoot\Charged Laser by LegoLunatic Id-151243		151742
 	1054661302	Combat_HowlStingers	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(5)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Combat\Stingers\Combat_HowlStingers		735384
 

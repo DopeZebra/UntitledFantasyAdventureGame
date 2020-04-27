@@ -20,8 +20,9 @@
 						<Effect Name="Hard_Knee_Minus_3dB_RMS" ID="{D083BAE5-F9EF-426B-A311-D9DF8DFE8807}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 							<PropertyList>
 								<Property Name="AttackTime" Type="Real32" Value="0.3"/>
+								<Property Name="OutputGain" Type="Real32" Value="2"/>
 								<Property Name="Ratio" Type="Real32" Value="5"/>
-								<Property Name="Threshold" Type="Real32" Value="-16"/>
+								<Property Name="Threshold" Type="Real32" Value="-23.8"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Dialog_Leveler_Soft" ID="{9C1D0FCF-896E-4739-A8E8-B1E908F51CE6}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
@@ -54,9 +55,10 @@
 						<Effect Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 							<PropertyList>
 								<Property Name="AttackTime" Type="Real32" Value="0.001"/>
+								<Property Name="OutputGain" Type="Real32" Value="24"/>
 								<Property Name="Ratio" Type="Real32" Value="20"/>
 								<Property Name="ReleaseTime" Type="Real32" Value="0.5"/>
-								<Property Name="Threshold" Type="Real32" Value="-25"/>
+								<Property Name="Threshold" Type="Real32" Value="-47.6"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Pumping_and_Breathing_1" ID="{87BE3270-3D27-45BB-9E46-7F2D9380F523}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
@@ -1638,6 +1640,7 @@
 								<Property Name="ModDepth" Type="Real32" Value="10"/>
 								<Property Name="ModFrequency" Type="Real32" Value="5.5"/>
 								<Property Name="ModPWM" Type="Real32" Value="0"/>
+								<Property Name="WetDryMix" Type="Real32" Value="73"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Special_Effect_1" ID="{83317D8A-9D4C-438E-BE8C-BC7D27CAD1B0}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
