@@ -20,7 +20,7 @@
 						<Effect Name="Hard_Knee_Minus_3dB_RMS" ID="{D083BAE5-F9EF-426B-A311-D9DF8DFE8807}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 							<PropertyList>
 								<Property Name="Ratio" Type="Real32" Value="8"/>
-								<Property Name="Threshold" Type="Real32" Value="-3"/>
+								<Property Name="Threshold" Type="Real32" Value="-18"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Dialog_Leveler_Soft" ID="{9C1D0FCF-896E-4739-A8E8-B1E908F51CE6}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
@@ -754,11 +754,44 @@
 						</Effect>
 						<Effect Name="Underground_Parking1" ID="{8DA66AA3-6CA0-41A0-B7A2-BB6FCABFCDA8}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 							<PropertyList>
+								<Property Name="DryLevel" Type="Real32" Value="0"/>
 								<Property Name="HFRatio" Type="Real32" Value="7.5"/>
 								<Property Name="NumberOfDelays" Type="int32" Value="12"/>
 								<Property Name="PreDelay" Type="Real32" Value="0.02"/>
 								<Property Name="ReverbTime" Type="Real32" Value="4.5"/>
-								<Property Name="WetLevel" Type="Real32" Value="-30"/>
+								<Property Name="WetLevel" Type="Real32" Value="-30">
+									<RTPCList>
+										<RTPC Name="" ID="{4B94F027-855D-4F62-BF74-F1BD9475AABD}" ShortID="172977328">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="PlayerHealth" ID="{4380712B-C9FB-49D5-87C6-DBDA6E73E056}" WorkUnitID="{87CE6915-7599-414E-83C8-8B4A35390FBE}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{ED51C693-384F-46EC-8558-2817067D0756}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-25</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>15</XPos>
+														<YPos>-96.3</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>-96.3</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 						</Effect>
 					</ChildrenList>
