@@ -42,9 +42,47 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="soul_charge" ID="{3F52F813-FFE7-443E-BE07-40D4FC8DA12C}"/>
+						<Event Name="pillar_rotate" ID="{DAB4DF55-D368-4D8D-977C-EBCF6CD4D95A}"/>
+						<Event Name="pillar_retract" ID="{8A601E27-F3B5-479F-8360-C27A13C92929}"/>
+						<Event Name="pillar_lever_use" ID="{345BB24B-3B6C-47CE-AF31-A22A659C6744}"/>
+						<Event Name="pillar_lever_retract" ID="{E32CBBA3-A5A6-4086-B2CA-790B97D7E00C}"/>
+						<Event Name="pillar_triangle_rotate" ID="{70F6600C-5D10-4461-AE8D-9DE87D18495A}"/>
+						<Event Name="pillar_triangle_rise" ID="{B4E2D6FE-C9EE-493F-9604-9BFF5F11CEB3}"/>
+						<Event Name="pillar_triangle_lower" ID="{0DE9D7D1-7C91-4288-BBC3-322DD079801C}"/>
+						<Event Name="time_crystal_nearby" ID="{7F770696-9B21-4666-B7B9-B0857172CE24}">
+							<ChildrenList>
+								<Action Name="" ID="{ACD2FBCA-6CB6-4A01-ABB0-070EA1EAE90E}" ShortID="72083273">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Change Time" ID="{DC6086E0-DAAF-4030-9B97-1A4691A63677}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DA39E685-7B44-4537-BC36-22D5F313097C}" ShortID="60330421">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Change Time" ID="{DC6086E0-DAAF-4030-9B97-1A4691A63677}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Characters" ID="{20CB9DA4-7050-4DDD-BD9D-32D3B00A5D3D}" ShortID="737686189"/>
+				<Folder Name="Characters" ID="{20CB9DA4-7050-4DDD-BD9D-32D3B00A5D3D}" ShortID="737686189">
+					<ChildrenList>
+						<Event Name="tibessa_respawn" ID="{95FC6B90-7438-49C3-86CE-2E4B3A059660}"/>
+						<Event Name="tibessa_slow_time" ID="{CE5559E7-C9AE-459D-B7F4-E335547E0DCB}"/>
+						<Event Name="agnar_shoot_laser" ID="{18279C3C-A590-4555-B884-8A38E19863D9}"/>
+						<Event Name="oxbaren_shockwave_charge" ID="{CACF39EF-7739-4B10-A2E0-FE18DF77BD49}"/>
+						<Event Name="oxbaren_shockwave_explode" ID="{E908A70F-1D06-4AE3-B8C5-B6D7F2BBD282}"/>
+						<Event Name="oxbaren_explosion" ID="{F3A520E4-3669-4574-9587-7CF54E469CBE}"/>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
