@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<ActorMixer Name="Interaction" ID="{7568CB29-D999-4744-8E17-D4CCDF5643CD}" ShortID="1063751151">
 					<PropertyList>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -565,6 +566,7 @@ Content provided by Vincent Gagnon
 				</ActorMixer>
 				<ActorMixer Name="Atmosphere" ID="{7BC9EC9F-D1B6-4F34-842F-059009CB5B44}" ShortID="440963598">
 					<PropertyList>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -578,6 +580,7 @@ Content provided by Vincent Gagnon
 				</ActorMixer>
 				<ActorMixer Name="Characters" ID="{BC06FD46-2E19-4E30-922C-D1746A2E3988}" ShortID="467436872">
 					<PropertyList>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>

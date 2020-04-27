@@ -21,7 +21,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Past" ID="{FA47C1D9-24C5-4BF9-91E2-87D35BB11814}"/>
+						<CurrentStateRef Name="Present" ID="{556F24BA-6297-4232-8F45-E8F06020063B}"/>
 						<CurrentStateRef Name="Explore" ID="{71BEBC05-1BFE-4CAB-B4F6-9B22A4AC1B5C}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
