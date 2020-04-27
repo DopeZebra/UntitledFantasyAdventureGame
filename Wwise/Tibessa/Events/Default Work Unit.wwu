@@ -7,26 +7,6 @@
 					<ChildrenList>
 						<Event Name="music" ID="{8FF6FB1B-DC44-48DB-8AED-6AB230C00B1F}">
 							<ChildrenList>
-								<Action Name="" ID="{9E4211E8-7014-41BA-9DE7-4ECD6207BD61}" ShortID="132008254">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Present" ID="{556F24BA-6297-4232-8F45-E8F06020063B}" WorkUnitID="{6DC7A827-3638-4F84-B2DD-74F4E5C7DAF7}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{EFF1315C-947A-4EFB-BE1A-AFDD8B9B8DD1}" ShortID="627854780">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Explore" ID="{71BEBC05-1BFE-4CAB-B4F6-9B22A4AC1B5C}" WorkUnitID="{6DC7A827-3638-4F84-B2DD-74F4E5C7DAF7}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{ACA48BC1-7D8B-4906-B015-0F548BBC4018}" ShortID="92363418">
 									<ReferenceList>
 										<Reference Name="Target">
@@ -44,6 +24,16 @@
 						<Event Name="time_change" ID="{5085AB8E-F7FE-4157-9B5E-B264F60CD5BA}">
 							<ChildrenList>
 								<Action Name="" ID="{05276CBE-9520-448B-A46D-D59089199663}" ShortID="1063959942">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Change Time" ID="{DC6086E0-DAAF-4030-9B97-1A4691A63677}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DA6DAF03-4C6A-4976-8FE0-1E31D9B64E2F}" ShortID="455612522">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Change Time" ID="{DC6086E0-DAAF-4030-9B97-1A4691A63677}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>

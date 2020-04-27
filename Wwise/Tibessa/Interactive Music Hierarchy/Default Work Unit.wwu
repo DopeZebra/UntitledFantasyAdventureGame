@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<MusicSwitchContainer Name="Music" ID="{260B69B1-FD92-4626-B3CF-431FAC3853E7}" ShortID="214566048">
 					<PropertyList>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="Tempo" Type="Real64" Value="94"/>
 					</PropertyList>
 					<ReferenceList>
@@ -43,9 +44,9 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicSegment Name="Explore" ID="{813A6D2A-A6B7-4598-9ECA-FC066EB21998}" ShortID="797801558">
+										<MusicSegment Name="Explore_main" ID="{813A6D2A-A6B7-4598-9ECA-FC066EB21998}" ShortID="797801558">
 											<PropertyList>
-												<Property Name="EndPosition" Type="Real64" Value="63144.0997340426"/>
+												<Property Name="EndPosition" Type="Real64" Value="65058.9933510638"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -86,7 +87,6 @@
 																	<PropertyList>
 																		<Property Name="EndTrimOffset" Type="Real64" Value="59314.3125"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="1333.12697625335"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="Broken Oath_BrondanIdle - Ambience Loop" ID="{993519E0-0FE4-48A4-9F83-4B0EE0248B9F}"/>
 																</MusicClip>
@@ -138,7 +138,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="12130.8125"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="7659.57446808511"/>
+																		<Property Name="PlayAt" Type="Real64" Value="6326.44749183176"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="Broken Oath_BrondanIdle - DarkDrone" ID="{0F1A7DE6-0C22-47FA-BE1B-BE20137F421E}"/>
 																	<PropertyCurveList>
@@ -210,7 +210,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="7029.81250000001"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="30056.5312315725"/>
+																		<Property Name="PlayAt" Type="Real64" Value="28723.4042553191"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="Broken Oath_BrondanIdle - DarkDrone(2)" ID="{3A3B86A6-4549-467A-BBB1-1943C00D49DF}"/>
 																	<PropertyCurveList>
@@ -336,7 +336,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="7021.2765957447"/>
 																		<Property Name="FadeInDuration" Type="Real64" Value="2812.6298728603"/>
 																		<Property Name="FadeOutDuration" Type="Real64" Value="2997.38075396989"/>
-																		<Property Name="PlayAt" Type="Real64" Value="6439.50995497676"/>
+																		<Property Name="PlayAt" Type="Real64" Value="5106.38297872341"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="Broken Oath_BrondanIdle - Screech" ID="{A0055C2F-52CF-4607-B4D0-DD4131029EA6}"/>
 																	<PropertyCurveList>
@@ -408,7 +408,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="6382.97872340427"/>
 																		<Property Name="FadeInDuration" Type="Real64" Value="2669.51170098088"/>
 																		<Property Name="FadeOutDuration" Type="Real64" Value="3129.9944190029"/>
-																		<Property Name="PlayAt" Type="Real64" Value="18567.1695294448"/>
+																		<Property Name="PlayAt" Type="Real64" Value="17234.0425531915"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="Broken Oath_BrondanIdle - Screech(4)" ID="{A64D5212-8D89-4386-A1C8-370468A5E406}"/>
 																	<PropertyCurveList>
@@ -480,7 +480,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="6382.97872340426"/>
 																		<Property Name="FadeInDuration" Type="Real64" Value="2972.56442993555"/>
 																		<Property Name="FadeOutDuration" Type="Real64" Value="2810.48310028211"/>
-																		<Property Name="PlayAt" Type="Real64" Value="28779.9354868917"/>
+																		<Property Name="PlayAt" Type="Real64" Value="27446.8085106384"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="Broken Oath_BrondanIdle - Screech(3)" ID="{051F5CB0-72E5-416F-A515-62C2F3D5557E}"/>
 																	<PropertyCurveList>
@@ -552,7 +552,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="5744.68085106382"/>
 																		<Property Name="FadeInDuration" Type="Real64" Value="2654.48429293354"/>
 																		<Property Name="FadeOutDuration" Type="Real64" Value="2618.70474996368"/>
-																		<Property Name="PlayAt" Type="Real64" Value="39630.9993166789"/>
+																		<Property Name="PlayAt" Type="Real64" Value="38297.8723404255"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="Broken Oath_BrondanIdle - Screech(2)" ID="{04C8CAE3-CCE4-4323-9582-FE7564F69A55}"/>
 																	<PropertyCurveList>
@@ -671,7 +671,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="12500"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="6439.50995497676"/>
+																		<Property Name="PlayAt" Type="Real64" Value="5106.38297872341"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="Broken Oath_BrondanIdle - Shaku(3)" ID="{5B574342-7D9B-4AC1-83EC-6C99DAB5BD70}"/>
 																	<PropertyCurveList>
@@ -743,7 +743,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="14020.875"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="21778.8355423958"/>
+																		<Property Name="PlayAt" Type="Real64" Value="20445.7085661425"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="Broken Oath_BrondanIdle - Shaku(2)" ID="{7A945567-7B11-4624-BA47-5457490E57F9}"/>
 																	<PropertyCurveList>
@@ -815,7 +815,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="11808.7291666667"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="30751.3603354855"/>
+																		<Property Name="PlayAt" Type="Real64" Value="29418.2333592322"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="Broken Oath_BrondanIdle - Shaku" ID="{9EDE8671-D0E2-4171-98B6-0859E3F97D89}"/>
 																	<PropertyCurveList>
@@ -919,7 +919,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="5500.00000000002"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="16788.7531199444"/>
+																		<Property Name="PlayAt" Type="Real64" Value="15455.6261436911"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="Broken Oath_BrondanIdle - Sub" ID="{108B118A-1614-4968-A873-0B1FE63BC163}"/>
 																	<PropertyCurveList>
@@ -987,17 +987,48 @@
 														<MusicTrackSequence Name="" ID="{329CE6D7-53A6-4CD8-8D31-A69E2E84B0B5}"/>
 													</SequenceList>
 												</MusicTrack>
-												<MusicTrack Name="Broken Oath_BrondanIdle - Drums intro" ID="{13B830DF-38A7-409E-AE91-E6687620F150}" ShortID="920814698">
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{9F587BE7-6EBD-4AD8-9881-F64A3EAFC279}">
+													<PropertyList>
+														<Property Name="TimeMs" Type="Real64" Value="638.297872340426"/>
+													</PropertyList>
+												</MusicCue>
+												<MusicCue Name="Exit Cue" ID="{B6049D28-281B-4A0C-B36A-6AE87F22B1D2}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="38297.8723404255"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+										<MusicSegment Name="Explore_intro" ID="{2CEB28A9-92DC-4999-9EE3-DE9B10519731}" ShortID="918571070">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="60647.4394762533"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="Broken Oath_BrondanIdle - Drums intro" ID="{3EC1AC82-6C74-4F5B-8719-EE92414486EA}" ShortID="750933698">
+													<PropertyList>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Music" ID="{1341993A-9A29-4750-AA61-9268EEFE8617}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+															<ObjectRef Name="Explore" ID="{6A98E1B3-B32E-4B3C-9034-ED0B078D200D}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Broken Oath_BrondanIdle - Drums intro" ID="{399BB848-2CE2-4404-AED6-CECF486301EF}">
+														<AudioFileSource Name="Broken Oath_BrondanIdle - Drums intro" ID="{998989E5-8ACC-4D6D-BC8A-07F6A8CE26E8}">
 															<Language>SFX</Language>
 															<AudioFile>Music\Broken Oath_BrondanIdle - Drums intro.wav</AudioFile>
 															<MediaIDList>
@@ -1006,7 +1037,7 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
-														<MusicTransition Name="Root" ID="{9A086996-78AD-4EDA-9EF5-233742730E89}">
+														<MusicTransition Name="Root" ID="{488B436E-407D-40BB-A551-8AB004E252BA}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -1014,15 +1045,15 @@
 														</MusicTransition>
 													</TransitionList>
 													<SequenceList>
-														<MusicTrackSequence Name="" ID="{45FA8EFF-6B72-45F8-AF72-DC923F8820BB}">
+														<MusicTrackSequence Name="" ID="{31B7F4DB-2356-4754-B706-632401360D26}">
 															<ClipList>
-																<MusicClip Name="Broken Oath_BrondanIdle - Drums intro" ID="{02F5BED1-396E-4FED-853C-3AB8250C6172}">
+																<MusicClip Name="Broken Oath_BrondanIdle - Drums intro" ID="{DF2BB060-E535-436F-A771-1DF7B4D319E3}">
 																	<PropertyList>
 																		<Property Name="EndTrimOffset" Type="Real64" Value="6382.97916666667"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
-																	<AudioSourceRef Name="Broken Oath_BrondanIdle - Drums intro" ID="{399BB848-2CE2-4404-AED6-CECF486301EF}"/>
+																	<AudioSourceRef Name="Broken Oath_BrondanIdle - Drums intro" ID="{998989E5-8ACC-4D6D-BC8A-07F6A8CE26E8}"/>
 																</MusicClip>
 															</ClipList>
 														</MusicTrackSequence>
@@ -1030,15 +1061,11 @@
 												</MusicTrack>
 											</ChildrenList>
 											<CueList>
-												<MusicCue Name="Entry Cue" ID="{9F587BE7-6EBD-4AD8-9881-F64A3EAFC279}">
-													<PropertyList>
-														<Property Name="TimeMs" Type="Real64" Value="6439.50995497676"/>
-													</PropertyList>
-												</MusicCue>
-												<MusicCue Name="Exit Cue" ID="{B6049D28-281B-4A0C-B36A-6AE87F22B1D2}">
+												<MusicCue Name="Entry Cue" ID="{31BA4F33-2B27-466F-95EA-E55DAD82EF73}"/>
+												<MusicCue Name="Exit Cue" ID="{960E4BC6-5447-475D-98D1-F8FC37DA1B8C}">
 													<PropertyList>
 														<Property Name="CueType" Type="int16" Value="1"/>
-														<Property Name="TimeMs" Type="Real64" Value="44737.3822954023"/>
+														<Property Name="TimeMs" Type="Real64" Value="1914.89361702128"/>
 													</PropertyList>
 												</MusicCue>
 											</CueList>
@@ -1059,15 +1086,23 @@
 									</TransitionList>
 									<Playlist>
 										<MusicPlaylistItem Name="" ID="{AE1EABE0-E653-42E6-93B7-C97D3E42904E}" ShortID="863483572">
-											<PropertyList>
-												<Property Name="LoopCount" Type="int16" Value="0"/>
-											</PropertyList>
 											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{5197B495-19A7-45EE-91DB-9F59EA5E8CFA}" ShortID="978536069">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Explore_intro" ID="{2CEB28A9-92DC-4999-9EE3-DE9B10519731}"/>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{8305E584-1E23-443D-8158-DDB5C6A9ACF1}" ShortID="150892607">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+													</PropertyList>
+												</MusicPlaylistItem>
 												<MusicPlaylistItem Name="" ID="{429F1798-5B2E-4762-BFD3-0EFB39C3EAE8}" ShortID="877795693">
 													<PropertyList>
 														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 													</PropertyList>
-													<SegmentRef Name="Explore" ID="{813A6D2A-A6B7-4598-9ECA-FC066EB21998}"/>
+													<SegmentRef Name="Explore_main" ID="{813A6D2A-A6B7-4598-9ECA-FC066EB21998}"/>
 												</MusicPlaylistItem>
 											</ChildrenList>
 										</MusicPlaylistItem>
@@ -1467,7 +1502,17 @@
 																<Value>5</Value>
 															</ValueList>
 														</Property>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
 														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>3</Value>
@@ -1982,7 +2027,17 @@
 												</MusicTrack>
 												<MusicTrack Name="Combat_ShakuStinger" ID="{82C41ACF-F7EC-4ED1-92DE-AF44C7E64A4C}" ShortID="249186400">
 													<PropertyList>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
 														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -2096,6 +2151,16 @@
 										<MusicSegment Name="BrondanCombat1" ID="{88F61A74-E72B-4597-A618-ACA6B8E03785}" ShortID="207327420">
 											<PropertyList>
 												<Property Name="EndPosition" Type="Real64" Value="28758.2478070175"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -2550,17 +2615,17 @@
 									<Playlist>
 										<MusicPlaylistItem Name="" ID="{30BF381D-F7CD-49A2-A0EF-6B21ED944D86}" ShortID="400566301">
 											<ChildrenList>
-												<MusicPlaylistItem Name="" ID="{37900E37-D0B6-4994-8C79-6C7172C86C76}" ShortID="987006589">
-													<PropertyList>
-														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-													</PropertyList>
-													<SegmentRef Name="BrondanCombat1" ID="{88F61A74-E72B-4597-A618-ACA6B8E03785}"/>
-												</MusicPlaylistItem>
 												<MusicPlaylistItem Name="" ID="{150FACD5-83F4-4AF5-9D80-1CEE1BBA5F4E}" ShortID="740027896">
 													<PropertyList>
 														<Property Name="LoopCount" Type="int16" Value="0"/>
 													</PropertyList>
 													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{37900E37-D0B6-4994-8C79-6C7172C86C76}" ShortID="987006589">
+															<PropertyList>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<SegmentRef Name="BrondanCombat1" ID="{88F61A74-E72B-4597-A618-ACA6B8E03785}"/>
+														</MusicPlaylistItem>
 														<MusicPlaylistItem Name="" ID="{7AC68629-8B9E-4879-BC34-FC940151244F}" ShortID="867406519">
 															<PropertyList>
 																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
@@ -2980,8 +3045,8 @@
 											<MusicFade Name="Source Fade-out" ID="{0115A028-1499-4645-897E-07D8B2111C6A}">
 												<PropertyList>
 													<Property Name="FadeCurve" Type="int16" Value="1"/>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="1"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="4"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -3018,8 +3083,8 @@
 											<MusicFade Name="Source Fade-out" ID="{0E09F897-AAD0-4B3E-9BE8-1483426F1101}">
 												<PropertyList>
 													<Property Name="FadeCurve" Type="int16" Value="1"/>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="1"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="4"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
