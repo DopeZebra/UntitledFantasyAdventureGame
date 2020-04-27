@@ -116,6 +116,31 @@
 						</Bus>
 						<Bus Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}"/>
 						<Bus Name="Atmosphere" ID="{6D7DE35A-259E-48E6-9A33-86434B4B4155}"/>
+						<AuxBus Name="Reverbs" ID="{FB150F2B-6FB6-489E-8344-DC21A313175D}">
+							<ChildrenList>
+								<AuxBus Name="MediumReverb" ID="{FE52EF90-A118-493E-A2C3-6C3C6ECF193A}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<AuxBus Name="SmallReverb" ID="{AD7537CD-734E-48D0-A5AE-E6D4C652E6F8}">
+									<ReferenceList>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<AuxBus Name="LargeReverb" ID="{D2E91996-4255-4BC0-9C9D-532524C4FE31}">
+									<ReferenceList>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Room_Large" ID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+							</ChildrenList>
+						</AuxBus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>
