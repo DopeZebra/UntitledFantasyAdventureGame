@@ -3139,6 +3139,15 @@
 								<AudioNodeRef Name="Present" ID="{90C29165-6F98-493E-9C63-4F7671B021EF}" WorkUnitID="{C2974EF7-2154-4AFB-8D2A-D09C7AE9FAE4}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Time" ID="{B14CCE9A-2207-43E0-8122-74FEC076D9E9}"/>
+								<PathElementRef Name="Combat" ID="{A7D2DFA2-3E44-486E-B275-60B000C4C7F7}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Present" ID="{90C29165-6F98-493E-9C63-4F7671B021EF}" WorkUnitID="{C2974EF7-2154-4AFB-8D2A-D09C7AE9FAE4}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
 					</EntryList>
 				</MusicSwitchContainer>
 			</ChildrenList>

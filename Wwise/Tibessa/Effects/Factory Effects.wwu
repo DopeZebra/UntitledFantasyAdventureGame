@@ -20,8 +20,9 @@
 						<Effect Name="Hard_Knee_Minus_3dB_RMS" ID="{D083BAE5-F9EF-426B-A311-D9DF8DFE8807}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 							<PropertyList>
 								<Property Name="AttackTime" Type="Real32" Value="0.3"/>
+								<Property Name="OutputGain" Type="Real32" Value="2"/>
 								<Property Name="Ratio" Type="Real32" Value="5"/>
-								<Property Name="Threshold" Type="Real32" Value="-16"/>
+								<Property Name="Threshold" Type="Real32" Value="-23.8"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Dialog_Leveler_Soft" ID="{9C1D0FCF-896E-4739-A8E8-B1E908F51CE6}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">

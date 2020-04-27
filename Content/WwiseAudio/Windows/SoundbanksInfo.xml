@@ -31,6 +31,7 @@
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1936516552" Name="agnar_shoot_laser" ObjectPath="\Events\Default Work Unit\Characters\agnar_shoot_laser"/>
 				<Event Id="3991942870" Name="music" ObjectPath="\Events\Default Work Unit\Music\music">
 					<IncludedMemoryFiles>
 						<File Id="449021" Language="SFX">
@@ -212,9 +213,59 @@
 						<SwitchContainer SwitchValue="{FA47C1D9-24C5-4BF9-91E2-87D35BB11814}">
 							<Children/>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{B14CCE9A-2207-43E0-8122-74FEC076D9E9}">
+							<Children/>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="1379722170" Name="oxbaren_explosion" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_explosion"/>
+				<Event Id="864184553" Name="oxbaren_shockwave_charge" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_charge"/>
+				<Event Id="4057998772" Name="oxbaren_shockwave_explode" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_explode"/>
+				<Event Id="4036749982" Name="pillar_lever_retract" ObjectPath="\Events\Default Work Unit\Interaction\pillar_lever_retract"/>
+				<Event Id="331846928" Name="pillar_lever_use" ObjectPath="\Events\Default Work Unit\Interaction\pillar_lever_use"/>
+				<Event Id="2089460903" Name="pillar_retract" ObjectPath="\Events\Default Work Unit\Interaction\pillar_retract"/>
+				<Event Id="2573489613" Name="pillar_rotate" ObjectPath="\Events\Default Work Unit\Interaction\pillar_rotate"/>
+				<Event Id="4217865490" Name="pillar_triangle_lower" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_lower"/>
+				<Event Id="1189214292" Name="pillar_triangle_rise" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rise"/>
+				<Event Id="2433708202" Name="pillar_triangle_rotate" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rotate"/>
+				<Event Id="3565352627" Name="soul_charge" ObjectPath="\Events\Default Work Unit\Interaction\soul_charge"/>
+				<Event Id="3312775127" Name="tibessa_respawn" ObjectPath="\Events\Default Work Unit\Characters\tibessa_respawn">
+					<IncludedMemoryFiles>
+						<File Id="16413053" Language="SFX">
+							<ShortName>Character\Tibessa\Krotos UI Chime Single Hit Mono-002.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-002_6F85AE67.wem</Path>
+						</File>
+						<File Id="149479780" Language="SFX">
+							<ShortName>Character\Tibessa\Krotos UI Chime Single Hit Mono-003.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-003_81B1A628.wem</Path>
+						</File>
+						<File Id="159248114" Language="SFX">
+							<ShortName>Character\Tibessa\Tension - sizzle drips 1.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Tension - sizzle drips 1_396958C3.wem</Path>
+						</File>
+						<File Id="179580837" Language="SFX">
+							<ShortName>Character\Tibessa\Krotos UI Chime Texture Magic Bending Mono-003 1.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Krotos UI Chime Texture Magic Bending Mono-003 1_F7E666B0.wem</Path>
+						</File>
+						<File Id="293740931" Language="SFX">
+							<ShortName>Character\Tibessa\Ethereal Whoosh-002 2.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Ethereal Whoosh-002 2_5B26AAE5.wem</Path>
+						</File>
+						<File Id="445686762" Language="SFX">
+							<ShortName>Character\Tibessa\Krotos UI Chime Single Hit Mono-001.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-001_EF2D6236.wem</Path>
+						</File>
+						<File Id="818417696" Language="SFX">
+							<ShortName>Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065_43DC7D05.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="866567142" Name="tibessa_slow_time" ObjectPath="\Events\Default Work Unit\Characters\tibessa_slow_time"/>
 				<Event Id="4130026045" Name="time_change" ObjectPath="\Events\Default Work Unit\Interaction\time_change">
+					<SwitchContainers/>
+				</Event>
+				<Event Id="1268222929" Name="time_crystal_nearby" ObjectPath="\Events\Default Work Unit\Interaction\time_crystal_nearby">
 					<SwitchContainers/>
 				</Event>
 			</IncludedEvents>

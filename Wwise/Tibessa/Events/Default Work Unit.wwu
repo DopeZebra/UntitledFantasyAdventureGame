@@ -75,7 +75,27 @@
 				</Folder>
 				<Folder Name="Characters" ID="{20CB9DA4-7050-4DDD-BD9D-32D3B00A5D3D}" ShortID="737686189">
 					<ChildrenList>
-						<Event Name="tibessa_respawn" ID="{95FC6B90-7438-49C3-86CE-2E4B3A059660}"/>
+						<Event Name="tibessa_respawn" ID="{95FC6B90-7438-49C3-86CE-2E4B3A059660}">
+							<ChildrenList>
+								<Action Name="" ID="{BE259E63-507D-4BDD-B39E-184089A83DB3}" ShortID="1017009140">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Respawn" ID="{CB473686-BEE8-4D19-AB3A-360EAD355D47}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5CD2CEEE-8EA6-49F6-992E-D876716624F5}" ShortID="923378136">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Respawn" ID="{CB473686-BEE8-4D19-AB3A-360EAD355D47}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="tibessa_slow_time" ID="{CE5559E7-C9AE-459D-B7F4-E335547E0DCB}"/>
 						<Event Name="agnar_shoot_laser" ID="{18279C3C-A590-4555-B884-8A38E19863D9}"/>
 						<Event Name="oxbaren_shockwave_charge" ID="{CACF39EF-7739-4B10-A2E0-FE18DF77BD49}"/>

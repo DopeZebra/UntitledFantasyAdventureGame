@@ -37,10 +37,10 @@ Effect plug-ins	ID	Name	Type				Notes
 	647881068	Wwise Gain (Custom)	Wwise Gain			
 	720889453	Wwise Gain (Custom)	Wwise Gain			
 	730552204	Wwise_Meter_(Custom)	Wwise Meter			
+	768507657	Hard_Knee_Minus_3dB_RMS_(Custom)	Wwise Compressor			
 	1990128658	Room_Medium	Wwise RoomVerb			
 	2098638826	Underground_Parking1	Wwise Matrix Reverb			
 	2995775460	Room_Small	Wwise RoomVerb			
-	3796564934	Hard_Knee_Minus_3dB_RMS	Wwise Compressor			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
