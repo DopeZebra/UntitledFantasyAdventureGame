@@ -31,7 +31,34 @@
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1936516552" Name="agnar_shoot_laser" ObjectPath="\Events\Default Work Unit\Characters\agnar_shoot_laser"/>
+				<Event Id="2667003859" Name="agnar_laser_charge" ObjectPath="\Events\Default Work Unit\Characters\agnar_laser_charge">
+					<IncludedMemoryFiles>
+						<File Id="117692380" Language="SFX">
+							<ShortName>Character\Agnar\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02.wav</ShortName>
+							<Path>SFX\Character\Agnar\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02_AE7FA48A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3940617192" Name="agnar_laser_shoot" ObjectPath="\Events\Default Work Unit\Characters\agnar_laser_shoot">
+					<IncludedMemoryFiles>
+						<File Id="534062515" Language="SFX">
+							<ShortName>Character\Agnar\Charged Laser by LegoLunatic Id-151243.wav</ShortName>
+							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_961011CA.wem</Path>
+						</File>
+						<File Id="607903466" Language="SFX">
+							<ShortName>Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1.wav</ShortName>
+							<Path>SFX\Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_E8D95FDA.wem</Path>
+						</File>
+						<File Id="701127015" Language="SFX">
+							<ShortName>Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1.wav</ShortName>
+							<Path>SFX\Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_C5326A1F.wem</Path>
+						</File>
+						<File Id="1028182275" Language="SFX">
+							<ShortName>Character\Agnar\Charged Laser by LegoLunatic Id-151243.wav</ShortName>
+							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_A932B75F.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3991942870" Name="music" ObjectPath="\Events\Default Work Unit\Music\music">
 					<IncludedMemoryFiles>
 						<File Id="449021" Language="SFX">
@@ -229,6 +256,7 @@
 				<Event Id="1189214292" Name="pillar_triangle_rise" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rise"/>
 				<Event Id="2433708202" Name="pillar_triangle_rotate" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rotate"/>
 				<Event Id="3565352627" Name="soul_charge" ObjectPath="\Events\Default Work Unit\Interaction\soul_charge"/>
+				<Event Id="354526556" Name="tibessa_normal_time" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normal_time"/>
 				<Event Id="3312775127" Name="tibessa_respawn" ObjectPath="\Events\Default Work Unit\Characters\tibessa_respawn">
 					<IncludedMemoryFiles>
 						<File Id="16413053" Language="SFX">
@@ -261,7 +289,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="866567142" Name="tibessa_slow_time" ObjectPath="\Events\Default Work Unit\Characters\tibessa_slow_time"/>
+				<Event Id="866567142" Name="tibessa_slow_time" ObjectPath="\Events\Default Work Unit\Characters\tibessa_slow_time">
+					<IncludedMemoryFiles>
+						<File Id="750396246" Language="SFX">
+							<ShortName>Character\Tibessa\Slowdown by DarkoZL Id-101118.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118_D9462B16.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="4130026045" Name="time_change" ObjectPath="\Events\Default Work Unit\Interaction\time_change">
 					<SwitchContainers/>
 				</Event>

@@ -122,7 +122,35 @@
 								</Bus>
 							</ChildrenList>
 						</Bus>
-						<Bus Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}"/>
+						<Bus Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}">
+							<ChildrenList>
+								<Bus Name="Characters" ID="{3063A728-00DE-4ADE-86FD-A0AD83ACEA69}">
+									<ChildrenList>
+										<Bus Name="Enemies" ID="{6A9F43E9-4143-4886-879E-E82059D83D02}">
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Slowdown" ID="{098283C2-189E-4EA6-AFBD-2D5640D3B5AA}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Slowdown" ID="{DF38D340-42F5-4A03-B69A-0B740B0547D2}"/>
+														<CustomState Name="" ID="{61EF084E-BDA8-4D92-A705-4464F467208A}" ShortID="760837324">
+															<PropertyList>
+																<Property Name="BusVolume" Type="Real64" Value="-12"/>
+																<Property Name="Lowpass" Type="int16" Value="50"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+										</Bus>
+										<Bus Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}"/>
+									</ChildrenList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
 						<Bus Name="Atmosphere" ID="{6D7DE35A-259E-48E6-9A33-86434B4B4155}"/>
 						<AuxBus Name="Reverbs" ID="{FB150F2B-6FB6-489E-8344-DC21A313175D}">
 							<ChildrenList>

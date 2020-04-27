@@ -10,8 +10,24 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="agnar_laser_charge" ID="{B715FCAA-3EAD-4EA6-AD13-4EE6DDB9E5AB}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="agnar_laser_shoot" ID="{18279C3C-A590-4555-B884-8A38E19863D9}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Music" ID="{260B69B1-FD92-4626-B3CF-431FAC3853E7}" WorkUnitID="{C2974EF7-2154-4AFB-8D2A-D09C7AE9FAE4}"/>
 							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="tibessa_slow_time" ID="{CE5559E7-C9AE-459D-B7F4-E335547E0DCB}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="tibessa_normal_time" ID="{CCDD3C51-62AC-4D2F-91CE-654BB3C4134B}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}"/>
+							<Position X="3" Y="2"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -27,6 +43,7 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Present" ID="{556F24BA-6297-4232-8F45-E8F06020063B}"/>
 						<CurrentStateRef Name="Combat" ID="{00F90FE2-B726-4469-819A-14383CB04EC6}"/>
+						<CurrentStateRef Name="None" ID="{0A446AEF-F9FA-4436-873B-54845266B6B4}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

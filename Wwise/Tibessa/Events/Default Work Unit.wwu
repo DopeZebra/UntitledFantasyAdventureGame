@@ -96,11 +96,118 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="tibessa_slow_time" ID="{CE5559E7-C9AE-459D-B7F4-E335547E0DCB}"/>
-						<Event Name="agnar_shoot_laser" ID="{18279C3C-A590-4555-B884-8A38E19863D9}"/>
+						<Event Name="tibessa_slow_time" ID="{CE5559E7-C9AE-459D-B7F4-E335547E0DCB}">
+							<ChildrenList>
+								<Action Name="" ID="{B358B66F-A1FC-445C-8693-3FF82F339730}" ShortID="333449155">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Slow Time" ID="{33DBED33-E015-4557-AB27-022E42418246}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E23CEA37-7221-4B89-A7A5-6896D49E9599}" ShortID="884800582">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Slow Time" ID="{33DBED33-E015-4557-AB27-022E42418246}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{BA32164A-FF31-423A-AC55-7725DB44806D}" ShortID="463179624">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Slowdown" ID="{DF38D340-42F5-4A03-B69A-0B740B0547D2}" WorkUnitID="{6DC7A827-3638-4F84-B2DD-74F4E5C7DAF7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="agnar_laser_shoot" ID="{18279C3C-A590-4555-B884-8A38E19863D9}">
+							<ChildrenList>
+								<Action Name="" ID="{3BD481C5-A092-4DB0-A68E-60E1CE7E48F0}" ShortID="1049192685">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Laser Charge" ID="{DBF8D013-4C17-4267-AFE8-0281269FB45F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E92EBEEC-1AB1-4B4E-8EAA-74679939B033}" ShortID="226468511">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Laser Shoot" ID="{FBE48CD2-ADFD-4BB5-81C5-D8E7323D6B8D}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C776CE3C-B2C1-4A19-9ECC-32EF4528582F}" ShortID="688398872">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Laser Shoot" ID="{FBE48CD2-ADFD-4BB5-81C5-D8E7323D6B8D}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="oxbaren_shockwave_charge" ID="{CACF39EF-7739-4B10-A2E0-FE18DF77BD49}"/>
 						<Event Name="oxbaren_shockwave_explode" ID="{E908A70F-1D06-4AE3-B8C5-B6D7F2BBD282}"/>
 						<Event Name="oxbaren_explosion" ID="{F3A520E4-3669-4574-9587-7CF54E469CBE}"/>
+						<Event Name="agnar_laser_charge" ID="{B715FCAA-3EAD-4EA6-AD13-4EE6DDB9E5AB}">
+							<ChildrenList>
+								<Action Name="" ID="{E48E7296-F22B-41F5-B4D3-BE307CBFC099}" ShortID="989273161">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Laser Charge" ID="{DBF8D013-4C17-4267-AFE8-0281269FB45F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EB281458-0A4F-46B7-B719-668093CC3AB8}" ShortID="988887917">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Laser Charge" ID="{DBF8D013-4C17-4267-AFE8-0281269FB45F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="tibessa_normal_time" ID="{CCDD3C51-62AC-4D2F-91CE-654BB3C4134B}">
+							<ChildrenList>
+								<Action Name="" ID="{59EE5CBE-0C43-460A-AA0E-270B253425CF}" ShortID="103093771">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Slow Time" ID="{33DBED33-E015-4557-AB27-022E42418246}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D49D4BD1-B551-4F95-A1DC-1083E679AD88}" ShortID="238166973">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="None" ID="{0A446AEF-F9FA-4436-873B-54845266B6B4}" WorkUnitID="{6DC7A827-3638-4F84-B2DD-74F4E5C7DAF7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

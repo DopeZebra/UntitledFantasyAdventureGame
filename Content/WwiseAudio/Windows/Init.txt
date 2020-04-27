@@ -1,6 +1,7 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	2654366170	Time			\Default Work Unit\Time	
 	2764240573	Combat			\Default Work Unit\Combat	
+	3101299514	Slowdown			\Default Work Unit\Slowdown	
 
 State	ID	Name	State Group			Notes
 	748895195	None	Time			
@@ -9,6 +10,11 @@ State	ID	Name	State Group			Notes
 	579523862	Explore	Combat			
 	748895195	None	Combat			
 	2764240573	Combat	Combat			
+	748895195	None	Slowdown			
+	3101299514	Slowdown	Slowdown			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	760837324	Slowdown	Slowdown	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Characters\Enemies		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	151362964	PlayerHealth			\Default Work Unit\PlayerHealth	
@@ -17,8 +23,11 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	579523862	Explore			\Default Work Unit\Master Audio Bus\Music\Main\Explore	
+	1557941045	Characters			\Default Work Unit\Master Audio Bus\SFX\Characters	
 	2145253833	Atmosphere			\Default Work Unit\Master Audio Bus\Atmosphere	
+	2242381963	Enemies			\Default Work Unit\Master Audio Bus\SFX\Characters\Enemies	
 	2764240573	Combat			\Default Work Unit\Master Audio Bus\Music\Main\Combat	
+	2845953950	Tibessa			\Default Work Unit\Master Audio Bus\SFX\Characters\Tibessa	
 	2940432316	Stingers			\Default Work Unit\Master Audio Bus\Music\Stingers	
 	3161908922	Main			\Default Work Unit\Master Audio Bus\Music\Main	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
