@@ -53,8 +53,14 @@ Modulator Envelope	ID	Name			Wwise Object Path	Notes
 	1063819344	Modulator Envelope (Custom)				
 
 Modulator Time	ID	Name			Wwise Object Path	Notes
+	24374720	Modulator Time (Custom)				
+	27241930	Modulator Time (Custom)				
 	422699685	Modulator Time (Custom)				
+	576011354	Modulator Time (Custom)				
+	698601411	Modulator Time (Custom)				
+	932913547	Modulator Time (Custom)				
 	976365587	Modulator Time (Custom)				
+	999052303	Modulator Time (Custom)				
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
@@ -112,7 +118,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	716628419	Broken Oath_Tibessa_theme	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Tibessa_Past\Broken Oath_Tibessa_theme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Past\Explore\Broken Oath_Tibessa_theme\Broken Oath_Tibessa_theme		12521804
 	725732600	Combat_ShakuStinger	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 6_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Combat\Stingers\Combat_ShakuStinger		2206024
 	745415054	Broken Oath_BrondanIdle - Sub	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\Broken Oath_BrondanIdle - Sub_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Explore\Explore_main\Broken Oath_BrondanIdle - Sub		1056064
-	750396246	Slowdown by DarkoZL Id-101118	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118_D9462B16.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Slow Time\Slowdown by DarkoZL Id-101118		910400
+	750396246	Slowdown by DarkoZL Id-101118	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118_8129AD11.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Slow Time\Slowdown by DarkoZL Id-101118		768064
+	755604789	Slowdown by DarkoZL Id-101118 1	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118 1_1B89BFEE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Normal Time\Slowdown by DarkoZL Id-101118 1		243776
 	769371718	Combat_ShakuStinger	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 5(2)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Present\Combat\Stingers\Combat_ShakuStinger		1225596
 	818417696	Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065_43DC7D05.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065		444480
 	1028182275	Charged Laser by LegoLunatic Id-151243	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_A932B75F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Agnar\Laser Shoot\Charged Laser by LegoLunatic Id-151243		151742

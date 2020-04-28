@@ -98,16 +98,6 @@
 						</Event>
 						<Event Name="tibessa_slow_time" ID="{CE5559E7-C9AE-459D-B7F4-E335547E0DCB}">
 							<ChildrenList>
-								<Action Name="" ID="{B358B66F-A1FC-445C-8693-3FF82F339730}" ShortID="333449155">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Slow Time" ID="{33DBED33-E015-4557-AB27-022E42418246}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{E23CEA37-7221-4B89-A7A5-6896D49E9599}" ShortID="884800582">
 									<ReferenceList>
 										<Reference Name="Target">
@@ -193,6 +183,13 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Slow Time" ID="{33DBED33-E015-4557-AB27-022E42418246}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{BB797600-8892-47E8-822F-5F80A9CC0D74}" ShortID="428200720">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Normal Time" ID="{CB47A8CE-9A6B-4EDB-A383-2299A7AB1AB2}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

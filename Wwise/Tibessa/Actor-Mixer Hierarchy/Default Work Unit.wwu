@@ -618,10 +618,13 @@ Content provided by Vincent Gagnon
 				</ActorMixer>
 				<ActorMixer Name="Characters" ID="{BC06FD46-2E19-4E30-922C-D1746A2E3988}" ShortID="467436872">
 					<PropertyList>
-						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Character_Att" ID="{BB1A6B0E-5898-49DD-963F-23B51A7CF66B}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
 						</Reference>
@@ -632,7 +635,9 @@ Content provided by Vincent Gagnon
 					<ChildrenList>
 						<ActorMixer Name="Tibessa" ID="{C2F410B9-27AC-413F-B7EA-A7DC647ACBD5}" ShortID="280963185">
 							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1054,6 +1059,125 @@ Content provided by Vincent Gagnon
 									</ChildrenList>
 								</BlendContainer>
 								<BlendContainer Name="Slow Time" ID="{33DBED33-E015-4557-AB27-022E42418246}" ShortID="635360873">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{41161F61-FE17-4ADC-A1F2-50F7385B5203}" ShortID="841973760">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorTime Name="Modulator Time (Custom)" ID="{41515345-D564-43BA-B8B0-2A817198EEB9}" ShortID="576011354">
+																	<PropertyList>
+																		<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																	</PropertyList>
+																</ModulatorTime>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{B9554B2F-21F6-4B0E-8C22-B6C9C922210F}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>50</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>-100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="Lowpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{4BABF8DF-E55D-42F8-80E0-21409E8F8902}" ShortID="678987377">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorTime Name="Modulator Time (Custom)" ID="{D63EB2CB-3196-4379-BA0D-994DDFEB55CC}" ShortID="27241930">
+																	<PropertyList>
+																		<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																	</PropertyList>
+																</ModulatorTime>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{B1C334FF-B366-4553-95B8-DC3BA720B007}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-75</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>75</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{DBF1301D-CD71-400A-9E7E-03199AF68602}" ShortID="823522287">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorTime Name="Modulator Time (Custom)" ID="{FF711C20-2BE5-4A1F-92FE-680D236AF4BB}" ShortID="698601411">
+																	<PropertyList>
+																		<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																		<Property Name="TimeModDuration" Type="Real64" Value="2"/>
+																	</PropertyList>
+																</ModulatorTime>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{41EDD3C4-94FC-4210-B024-15BC3F861B7F}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>2</XPos>
+																<YPos>-1200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
@@ -1072,6 +1196,11 @@ Content provided by Vincent Gagnon
 														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="RenderEffect1" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1079,11 +1208,23 @@ Content provided by Vincent Gagnon
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
 												</Reference>
 												<Reference Name="Effect0">
-													<Custom>
-														<Effect Name="Wwise_Time_Stretch_(Custom)" ID="{F58E3C2B-1C1C-43B3-B417-64589C3792F6}" ShortID="309033001" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+													<Custom CreatedFrom="{A98F423C-EC97-49D8-8698-445CE91F24B7}">
+														<Effect Name="Octave_Up_(Custom)" ID="{BC271871-67AD-4C78-A1EE-85BF780ACAB7}" ShortID="535980521" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
 															<PropertyList>
-																<Property Name="TimeStretch" Type="Real32" Value="150"/>
-																<Property Name="TimeStretchRandom" Type="Real32" Value="37"/>
+																<Property Name="DryLevel" Type="Real32" Value="0"/>
+																<Property Name="Pitch" Type="Real32" Value="1200"/>
+																<Property Name="WetLevel" Type="Real32" Value="-9"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="Effect1">
+													<Custom CreatedFrom="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}">
+														<Effect Name="Brick_Wall_Minus_1dB_Peak_Fast_Release_(Custom)" ID="{0536C0F1-839D-4A90-A39D-EB63E1F1D963}" ShortID="94300911" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+															<PropertyList>
+																<Property Name="Ratio" Type="Real32" Value="50"/>
+																<Property Name="ReleaseTime" Type="Real32" Value="0.02"/>
+																<Property Name="Threshold" Type="Real32" Value="-1"/>
 															</PropertyList>
 														</Effect>
 													</Custom>
@@ -1095,10 +1236,17 @@ Content provided by Vincent Gagnon
 											<ChildrenList>
 												<AudioFileSource Name="Slowdown by DarkoZL Id-101118" ID="{E7089B6E-C14B-4787-BD3D-75D9824F0F03}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.179805454820187"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.260717909489272"/>
+														<Property Name="FadeInShape" Type="int16" Value="2"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.534921228090058"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.242737364007253"/>
 														<Property Name="TrimEnd" Type="Real64" Value="4.17598168819885"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Character\Tibessa\Slowdown by DarkoZL Id-101118.wav</AudioFile>
@@ -1109,6 +1257,191 @@ Content provided by Vincent Gagnon
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="Slowdown by DarkoZL Id-101118" ID="{E7089B6E-C14B-4787-BD3D-75D9824F0F03}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
+								<BlendContainer Name="Normal Time" ID="{CB47A8CE-9A6B-4EDB-A383-2299A7AB1AB2}" ShortID="1006492075">
+									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="Highpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{6549148E-D924-4E75-8AA7-7B7053B57A7D}" ShortID="1008990448">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorTime Name="Modulator Time (Custom)" ID="{FC0791F8-90CF-446B-A6E3-47D1E901EA42}" ShortID="24374720">
+																	<PropertyList>
+																		<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																	</PropertyList>
+																</ModulatorTime>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{BF4492C5-4CE4-4B76-AC7E-FD7AD843FC0E}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="Lowpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{F6F849BD-44F6-4E3C-B8E9-092F6A9D7C4E}" ShortID="914738468">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorTime Name="Modulator Time (Custom)" ID="{D0B59EB9-A37D-489D-A6B1-57CA29924763}" ShortID="999052303">
+																	<PropertyList>
+																		<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																	</PropertyList>
+																</ModulatorTime>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{3CC9B935-B2FC-4302-8C1E-D3D9EF2B11E5}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>73</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>-100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{EB63441E-204B-49E0-8F71-07399214683E}" ShortID="1067582849">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorTime Name="Modulator Time (Custom)" ID="{671A4D5E-7BA0-4D6F-91CB-05A1F1172E52}" ShortID="932913547">
+																	<PropertyList>
+																		<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																	</PropertyList>
+																</ModulatorTime>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{67D293A3-E6EB-4581-ADA8-F532CF4BBEC9}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>1200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Slowdown by DarkoZL Id-101118 1" ID="{28A5F0B9-F8E8-405B-9FDF-479394CA3E23}" ShortID="976697078">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="RenderEffect0" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{A98F423C-EC97-49D8-8698-445CE91F24B7}">
+														<Effect Name="Octave_Up_(Custom)" ID="{E9DDBB6D-6603-4036-BD03-F589A21DFAC6}" ShortID="367401139" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+															<PropertyList>
+																<Property Name="DryLevel" Type="Real32" Value="0"/>
+																<Property Name="Pitch" Type="Real32" Value="1200"/>
+																<Property Name="WetLevel" Type="Real32" Value="-6"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Slowdown by DarkoZL Id-101118 1" ID="{738A7FA1-92FF-4151-B434-17D13D9441E1}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.578532411604714"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.17059289060139"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.78116459426575"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.99942959101535"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>12</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Character\Tibessa\Slowdown by DarkoZL Id-101118 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="755604789"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Slowdown by DarkoZL Id-101118 1" ID="{738A7FA1-92FF-4151-B434-17D13D9441E1}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -1218,6 +1551,53 @@ Content provided by Vincent Gagnon
 									</ChildrenList>
 								</BlendContainer>
 								<BlendContainer Name="Laser Shoot" ID="{FBE48CD2-ADFD-4BB5-81C5-D8E7323D6B8D}" ShortID="370303744">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{47E86791-D8E8-4001-87E0-B64A730DE7ED}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3952A1D7-9F32-46A9-9333-C180A0CFDDFD}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2580BD36-20D0-42AE-8F12-69BFF2A11FA7}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="450"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{EB6F1054-DCC3-41E0-9232-7A236958DF61}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
