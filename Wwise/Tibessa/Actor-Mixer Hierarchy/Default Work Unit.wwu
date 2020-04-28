@@ -730,7 +730,7 @@ Content provided by Vincent Gagnon
 											<PropertyList>
 												<Property Name="InitialDelay" Type="Real64">
 													<ValueList>
-														<Value>0.8</Value>
+														<Value>0.75</Value>
 													</ValueList>
 												</Property>
 												<Property Name="Lowpass" Type="int16">
@@ -1131,6 +1131,13 @@ Content provided by Vincent Gagnon
 							</ReferenceList>
 							<ChildrenList>
 								<BlendContainer Name="Laser Charge" ID="{DBF8D013-4C17-4267-AFE8-0281269FB45F}" ShortID="49262034">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
@@ -1192,6 +1199,7 @@ Content provided by Vincent Gagnon
 												<AudioFileSource Name="MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02" ID="{3C0621C9-2E23-4E68-9B71-988A1ADDB5BF}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="1.45959504381989"/>
+														<Property Name="FadeInShape" Type="int16" Value="0"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.0588546388637052"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.899298881837413"/>
