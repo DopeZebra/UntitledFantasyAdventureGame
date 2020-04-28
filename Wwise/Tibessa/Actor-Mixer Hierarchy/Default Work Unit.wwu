@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<ActorMixer Name="Interaction" ID="{7568CB29-D999-4744-8E17-D4CCDF5643CD}" ShortID="1063751151">
 					<PropertyList>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
@@ -604,6 +605,7 @@ Content provided by Vincent Gagnon
 				</ActorMixer>
 				<ActorMixer Name="Atmosphere" ID="{7BC9EC9F-D1B6-4F34-842F-059009CB5B44}" ShortID="440963598">
 					<PropertyList>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
@@ -619,11 +621,12 @@ Content provided by Vincent Gagnon
 				<ActorMixer Name="Characters" ID="{BC06FD46-2E19-4E30-922C-D1746A2E3988}" ShortID="467436872">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<ObjectRef Name="Character_Att" ID="{BB1A6B0E-5898-49DD-963F-23B51A7CF66B}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+							<ObjectRef Name="Character_Att" ID="{51E40D0D-3145-4FC8-8E90-5A0BDE2A9731}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
@@ -1451,6 +1454,13 @@ Content provided by Vincent Gagnon
 						<ActorMixer Name="Agnar" ID="{760ABF43-BC26-496F-BBE4-4FF62CF2B380}" ShortID="653603872">
 							<PropertyList>
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
@@ -1465,13 +1475,64 @@ Content provided by Vincent Gagnon
 							<ChildrenList>
 								<BlendContainer Name="Laser Charge" ID="{DBF8D013-4C17-4267-AFE8-0281269FB45F}" ShortID="49262034">
 									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BDECF995-FC6A-49FE-ABC9-0EBDE860C3D8}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{10A8B728-9DBA-4B26-B87C-1CEDDE37C3F0}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="450"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>2</Value>
 											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1E357BA3-BEA8-4287-9DD4-4953D7AC0B6A}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Enemy_Ability_Att" ID="{BB1A6B0E-5898-49DD-963F-23B51A7CF66B}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
 										</Reference>
@@ -1559,6 +1620,7 @@ Content provided by Vincent Gagnon
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 										<Property Name="Lowpass" Type="int16">
 											<ModifierList>
 												<ModifierInfo>
@@ -1571,6 +1633,12 @@ Content provided by Vincent Gagnon
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -1584,14 +1652,19 @@ Content provided by Vincent Gagnon
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{EB6F1054-DCC3-41E0-9232-7A236958DF61}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="1"/>
-															<Property Name="Min" Type="Real64" Value="-1"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -1599,6 +1672,9 @@ Content provided by Vincent Gagnon
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Enemy_Ability_Att" ID="{BB1A6B0E-5898-49DD-963F-23B51A7CF66B}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
 										</Reference>
@@ -1802,6 +1878,12 @@ Content provided by Vincent Gagnon
 						</ActorMixer>
 						<ActorMixer Name="Oxbaren" ID="{DF9133F2-09E8-43CD-8512-9DDEBE70EB25}" ShortID="518242500">
 							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -1812,6 +1894,836 @@ Content provided by Vincent Gagnon
 									<ObjectRef Name="Enemies" ID="{6A9F43E9-4143-4886-879E-E82059D83D02}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="Shockwave Charge" ID="{95D633B6-5D62-4F8B-8F23-EF9963285E57}" ShortID="999658187">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2F50DED5-FB18-4E96-A867-BC33CCC7502B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>15</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{18C5C0DC-96B5-4E97-B83A-C0F69DF82E23}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="450"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+											<RTPCList>
+												<RTPC Name="" ID="{63EFC1F2-F0F1-4F90-8CD4-488E28BC6F33}" ShortID="742102731">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorTime Name="Modulator Time (Custom)" ID="{8AC83A1A-8EF0-49E5-8FB1-FF44B656153A}" ShortID="472396953">
+																	<PropertyList>
+																		<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																		<Property Name="TimeModDuration" Type="Real64" Value="1.4"/>
+																	</PropertyList>
+																</ModulatorTime>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{DCE9C6FC-4CB0-477B-93D7-C9586BCEF02B}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1.4</XPos>
+																<YPos>1200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E2DEC885-AF47-4AF5-BC7C-205FA5A78E5F}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Enemy_Ability_Att" ID="{BB1A6B0E-5898-49DD-963F-23B51A7CF66B}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Cinematic_Riser-003" ID="{86A464FC-B09E-4C68-9702-3198509B3B09}" ShortID="493793298">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="RenderEffect0" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Enemy_Ability_Att" ID="{BB1A6B0E-5898-49DD-963F-23B51A7CF66B}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{EEE0CC86-8CA5-4DBC-A6B7-568FCB26F290}">
+														<Effect Name="Chorus_Like_(Custom)" ID="{F8BB28AF-CDD1-4056-8CE8-BB6393BC4848}" ShortID="830561723" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+															<PropertyList>
+																<Property Name="DelayTime" Type="Real32" Value="10"/>
+																<Property Name="DryLevel" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{406C919B-96D1-4CB2-AC5A-EDF1DB91433B}" ShortID="264322416">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<Custom>
+																						<ModulatorTime Name="Modulator Time (Custom)" ID="{86216391-BFBD-4CB2-8CEB-C1EDC47F3B62}" ShortID="615420324">
+																							<PropertyList>
+																								<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																								<Property Name="TimeModDuration" Type="Real64" Value="1.4"/>
+																							</PropertyList>
+																						</ModulatorTime>
+																					</Custom>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{54BE2E1C-88BA-4AB1-9E4E-10C317BFE24B}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-1</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.4</XPos>
+																						<YPos>1</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="ModDepth" Type="Real32" Value="60"/>
+																<Property Name="ModFrequency" Type="Real32" Value="0.85"/>
+																<Property Name="ModPWM" Type="Real32" Value="0">
+																	<RTPCList>
+																		<RTPC Name="" ID="{F9E99813-DD08-4D28-85F4-49E2C089ABF8}" ShortID="1035803766">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<Custom>
+																						<ModulatorTime Name="Modulator Time (Custom)" ID="{853B482A-C213-4434-84E8-ED8AA300AF79}" ShortID="711467359">
+																							<PropertyList>
+																								<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																								<Property Name="TimeModDuration" Type="Real64" Value="1.4"/>
+																							</PropertyList>
+																						</ModulatorTime>
+																					</Custom>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{A351D1EB-468F-4AEF-8165-7247015A1025}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-100</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.4</XPos>
+																						<YPos>100</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Enemies" ID="{6A9F43E9-4143-4886-879E-E82059D83D02}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cinematic_Riser-003" ID="{61E5546D-9270-4DC4-B522-B182890A5B02}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.49193122171946"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0932457013574659"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.41550769230769"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Character\Oxbaren\Cinematic_Riser-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="853849093"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cinematic_Riser-003" ID="{61E5546D-9270-4DC4-B522-B182890A5B02}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Malfunction Glitch Rise BRSound-05" ID="{8F3497AB-0D20-405E-839C-D560BE938BB0}" ShortID="698527476">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>33</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>380</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Enemy_Ability_Att" ID="{BB1A6B0E-5898-49DD-963F-23B51A7CF66B}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Enemies" ID="{6A9F43E9-4143-4886-879E-E82059D83D02}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Malfunction Glitch Rise BRSound-05" ID="{8DD44A05-55EA-4666-B7F1-2AA30118F52A}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0965668929110105"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0746198717948721"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Character\Oxbaren\Malfunction Glitch Rise BRSound-05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="385849276"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Malfunction Glitch Rise BRSound-05" ID="{8DD44A05-55EA-4666-B7F1-2AA30118F52A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Malfunction Glitch Rise BRSound-05_01" ID="{0F2864A7-5197-4B55-8F47-3A5D284A9260}" ShortID="793912152">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>43</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-900</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RenderEffect0" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Enemy_Ability_Att" ID="{BB1A6B0E-5898-49DD-963F-23B51A7CF66B}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{4D8AE348-F8F5-47AE-AE7A-FA1E83E3CC09}" ShortID="1068256865" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand3" Type="Real32" Value="964"/>
+																<Property Name="GainBand3" Type="Real32" Value="-24"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Enemies" ID="{6A9F43E9-4143-4886-879E-E82059D83D02}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Malfunction Glitch Rise BRSound-05" ID="{A961A5C4-CBCF-4BC7-8056-022B5B8366A7}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0965668929110105"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0746198717948721"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Character\Oxbaren\Malfunction Glitch Rise BRSound-05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="447711608"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Malfunction Glitch Rise BRSound-05" ID="{A961A5C4-CBCF-4BC7-8056-022B5B8366A7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
+								<BlendContainer Name="Shockwave Explode" ID="{1C981865-7A76-46E9-8052-27A340F2708B}" ShortID="1045292364">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CF96FA48-2683-4BD1-B5AD-4CA8A9B75E53}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>30</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{AC47DF2B-1EC5-4C9F-B01F-B2214516CEE7}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="450"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RenderEffect0" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RenderEffect1" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3049FED4-1D36-4B69-B68F-59687ACC0171}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Enemy_Ability_Att" ID="{BB1A6B0E-5898-49DD-963F-23B51A7CF66B}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_Delay_(Custom)" ID="{3C460C07-1CC6-48EC-953B-A76597838118}" ShortID="42777276" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+													<PropertyList>
+														<Property Name="DelayTime" Type="Real32" Value="0.22"/>
+														<Property Name="Feedback" Type="Real32" Value="16"/>
+														<Property Name="WetDryMix" Type="Real32" Value="48.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect1">
+											<Custom>
+												<Effect Name="Wwise_Guitar_Distortion_(Custom)" ID="{A0F39101-936C-4EFC-A5CC-1B6E455CDD07}" ShortID="188753398" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+													<PropertyList>
+														<Property Name="DistortionDrive" Type="Real32" Value="55"/>
+														<Property Name="DistortionType" Type="int32" Value="2"/>
+														<Property Name="Rectification" Type="Real32" Value="14"/>
+														<Property Name="WetDryMix" Type="Real32" Value="23"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Explosives - Sweetners_07" ID="{1C67AAEB-34D3-49EB-9C85-51739DBC4969}" ShortID="142890901">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>9</Value>
+													</ValueList>
+												</Property>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Enemy_Ability_Att" ID="{BB1A6B0E-5898-49DD-963F-23B51A7CF66B}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Enemies" ID="{6A9F43E9-4143-4886-879E-E82059D83D02}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Explosives - Sweetners_07" ID="{A62AE913-6447-40EB-88AA-5E3EC0BDBF99}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0480727564102564"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.627773642533936"/>
+														<Property Name="FadeOutShape" Type="int16" Value="1"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.06042845022624"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Character\Oxbaren\Explosives - Sweetners_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="76148055"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Explosives - Sweetners_07" ID="{A62AE913-6447-40EB-88AA-5E3EC0BDBF99}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Impact_Boom_Distorted_02" ID="{659DF08D-DB70-45B9-9CBA-814DCA03FEF6}" ShortID="340121448">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>11</Value>
+													</ValueList>
+												</Property>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.02</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>9</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="RenderEffect0" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Enemy_Ability_Att" ID="{BB1A6B0E-5898-49DD-963F-23B51A7CF66B}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise_Compressor_(Custom)" ID="{A5721DDE-C777-472A-B081-F9357333E9B2}" ShortID="947679471" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+															<PropertyList>
+																<Property Name="AttackTime" Type="Real32" Value="0.45"/>
+																<Property Name="OutputGain" Type="Real32" Value="8"/>
+																<Property Name="Ratio" Type="Real32" Value="5.7"/>
+																<Property Name="ReleaseTime" Type="Real32" Value="1.54"/>
+																<Property Name="Threshold" Type="Real32" Value="-25.4"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Enemies" ID="{6A9F43E9-4143-4886-879E-E82059D83D02}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Impact_Boom_Distorted_02" ID="{51847AAB-DFF1-4E3B-94F5-F935CAB2AF4E}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.000491116234100206"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.504422134238311"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.28032835360052"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Character\Oxbaren\Impact_Boom_Distorted_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="417463762"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Impact_Boom_Distorted_02" ID="{51847AAB-DFF1-4E3B-94F5-F935CAB2AF4E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SW001_8-Bit-Games-017_Explosion" ID="{2EBEF69B-8435-4FC0-9200-DDC61BA52728}" ShortID="424615105">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>68</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="RenderEffect0" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Enemy_Ability_Att" ID="{BB1A6B0E-5898-49DD-963F-23B51A7CF66B}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise_Compressor_(Custom)" ID="{57297484-FDA8-4EF4-83FC-667994333DDF}" ShortID="820177889" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+															<PropertyList>
+																<Property Name="AttackTime" Type="Real32" Value="0.51"/>
+																<Property Name="OutputGain" Type="Real32" Value="6.7"/>
+																<Property Name="Ratio" Type="Real32" Value="13.9"/>
+																<Property Name="Threshold" Type="Real32" Value="-44.1"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Enemies" ID="{6A9F43E9-4143-4886-879E-E82059D83D02}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SW001_8-Bit-Games-017_Explosion" ID="{FD505C28-C53F-4D4E-A947-5F4B2127B871}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0243467194570136"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.566467006033183"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.842396493212669"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Character\Oxbaren\SW001_8-Bit-Games-017_Explosion.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="686824068"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SW001_8-Bit-Games-017_Explosion" ID="{FD505C28-C53F-4D4E-A947-5F4B2127B871}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SORCERY - CK - EFFECT Reverse Explosion 02" ID="{3F13F946-456D-4777-BCAD-6328DE6A2B63}" ShortID="316993645">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="RenderEffect0" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RenderEffect1" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise_Guitar_Distortion_(Custom)" ID="{A2031FE6-D97A-4768-A77A-BC52D28A84B2}" ShortID="5084703" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+															<PropertyList>
+																<Property Name="DistortionDrive" Type="Real32" Value="33"/>
+																<Property Name="DistortionTone" Type="Real32" Value="27"/>
+																<Property Name="DistortionType" Type="int32" Value="2"/>
+																<Property Name="Rectification" Type="Real32" Value="47"/>
+																<Property Name="WetDryMix" Type="Real32" Value="22"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="Effect1">
+													<Custom CreatedFrom="{0D20C91A-F750-47E0-AE32-00E5F2AA1272}">
+														<Effect Name="Aluminium_Tank_(Custom)" ID="{DC383AC2-D942-44E9-87C4-7DCDD040A02F}" ShortID="1033384271" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<PropertyList>
+																<Property Name="DecayTime" Type="Real32" Value="6.1"/>
+																<Property Name="Density" Type="Real32" Value="100"/>
+																<Property Name="Diffusion" Type="Real32" Value="53"/>
+																<Property Name="DryLevel" Type="Real32" Value="-8.3"/>
+																<Property Name="ERLevel" Type="Real32" Value="-25"/>
+																<Property Name="ERPattern" Type="int32" Value="30"/>
+																<Property Name="Filter1Freq" Type="Real32" Value="490"/>
+																<Property Name="Filter2Freq" Type="Real32" Value="2200"/>
+																<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+																<Property Name="Filter2Q" Type="Real32" Value="0.1"/>
+																<Property Name="Filter3Freq" Type="Real32" Value="15000"/>
+																<Property Name="Filter3Gain" Type="Real32" Value="-3.5"/>
+																<Property Name="HFDamping" Type="Real32" Value="10"/>
+																<Property Name="PreDelay" Type="Real32" Value="100"/>
+																<Property Name="Quality" Type="int32" Value="6"/>
+																<Property Name="ReverbLevel" Type="Real32" Value="-14"/>
+																<Property Name="RoomSize" Type="Real32" Value="55"/>
+																<Property Name="StereoWidth" Type="Real32" Value="130"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SORCERY - CK - EFFECT Reverse Explosion 02" ID="{53C9E44C-A62B-4EBA-AC3C-85A0378F8C2E}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.642926357466064"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.754951404600302"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.27459552224736"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.72453459653092"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Character\Oxbaren\SORCERY - CK - EFFECT Reverse Explosion 02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="817005111"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SORCERY - CK - EFFECT Reverse Explosion 02" ID="{53C9E44C-A62B-4EBA-AC3C-85A0378F8C2E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Impact_Boom_Distorted_01" ID="{13276843-A0E8-40AD-BF80-A83E06698D64}" ShortID="837480580">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.02</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>73</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-1200</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RenderEffect0" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Enemy_Ability_Att" ID="{BB1A6B0E-5898-49DD-963F-23B51A7CF66B}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise_Compressor_(Custom)" ID="{95030C41-7445-453F-BDDB-8C7479474B7B}" ShortID="555333121" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+															<PropertyList>
+																<Property Name="AttackTime" Type="Real32" Value="0.45"/>
+																<Property Name="OutputGain" Type="Real32" Value="8"/>
+																<Property Name="Ratio" Type="Real32" Value="5.7"/>
+																<Property Name="ReleaseTime" Type="Real32" Value="1.54"/>
+																<Property Name="Threshold" Type="Real32" Value="-25.4"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Enemies" ID="{6A9F43E9-4143-4886-879E-E82059D83D02}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Impact_Boom_Distorted_02" ID="{6F2B70EB-9A3E-4052-9BAB-BA3ED8969AB0}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.000491116234100206"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.504422134238311"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.28032835360052"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Character\Oxbaren\Impact_Boom_Distorted_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="832383110"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Impact_Boom_Distorted_02" ID="{6F2B70EB-9A3E-4052-9BAB-BA3ED8969AB0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Charged Laser by LegoLunatic Id-151243_01" ID="{6484902C-F890-470B-B68C-F0B1A204E764}" ShortID="94942601">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>63</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>900</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Enemy_Ability_Att" ID="{BB1A6B0E-5898-49DD-963F-23B51A7CF66B}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Enemies" ID="{6A9F43E9-4143-4886-879E-E82059D83D02}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Charged Laser by LegoLunatic Id-151243" ID="{C353E5C7-197B-4DE5-A3AA-C1F8BACF750B}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.224793748129155"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.30220745222197"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.00695213983411625"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.08121099517981"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Character\Agnar\Charged Laser by LegoLunatic Id-151243.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="534062515"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Charged Laser by LegoLunatic Id-151243" ID="{C353E5C7-197B-4DE5-A3AA-C1F8BACF750B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
+							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>

@@ -246,8 +246,50 @@
 					</SwitchContainers>
 				</Event>
 				<Event Id="1379722170" Name="oxbaren_explosion" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_explosion"/>
-				<Event Id="864184553" Name="oxbaren_shockwave_charge" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_charge"/>
-				<Event Id="4057998772" Name="oxbaren_shockwave_explode" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_explode"/>
+				<Event Id="864184553" Name="oxbaren_shockwave_charge" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_charge">
+					<IncludedMemoryFiles>
+						<File Id="385849276" Language="SFX">
+							<ShortName>Character\Oxbaren\Malfunction Glitch Rise BRSound-05.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_D03A02D2.wem</Path>
+						</File>
+						<File Id="447711608" Language="SFX">
+							<ShortName>Character\Oxbaren\Malfunction Glitch Rise BRSound-05.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_5A335702.wem</Path>
+						</File>
+						<File Id="853849093" Language="SFX">
+							<ShortName>Character\Oxbaren\Cinematic_Riser-003.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Cinematic_Riser-003_DC3900B9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4057998772" Name="oxbaren_shockwave_explode" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_explode">
+					<IncludedMemoryFiles>
+						<File Id="76148055" Language="SFX">
+							<ShortName>Character\Oxbaren\Explosives - Sweetners_07.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Explosives - Sweetners_07_7E3C9774.wem</Path>
+						</File>
+						<File Id="417463762" Language="SFX">
+							<ShortName>Character\Oxbaren\Impact_Boom_Distorted_02.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Impact_Boom_Distorted_02_C9899D53.wem</Path>
+						</File>
+						<File Id="534062515" Language="SFX">
+							<ShortName>Character\Agnar\Charged Laser by LegoLunatic Id-151243.wav</ShortName>
+							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_961011CA.wem</Path>
+						</File>
+						<File Id="686824068" Language="SFX">
+							<ShortName>Character\Oxbaren\SW001_8-Bit-Games-017_Explosion.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\SW001_8-Bit-Games-017_Explosion_6C14E37A.wem</Path>
+						</File>
+						<File Id="817005111" Language="SFX">
+							<ShortName>Character\Oxbaren\SORCERY - CK - EFFECT Reverse Explosion 02.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\SORCERY - CK - EFFECT Reverse Explosion 02_48DFF7B7.wem</Path>
+						</File>
+						<File Id="832383110" Language="SFX">
+							<ShortName>Character\Oxbaren\Impact_Boom_Distorted_02.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Impact_Boom_Distorted_02_EC2EE402.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="4036749982" Name="pillar_lever_retract" ObjectPath="\Events\Default Work Unit\Interaction\pillar_lever_retract"/>
 				<Event Id="331846928" Name="pillar_lever_use" ObjectPath="\Events\Default Work Unit\Interaction\pillar_lever_use"/>
 				<Event Id="2089460903" Name="pillar_retract" ObjectPath="\Events\Default Work Unit\Interaction\pillar_retract"/>
@@ -260,7 +302,7 @@
 					<IncludedMemoryFiles>
 						<File Id="755604789" Language="SFX">
 							<ShortName>Character\Tibessa\Slowdown by DarkoZL Id-101118 1.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118 1_B66FE313.wem</Path>
+							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118 1_1B89BFEE.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -300,7 +342,7 @@
 					<IncludedMemoryFiles>
 						<File Id="750396246" Language="SFX">
 							<ShortName>Character\Tibessa\Slowdown by DarkoZL Id-101118.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118_5749C868.wem</Path>
+							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118_8129AD11.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

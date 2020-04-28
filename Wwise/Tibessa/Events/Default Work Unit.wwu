@@ -149,8 +149,58 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="oxbaren_shockwave_charge" ID="{CACF39EF-7739-4B10-A2E0-FE18DF77BD49}"/>
-						<Event Name="oxbaren_shockwave_explode" ID="{E908A70F-1D06-4AE3-B8C5-B6D7F2BBD282}"/>
+						<Event Name="oxbaren_shockwave_charge" ID="{CACF39EF-7739-4B10-A2E0-FE18DF77BD49}">
+							<ChildrenList>
+								<Action Name="" ID="{038DC6B4-7204-488A-83B5-B577A57671B1}" ShortID="939492882">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shockwave Charge" ID="{95D633B6-5D62-4F8B-8F23-EF9963285E57}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{70E6A4EB-387B-4E37-B4D8-032C6C9E1C57}" ShortID="141718339">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shockwave Charge" ID="{95D633B6-5D62-4F8B-8F23-EF9963285E57}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="oxbaren_shockwave_explode" ID="{E908A70F-1D06-4AE3-B8C5-B6D7F2BBD282}">
+							<ChildrenList>
+								<Action Name="" ID="{F1D07695-A55D-4DCC-BFE0-9F61192F4220}" ShortID="256827027">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shockwave Charge" ID="{95D633B6-5D62-4F8B-8F23-EF9963285E57}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{FEEADB5B-023F-4678-8B4D-458D4E1AB55C}" ShortID="99386688">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shockwave Explode" ID="{1C981865-7A76-46E9-8052-27A340F2708B}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{95A000DB-98A9-428C-82F2-D3824511F134}" ShortID="820538795">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shockwave Explode" ID="{1C981865-7A76-46E9-8052-27A340F2708B}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="oxbaren_explosion" ID="{F3A520E4-3669-4574-9587-7CF54E469CBE}"/>
 						<Event Name="agnar_laser_charge" ID="{B715FCAA-3EAD-4EA6-AD13-4EE6DDB9E5AB}">
 							<ChildrenList>

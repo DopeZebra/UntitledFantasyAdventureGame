@@ -10,8 +10,16 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="oxbaren_shockwave_charge" ID="{CACF39EF-7739-4B10-A2E0-FE18DF77BD49}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="agnar_laser_charge" ID="{B715FCAA-3EAD-4EA6-AD13-4EE6DDB9E5AB}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}"/>
 							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="oxbaren_shockwave_explode" ID="{E908A70F-1D06-4AE3-B8C5-B6D7F2BBD282}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}"/>
+							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="agnar_laser_shoot" ID="{18279C3C-A590-4555-B884-8A38E19863D9}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}"/>
