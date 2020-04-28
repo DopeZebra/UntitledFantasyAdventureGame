@@ -35,7 +35,7 @@
 					<IncludedMemoryFiles>
 						<File Id="117692380" Language="SFX">
 							<ShortName>Character\Agnar\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02.wav</ShortName>
-							<Path>SFX\Character\Agnar\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02_1AF72912.wem</Path>
+							<Path>SFX\Character\Agnar\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02_530C1D51.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -43,19 +43,19 @@
 					<IncludedMemoryFiles>
 						<File Id="534062515" Language="SFX">
 							<ShortName>Character\Agnar\Charged Laser by LegoLunatic Id-151243.wav</ShortName>
-							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_BABD869B.wem</Path>
+							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_961011CA.wem</Path>
 						</File>
 						<File Id="607903466" Language="SFX">
 							<ShortName>Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1.wav</ShortName>
-							<Path>SFX\Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_81953208.wem</Path>
+							<Path>SFX\Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_E8D95FDA.wem</Path>
 						</File>
 						<File Id="701127015" Language="SFX">
 							<ShortName>Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1.wav</ShortName>
-							<Path>SFX\Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_EECEE3A5.wem</Path>
+							<Path>SFX\Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_C5326A1F.wem</Path>
 						</File>
 						<File Id="1028182275" Language="SFX">
 							<ShortName>Character\Agnar\Charged Laser by LegoLunatic Id-151243.wav</ShortName>
-							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_D2F3E1AD.wem</Path>
+							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_A932B75F.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -246,8 +246,50 @@
 					</SwitchContainers>
 				</Event>
 				<Event Id="1379722170" Name="oxbaren_explosion" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_explosion"/>
-				<Event Id="864184553" Name="oxbaren_shockwave_charge" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_charge"/>
-				<Event Id="4057998772" Name="oxbaren_shockwave_explode" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_explode"/>
+				<Event Id="864184553" Name="oxbaren_shockwave_charge" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_charge">
+					<IncludedMemoryFiles>
+						<File Id="385849276" Language="SFX">
+							<ShortName>Character\Oxbaren\Malfunction Glitch Rise BRSound-05.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_D03A02D2.wem</Path>
+						</File>
+						<File Id="447711608" Language="SFX">
+							<ShortName>Character\Oxbaren\Malfunction Glitch Rise BRSound-05.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_5A335702.wem</Path>
+						</File>
+						<File Id="853849093" Language="SFX">
+							<ShortName>Character\Oxbaren\Cinematic_Riser-003.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Cinematic_Riser-003_DC3900B9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4057998772" Name="oxbaren_shockwave_explode" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_explode">
+					<IncludedMemoryFiles>
+						<File Id="76148055" Language="SFX">
+							<ShortName>Character\Oxbaren\Explosives - Sweetners_07.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Explosives - Sweetners_07_7E3C9774.wem</Path>
+						</File>
+						<File Id="417463762" Language="SFX">
+							<ShortName>Character\Oxbaren\Impact_Boom_Distorted_02.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Impact_Boom_Distorted_02_C9899D53.wem</Path>
+						</File>
+						<File Id="534062515" Language="SFX">
+							<ShortName>Character\Agnar\Charged Laser by LegoLunatic Id-151243.wav</ShortName>
+							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_961011CA.wem</Path>
+						</File>
+						<File Id="686824068" Language="SFX">
+							<ShortName>Character\Oxbaren\SW001_8-Bit-Games-017_Explosion.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\SW001_8-Bit-Games-017_Explosion_6C14E37A.wem</Path>
+						</File>
+						<File Id="817005111" Language="SFX">
+							<ShortName>Character\Oxbaren\SORCERY - CK - EFFECT Reverse Explosion 02.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\SORCERY - CK - EFFECT Reverse Explosion 02_48DFF7B7.wem</Path>
+						</File>
+						<File Id="832383110" Language="SFX">
+							<ShortName>Character\Oxbaren\Impact_Boom_Distorted_02.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Impact_Boom_Distorted_02_EC2EE402.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="4036749982" Name="pillar_lever_retract" ObjectPath="\Events\Default Work Unit\Interaction\pillar_lever_retract"/>
 				<Event Id="331846928" Name="pillar_lever_use" ObjectPath="\Events\Default Work Unit\Interaction\pillar_lever_use"/>
 				<Event Id="2089460903" Name="pillar_retract" ObjectPath="\Events\Default Work Unit\Interaction\pillar_retract"/>
@@ -256,36 +298,43 @@
 				<Event Id="1189214292" Name="pillar_triangle_rise" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rise"/>
 				<Event Id="2433708202" Name="pillar_triangle_rotate" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rotate"/>
 				<Event Id="3565352627" Name="soul_charge" ObjectPath="\Events\Default Work Unit\Interaction\soul_charge"/>
-				<Event Id="354526556" Name="tibessa_normal_time" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normal_time"/>
+				<Event Id="354526556" Name="tibessa_normal_time" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normal_time">
+					<IncludedMemoryFiles>
+						<File Id="755604789" Language="SFX">
+							<ShortName>Character\Tibessa\Slowdown by DarkoZL Id-101118 1.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118 1_1B89BFEE.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3312775127" Name="tibessa_respawn" ObjectPath="\Events\Default Work Unit\Characters\tibessa_respawn">
 					<IncludedMemoryFiles>
 						<File Id="16413053" Language="SFX">
 							<ShortName>Character\Tibessa\Krotos UI Chime Single Hit Mono-002.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-002_D43646C2.wem</Path>
+							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-002_6F85AE67.wem</Path>
 						</File>
 						<File Id="149479780" Language="SFX">
 							<ShortName>Character\Tibessa\Krotos UI Chime Single Hit Mono-003.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-003_8EA4E333.wem</Path>
+							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-003_81B1A628.wem</Path>
 						</File>
 						<File Id="159248114" Language="SFX">
 							<ShortName>Character\Tibessa\Tension - sizzle drips 1.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Tension - sizzle drips 1_B28CB9BD.wem</Path>
+							<Path>SFX\Character\Tibessa\Tension - sizzle drips 1_396958C3.wem</Path>
 						</File>
 						<File Id="179580837" Language="SFX">
 							<ShortName>Character\Tibessa\Krotos UI Chime Texture Magic Bending Mono-003 1.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Krotos UI Chime Texture Magic Bending Mono-003 1_7D465BA7.wem</Path>
+							<Path>SFX\Character\Tibessa\Krotos UI Chime Texture Magic Bending Mono-003 1_F7E666B0.wem</Path>
 						</File>
 						<File Id="293740931" Language="SFX">
 							<ShortName>Character\Tibessa\Ethereal Whoosh-002 2.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Ethereal Whoosh-002 2_5EC8D98C.wem</Path>
+							<Path>SFX\Character\Tibessa\Ethereal Whoosh-002 2_5B26AAE5.wem</Path>
 						</File>
 						<File Id="445686762" Language="SFX">
 							<ShortName>Character\Tibessa\Krotos UI Chime Single Hit Mono-001.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-001_AA2E965E.wem</Path>
+							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-001_EF2D6236.wem</Path>
 						</File>
 						<File Id="818417696" Language="SFX">
 							<ShortName>Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065_79A1BF4D.wem</Path>
+							<Path>SFX\Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065_43DC7D05.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -293,7 +342,7 @@
 					<IncludedMemoryFiles>
 						<File Id="750396246" Language="SFX">
 							<ShortName>Character\Tibessa\Slowdown by DarkoZL Id-101118.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118_5D94AA6E.wem</Path>
+							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118_8129AD11.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
