@@ -35,6 +35,11 @@
 								<MusicPlaylistContainer Name="Explore" ID="{92D1E1C8-D013-44EE-8777-B2BCFCCAEF13}" ShortID="1063833692">
 									<PropertyList>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1112,6 +1117,11 @@
 								<MusicPlaylistContainer Name="Combat" ID="{AE63886A-715C-458D-B1BF-55FDB142A0ED}" ShortID="477975232">
 									<PropertyList>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2839,6 +2849,11 @@
 								<MusicPlaylistContainer Name="Explore" ID="{053009C6-FED3-4546-907B-48927D961C9C}" ShortID="414019295">
 									<PropertyList>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
