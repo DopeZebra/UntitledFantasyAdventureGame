@@ -600,6 +600,1374 @@ Content provided by Vincent Gagnon
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="Outer Pillar" ID="{D6F296BF-D4E9-44E4-A233-90856CBF95A0}" ShortID="953807467">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Debris" ID="{2A32DDBE-241C-4490-A06A-7CD8B876981F}" ShortID="1004742370">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{898DB986-6C73-4976-A782-A3F579AA651D}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="300"/>
+																	<Property Name="Min" Type="Real64" Value="-300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{7D74BBA5-C2A4-455A-8477-970E10A4825C}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="2"/>
+																	<Property Name="Min" Type="Real64" Value="-0.2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{192EB838-FA68-4330-921C-F7351A6E6D0A}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246" ID="{404F8C6E-9A19-4B99-B37C-68044A7AC001}" ShortID="436366089">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>25</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246" ID="{F7B4800D-E09C-4F3F-BA95-78A2C741EE2E}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.145579377637131"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.249564647377938"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.89079049879445"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Pillar Puzzle\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="231383597"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246" ID="{F7B4800D-E09C-4F3F-BA95-78A2C741EE2E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246_01" ID="{EE47552F-EE19-4BB2-AB91-EFD83E647944}" ShortID="339315409">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>25</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246" ID="{EE413379-9608-473F-9268-5E6FB4849D93}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.145579377637131"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.249564647377938"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.81280154648885"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Pillar Puzzle\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="815528195"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246" ID="{EE413379-9608-473F-9268-5E6FB4849D93}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124" ID="{ECA36CFA-6E13-45DE-AC21-5FB53261097E}" ShortID="96270085">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>47</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124" ID="{384146E7-D53B-46D4-A34F-7DA3B7DAE237}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.41006901748041"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.469421112115732"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.178056283905968"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.6240891350211"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Pillar Puzzle\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="705550403"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124" ID="{384146E7-D53B-46D4-A34F-7DA3B7DAE237}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124_01" ID="{E0F50906-B118-4E10-A75E-BB506A375DFA}" ShortID="921530483">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>46</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124" ID="{3ED334AB-B4EA-488A-96F0-CEEA8CE5008B}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.41006901748041"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.469421112115732"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.42175244876432"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.68163554852321"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Pillar Puzzle\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="364374817"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124" ID="{3ED334AB-B4EA-488A-96F0-CEEA8CE5008B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{E53B7E5C-6689-4457-A97B-2B3E5D2B7F90}" ShortID="925000997">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>23</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>8</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{D81B35BC-A259-49A4-930D-08F2305DA54A}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.186288191305003"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.223545829566"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.27271593392104"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>-8</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1018015412"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{D81B35BC-A259-49A4-930D-08F2305DA54A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rocks, Movement, Heavy, Short, Crunchy SND42689_01" ID="{F3AF1ED0-9108-4476-BB95-966F2DB98E54}" ShortID="116502124">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>23</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>8</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{7DCF6057-1016-485D-A8C3-1F76813D04AF}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.186288191305003"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.223545829566"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="3.80027910262206"/>
+																<Property Name="TrimEnd" Type="Real64" Value="6.70637488698011"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>-8</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="128447381"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{7DCF6057-1016-485D-A8C3-1F76813D04AF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rocks, Movement, Heavy, Short, Crunchy SND42689_02" ID="{D8E31B67-C7A5-43BC-9A1B-7DFDFBF5A5EB}" ShortID="333223286">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>23</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>8</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{178FEAFD-BE44-4F58-9E84-11EF9A96D6F1}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.186288191305003"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.223545829566"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="7.78684639654912"/>
+																<Property Name="TrimEnd" Type="Real64" Value="10.2831081600362"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>-8</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="304007232"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{178FEAFD-BE44-4F58-9E84-11EF9A96D6F1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rocks, Movement, Heavy, Short, Crunchy SND42689_03" ID="{EBE8BBC2-EA77-4933-9482-BB9345BDE3C1}" ShortID="709901192">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>23</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>8</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{978F7C8E-A89E-4427-A385-4AA77EE6E603}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.186288191305003"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.223545829566"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="11.0282609252562"/>
+																<Property Name="TrimEnd" Type="Real64" Value="14.0088719861362"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>-8</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1071533740"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{978F7C8E-A89E-4427-A385-4AA77EE6E603}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rocks, Movement, Heavy, Short, Crunchy SND42689_04" ID="{E19C122D-BA50-4C86-9155-470CDDEA39A5}" ShortID="975160337">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>23</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>8</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{0A1FD14F-9C74-4EE5-B551-6FD64E5CB307}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.186288191305003"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.223545829566"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="14.9403129426612"/>
+																<Property Name="TrimEnd" Type="Real64" Value="17.1012559617993"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>-8</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="418762862"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{0A1FD14F-9C74-4EE5-B551-6FD64E5CB307}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rocks, Movement, Heavy, Short, Crunchy SND42689_05" ID="{185CCF26-F27D-4CD8-9F53-3349E52C7D9A}" ShortID="97950333">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>23</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>8</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{6D3DD295-D719-4B24-B0F4-01E621702971}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.186288191305003"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.223545829566"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="18.1072121948463"/>
+																<Property Name="TrimEnd" Type="Real64" Value="19.9700941078963"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>-8</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="160430172"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{6D3DD295-D719-4B24-B0F4-01E621702971}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rocks, Movement, Heavy, Short, Crunchy SND42689_06" ID="{64865828-5513-4A16-8D7F-78C96E562354}" ShortID="71600661">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>23</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>8</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{3A999433-6066-46DC-83F6-E225942EC3B0}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.186288191305003"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.223545829566"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="20.9015350644213"/>
+																<Property Name="TrimEnd" Type="Real64" Value="22.8016746157324"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>-8</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="929123293"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{3A999433-6066-46DC-83F6-E225942EC3B0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rocks, Movement, Heavy, Short, Crunchy SND42689_07" ID="{C8FEFEFD-F8AE-4716-8B14-2E9778CBD66B}" ShortID="822249380">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>23</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>8</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{B49161C0-E583-4E74-8B8B-1B149B9F7C0A}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.186288191305003"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.223545829566"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="23.4350544661694"/>
+																<Property Name="TrimEnd" Type="Real64" Value="25.5959974853074"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>-8</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="498919310"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{B49161C0-E583-4E74-8B8B-1B149B9F7C0A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rocks, Movement, Heavy, Short, Crunchy SND42689_08" ID="{29F99F41-FDEB-4B4E-A960-FECFBB4776EA}" ShortID="892781349">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>23</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>8</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{1709C50B-C9A7-419D-85FC-32737943E636}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.186288191305003"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.223545829566"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="25.2979363792194"/>
+																<Property Name="TrimEnd" Type="Real64" Value="27.7569405044455"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>-8</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="331814902"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{1709C50B-C9A7-419D-85FC-32737943E636}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rocks, Movement, Heavy, Short, Crunchy SND42689_09" ID="{4F3AB494-DFC3-4B75-910A-979F63794A0F}" ShortID="894913747">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>23</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>8</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{9B82AA72-5E0F-4125-9003-D3F16A6E97BF}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.186288191305003"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.223545829566"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="28.5393509079265"/>
+																<Property Name="TrimEnd" Type="Real64" Value="30.6257786505425"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>-8</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="710773299"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{9B82AA72-5E0F-4125-9003-D3F16A6E97BF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rocks, Movement, Heavy, Short, Crunchy SND42689_10" ID="{A35BB92C-D88E-4BB2-A917-9EE285A1BB61}" ShortID="398472318">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>23</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>8</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{64F8EC9D-D813-45E1-A916-AA858C0BAD47}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.186288191305003"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.223545829566"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="31.4454466922845"/>
+																<Property Name="TrimEnd" Type="Real64" Value="33.4573591583785"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>-8</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="431051856"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{64F8EC9D-D813-45E1-A916-AA858C0BAD47}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rocks, Movement, Heavy, Short, Crunchy SND42689_11" ID="{8C832E4B-6B65-43D1-A2E3-E206BCAF5C67}" ShortID="748373151">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>23</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>8</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{4EB37FFE-5D3C-4320-9EE7-3B2CBA2B5B36}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.186288191305003"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.223545829566"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="34.5005730296866"/>
+																<Property Name="TrimEnd" Type="Real64" Value="36.4752278575196"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>-8</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="680600256"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{4EB37FFE-5D3C-4320-9EE7-3B2CBA2B5B36}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rocks, Movement, Heavy, Short, Crunchy SND42689_12" ID="{E4CC61B7-EF02-4AF3-811B-693A032EA4D4}" ShortID="621859166">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>23</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>8</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{8C078C49-8CFF-42D5-95D4-8697C3A67C56}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.186288191305003"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.223545829566"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="37.1458653462176"/>
+																<Property Name="TrimEnd" Type="Real64" Value="38.5989132383966"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>-8</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="527719636"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{8C078C49-8CFF-42D5-95D4-8697C3A67C56}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rocks, Movement, Heavy, Short, Crunchy SND42689_13" ID="{8706B457-1476-40C1-BF4A-8621A7472254}" ShortID="403966243">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>23</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>8</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{61369BF7-2882-488D-A075-90C2A43BE007}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.186288191305003"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.223545829566"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="39.1950354505726"/>
+																<Property Name="TrimEnd" Type="Real64" Value="40.9834020871007"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>-8</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="776102589"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rocks, Movement, Heavy, Short, Crunchy SND42689" ID="{61369BF7-2882-488D-A075-90C2A43BE007}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<BlendContainer Name="Pillar Rotate" ID="{A5BFE958-8D59-444F-AA5B-975076011DD3}" ShortID="883615708">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Rocks, Stones, Pebbles, Wet, Movement 1 SND20560" ID="{D2BDAADA-0A8C-4738-B95C-209032051032}" ShortID="814780389">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>8</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-300</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rocks, Stones, Pebbles, Wet, Movement 1 SND20560" ID="{D295DA89-2ABB-4619-873F-55C5653299BE}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.393865355635925"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.454682800256179"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.92213341056359"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Pillar Puzzle\Rocks, Stones, Pebbles, Wet, Movement 1 SND20560.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="367984107"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rocks, Stones, Pebbles, Wet, Movement 1 SND20560" ID="{D295DA89-2ABB-4619-873F-55C5653299BE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<RandomSequenceContainer Name="Rotate" ID="{01D925B4-C944-4298-923C-EAB3BBBE0D3F}" ShortID="556628377">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{C57578A2-5032-4BF8-8C6C-D497A85CF11A}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="200"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{9E02C920-8412-47E2-ABC0-609107F67C8B}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																			<Property Name="Min" Type="Real64" Value="-1"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Rock, Large, Movement 5 SND18128 1" ID="{DE50B0A6-4F91-45BE-A6D3-707F2174D69E}" ShortID="972333670">
+															<PropertyList>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Rock, Large, Movement 5 SND18128 1" ID="{76BF3C94-82AA-4869-B8B2-B70D3458EE33}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0573846726190476"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.100997023809524"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.23721354166667"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Interaction\Pillar Puzzle\Rock, Large, Movement 5 SND18128 1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="170866480"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Rock, Large, Movement 5 SND18128 1" ID="{76BF3C94-82AA-4869-B8B2-B70D3458EE33}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Rock, Large, Movement 6 SND18127" ID="{B1B50FA8-43ED-4DBB-B2A1-ED2E171BBC9B}" ShortID="689948689">
+															<PropertyList>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="Highpass" Type="int16">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Lowpass" Type="int16">
+																	<ValueList>
+																		<Value>15</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Rock, Large, Movement 6 SND18127" ID="{CBD5BE20-2523-49F5-969C-FDFC083D9E49}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.040818697257384"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0932998794454494"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.2070671903255"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Interaction\Pillar Puzzle\Rock, Large, Movement 6 SND18127.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="780847929"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Rock, Large, Movement 6 SND18127" ID="{CBD5BE20-2523-49F5-969C-FDFC083D9E49}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Rock, Large, Movement 6 SND18127_01" ID="{240DD8E4-31E4-4E50-9A06-77DB790D1839}" ShortID="288635979">
+															<PropertyList>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="Highpass" Type="int16">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Lowpass" Type="int16">
+																	<ValueList>
+																		<Value>15</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Rock, Large, Movement 6 SND18127" ID="{11A7C27F-5848-4DF4-806B-57FA95B27FD9}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.040818697257384"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0932998794454494"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="1.08461109855335"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="2.18963154573539"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Interaction\Pillar Puzzle\Rock, Large, Movement 6 SND18127.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1007448769"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Rock, Large, Movement 6 SND18127" ID="{11A7C27F-5848-4DF4-806B-57FA95B27FD9}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Rock, Large, Movement 6 SND18127_02" ID="{E23F5F5B-A534-4B98-B190-BD2B53365106}" ShortID="468388603">
+															<PropertyList>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="Highpass" Type="int16">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Lowpass" Type="int16">
+																	<ValueList>
+																		<Value>15</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Rock, Large, Movement 6 SND18127" ID="{E0F516A6-A82C-446C-8D64-7FF2F97375E4}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0699749095840868"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0932998794454494"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="2.02635675670585"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="3.07598040046715"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Interaction\Pillar Puzzle\Rock, Large, Movement 6 SND18127.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="282707408"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Rock, Large, Movement 6 SND18127" ID="{E0F516A6-A82C-446C-8D64-7FF2F97375E4}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Rock, Large, Movement 5 SND18128 1_01" ID="{947EDF06-13F0-4D65-9A58-AA3298C8B512}" ShortID="117345861">
+															<PropertyList>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Rock, Large, Movement 5 SND18128 1" ID="{CAE18648-0EE0-4287-8024-32E23D516D6E}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0573846726190476"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.100997023809524"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="1.18901041666667"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="2.40327008928571"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Interaction\Pillar Puzzle\Rock, Large, Movement 5 SND18128 1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="720176364"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Rock, Large, Movement 5 SND18128 1" ID="{CAE18648-0EE0-4287-8024-32E23D516D6E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+								</BlendContainer>
+								<BlendContainer Name="Pillar Lever" ID="{65F23348-28DA-4233-83F6-79578C51AA93}" ShortID="199299753">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Terracotta, Roof, Tile, Movement On Top Of Other 1 SND19458" ID="{90B33E8E-E799-493D-A9E7-562ECFA2AE6F}" ShortID="214393225">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>20</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Terracotta, Roof, Tile, Movement On Top Of Other 1 SND19458" ID="{A008274D-2F95-4A14-BF4A-A32AF5DA6ADF}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0741160525919228"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.126370535714286"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.520945204189271"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Interaction\Pillar Puzzle\Terracotta, Roof, Tile, Movement On Top Of Other 1 SND19458.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="433168068"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Terracotta, Roof, Tile, Movement On Top Of Other 1 SND19458" ID="{A008274D-2F95-4A14-BF4A-A32AF5DA6ADF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rock, Large, Movement 5 SND18128 2" ID="{A6CF0973-20AC-4805-BC78-480A564AB6D4}" ShortID="539568848">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>25</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rock, Large, Movement 5 SND18128 2" ID="{CE0F62CD-B3D7-4998-807D-D3C08199E474}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0506380820524412"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.233539811256781"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.745966969936709"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Interaction\Pillar Puzzle\Rock, Large, Movement 5 SND18128 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="284953803"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rock, Large, Movement 5 SND18128 2" ID="{CE0F62CD-B3D7-4998-807D-D3C08199E474}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rock, Large, Movement 5 SND18128 3" ID="{9CE16823-CA9A-4A25-83AE-2142FE59AE9D}" ShortID="588401715">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rock, Large, Movement 5 SND18128 3" ID="{FF1AA294-2839-4B13-B2D4-0D5F47037F4D}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.169383598930078"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0811838551084992"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.09848771850512"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Interaction\Pillar Puzzle\Rock, Large, Movement 5 SND18128 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="221966594"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rock, Large, Movement 5 SND18128 3" ID="{FF1AA294-2839-4B13-B2D4-0D5F47037F4D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
+							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
@@ -2799,7 +4167,7 @@ Content provided by Vincent Gagnon
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-12</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -2854,7 +4222,12 @@ Content provided by Vincent Gagnon
 											<PropertyList>
 												<Property Name="Highpass" Type="int16">
 													<ValueList>
-														<Value>42</Value>
+														<Value>54</Value>
+													</ValueList>
+												</Property>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.1</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -2939,6 +4312,11 @@ Content provided by Vincent Gagnon
 										</Sound>
 										<Sound Name="Impact_Drum Hit_03" ID="{2AA91D88-BF57-48E0-A2C4-5427A2EF5E7D}" ShortID="866098878">
 											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.2</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
 														<Value>46</Value>
@@ -3033,6 +4411,13 @@ Content provided by Vincent Gagnon
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="BROKEN - CK - EXPLOSION Boomy Crack" ID="{997C1AD3-35B4-471F-8139-DDB966991E8E}" ShortID="149428245">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.02</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
