@@ -35,7 +35,7 @@
 					<IncludedMemoryFiles>
 						<File Id="117692380" Language="SFX">
 							<ShortName>Character\Agnar\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02.wav</ShortName>
-							<Path>SFX\Character\Agnar\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02_AE7FA48A.wem</Path>
+							<Path>SFX\Character\Agnar\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02_530C1D51.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -246,8 +246,50 @@
 					</SwitchContainers>
 				</Event>
 				<Event Id="1379722170" Name="oxbaren_explosion" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_explosion"/>
-				<Event Id="864184553" Name="oxbaren_shockwave_charge" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_charge"/>
-				<Event Id="4057998772" Name="oxbaren_shockwave_explode" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_explode"/>
+				<Event Id="864184553" Name="oxbaren_shockwave_charge" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_charge">
+					<IncludedMemoryFiles>
+						<File Id="385849276" Language="SFX">
+							<ShortName>Character\Oxbaren\Malfunction Glitch Rise BRSound-05.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_2EE0E28D.wem</Path>
+						</File>
+						<File Id="447711608" Language="SFX">
+							<ShortName>Character\Oxbaren\Malfunction Glitch Rise BRSound-05.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_1BB82539.wem</Path>
+						</File>
+						<File Id="853849093" Language="SFX">
+							<ShortName>Character\Oxbaren\Cinematic_Riser-003.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Cinematic_Riser-003_63A8520C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4057998772" Name="oxbaren_shockwave_explode" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_explode">
+					<IncludedMemoryFiles>
+						<File Id="76148055" Language="SFX">
+							<ShortName>Character\Oxbaren\Explosives - Sweetners_07.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Explosives - Sweetners_07_8E28CEC8.wem</Path>
+						</File>
+						<File Id="417463762" Language="SFX">
+							<ShortName>Character\Oxbaren\Impact_Boom_Distorted_02.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Impact_Boom_Distorted_02_D3B94565.wem</Path>
+						</File>
+						<File Id="534062515" Language="SFX">
+							<ShortName>Character\Agnar\Charged Laser by LegoLunatic Id-151243.wav</ShortName>
+							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_961011CA.wem</Path>
+						</File>
+						<File Id="686824068" Language="SFX">
+							<ShortName>Character\Oxbaren\SW001_8-Bit-Games-017_Explosion.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\SW001_8-Bit-Games-017_Explosion_334E8BC5.wem</Path>
+						</File>
+						<File Id="817005111" Language="SFX">
+							<ShortName>Character\Oxbaren\SORCERY - CK - EFFECT Reverse Explosion 02.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\SORCERY - CK - EFFECT Reverse Explosion 02_1BE62455.wem</Path>
+						</File>
+						<File Id="832383110" Language="SFX">
+							<ShortName>Character\Oxbaren\Impact_Boom_Distorted_02.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Impact_Boom_Distorted_02_5A23B298.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="4036749982" Name="pillar_lever_retract" ObjectPath="\Events\Default Work Unit\Interaction\pillar_lever_retract"/>
 				<Event Id="331846928" Name="pillar_lever_use" ObjectPath="\Events\Default Work Unit\Interaction\pillar_lever_use"/>
 				<Event Id="2089460903" Name="pillar_retract" ObjectPath="\Events\Default Work Unit\Interaction\pillar_retract"/>
@@ -256,7 +298,14 @@
 				<Event Id="1189214292" Name="pillar_triangle_rise" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rise"/>
 				<Event Id="2433708202" Name="pillar_triangle_rotate" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rotate"/>
 				<Event Id="3565352627" Name="soul_charge" ObjectPath="\Events\Default Work Unit\Interaction\soul_charge"/>
-				<Event Id="354526556" Name="tibessa_normal_time" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normal_time"/>
+				<Event Id="354526556" Name="tibessa_normal_time" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normal_time">
+					<IncludedMemoryFiles>
+						<File Id="755604789" Language="SFX">
+							<ShortName>Character\Tibessa\Slowdown by DarkoZL Id-101118 1.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118 1_1B89BFEE.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3312775127" Name="tibessa_respawn" ObjectPath="\Events\Default Work Unit\Characters\tibessa_respawn">
 					<IncludedMemoryFiles>
 						<File Id="16413053" Language="SFX">
@@ -293,7 +342,7 @@
 					<IncludedMemoryFiles>
 						<File Id="750396246" Language="SFX">
 							<ShortName>Character\Tibessa\Slowdown by DarkoZL Id-101118.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118_D9462B16.wem</Path>
+							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118_8129AD11.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

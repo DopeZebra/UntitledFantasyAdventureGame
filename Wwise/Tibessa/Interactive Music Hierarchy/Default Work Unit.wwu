@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<MusicSwitchContainer Name="Music" ID="{260B69B1-FD92-4626-B3CF-431FAC3853E7}" ShortID="214566048">
 					<PropertyList>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="Tempo" Type="Real64" Value="94"/>
 					</PropertyList>
