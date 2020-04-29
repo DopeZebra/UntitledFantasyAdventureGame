@@ -11,6 +11,17 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
+		<SoundBank Id="470666859" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Aux_SB</ObjectPath>
+			<ShortName>Aux_SB</ShortName>
+			<Path>Aux_SB.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="894231404" Name="MediumReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\MediumReverb"/>
+				<AuxBus Id="2134960294" Name="SmallReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\SmallReverb"/>
+				<AuxBus Id="3545700988" Name="Reverbs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs"/>
+				<AuxBus Id="3684725634" Name="LargeReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\LargeReverb"/>
+			</IncludedAuxBusses>
+		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
@@ -26,156 +37,133 @@
 				<GameParameter Id="4122641472" Name="Stinger_sidechain" ObjectPath="\Game Parameters\Default Work Unit\Stinger_sidechain"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank</ObjectPath>
-			<ShortName>Soundbank</ShortName>
-			<Path>Soundbank.bnk</Path>
+		<SoundBank Id="1824335135" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Atmosphere_SB</ObjectPath>
+			<ShortName>Atmosphere_SB</ShortName>
+			<Path>Atmosphere_SB.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2996874622" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music_SB</ObjectPath>
+			<ShortName>Music_SB</ShortName>
+			<Path>Music_SB.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2667003859" Name="agnar_laser_charge" ObjectPath="\Events\Default Work Unit\Characters\agnar_laser_charge">
-					<IncludedMemoryFiles>
-						<File Id="117692380" Language="SFX">
-							<ShortName>Character\Agnar\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02.wav</ShortName>
-							<Path>SFX\Character\Agnar\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02_530C1D51.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3940617192" Name="agnar_laser_shoot" ObjectPath="\Events\Default Work Unit\Characters\agnar_laser_shoot">
-					<IncludedMemoryFiles>
-						<File Id="534062515" Language="SFX">
-							<ShortName>Character\Agnar\Charged Laser by LegoLunatic Id-151243.wav</ShortName>
-							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_961011CA.wem</Path>
-						</File>
-						<File Id="607903466" Language="SFX">
-							<ShortName>Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1.wav</ShortName>
-							<Path>SFX\Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_E8D95FDA.wem</Path>
-						</File>
-						<File Id="701127015" Language="SFX">
-							<ShortName>Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1.wav</ShortName>
-							<Path>SFX\Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_C5326A1F.wem</Path>
-						</File>
-						<File Id="1028182275" Language="SFX">
-							<ShortName>Character\Agnar\Charged Laser by LegoLunatic Id-151243.wav</ShortName>
-							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_A932B75F.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 				<Event Id="3991942870" Name="music" ObjectPath="\Events\Default Work Unit\Music\music">
 					<IncludedMemoryFiles>
 						<File Id="449021" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat_1P - WildWind.wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat_1P - WildWind_D79FB2B7.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat_1P - WildWind_AA3A450C.wem</Path>
 						</File>
 						<File Id="49078717" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Shaku.wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Shaku_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Shaku_AA3A450C.wem</Path>
 						</File>
 						<File Id="50228522" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - DarkDrone(2).wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - DarkDrone(2)_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - DarkDrone(2)_AA3A450C.wem</Path>
 						</File>
 						<File Id="80053009" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro.wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro_D79FB2B7.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro_AA3A450C.wem</Path>
 						</File>
 						<File Id="98774313" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Percussion.wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Percussion_D79FB2B7.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Percussion_AA3A450C.wem</Path>
 						</File>
 						<File Id="195115677" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(4).wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(4)_D79FB2B7.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(4)_AA3A450C.wem</Path>
 						</File>
 						<File Id="244481563" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro(2).wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro(2)_D79FB2B7.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro(2)_AA3A450C.wem</Path>
 						</File>
 						<File Id="251054655" Language="SFX">
 							<ShortName>Music\BrondanCombat\BrokenOath_BrondanCombat_End.wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\BrokenOath_BrondanCombat_End_D79FB2B7.wem</Path>
+							<Path>SFX\Music\BrondanCombat\BrokenOath_BrondanCombat_End_AA3A450C.wem</Path>
 						</File>
 						<File Id="308489943" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(2).wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(2)_D79FB2B7.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(2)_AA3A450C.wem</Path>
 						</File>
 						<File Id="339320626" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Ambience Loop.wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Ambience Loop_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Ambience Loop_AA3A450C.wem</Path>
 						</File>
 						<File Id="340995209" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Shaku(3).wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Shaku(3)_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Shaku(3)_AA3A450C.wem</Path>
 						</File>
 						<File Id="342008685" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Screech(3).wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech(3)_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech(3)_AA3A450C.wem</Path>
 						</File>
 						<File Id="346977009" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 5.wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 5_D79FB2B7.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 5_AA3A450C.wem</Path>
 						</File>
 						<File Id="362030614" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(6).wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(6)_D79FB2B7.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(6)_AA3A450C.wem</Path>
 						</File>
 						<File Id="393441381" Language="SFX">
 							<ShortName>Music\BrondanCombat\BrokenOath_BrondanCombat_Pre.wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\BrokenOath_BrondanCombat_Pre_D79FB2B7.wem</Path>
+							<Path>SFX\Music\BrondanCombat\BrokenOath_BrondanCombat_Pre_AA3A450C.wem</Path>
 						</File>
 						<File Id="404142544" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Screech(2).wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech(2)_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech(2)_AA3A450C.wem</Path>
 						</File>
 						<File Id="406411715" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Screech(4).wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech(4)_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech(4)_AA3A450C.wem</Path>
 						</File>
 						<File Id="431715203" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl.wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl_D79FB2B7.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl_AA3A450C.wem</Path>
 						</File>
 						<File Id="470110550" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - DarkDrone.wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - DarkDrone_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - DarkDrone_AA3A450C.wem</Path>
 						</File>
 						<File Id="549857491" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Drums intro.wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Drums intro_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Drums intro_AA3A450C.wem</Path>
 						</File>
 						<File Id="556890851" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Shaku(2).wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Shaku(2)_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Shaku(2)_AA3A450C.wem</Path>
 						</File>
 						<File Id="568387146" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 3.wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 3_D79FB2B7.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 3_AA3A450C.wem</Path>
 						</File>
 						<File Id="634279464" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Screech.wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech_AA3A450C.wem</Path>
 						</File>
 						<File Id="647733899" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(3).wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(3)_D79FB2B7.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(3)_AA3A450C.wem</Path>
 						</File>
 						<File Id="716628419" Language="SFX">
 							<ShortName>Music\Tibessa_Past\Broken Oath_Tibessa_theme.wav</ShortName>
-							<Path>SFX\Music\Tibessa_Past\Broken Oath_Tibessa_theme_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Tibessa_Past\Broken Oath_Tibessa_theme_AA3A450C.wem</Path>
 						</File>
 						<File Id="725732600" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 6.wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 6_D79FB2B7.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 6_AA3A450C.wem</Path>
 						</File>
 						<File Id="745415054" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Sub.wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Sub_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Sub_AA3A450C.wem</Path>
 						</File>
 						<File Id="769371718" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 5(2).wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 5(2)_D79FB2B7.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 5(2)_AA3A450C.wem</Path>
 						</File>
 						<File Id="1054661302" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(5).wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(5)_D79FB2B7.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(5)_AA3A450C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -245,117 +233,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1379722170" Name="oxbaren_explosion" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_explosion"/>
-				<Event Id="864184553" Name="oxbaren_shockwave_charge" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_charge">
-					<IncludedMemoryFiles>
-						<File Id="385849276" Language="SFX">
-							<ShortName>Character\Oxbaren\Malfunction Glitch Rise BRSound-05.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_D03A02D2.wem</Path>
-						</File>
-						<File Id="447711608" Language="SFX">
-							<ShortName>Character\Oxbaren\Malfunction Glitch Rise BRSound-05.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_5A335702.wem</Path>
-						</File>
-						<File Id="853849093" Language="SFX">
-							<ShortName>Character\Oxbaren\Cinematic_Riser-003.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Cinematic_Riser-003_DC3900B9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="4057998772" Name="oxbaren_shockwave_explode" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_explode">
-					<IncludedMemoryFiles>
-						<File Id="76148055" Language="SFX">
-							<ShortName>Character\Oxbaren\Explosives - Sweetners_07.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Explosives - Sweetners_07_7E3C9774.wem</Path>
-						</File>
-						<File Id="417463762" Language="SFX">
-							<ShortName>Character\Oxbaren\Impact_Boom_Distorted_02.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Impact_Boom_Distorted_02_C9899D53.wem</Path>
-						</File>
-						<File Id="534062515" Language="SFX">
-							<ShortName>Character\Agnar\Charged Laser by LegoLunatic Id-151243.wav</ShortName>
-							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_961011CA.wem</Path>
-						</File>
-						<File Id="686824068" Language="SFX">
-							<ShortName>Character\Oxbaren\SW001_8-Bit-Games-017_Explosion.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\SW001_8-Bit-Games-017_Explosion_6C14E37A.wem</Path>
-						</File>
-						<File Id="817005111" Language="SFX">
-							<ShortName>Character\Oxbaren\SORCERY - CK - EFFECT Reverse Explosion 02.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\SORCERY - CK - EFFECT Reverse Explosion 02_48DFF7B7.wem</Path>
-						</File>
-						<File Id="832383110" Language="SFX">
-							<ShortName>Character\Oxbaren\Impact_Boom_Distorted_02.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Impact_Boom_Distorted_02_EC2EE402.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="4036749982" Name="pillar_lever_retract" ObjectPath="\Events\Default Work Unit\Interaction\pillar_lever_retract"/>
-				<Event Id="331846928" Name="pillar_lever_use" ObjectPath="\Events\Default Work Unit\Interaction\pillar_lever_use"/>
-				<Event Id="2089460903" Name="pillar_retract" ObjectPath="\Events\Default Work Unit\Interaction\pillar_retract"/>
-				<Event Id="2573489613" Name="pillar_rotate" ObjectPath="\Events\Default Work Unit\Interaction\pillar_rotate"/>
-				<Event Id="4217865490" Name="pillar_triangle_lower" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_lower"/>
-				<Event Id="1189214292" Name="pillar_triangle_rise" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rise"/>
-				<Event Id="2433708202" Name="pillar_triangle_rotate" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rotate"/>
-				<Event Id="3565352627" Name="soul_charge" ObjectPath="\Events\Default Work Unit\Interaction\soul_charge"/>
-				<Event Id="354526556" Name="tibessa_normal_time" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normal_time">
-					<IncludedMemoryFiles>
-						<File Id="755604789" Language="SFX">
-							<ShortName>Character\Tibessa\Slowdown by DarkoZL Id-101118 1.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118 1_1B89BFEE.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3312775127" Name="tibessa_respawn" ObjectPath="\Events\Default Work Unit\Characters\tibessa_respawn">
-					<IncludedMemoryFiles>
-						<File Id="16413053" Language="SFX">
-							<ShortName>Character\Tibessa\Krotos UI Chime Single Hit Mono-002.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-002_6F85AE67.wem</Path>
-						</File>
-						<File Id="149479780" Language="SFX">
-							<ShortName>Character\Tibessa\Krotos UI Chime Single Hit Mono-003.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-003_81B1A628.wem</Path>
-						</File>
-						<File Id="159248114" Language="SFX">
-							<ShortName>Character\Tibessa\Tension - sizzle drips 1.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Tension - sizzle drips 1_396958C3.wem</Path>
-						</File>
-						<File Id="179580837" Language="SFX">
-							<ShortName>Character\Tibessa\Krotos UI Chime Texture Magic Bending Mono-003 1.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Krotos UI Chime Texture Magic Bending Mono-003 1_F7E666B0.wem</Path>
-						</File>
-						<File Id="293740931" Language="SFX">
-							<ShortName>Character\Tibessa\Ethereal Whoosh-002 2.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Ethereal Whoosh-002 2_5B26AAE5.wem</Path>
-						</File>
-						<File Id="445686762" Language="SFX">
-							<ShortName>Character\Tibessa\Krotos UI Chime Single Hit Mono-001.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-001_EF2D6236.wem</Path>
-						</File>
-						<File Id="818417696" Language="SFX">
-							<ShortName>Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065_43DC7D05.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="866567142" Name="tibessa_slow_time" ObjectPath="\Events\Default Work Unit\Characters\tibessa_slow_time">
-					<IncludedMemoryFiles>
-						<File Id="750396246" Language="SFX">
-							<ShortName>Character\Tibessa\Slowdown by DarkoZL Id-101118.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118_8129AD11.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="4130026045" Name="time_change" ObjectPath="\Events\Default Work Unit\Interaction\time_change">
-					<SwitchContainers/>
-				</Event>
-				<Event Id="1268222929" Name="time_crystal_nearby" ObjectPath="\Events\Default Work Unit\Interaction\time_crystal_nearby">
-					<SwitchContainers/>
-				</Event>
 			</IncludedEvents>
-			<GameParameters>
-				<GameParameter Id="129" Name="MIDI note velocity" ObjectPath="MIDI\MIDI note velocity"/>
-			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="2654366170" Name="Time" ObjectPath="\States\Default Work Unit\Time">
 					<States>
@@ -369,6 +247,545 @@
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Combat\None"/>
 						<State Id="2764240573" Name="Combat" ObjectPath="\States\Default Work Unit\Combat\Combat"/>
 						<State Id="579523862" Name="Explore" ObjectPath="\States\Default Work Unit\Combat\Explore"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="3896292454" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_SB</ObjectPath>
+			<ShortName>SFX_SB</ShortName>
+			<Path>SFX_SB.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2667003859" Name="agnar_laser_charge" ObjectPath="\Events\Default Work Unit\Characters\agnar_laser_charge">
+					<IncludedMemoryFiles>
+						<File Id="117692380" Language="SFX">
+							<ShortName>Character\Agnar\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02.wav</ShortName>
+							<Path>SFX\Character\Agnar\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02_1F97EB32.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3940617192" Name="agnar_laser_shoot" ObjectPath="\Events\Default Work Unit\Characters\agnar_laser_shoot">
+					<IncludedMemoryFiles>
+						<File Id="534062515" Language="SFX">
+							<ShortName>Character\Agnar\Charged Laser by LegoLunatic Id-151243.wav</ShortName>
+							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_5E50DE59.wem</Path>
+						</File>
+						<File Id="607903466" Language="SFX">
+							<ShortName>Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1.wav</ShortName>
+							<Path>SFX\Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_3981DD91.wem</Path>
+						</File>
+						<File Id="701127015" Language="SFX">
+							<ShortName>Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1.wav</ShortName>
+							<Path>SFX\Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_8BA9F690.wem</Path>
+						</File>
+						<File Id="1028182275" Language="SFX">
+							<ShortName>Character\Agnar\Charged Laser by LegoLunatic Id-151243.wav</ShortName>
+							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_9B5D6060.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="853237068" Name="lever_retract_start" ObjectPath="\Events\Default Work Unit\Interaction\lever_retract_start"/>
+				<Event Id="1739864800" Name="lever_retract_stop" ObjectPath="\Events\Default Work Unit\Interaction\lever_retract_stop"/>
+				<Event Id="2657532751" Name="lever_use" ObjectPath="\Events\Default Work Unit\Interaction\lever_use">
+					<IncludedMemoryFiles>
+						<File Id="128447381" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_86809A36.wem</Path>
+						</File>
+						<File Id="160430172" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_D0724BE0.wem</Path>
+						</File>
+						<File Id="221966594" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rock, Large, Movement 5 SND18128 3.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rock, Large, Movement 5 SND18128 3_89163DED.wem</Path>
+						</File>
+						<File Id="231383597" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246_C885D6EE.wem</Path>
+						</File>
+						<File Id="284953803" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rock, Large, Movement 5 SND18128 2.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rock, Large, Movement 5 SND18128 2_4171FA35.wem</Path>
+						</File>
+						<File Id="304007232" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_3D891CB6.wem</Path>
+						</File>
+						<File Id="331814902" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_962EA1EC.wem</Path>
+						</File>
+						<File Id="364374817" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124_7A923566.wem</Path>
+						</File>
+						<File Id="418762862" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_7079C2A4.wem</Path>
+						</File>
+						<File Id="431051856" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_C8F2FF66.wem</Path>
+						</File>
+						<File Id="433168068" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Terracotta, Roof, Tile, Movement On Top Of Other 1 SND19458.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Terracotta, Roof, Tile, Movement On Top Of Other 1 SND19458_8F7DA808.wem</Path>
+						</File>
+						<File Id="498919310" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_A7FA8AC8.wem</Path>
+						</File>
+						<File Id="527719636" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_09E9EB40.wem</Path>
+						</File>
+						<File Id="680600256" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_8E41CAA6.wem</Path>
+						</File>
+						<File Id="705550403" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124_66D5D741.wem</Path>
+						</File>
+						<File Id="710773299" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_2D4EFCAA.wem</Path>
+						</File>
+						<File Id="776102589" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_51C1B280.wem</Path>
+						</File>
+						<File Id="815528195" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246_89C4E888.wem</Path>
+						</File>
+						<File Id="929123293" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_6E26FB97.wem</Path>
+						</File>
+						<File Id="1018015412" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_0467D01A.wem</Path>
+						</File>
+						<File Id="1071533740" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_5BA62E0D.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1379722170" Name="oxbaren_explosion" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_explosion">
+					<IncludedMemoryFiles>
+						<File Id="145121621" Language="SFX">
+							<ShortName>Character\Oxbaren\Sci-Fi, Shield, Power Deflect, Boom 02 SND7092 1.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Sci-Fi, Shield, Power Deflect, Boom 02 SND7092 1_392F44F8.wem</Path>
+						</File>
+						<File Id="443550412" Language="SFX">
+							<ShortName>Character\Oxbaren\Impact_Drum Hit_03.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Impact_Drum Hit_03_A028E9DA.wem</Path>
+						</File>
+						<File Id="735412867" Language="SFX">
+							<ShortName>Character\Oxbaren\Sci-fi, Weapon, Blaster, Laser, Boom, Zap 4 SND7287.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Sci-fi, Weapon, Blaster, Laser, Boom, Zap 4 SND7287_2054D5F7.wem</Path>
+						</File>
+						<File Id="776430186" Language="SFX">
+							<ShortName>Character\Oxbaren\Thunder_Very-Close_Rain_08.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Thunder_Very-Close_Rain_08_0B598045.wem</Path>
+						</File>
+						<File Id="925299909" Language="SFX">
+							<ShortName>Character\Oxbaren\BROKEN - CK - EXPLOSION Boomy Crack.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\BROKEN - CK - EXPLOSION Boomy Crack_3101DDC4.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="864184553" Name="oxbaren_shockwave_charge" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_charge">
+					<IncludedMemoryFiles>
+						<File Id="385849276" Language="SFX">
+							<ShortName>Character\Oxbaren\Malfunction Glitch Rise BRSound-05.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_AE788372.wem</Path>
+						</File>
+						<File Id="447711608" Language="SFX">
+							<ShortName>Character\Oxbaren\Malfunction Glitch Rise BRSound-05.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_364D4E62.wem</Path>
+						</File>
+						<File Id="853849093" Language="SFX">
+							<ShortName>Character\Oxbaren\Cinematic_Riser-003.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Cinematic_Riser-003_0754675B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4057998772" Name="oxbaren_shockwave_explode" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_explode">
+					<IncludedMemoryFiles>
+						<File Id="76148055" Language="SFX">
+							<ShortName>Character\Oxbaren\Explosives - Sweetners_07.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Explosives - Sweetners_07_18D898E7.wem</Path>
+						</File>
+						<File Id="417463762" Language="SFX">
+							<ShortName>Character\Oxbaren\Impact_Boom_Distorted_02.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Impact_Boom_Distorted_02_D1CA316A.wem</Path>
+						</File>
+						<File Id="534062515" Language="SFX">
+							<ShortName>Character\Agnar\Charged Laser by LegoLunatic Id-151243.wav</ShortName>
+							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_5E50DE59.wem</Path>
+						</File>
+						<File Id="686824068" Language="SFX">
+							<ShortName>Character\Oxbaren\SW001_8-Bit-Games-017_Explosion.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\SW001_8-Bit-Games-017_Explosion_37BE6D1A.wem</Path>
+						</File>
+						<File Id="817005111" Language="SFX">
+							<ShortName>Character\Oxbaren\SORCERY - CK - EFFECT Reverse Explosion 02.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\SORCERY - CK - EFFECT Reverse Explosion 02_DB7A0C62.wem</Path>
+						</File>
+						<File Id="832383110" Language="SFX">
+							<ShortName>Character\Oxbaren\Impact_Boom_Distorted_02.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Impact_Boom_Distorted_02_CA571177.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2086680074" Name="pillar_retract_start" ObjectPath="\Events\Default Work Unit\Interaction\pillar_retract_start">
+					<IncludedMemoryFiles>
+						<File Id="128447381" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_86809A36.wem</Path>
+						</File>
+						<File Id="160430172" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_D0724BE0.wem</Path>
+						</File>
+						<File Id="231383597" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246_C885D6EE.wem</Path>
+						</File>
+						<File Id="304007232" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_3D891CB6.wem</Path>
+						</File>
+						<File Id="331814902" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_962EA1EC.wem</Path>
+						</File>
+						<File Id="364374817" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124_7A923566.wem</Path>
+						</File>
+						<File Id="418762862" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_7079C2A4.wem</Path>
+						</File>
+						<File Id="431051856" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_C8F2FF66.wem</Path>
+						</File>
+						<File Id="498919310" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_A7FA8AC8.wem</Path>
+						</File>
+						<File Id="527719636" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_09E9EB40.wem</Path>
+						</File>
+						<File Id="680600256" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_8E41CAA6.wem</Path>
+						</File>
+						<File Id="705550403" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124_66D5D741.wem</Path>
+						</File>
+						<File Id="710773299" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_2D4EFCAA.wem</Path>
+						</File>
+						<File Id="776102589" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_51C1B280.wem</Path>
+						</File>
+						<File Id="815528195" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246_89C4E888.wem</Path>
+						</File>
+						<File Id="929123293" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_6E26FB97.wem</Path>
+						</File>
+						<File Id="1018015412" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_0467D01A.wem</Path>
+						</File>
+						<File Id="1071533740" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_5BA62E0D.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="629306210" Name="pillar_retract_stop" ObjectPath="\Events\Default Work Unit\Interaction\pillar_retract_stop"/>
+				<Event Id="243348140" Name="pillar_rotate_start" ObjectPath="\Events\Default Work Unit\Interaction\pillar_rotate_start">
+					<IncludedMemoryFiles>
+						<File Id="128447381" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_86809A36.wem</Path>
+						</File>
+						<File Id="160430172" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_D0724BE0.wem</Path>
+						</File>
+						<File Id="170866480" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rock, Large, Movement 5 SND18128 1.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rock, Large, Movement 5 SND18128 1_F40624CD.wem</Path>
+						</File>
+						<File Id="231383597" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246_C885D6EE.wem</Path>
+						</File>
+						<File Id="282707408" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rock, Large, Movement 6 SND18127.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rock, Large, Movement 6 SND18127_178147EC.wem</Path>
+						</File>
+						<File Id="304007232" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_3D891CB6.wem</Path>
+						</File>
+						<File Id="331814902" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_962EA1EC.wem</Path>
+						</File>
+						<File Id="364374817" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124_7A923566.wem</Path>
+						</File>
+						<File Id="367984107" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Stones, Pebbles, Wet, Movement 1 SND20560.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Stones, Pebbles, Wet, Movement 1 SND20560_C2FED4CE.wem</Path>
+						</File>
+						<File Id="418762862" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_7079C2A4.wem</Path>
+						</File>
+						<File Id="431051856" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_C8F2FF66.wem</Path>
+						</File>
+						<File Id="498919310" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_A7FA8AC8.wem</Path>
+						</File>
+						<File Id="527719636" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_09E9EB40.wem</Path>
+						</File>
+						<File Id="680600256" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_8E41CAA6.wem</Path>
+						</File>
+						<File Id="705550403" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124_66D5D741.wem</Path>
+						</File>
+						<File Id="710773299" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_2D4EFCAA.wem</Path>
+						</File>
+						<File Id="720176364" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rock, Large, Movement 5 SND18128 1.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rock, Large, Movement 5 SND18128 1_5E3DE93F.wem</Path>
+						</File>
+						<File Id="776102589" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_51C1B280.wem</Path>
+						</File>
+						<File Id="780847929" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rock, Large, Movement 6 SND18127.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rock, Large, Movement 6 SND18127_63532E30.wem</Path>
+						</File>
+						<File Id="815528195" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246_89C4E888.wem</Path>
+						</File>
+						<File Id="929123293" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_6E26FB97.wem</Path>
+						</File>
+						<File Id="1007448769" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rock, Large, Movement 6 SND18127.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rock, Large, Movement 6 SND18127_59C6DE9B.wem</Path>
+						</File>
+						<File Id="1018015412" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_0467D01A.wem</Path>
+						</File>
+						<File Id="1071533740" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_5BA62E0D.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3210416832" Name="pillar_rotate_stop" ObjectPath="\Events\Default Work Unit\Interaction\pillar_rotate_stop"/>
+				<Event Id="4217865490" Name="pillar_triangle_lower" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_lower"/>
+				<Event Id="1189214292" Name="pillar_triangle_rise" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rise"/>
+				<Event Id="3570432955" Name="pillar_triangle_rotate_start" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rotate_start">
+					<IncludedMemoryFiles>
+						<File Id="128447381" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_86809A36.wem</Path>
+						</File>
+						<File Id="160430172" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_D0724BE0.wem</Path>
+						</File>
+						<File Id="170866480" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rock, Large, Movement 5 SND18128 1.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rock, Large, Movement 5 SND18128 1_F40624CD.wem</Path>
+						</File>
+						<File Id="231383597" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246_C885D6EE.wem</Path>
+						</File>
+						<File Id="282707408" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rock, Large, Movement 6 SND18127.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rock, Large, Movement 6 SND18127_178147EC.wem</Path>
+						</File>
+						<File Id="304007232" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_3D891CB6.wem</Path>
+						</File>
+						<File Id="331814902" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_962EA1EC.wem</Path>
+						</File>
+						<File Id="364374817" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124_7A923566.wem</Path>
+						</File>
+						<File Id="367984107" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Stones, Pebbles, Wet, Movement 1 SND20560.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Stones, Pebbles, Wet, Movement 1 SND20560_C2FED4CE.wem</Path>
+						</File>
+						<File Id="418762862" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_7079C2A4.wem</Path>
+						</File>
+						<File Id="431051856" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_C8F2FF66.wem</Path>
+						</File>
+						<File Id="498919310" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_A7FA8AC8.wem</Path>
+						</File>
+						<File Id="527719636" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_09E9EB40.wem</Path>
+						</File>
+						<File Id="680600256" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_8E41CAA6.wem</Path>
+						</File>
+						<File Id="705550403" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124_66D5D741.wem</Path>
+						</File>
+						<File Id="710773299" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_2D4EFCAA.wem</Path>
+						</File>
+						<File Id="720176364" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rock, Large, Movement 5 SND18128 1.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rock, Large, Movement 5 SND18128 1_5E3DE93F.wem</Path>
+						</File>
+						<File Id="776102589" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_51C1B280.wem</Path>
+						</File>
+						<File Id="780847929" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rock, Large, Movement 6 SND18127.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rock, Large, Movement 6 SND18127_63532E30.wem</Path>
+						</File>
+						<File Id="815528195" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246_89C4E888.wem</Path>
+						</File>
+						<File Id="929123293" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_6E26FB97.wem</Path>
+						</File>
+						<File Id="1007448769" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rock, Large, Movement 6 SND18127.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rock, Large, Movement 6 SND18127_59C6DE9B.wem</Path>
+						</File>
+						<File Id="1018015412" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_0467D01A.wem</Path>
+						</File>
+						<File Id="1071533740" Language="SFX">
+							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
+							<Path>SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_5BA62E0D.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2118246937" Name="pillar_triangle_rotate_stop" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rotate_stop"/>
+				<Event Id="3565352627" Name="soul_charge" ObjectPath="\Events\Default Work Unit\Interaction\soul_charge"/>
+				<Event Id="354526556" Name="tibessa_normal_time" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normal_time">
+					<IncludedMemoryFiles>
+						<File Id="755604789" Language="SFX">
+							<ShortName>Character\Tibessa\Slowdown by DarkoZL Id-101118 1.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118 1_B5EEBA2D.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3312775127" Name="tibessa_respawn" ObjectPath="\Events\Default Work Unit\Characters\tibessa_respawn">
+					<IncludedMemoryFiles>
+						<File Id="16413053" Language="SFX">
+							<ShortName>Character\Tibessa\Krotos UI Chime Single Hit Mono-002.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-002_663F4B20.wem</Path>
+						</File>
+						<File Id="149479780" Language="SFX">
+							<ShortName>Character\Tibessa\Krotos UI Chime Single Hit Mono-003.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-003_E245E243.wem</Path>
+						</File>
+						<File Id="159248114" Language="SFX">
+							<ShortName>Character\Tibessa\Tension - sizzle drips 1.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Tension - sizzle drips 1_3B0B2760.wem</Path>
+						</File>
+						<File Id="179580837" Language="SFX">
+							<ShortName>Character\Tibessa\Krotos UI Chime Texture Magic Bending Mono-003 1.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Krotos UI Chime Texture Magic Bending Mono-003 1_B738D0FF.wem</Path>
+						</File>
+						<File Id="293740931" Language="SFX">
+							<ShortName>Character\Tibessa\Ethereal Whoosh-002 2.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Ethereal Whoosh-002 2_F94E72D2.wem</Path>
+						</File>
+						<File Id="445686762" Language="SFX">
+							<ShortName>Character\Tibessa\Krotos UI Chime Single Hit Mono-001.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-001_C3B996B1.wem</Path>
+						</File>
+						<File Id="818417696" Language="SFX">
+							<ShortName>Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065_8A58AAC2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="866567142" Name="tibessa_slow_time" ObjectPath="\Events\Default Work Unit\Characters\tibessa_slow_time">
+					<IncludedMemoryFiles>
+						<File Id="750396246" Language="SFX">
+							<ShortName>Character\Tibessa\Slowdown by DarkoZL Id-101118.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118_8EAC0F22.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4130026045" Name="time_change" ObjectPath="\Events\Default Work Unit\Interaction\time_change">
+					<SwitchContainers/>
+				</Event>
+				<Event Id="1268222929" Name="time_crystal_nearby" ObjectPath="\Events\Default Work Unit\Interaction\time_crystal_nearby"/>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="129" Name="MIDI note velocity" ObjectPath="MIDI\MIDI note velocity"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="2654366170" Name="Time" ObjectPath="\States\Default Work Unit\Time">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Time\None"/>
+						<State Id="1627031569" Name="Past" ObjectPath="\States\Default Work Unit\Time\Past"/>
+						<State Id="3524519058" Name="Present" ObjectPath="\States\Default Work Unit\Time\Present"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
