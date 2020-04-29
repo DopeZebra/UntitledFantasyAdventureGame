@@ -51,119 +51,119 @@
 					<IncludedMemoryFiles>
 						<File Id="449021" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat_1P - WildWind.wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat_1P - WildWind_9EDFC787.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat_1P - WildWind_AA3A450C.wem</Path>
 						</File>
 						<File Id="49078717" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Shaku.wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Shaku_9EDFC787.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Shaku_AA3A450C.wem</Path>
 						</File>
 						<File Id="50228522" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - DarkDrone(2).wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - DarkDrone(2)_9EDFC787.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - DarkDrone(2)_AA3A450C.wem</Path>
 						</File>
 						<File Id="80053009" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro.wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro_9EDFC787.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro_AA3A450C.wem</Path>
 						</File>
 						<File Id="98774313" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Percussion.wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Percussion_9EDFC787.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Percussion_AA3A450C.wem</Path>
 						</File>
 						<File Id="195115677" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(4).wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(4)_9EDFC787.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(4)_AA3A450C.wem</Path>
 						</File>
 						<File Id="244481563" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro(2).wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro(2)_9EDFC787.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Combat Drums intro(2)_AA3A450C.wem</Path>
 						</File>
 						<File Id="251054655" Language="SFX">
 							<ShortName>Music\BrondanCombat\BrokenOath_BrondanCombat_End.wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\BrokenOath_BrondanCombat_End_9EDFC787.wem</Path>
+							<Path>SFX\Music\BrondanCombat\BrokenOath_BrondanCombat_End_AA3A450C.wem</Path>
 						</File>
 						<File Id="308489943" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(2).wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(2)_9EDFC787.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(2)_AA3A450C.wem</Path>
 						</File>
 						<File Id="339320626" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Ambience Loop.wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Ambience Loop_9EDFC787.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Ambience Loop_AA3A450C.wem</Path>
 						</File>
 						<File Id="340995209" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Shaku(3).wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Shaku(3)_9EDFC787.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Shaku(3)_AA3A450C.wem</Path>
 						</File>
 						<File Id="342008685" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Screech(3).wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech(3)_9EDFC787.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech(3)_AA3A450C.wem</Path>
 						</File>
 						<File Id="346977009" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 5.wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 5_9EDFC787.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 5_AA3A450C.wem</Path>
 						</File>
 						<File Id="362030614" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(6).wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(6)_9EDFC787.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(6)_AA3A450C.wem</Path>
 						</File>
 						<File Id="393441381" Language="SFX">
 							<ShortName>Music\BrondanCombat\BrokenOath_BrondanCombat_Pre.wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\BrokenOath_BrondanCombat_Pre_9EDFC787.wem</Path>
+							<Path>SFX\Music\BrondanCombat\BrokenOath_BrondanCombat_Pre_AA3A450C.wem</Path>
 						</File>
 						<File Id="404142544" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Screech(2).wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech(2)_9EDFC787.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech(2)_AA3A450C.wem</Path>
 						</File>
 						<File Id="406411715" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Screech(4).wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech(4)_9EDFC787.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech(4)_AA3A450C.wem</Path>
 						</File>
 						<File Id="431715203" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl.wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl_9EDFC787.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl_AA3A450C.wem</Path>
 						</File>
 						<File Id="470110550" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - DarkDrone.wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - DarkDrone_9EDFC787.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - DarkDrone_AA3A450C.wem</Path>
 						</File>
 						<File Id="549857491" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Drums intro.wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Drums intro_9EDFC787.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Drums intro_AA3A450C.wem</Path>
 						</File>
 						<File Id="556890851" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Shaku(2).wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Shaku(2)_9EDFC787.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Shaku(2)_AA3A450C.wem</Path>
 						</File>
 						<File Id="568387146" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 3.wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 3_9EDFC787.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 3_AA3A450C.wem</Path>
 						</File>
 						<File Id="634279464" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Screech.wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech_9EDFC787.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Screech_AA3A450C.wem</Path>
 						</File>
 						<File Id="647733899" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(3).wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(3)_9EDFC787.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(3)_AA3A450C.wem</Path>
 						</File>
 						<File Id="716628419" Language="SFX">
 							<ShortName>Music\Tibessa_Past\Broken Oath_Tibessa_theme.wav</ShortName>
-							<Path>SFX\Music\Tibessa_Past\Broken Oath_Tibessa_theme_9EDFC787.wem</Path>
+							<Path>SFX\Music\Tibessa_Past\Broken Oath_Tibessa_theme_AA3A450C.wem</Path>
 						</File>
 						<File Id="725732600" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 6.wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 6_9EDFC787.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 6_AA3A450C.wem</Path>
 						</File>
 						<File Id="745415054" Language="SFX">
 							<ShortName>Music\Broken Oath_BrondanIdle - Sub.wav</ShortName>
-							<Path>SFX\Music\Broken Oath_BrondanIdle - Sub_9EDFC787.wem</Path>
+							<Path>SFX\Music\Broken Oath_BrondanIdle - Sub_AA3A450C.wem</Path>
 						</File>
 						<File Id="769371718" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 5(2).wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 5(2)_9EDFC787.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Shaku 5(2)_AA3A450C.wem</Path>
 						</File>
 						<File Id="1054661302" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(5).wav</ShortName>
-							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(5)_9EDFC787.wem</Path>
+							<Path>SFX\Music\BrondanCombat\Broken Oath_BrondanCombat - Monster_howl(5)_AA3A450C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -260,7 +260,7 @@
 					<IncludedMemoryFiles>
 						<File Id="117692380" Language="SFX">
 							<ShortName>Character\Agnar\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02.wav</ShortName>
-							<Path>SFX\Character\Agnar\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02_CAFBAF41.wem</Path>
+							<Path>SFX\Character\Agnar\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02_1F97EB32.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -268,19 +268,19 @@
 					<IncludedMemoryFiles>
 						<File Id="534062515" Language="SFX">
 							<ShortName>Character\Agnar\Charged Laser by LegoLunatic Id-151243.wav</ShortName>
-							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_FFB5F0DA.wem</Path>
+							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_5E50DE59.wem</Path>
 						</File>
 						<File Id="607903466" Language="SFX">
 							<ShortName>Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1.wav</ShortName>
-							<Path>SFX\Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_0025D00A.wem</Path>
+							<Path>SFX\Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_3981DD91.wem</Path>
 						</File>
 						<File Id="701127015" Language="SFX">
 							<ShortName>Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1.wav</ShortName>
-							<Path>SFX\Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_0FC0496F.wem</Path>
+							<Path>SFX\Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_8BA9F690.wem</Path>
 						</File>
 						<File Id="1028182275" Language="SFX">
 							<ShortName>Character\Agnar\Charged Laser by LegoLunatic Id-151243.wav</ShortName>
-							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_2996200F.wem</Path>
+							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_9B5D6060.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -288,23 +288,23 @@
 					<IncludedMemoryFiles>
 						<File Id="145121621" Language="SFX">
 							<ShortName>Character\Oxbaren\Sci-Fi, Shield, Power Deflect, Boom 02 SND7092 1.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Sci-Fi, Shield, Power Deflect, Boom 02 SND7092 1_F721C766.wem</Path>
+							<Path>SFX\Character\Oxbaren\Sci-Fi, Shield, Power Deflect, Boom 02 SND7092 1_90E4938D.wem</Path>
 						</File>
 						<File Id="443550412" Language="SFX">
 							<ShortName>Character\Oxbaren\Impact_Drum Hit_03.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Impact_Drum Hit_03_6749843A.wem</Path>
+							<Path>SFX\Character\Oxbaren\Impact_Drum Hit_03_1FF38E81.wem</Path>
 						</File>
 						<File Id="735412867" Language="SFX">
 							<ShortName>Character\Oxbaren\Sci-fi, Weapon, Blaster, Laser, Boom, Zap 4 SND7287.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Sci-fi, Weapon, Blaster, Laser, Boom, Zap 4 SND7287_C48E323E.wem</Path>
+							<Path>SFX\Character\Oxbaren\Sci-fi, Weapon, Blaster, Laser, Boom, Zap 4 SND7287_5D208D2D.wem</Path>
 						</File>
 						<File Id="776430186" Language="SFX">
 							<ShortName>Character\Oxbaren\Thunder_Very-Close_Rain_08.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Thunder_Very-Close_Rain_08_20632D13.wem</Path>
+							<Path>SFX\Character\Oxbaren\Thunder_Very-Close_Rain_08_D3E35DC8.wem</Path>
 						</File>
 						<File Id="925299909" Language="SFX">
 							<ShortName>Character\Oxbaren\BROKEN - CK - EXPLOSION Boomy Crack.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\BROKEN - CK - EXPLOSION Boomy Crack_4CDB65B9.wem</Path>
+							<Path>SFX\Character\Oxbaren\BROKEN - CK - EXPLOSION Boomy Crack_066C5846.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -312,15 +312,15 @@
 					<IncludedMemoryFiles>
 						<File Id="385849276" Language="SFX">
 							<ShortName>Character\Oxbaren\Malfunction Glitch Rise BRSound-05.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_71F303BD.wem</Path>
+							<Path>SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_AE788372.wem</Path>
 						</File>
 						<File Id="447711608" Language="SFX">
 							<ShortName>Character\Oxbaren\Malfunction Glitch Rise BRSound-05.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_5DFE9269.wem</Path>
+							<Path>SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_364D4E62.wem</Path>
 						</File>
 						<File Id="853849093" Language="SFX">
 							<ShortName>Character\Oxbaren\Cinematic_Riser-003.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Cinematic_Riser-003_3F43891C.wem</Path>
+							<Path>SFX\Character\Oxbaren\Cinematic_Riser-003_0754675B.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -328,27 +328,27 @@
 					<IncludedMemoryFiles>
 						<File Id="76148055" Language="SFX">
 							<ShortName>Character\Oxbaren\Explosives - Sweetners_07.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Explosives - Sweetners_07_E4F26A18.wem</Path>
+							<Path>SFX\Character\Oxbaren\Explosives - Sweetners_07_18D898E7.wem</Path>
 						</File>
 						<File Id="417463762" Language="SFX">
 							<ShortName>Character\Oxbaren\Impact_Boom_Distorted_02.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Impact_Boom_Distorted_02_D43E6975.wem</Path>
+							<Path>SFX\Character\Oxbaren\Impact_Boom_Distorted_02_D1CA316A.wem</Path>
 						</File>
 						<File Id="534062515" Language="SFX">
 							<ShortName>Character\Agnar\Charged Laser by LegoLunatic Id-151243.wav</ShortName>
-							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_FFB5F0DA.wem</Path>
+							<Path>SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_5E50DE59.wem</Path>
 						</File>
 						<File Id="686824068" Language="SFX">
 							<ShortName>Character\Oxbaren\SW001_8-Bit-Games-017_Explosion.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\SW001_8-Bit-Games-017_Explosion_A747D795.wem</Path>
+							<Path>SFX\Character\Oxbaren\SW001_8-Bit-Games-017_Explosion_37BE6D1A.wem</Path>
 						</File>
 						<File Id="817005111" Language="SFX">
 							<ShortName>Character\Oxbaren\SORCERY - CK - EFFECT Reverse Explosion 02.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\SORCERY - CK - EFFECT Reverse Explosion 02_E0BCEA85.wem</Path>
+							<Path>SFX\Character\Oxbaren\SORCERY - CK - EFFECT Reverse Explosion 02_DB7A0C62.wem</Path>
 						</File>
 						<File Id="832383110" Language="SFX">
 							<ShortName>Character\Oxbaren\Impact_Boom_Distorted_02.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Impact_Boom_Distorted_02_708524E8.wem</Path>
+							<Path>SFX\Character\Oxbaren\Impact_Boom_Distorted_02_CA571177.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -364,7 +364,7 @@
 					<IncludedMemoryFiles>
 						<File Id="755604789" Language="SFX">
 							<ShortName>Character\Tibessa\Slowdown by DarkoZL Id-101118 1.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118 1_DF84937E.wem</Path>
+							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118 1_B5EEBA2D.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -372,31 +372,31 @@
 					<IncludedMemoryFiles>
 						<File Id="16413053" Language="SFX">
 							<ShortName>Character\Tibessa\Krotos UI Chime Single Hit Mono-002.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-002_3307F597.wem</Path>
+							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-002_663F4B20.wem</Path>
 						</File>
 						<File Id="149479780" Language="SFX">
 							<ShortName>Character\Tibessa\Krotos UI Chime Single Hit Mono-003.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-003_05307278.wem</Path>
+							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-003_E245E243.wem</Path>
 						</File>
 						<File Id="159248114" Language="SFX">
 							<ShortName>Character\Tibessa\Tension - sizzle drips 1.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Tension - sizzle drips 1_9D788D73.wem</Path>
+							<Path>SFX\Character\Tibessa\Tension - sizzle drips 1_3B0B2760.wem</Path>
 						</File>
 						<File Id="179580837" Language="SFX">
 							<ShortName>Character\Tibessa\Krotos UI Chime Texture Magic Bending Mono-003 1.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Krotos UI Chime Texture Magic Bending Mono-003 1_D7835BA0.wem</Path>
+							<Path>SFX\Character\Tibessa\Krotos UI Chime Texture Magic Bending Mono-003 1_B738D0FF.wem</Path>
 						</File>
 						<File Id="293740931" Language="SFX">
 							<ShortName>Character\Tibessa\Ethereal Whoosh-002 2.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Ethereal Whoosh-002 2_B28F03D5.wem</Path>
+							<Path>SFX\Character\Tibessa\Ethereal Whoosh-002 2_F94E72D2.wem</Path>
 						</File>
 						<File Id="445686762" Language="SFX">
 							<ShortName>Character\Tibessa\Krotos UI Chime Single Hit Mono-001.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-001_AD205AC6.wem</Path>
+							<Path>SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-001_C3B996B1.wem</Path>
 						</File>
 						<File Id="818417696" Language="SFX">
 							<ShortName>Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065_9CAE3CB5.wem</Path>
+							<Path>SFX\Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065_8A58AAC2.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -404,7 +404,7 @@
 					<IncludedMemoryFiles>
 						<File Id="750396246" Language="SFX">
 							<ShortName>Character\Tibessa\Slowdown by DarkoZL Id-101118.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118_FA1509E1.wem</Path>
+							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118_8EAC0F22.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

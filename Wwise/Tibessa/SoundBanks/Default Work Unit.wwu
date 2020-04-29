@@ -26,7 +26,9 @@
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="Aux_SB" ID="{2C2023B4-713F-4CBC-924B-68E026D8BDBB}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Reverbs" ID="{FB150F2B-6FB6-489E-8344-DC21A313175D}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
