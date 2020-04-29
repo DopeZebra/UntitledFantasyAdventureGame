@@ -1,0 +1,90 @@
+Event	ID	Name			Wwise Object Path	Notes
+	331846928	pillar_lever_use			\Default Work Unit\Interaction\pillar_lever_use	
+	354526556	tibessa_normal_time			\Default Work Unit\Characters\tibessa_normal_time	
+	864184553	oxbaren_shockwave_charge			\Default Work Unit\Characters\oxbaren_shockwave_charge	
+	866567142	tibessa_slow_time			\Default Work Unit\Characters\tibessa_slow_time	
+	1189214292	pillar_triangle_rise			\Default Work Unit\Interaction\pillar_triangle_rise	
+	1268222929	time_crystal_nearby			\Default Work Unit\Interaction\time_crystal_nearby	
+	1379722170	oxbaren_explosion			\Default Work Unit\Characters\oxbaren_explosion	
+	2089460903	pillar_retract			\Default Work Unit\Interaction\pillar_retract	
+	2433708202	pillar_triangle_rotate			\Default Work Unit\Interaction\pillar_triangle_rotate	
+	2573489613	pillar_rotate			\Default Work Unit\Interaction\pillar_rotate	
+	2667003859	agnar_laser_charge			\Default Work Unit\Characters\agnar_laser_charge	
+	3312775127	tibessa_respawn			\Default Work Unit\Characters\tibessa_respawn	
+	3565352627	soul_charge			\Default Work Unit\Interaction\soul_charge	
+	3940617192	agnar_laser_shoot			\Default Work Unit\Characters\agnar_laser_shoot	
+	4036749982	pillar_lever_retract			\Default Work Unit\Interaction\pillar_lever_retract	
+	4057998772	oxbaren_shockwave_explode			\Default Work Unit\Characters\oxbaren_shockwave_explode	
+	4130026045	time_change			\Default Work Unit\Interaction\time_change	
+	4217865490	pillar_triangle_lower			\Default Work Unit\Interaction\pillar_triangle_lower	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2654366170	Time			\Default Work Unit\Time	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Time			
+	1627031569	Past	Time			
+	3524519058	Present	Time			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	129	MIDI note velocity			\MIDI note velocity	
+
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	891982363	Modulator LFO (Custom)				
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	260102189	Modulator Envelope (Custom)				
+	278598906	Modulator Envelope (Custom)				
+	506695838	Modulator Envelope (Custom)				
+	626577432	Modulator Envelope (Custom)				
+	884484006	Modulator Envelope (Custom)				
+	886929073	Modulator Envelope (Custom)				
+	913743021	Modulator Envelope (Custom)				
+	1063819344	Modulator Envelope (Custom)				
+
+Modulator Time	ID	Name			Wwise Object Path	Notes
+	24374720	Modulator Time (Custom)				
+	27241930	Modulator Time (Custom)				
+	422699685	Modulator Time (Custom)				
+	472396953	Modulator Time (Custom)				
+	576011354	Modulator Time (Custom)				
+	615420324	Modulator Time (Custom)				
+	698601411	Modulator Time (Custom)				
+	711467359	Modulator Time (Custom)				
+	932913547	Modulator Time (Custom)				
+	976365587	Modulator Time (Custom)				
+	999052303	Modulator Time (Custom)				
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	945803	WOOSH 01	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Time\Change Time\Time Switch\WOOSH 01\WOOSH 01	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
+	162601119	WOOSH 02	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Time\Change Time\Time Switch\WOOSH 02\WOOSH 02	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	16413053	Krotos UI Chime Single Hit Mono-002	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-002_6F85AE67.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\ChimeHit\Krotos UI Chime Single Hit Mono-002		97728
+	76148055	Explosives - Sweetners_07	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\Explosives - Sweetners_07_8E28CEC8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Shockwave Explode\Explosives - Sweetners_07		182336
+	117692380	MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Agnar\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02_530C1D51.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Agnar\Laser Charge\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02		163010
+	145121621	Sci-Fi, Shield, Power Deflect, Boom 02 SND7092 1	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\Sci-Fi, Shield, Power Deflect, Boom 02 SND7092 1_4CAC2B16.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Self-Explosion\Sci-Fi, Shield, Power Deflect, Boom 02 SND7092 1		103396
+	149479780	Krotos UI Chime Single Hit Mono-003	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-003_81B1A628.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\ChimeHit\Krotos UI Chime Single Hit Mono-003		97592
+	159248114	Tension - sizzle drips 1	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Tension - sizzle drips 1_396958C3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\Tension - sizzle drips 1		312016
+	179580837	Krotos UI Chime Texture Magic Bending Mono-003 1	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Krotos UI Chime Texture Magic Bending Mono-003 1_F7E666B0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\Krotos UI Chime Texture Magic Bending Mono-003 1		153308
+	293740931	Ethereal Whoosh-002 2	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Ethereal Whoosh-002 2_5B26AAE5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\Ethereal Whoosh-002 2		419688
+	385849276	Malfunction Glitch Rise BRSound-05	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_2EE0E28D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Shockwave Charge\Malfunction Glitch Rise BRSound-05		465692
+	417463762	Impact_Boom_Distorted_02	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\Impact_Boom_Distorted_02_D3B94565.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Shockwave Explode\Impact_Boom_Distorted_02		122976
+	443550412	Impact_Drum Hit_03	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\Impact_Drum Hit_03_DF350607.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Self-Explosion\Impact_Drum Hit_03		187456
+	445686762	Krotos UI Chime Single Hit Mono-001	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-001_EF2D6236.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\ChimeHit\Krotos UI Chime Single Hit Mono-001		102256
+	447711608	Malfunction Glitch Rise BRSound-05_01	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_1BB82539.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Shockwave Charge\Malfunction Glitch Rise BRSound-05_01		465692
+	534062515	Charged Laser by LegoLunatic Id-151243_01	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_961011CA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Agnar\Laser Shoot\Charged Laser by LegoLunatic Id-151243_01		199192
+	607903466	SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_E8D95FDA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Agnar\Laser Shoot\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1		77382
+	686824068	SW001_8-Bit-Games-017_Explosion	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\SW001_8-Bit-Games-017_Explosion_334E8BC5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Shockwave Explode\SW001_8-Bit-Games-017_Explosion		80934
+	701127015	SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_01	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_C5326A1F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Agnar\Laser Shoot\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_01		77382
+	735412867	Sci-fi, Weapon, Blaster, Laser, Boom, Zap 4 SND7287	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\Sci-fi, Weapon, Blaster, Laser, Boom, Zap 4 SND7287_BC98A7F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Self-Explosion\Sci-fi, Weapon, Blaster, Laser, Boom, Zap 4 SND7287		158784
+	750396246	Slowdown by DarkoZL Id-101118	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118_8129AD11.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Slow Time\Slowdown by DarkoZL Id-101118		768064
+	755604789	Slowdown by DarkoZL Id-101118 1	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118 1_1B89BFEE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Normal Time\Slowdown by DarkoZL Id-101118 1		243776
+	776430186	Thunder_Very-Close_Rain_08	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\Thunder_Very-Close_Rain_08_E65CF103.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Self-Explosion\Thunder_Very-Close_Rain_08		42562
+	817005111	SORCERY - CK - EFFECT Reverse Explosion 02	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\SORCERY - CK - EFFECT Reverse Explosion 02_1BE62455.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Shockwave Explode\SORCERY - CK - EFFECT Reverse Explosion 02		831552
+	818417696	Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065_43DC7D05.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065		444480
+	832383110	Impact_Boom_Distorted_01	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\Impact_Boom_Distorted_02_5A23B298.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Shockwave Explode\Impact_Boom_Distorted_01		122976
+	853849093	Cinematic_Riser-003	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\Cinematic_Riser-003_63A8520C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Shockwave Charge\Cinematic_Riser-003		231952
+	925299909	BROKEN - CK - EXPLOSION Boomy Crack	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\BROKEN - CK - EXPLOSION Boomy Crack_B3BE4414.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Self-Explosion\BROKEN - CK - EXPLOSION Boomy Crack		248896
+	1028182275	Charged Laser by LegoLunatic Id-151243	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_A932B75F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Agnar\Laser Shoot\Charged Laser by LegoLunatic Id-151243		151742
+

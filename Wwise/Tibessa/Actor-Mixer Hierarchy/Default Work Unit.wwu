@@ -2744,6 +2744,11 @@ Content provided by Vincent Gagnon
 								</BlendContainer>
 								<BlendContainer Name="Self-Explosion" ID="{5141A05F-D61C-42A6-8A8E-46A47D17FC8A}" ShortID="1030420422">
 									<PropertyList>
+										<Property Name="BypassEffect" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
 												<Value>5</Value>
@@ -2768,6 +2773,7 @@ Content provided by Vincent Gagnon
 											</ValueList>
 										</Property>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -2782,11 +2788,6 @@ Content provided by Vincent Gagnon
 											</ModifierList>
 										</Property>
 										<Property Name="RenderEffect0" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="RenderEffect1" Type="bool">
 											<ValueList>
 												<Value>True</Value>
 											</ValueList>
@@ -2806,7 +2807,7 @@ Content provided by Vincent Gagnon
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
 															<Property Name="Max" Type="Real64" Value="3"/>
-															<Property Name="Min" Type="Real64" Value="-3"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -2814,6 +2815,9 @@ Content provided by Vincent Gagnon
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Enemy_Ability_Att" ID="{BB1A6B0E-5898-49DD-963F-23B51A7CF66B}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
 										</Reference>
@@ -2823,6 +2827,7 @@ Content provided by Vincent Gagnon
 													<PropertyList>
 														<Property Name="DelayTime" Type="Real32" Value="0.22"/>
 														<Property Name="Feedback" Type="Real32" Value="16"/>
+														<Property Name="ProcessLFE" Type="bool" Value="False"/>
 														<Property Name="WetDryMix" Type="Real32" Value="20.5"/>
 													</PropertyList>
 												</Effect>
@@ -2832,10 +2837,10 @@ Content provided by Vincent Gagnon
 											<Custom>
 												<Effect Name="Wwise_Guitar_Distortion_(Custom)" ID="{BB046A64-BC9F-4013-88C2-AFE513FEC56F}" ShortID="936770133" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
 													<PropertyList>
-														<Property Name="DistortionDrive" Type="Real32" Value="55"/>
+														<Property Name="DistortionDrive" Type="Real32" Value="39"/>
 														<Property Name="DistortionType" Type="int32" Value="2"/>
 														<Property Name="Rectification" Type="Real32" Value="14"/>
-														<Property Name="WetDryMix" Type="Real32" Value="69"/>
+														<Property Name="WetDryMix" Type="Real32" Value="22"/>
 													</PropertyList>
 												</Effect>
 											</Custom>
@@ -2849,7 +2854,7 @@ Content provided by Vincent Gagnon
 											<PropertyList>
 												<Property Name="Highpass" Type="int16">
 													<ValueList>
-														<Value>54</Value>
+														<Value>42</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -2884,7 +2889,7 @@ Content provided by Vincent Gagnon
 											<PropertyList>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
-														<Value>6</Value>
+														<Value>7</Value>
 													</ValueList>
 												</Property>
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
@@ -2971,7 +2976,7 @@ Content provided by Vincent Gagnon
 											<PropertyList>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
-														<Value>57</Value>
+														<Value>34</Value>
 													</ValueList>
 												</Property>
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
