@@ -50,7 +50,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Present" ID="{556F24BA-6297-4232-8F45-E8F06020063B}"/>
-						<CurrentStateRef Name="Explore" ID="{71BEBC05-1BFE-4CAB-B4F6-9B22A4AC1B5C}"/>
+						<CurrentStateRef Name="Combat" ID="{00F90FE2-B726-4469-819A-14383CB04EC6}"/>
 						<CurrentStateRef Name="None" ID="{0A446AEF-F9FA-4436-873B-54845266B6B4}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>

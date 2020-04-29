@@ -201,7 +201,27 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="oxbaren_explosion" ID="{F3A520E4-3669-4574-9587-7CF54E469CBE}"/>
+						<Event Name="oxbaren_explosion" ID="{F3A520E4-3669-4574-9587-7CF54E469CBE}">
+							<ChildrenList>
+								<Action Name="" ID="{4EFC9B75-567A-40E0-A92F-206838D42C97}" ShortID="778049186">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Self-Explosion" ID="{5141A05F-D61C-42A6-8A8E-46A47D17FC8A}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{19234AD7-D10F-45B0-B60C-A4889D924747}" ShortID="119228094">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Self-Explosion" ID="{5141A05F-D61C-42A6-8A8E-46A47D17FC8A}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="agnar_laser_charge" ID="{B715FCAA-3EAD-4EA6-AD13-4EE6DDB9E5AB}">
 							<ChildrenList>
 								<Action Name="" ID="{E48E7296-F22B-41F5-B4D3-BE307CBFC099}" ShortID="989273161">

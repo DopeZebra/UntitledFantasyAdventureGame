@@ -245,20 +245,43 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1379722170" Name="oxbaren_explosion" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_explosion"/>
+				<Event Id="1379722170" Name="oxbaren_explosion" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_explosion">
+					<IncludedMemoryFiles>
+						<File Id="145121621" Language="SFX">
+							<ShortName>Character\Oxbaren\Sci-Fi, Shield, Power Deflect, Boom 02 SND7092 1.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Sci-Fi, Shield, Power Deflect, Boom 02 SND7092 1_E7F1A8BF.wem</Path>
+						</File>
+						<File Id="443550412" Language="SFX">
+							<ShortName>Character\Oxbaren\Impact_Drum Hit_03.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Impact_Drum Hit_03_FEDB6780.wem</Path>
+						</File>
+						<File Id="735412867" Language="SFX">
+							<ShortName>Character\Oxbaren\Sci-fi, Weapon, Blaster, Laser, Boom, Zap 4 SND7287.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Sci-fi, Weapon, Blaster, Laser, Boom, Zap 4 SND7287_50C96D29.wem</Path>
+						</File>
+						<File Id="776430186" Language="SFX">
+							<ShortName>Character\Oxbaren\Thunder_Very-Close_Rain_08.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\Thunder_Very-Close_Rain_08_1A5EBCB2.wem</Path>
+						</File>
+						<File Id="925299909" Language="SFX">
+							<ShortName>Character\Oxbaren\BROKEN - CK - EXPLOSION Boomy Crack.wav</ShortName>
+							<Path>SFX\Character\Oxbaren\BROKEN - CK - EXPLOSION Boomy Crack_5178D8C2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="864184553" Name="oxbaren_shockwave_charge" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_charge">
 					<IncludedMemoryFiles>
 						<File Id="385849276" Language="SFX">
 							<ShortName>Character\Oxbaren\Malfunction Glitch Rise BRSound-05.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_D03A02D2.wem</Path>
+							<Path>SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_2EE0E28D.wem</Path>
 						</File>
 						<File Id="447711608" Language="SFX">
 							<ShortName>Character\Oxbaren\Malfunction Glitch Rise BRSound-05.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_5A335702.wem</Path>
+							<Path>SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_1BB82539.wem</Path>
 						</File>
 						<File Id="853849093" Language="SFX">
 							<ShortName>Character\Oxbaren\Cinematic_Riser-003.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Cinematic_Riser-003_DC3900B9.wem</Path>
+							<Path>SFX\Character\Oxbaren\Cinematic_Riser-003_63A8520C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -266,11 +289,11 @@
 					<IncludedMemoryFiles>
 						<File Id="76148055" Language="SFX">
 							<ShortName>Character\Oxbaren\Explosives - Sweetners_07.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Explosives - Sweetners_07_7E3C9774.wem</Path>
+							<Path>SFX\Character\Oxbaren\Explosives - Sweetners_07_8E28CEC8.wem</Path>
 						</File>
 						<File Id="417463762" Language="SFX">
 							<ShortName>Character\Oxbaren\Impact_Boom_Distorted_02.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Impact_Boom_Distorted_02_C9899D53.wem</Path>
+							<Path>SFX\Character\Oxbaren\Impact_Boom_Distorted_02_D3B94565.wem</Path>
 						</File>
 						<File Id="534062515" Language="SFX">
 							<ShortName>Character\Agnar\Charged Laser by LegoLunatic Id-151243.wav</ShortName>
@@ -278,15 +301,15 @@
 						</File>
 						<File Id="686824068" Language="SFX">
 							<ShortName>Character\Oxbaren\SW001_8-Bit-Games-017_Explosion.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\SW001_8-Bit-Games-017_Explosion_6C14E37A.wem</Path>
+							<Path>SFX\Character\Oxbaren\SW001_8-Bit-Games-017_Explosion_334E8BC5.wem</Path>
 						</File>
 						<File Id="817005111" Language="SFX">
 							<ShortName>Character\Oxbaren\SORCERY - CK - EFFECT Reverse Explosion 02.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\SORCERY - CK - EFFECT Reverse Explosion 02_48DFF7B7.wem</Path>
+							<Path>SFX\Character\Oxbaren\SORCERY - CK - EFFECT Reverse Explosion 02_1BE62455.wem</Path>
 						</File>
 						<File Id="832383110" Language="SFX">
 							<ShortName>Character\Oxbaren\Impact_Boom_Distorted_02.wav</ShortName>
-							<Path>SFX\Character\Oxbaren\Impact_Boom_Distorted_02_EC2EE402.wem</Path>
+							<Path>SFX\Character\Oxbaren\Impact_Boom_Distorted_02_5A23B298.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

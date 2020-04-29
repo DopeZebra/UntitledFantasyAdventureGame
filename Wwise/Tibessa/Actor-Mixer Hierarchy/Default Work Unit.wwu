@@ -666,7 +666,7 @@ Content provided by Vincent Gagnon
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>-9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1180,6 +1180,11 @@ Content provided by Vincent Gagnon
 												<Value>True</Value>
 											</ValueList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1384,6 +1389,11 @@ Content provided by Vincent Gagnon
 												<Value>True</Value>
 											</ValueList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1514,7 +1524,7 @@ Content provided by Vincent Gagnon
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>2</Value>
+												<Value>-4</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -1658,6 +1668,9 @@ Content provided by Vincent Gagnon
 											</ValueList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{EB6F1054-DCC3-41E0-9232-7A236958DF61}">
@@ -1968,6 +1981,9 @@ Content provided by Vincent Gagnon
 											</ValueList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{E2DEC885-AF47-4AF5-BC7C-205FA5A78E5F}">
@@ -2283,6 +2299,9 @@ Content provided by Vincent Gagnon
 											</ValueList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{3049FED4-1D36-4B69-B68F-59687ACC0171}">
@@ -2719,6 +2738,322 @@ Content provided by Vincent Gagnon
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="Charged Laser by LegoLunatic Id-151243" ID="{C353E5C7-197B-4DE5-A3AA-C1F8BACF750B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
+								<BlendContainer Name="Self-Explosion" ID="{5141A05F-D61C-42A6-8A8E-46A47D17FC8A}" ShortID="1030420422">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{621A91A9-E5A1-4A92-A584-41D40A5CC532}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>25</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8DD1F682-AD37-4D43-A1BE-CE3DAF8EEBCD}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="300"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RenderEffect0" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RenderEffect1" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0261441A-5305-4B25-A145-F37BFA244095}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_Delay_(Custom)" ID="{1C805490-C1E1-459D-95DD-A4FB7DF9BCFB}" ShortID="950708049" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+													<PropertyList>
+														<Property Name="DelayTime" Type="Real32" Value="0.22"/>
+														<Property Name="Feedback" Type="Real32" Value="16"/>
+														<Property Name="WetDryMix" Type="Real32" Value="20.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect1">
+											<Custom>
+												<Effect Name="Wwise_Guitar_Distortion_(Custom)" ID="{BB046A64-BC9F-4013-88C2-AFE513FEC56F}" ShortID="936770133" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+													<PropertyList>
+														<Property Name="DistortionDrive" Type="Real32" Value="55"/>
+														<Property Name="DistortionType" Type="int32" Value="2"/>
+														<Property Name="Rectification" Type="Real32" Value="14"/>
+														<Property Name="WetDryMix" Type="Real32" Value="69"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Sci-fi, Weapon, Blaster, Laser, Boom, Zap 4 SND7287" ID="{727A7929-5C2F-4761-B7F2-F0D2051814B0}" ShortID="866947205">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>54</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Sci-fi, Weapon, Blaster, Laser, Boom, Zap 4 SND7287" ID="{DBFA1059-7A1E-4359-8F5C-53A666C43FAC}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0127730560578662"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.44555424954792"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.81972965641953"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Character\Oxbaren\Sci-fi, Weapon, Blaster, Laser, Boom, Zap 4 SND7287.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="735412867"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Sci-fi, Weapon, Blaster, Laser, Boom, Zap 4 SND7287" ID="{DBFA1059-7A1E-4359-8F5C-53A666C43FAC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Sci-Fi, Shield, Power Deflect, Boom 02 SND7092 1" ID="{8FB64250-1914-4166-A057-A8FC624F1A2D}" ShortID="369386803">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="RenderEffect0" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{AB836FE4-5C14-4413-BDB7-71CBDDC6BF73}" ShortID="181674204" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand2" Type="Real32" Value="1215"/>
+																<Property Name="GainBand2" Type="Real32" Value="-24"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Sci-Fi, Shield, Power Deflect, Boom 02 SND7092 1" ID="{2DC06FF7-30A0-4C51-BC88-41F874D385B1}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0168710443037975"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.543247626582278"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.07637262658228"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Character\Oxbaren\Sci-Fi, Shield, Power Deflect, Boom 02 SND7092 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="145121621"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Sci-Fi, Shield, Power Deflect, Boom 02 SND7092 1" ID="{2DC06FF7-30A0-4C51-BC88-41F874D385B1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Impact_Drum Hit_03" ID="{2AA91D88-BF57-48E0-A2C4-5427A2EF5E7D}" ShortID="866098878">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>46</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Impact_Drum Hit_03" ID="{63C16813-9251-4616-8EB5-020D77CB407C}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0150072521097046"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.960464135021097"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.118040282173"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Character\Oxbaren\Impact_Drum Hit_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="443550412"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Impact_Drum Hit_03" ID="{63C16813-9251-4616-8EB5-020D77CB407C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Thunder_Very-Close_Rain_08" ID="{50598446-CD04-4516-AAF2-8828FCA42241}" ShortID="717900269">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>57</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-1190</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RenderEffect0" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise_Compressor_(Custom)" ID="{4E6016E4-88B5-4DB4-9448-BE141AA2FFC5}" ShortID="84110469" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+															<PropertyList>
+																<Property Name="AttackTime" Type="Real32" Value="0.34"/>
+																<Property Name="OutputGain" Type="Real32" Value="15"/>
+																<Property Name="Ratio" Type="Real32" Value="12.1"/>
+																<Property Name="ReleaseTime" Type="Real32" Value="0.26"/>
+																<Property Name="Threshold" Type="Real32" Value="-36.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Thunder_Very-Close_Rain_08" ID="{8FD3E58E-FE0A-4285-8A46-818638CBFBEB}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.05085718053044"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.297052168098252"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0728182357594937"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.515506875376733"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Character\Oxbaren\Thunder_Very-Close_Rain_08.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="776430186"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Thunder_Very-Close_Rain_08" ID="{8FD3E58E-FE0A-4285-8A46-818638CBFBEB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BROKEN - CK - EXPLOSION Boomy Crack" ID="{997C1AD3-35B4-471F-8139-DDB966991E8E}" ShortID="149428245">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BROKEN - CK - EXPLOSION Boomy Crack" ID="{0F7F8F38-7DD7-4A73-A9D4-8941FC955F74}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.058679108273056"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.53869661693792"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.136917919303797"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.89077126657625"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Character\Oxbaren\BROKEN - CK - EXPLOSION Boomy Crack.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="925299909"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BROKEN - CK - EXPLOSION Boomy Crack" ID="{0F7F8F38-7DD7-4A73-A9D4-8941FC955F74}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
