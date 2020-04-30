@@ -917,6 +917,38 @@
 				</Event>
 				<Event Id="2118246937" Name="pillar_triangle_rotate_stop" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rotate_stop"/>
 				<Event Id="3565352627" Name="soul_charge" ObjectPath="\Events\Default Work Unit\Interaction\soul_charge"/>
+				<Event Id="3198794998" Name="tibessa_gauntlet_close" ObjectPath="\Events\Default Work Unit\Characters\tibessa_gauntlet_close">
+					<IncludedMemoryFiles>
+						<File Id="87791094" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03 1.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03 1_35D5BB72.wem</Path>
+						</File>
+						<File Id="727471767" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun_167B0698.wem</Path>
+						</File>
+						<File Id="743042691" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03 2.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03 2_8638814B.wem</Path>
+						</File>
+						<File Id="783325049" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun 2.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun 2_C6E69553.wem</Path>
+						</File>
+						<File Id="784595194" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03_B45C07D6.wem</Path>
+						</File>
+						<File Id="849923224" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun 1.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun 1_28462AC5.wem</Path>
+						</File>
+						<File Id="904790551" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\3006_Hammer-Mechanism_Erase_05.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\3006_Hammer-Mechanism_Erase_05_205ED5B0.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2314145186" Name="tibessa_gauntlet_open" ObjectPath="\Events\Default Work Unit\Characters\tibessa_gauntlet_open">
 					<IncludedMemoryFiles>
 						<File Id="87791094" Language="SFX">
@@ -957,8 +989,30 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1997688715" Name="tibessa_normalarrow_prepare" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normalarrow_prepare"/>
-				<Event Id="1175194179" Name="tibessa_normalarrow_shoot" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normalarrow_shoot"/>
+				<Event Id="1997688715" Name="tibessa_normalarrow_prepare" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normalarrow_prepare">
+					<IncludedMemoryFiles>
+						<File Id="611887373" Language="SFX">
+							<ShortName>Arrow Fletching.wav</ShortName>
+							<Path>SFX\Arrow Fletching_4ED2DBC0.wem</Path>
+						</File>
+						<File Id="1053696487" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\Weapons, Bow, Arrow, Load, Unload x 2 SND42775.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\Weapons, Bow, Arrow, Load, Unload x 2 SND42775_1FE88EE2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1175194179" Name="tibessa_normalarrow_shoot" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normalarrow_shoot">
+					<IncludedMemoryFiles>
+						<File Id="738926301" Language="SFX">
+							<ShortName>Scythian Recurve Arrow Passby.wav</ShortName>
+							<Path>SFX\Scythian Recurve Arrow Passby_B828CE17.wem</Path>
+						</File>
+						<File Id="1006350162" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\Design, Whoosh, Fast, Flying Item Pass By 03 SND40820.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\Design, Whoosh, Fast, Flying Item Pass By 03 SND40820_49AB7F41.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3312775127" Name="tibessa_respawn" ObjectPath="\Events\Default Work Unit\Characters\tibessa_respawn">
 					<IncludedMemoryFiles>
 						<File Id="16413053" Language="SFX">

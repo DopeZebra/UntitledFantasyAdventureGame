@@ -492,7 +492,7 @@
 						</Event>
 						<Event Name="tibessa_normalarrow_shoot" ID="{C08F5D14-4EB3-4A69-AD74-F353513C0B38}">
 							<ChildrenList>
-								<Action Name="" ID="{29C49418-C34E-4867-A865-19664287BD9A}" ShortID="345414053">
+								<Action Name="" ID="{850F3A1F-A432-4CD8-91B3-56DBD4AB1394}" ShortID="281450471">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Shoot" ID="{EFC5A3F7-C2B3-475E-9CBC-C75BB34D36ED}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>

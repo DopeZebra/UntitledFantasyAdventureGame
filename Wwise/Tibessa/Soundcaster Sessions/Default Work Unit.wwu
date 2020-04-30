@@ -117,7 +117,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Past" ID="{FA47C1D9-24C5-4BF9-91E2-87D35BB11814}"/>
+						<CurrentStateRef Name="None" ID="{E9B8CC3F-C41E-4931-B0C5-35FC52CE61BF}"/>
 						<CurrentStateRef Name="None" ID="{D40C4C9A-9821-4265-8C86-9856E21154E6}"/>
 						<CurrentStateRef Name="None" ID="{0A446AEF-F9FA-4436-873B-54845266B6B4}"/>
 					</CurrentStateList>

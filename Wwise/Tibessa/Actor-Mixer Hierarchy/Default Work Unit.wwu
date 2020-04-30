@@ -4203,14 +4203,217 @@ Content provided by Vincent Gagnon
 											</ReferenceList>
 											<ChildrenList>
 												<BlendContainer Name="Shoot" ID="{EFC5A3F7-C2B3-475E-9CBC-C75BB34D36ED}" ShortID="564569284">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>32</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>1210</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{FAE79D99-49A3-4D96-900D-FA9CF494E3E8}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="RenderEffect0" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{00E2FD3F-0F72-4A14-8204-C1C5DC55471E}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="3"/>
+																			<Property Name="Min" Type="Real64" Value="-3"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{2AFD6FB0-C906-4683-A377-FEEEF72967B0}">
+																<Effect Name="High_Impact_(Custom)" ID="{28B3A333-AC64-4BCC-8970-4E6A6AD9307E}" ShortID="61280283" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+																	<PropertyList>
+																		<Property Name="AttackTime" Type="Real32" Value="0.11"/>
+																		<Property Name="OutputGain" Type="Real32" Value="6.4"/>
+																		<Property Name="Ratio" Type="Real32" Value="12"/>
+																		<Property Name="ReleaseTime" Type="Real32" Value="0.394"/>
+																		<Property Name="Threshold" Type="Real32" Value="-25.3"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
 														</Reference>
 													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Design, Whoosh, Fast, Flying Item Pass By 03 SND40820" ID="{09A98DF7-073C-4A89-A25B-7411669C39ED}" ShortID="950054393">
+															<PropertyList>
+																<Property Name="Highpass" Type="int16">
+																	<ValueList>
+																		<Value>10</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Lowpass" Type="int16">
+																	<ValueList>
+																		<Value>33</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Design, Whoosh, Fast, Flying Item Pass By 03 SND40820" ID="{05E9AD6A-7E3F-42EA-BC61-DE34ADFC8729}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0627271097524155"/>
+																		<Property Name="FadeInShape" Type="int16" Value="8"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0924753963972364"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.109391847715082"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.28227199388587"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Tibessa\Weapons\Design, Whoosh, Fast, Flying Item Pass By 03 SND40820.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1006350162"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Design, Whoosh, Fast, Flying Item Pass By 03 SND40820" ID="{05E9AD6A-7E3F-42EA-BC61-DE34ADFC8729}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Scythian Recurve Heavy Arrow Approach" ID="{BF6B4482-2E3A-4430-89F5-0E35FFBCBA1B}" ShortID="530593642">
+															<PropertyList>
+																<Property Name="Inclusion" Type="bool">
+																	<ValueList>
+																		<Value>False</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Lowpass" Type="int16">
+																	<ValueList>
+																		<Value>28</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Pitch" Type="int32">
+																	<ValueList>
+																		<Value>-560</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Scythian Recurve Heavy Arrow Approach" ID="{8F5D2BBA-6567-43A1-B67F-4997B7B0F774}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0271675347222222"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.028348731884058"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.138495367225242"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.277286033740942"/>
+																		<Property Name="VolumeOffset" Type="Real64">
+																			<ValueList>
+																				<Value>12</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Scythian Recurve Heavy Arrow Approach.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="839579468"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Scythian Recurve Heavy Arrow Approach" ID="{8F5D2BBA-6567-43A1-B67F-4997B7B0F774}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Scythian Recurve Arrow Passby" ID="{66FC6C78-54D9-4069-BB2A-6845A722D98B}" ShortID="51457820">
+															<PropertyList>
+																<Property Name="Highpass" Type="int16">
+																	<ValueList>
+																		<Value>53</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>3</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Scythian Recurve Arrow Passby" ID="{162DC77E-F702-44B4-BD96-FA2522EF7910}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0294021739130435"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.232358846618358"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.300147192028986"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Scythian Recurve Arrow Passby.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="738926301"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Scythian Recurve Arrow Passby" ID="{162DC77E-F702-44B4-BD96-FA2522EF7910}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
 												</BlendContainer>
 												<BlendContainer Name="Prepare" ID="{B9DB82A5-C56B-4DA4-B3FB-4346FCA64085}" ShortID="764084022">
 													<PropertyList>
@@ -4229,6 +4432,94 @@ Content provided by Vincent Gagnon
 															<ObjectRef Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
 														</Reference>
 													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Weapons, Bow, Arrow, Load, Unload x 2 SND42775" ID="{7988517D-FCF1-4F46-9CA3-7734091C7DE0}" ShortID="963442668">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+																<Property Name="Highpass" Type="int16">
+																	<ValueList>
+																		<Value>40</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Lowpass" Type="int16">
+																	<ValueList>
+																		<Value>35</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Pitch" Type="int32">
+																	<ValueList>
+																		<Value>990</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Character_Att" ID="{51E40D0D-3145-4FC8-8E90-5A0BDE2A9731}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Weapons, Bow, Arrow, Load, Unload x 2 SND42775" ID="{B777B755-69A2-4D7D-932D-75EA144CE4EB}">
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Tibessa\Weapons\Weapons, Bow, Arrow, Load, Unload x 2 SND42775.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1053696487"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Weapons, Bow, Arrow, Load, Unload x 2 SND42775" ID="{B777B755-69A2-4D7D-932D-75EA144CE4EB}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Arrow Fletching" ID="{8376A6AB-4055-4CD2-8EA5-F66F58BD34CE}" ShortID="327780359">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+																<Property Name="Highpass" Type="int16">
+																	<ValueList>
+																		<Value>10</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Character_Att" ID="{51E40D0D-3145-4FC8-8E90-5A0BDE2A9731}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Arrow Fletching" ID="{3E020088-FC74-4BDC-9FFD-2BB82BDBD9D2}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0154253393665158"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.112384615384615"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.0802117647058824"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Arrow Fletching.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="611887373"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Arrow Fletching" ID="{3E020088-FC74-4BDC-9FFD-2BB82BDBD9D2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
 												</BlendContainer>
 											</ChildrenList>
 										</BlendContainer>
@@ -4333,7 +4624,7 @@ Content provided by Vincent Gagnon
 													<PropertyList>
 														<Property Name="InitialDelay" Type="Real64">
 															<ValueList>
-																<Value>0.51</Value>
+																<Value>0.5</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
