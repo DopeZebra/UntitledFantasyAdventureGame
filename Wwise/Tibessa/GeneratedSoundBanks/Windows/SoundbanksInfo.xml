@@ -917,14 +917,80 @@
 				</Event>
 				<Event Id="2118246937" Name="pillar_triangle_rotate_stop" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rotate_stop"/>
 				<Event Id="3565352627" Name="soul_charge" ObjectPath="\Events\Default Work Unit\Interaction\soul_charge"/>
+				<Event Id="3198794998" Name="tibessa_gauntlet_close" ObjectPath="\Events\Default Work Unit\Characters\tibessa_gauntlet_close">
+					<IncludedMemoryFiles>
+						<File Id="87791094" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03 1.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03 1_274E0498.wem</Path>
+						</File>
+						<File Id="727471767" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun_14C6DA6D.wem</Path>
+						</File>
+						<File Id="743042691" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03 2.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03 2_74B43C5F.wem</Path>
+						</File>
+						<File Id="783325049" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun 2.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun 2_64B1370B.wem</Path>
+						</File>
+						<File Id="784595194" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03_2F595AA6.wem</Path>
+						</File>
+						<File Id="849923224" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun 1.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun 1_01644F6F.wem</Path>
+						</File>
+						<File Id="904790551" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\3006_Hammer-Mechanism_Erase_05.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\3006_Hammer-Mechanism_Erase_05_550C2A58.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2314145186" Name="tibessa_gauntlet_open" ObjectPath="\Events\Default Work Unit\Characters\tibessa_gauntlet_open">
+					<IncludedMemoryFiles>
+						<File Id="87791094" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03 1.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03 1_274E0498.wem</Path>
+						</File>
+						<File Id="302836373" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\ Solar Sky - Door - SpaceShip Small_09.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\ Solar Sky - Door - SpaceShip Small_09_2F403751.wem</Path>
+						</File>
+						<File Id="727471767" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun_14C6DA6D.wem</Path>
+						</File>
+						<File Id="743042691" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03 2.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03 2_74B43C5F.wem</Path>
+						</File>
+						<File Id="783325049" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun 2.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun 2_64B1370B.wem</Path>
+						</File>
+						<File Id="784595194" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03_2F595AA6.wem</Path>
+						</File>
+						<File Id="849923224" Language="SFX">
+							<ShortName>Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun 1.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun 1_01644F6F.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="354526556" Name="tibessa_normal_time" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normal_time">
 					<IncludedMemoryFiles>
 						<File Id="755604789" Language="SFX">
 							<ShortName>Character\Tibessa\Slowdown by DarkoZL Id-101118 1.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118 1_B5EEBA2D.wem</Path>
+							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118 1_5F48342D.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1997688715" Name="tibessa_normalarrow_prepare" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normalarrow_prepare"/>
+				<Event Id="1175194179" Name="tibessa_normalarrow_shoot" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normalarrow_shoot"/>
 				<Event Id="3312775127" Name="tibessa_respawn" ObjectPath="\Events\Default Work Unit\Characters\tibessa_respawn">
 					<IncludedMemoryFiles>
 						<File Id="16413053" Language="SFX">
@@ -961,7 +1027,7 @@
 					<IncludedMemoryFiles>
 						<File Id="750396246" Language="SFX">
 							<ShortName>Character\Tibessa\Slowdown by DarkoZL Id-101118.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118_8EAC0F22.wem</Path>
+							<Path>SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118_31721FE6.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

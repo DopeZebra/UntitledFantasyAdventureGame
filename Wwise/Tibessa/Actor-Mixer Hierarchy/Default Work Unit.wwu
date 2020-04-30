@@ -3355,11 +3355,12 @@ Content provided by Vincent Gagnon
 					<ChildrenList>
 						<ActorMixer Name="Tibessa" ID="{C2F410B9-27AC-413F-B7EA-A7DC647ACBD5}" ShortID="280963185">
 							<PropertyList>
-								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Character_Att" ID="{51E40D0D-3145-4FC8-8E90-5A0BDE2A9731}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
 								</Reference>
@@ -3370,7 +3371,9 @@ Content provided by Vincent Gagnon
 							<ChildrenList>
 								<BlendContainer Name="Respawn" ID="{CB473686-BEE8-4D19-AB3A-360EAD355D47}" ShortID="892283657">
 									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="RenderEffect0" Type="bool">
 											<ValueList>
 												<Value>True</Value>
@@ -3383,7 +3386,7 @@ Content provided by Vincent Gagnon
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3780,6 +3783,7 @@ Content provided by Vincent Gagnon
 								</BlendContainer>
 								<BlendContainer Name="Slow Time" ID="{33DBED33-E015-4557-AB27-022E42418246}" ShortID="635360873">
 									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="Highpass" Type="int16">
 											<RTPCList>
 												<RTPC Name="" ID="{41161F61-FE17-4ADC-A1F2-50F7385B5203}" ShortID="841973760">
@@ -3856,6 +3860,7 @@ Content provided by Vincent Gagnon
 												<Value>1</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<RTPCList>
 												<RTPC Name="" ID="{DBF1301D-CD71-400A-9E7E-03199AF68602}" ShortID="823522287">
@@ -3936,9 +3941,9 @@ Content provided by Vincent Gagnon
 													<Custom CreatedFrom="{A98F423C-EC97-49D8-8698-445CE91F24B7}">
 														<Effect Name="Octave_Up_(Custom)" ID="{BC271871-67AD-4C78-A1EE-85BF780ACAB7}" ShortID="535980521" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
 															<PropertyList>
-																<Property Name="DryLevel" Type="Real32" Value="0"/>
+																<Property Name="DryLevel" Type="Real32" Value="-4"/>
 																<Property Name="Pitch" Type="Real32" Value="1200"/>
-																<Property Name="WetLevel" Type="Real32" Value="-9"/>
+																<Property Name="WetLevel" Type="Real32" Value="3"/>
 															</PropertyList>
 														</Effect>
 													</Custom>
@@ -3963,10 +3968,10 @@ Content provided by Vincent Gagnon
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.260717909489272"/>
 														<Property Name="FadeInShape" Type="int16" Value="2"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.534921228090058"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="2.17716336609911"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.242737364007253"/>
-														<Property Name="TrimEnd" Type="Real64" Value="4.17598168819885"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.16640660335722"/>
 														<Property Name="VolumeOffset" Type="Real64">
 															<ValueList>
 																<Value>6</Value>
@@ -4065,6 +4070,7 @@ Content provided by Vincent Gagnon
 												<Value>1</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<RTPCList>
 												<RTPC Name="" ID="{EB63441E-204B-49E0-8F71-07399214683E}" ShortID="1067582849">
@@ -4138,9 +4144,9 @@ Content provided by Vincent Gagnon
 													<Custom CreatedFrom="{A98F423C-EC97-49D8-8698-445CE91F24B7}">
 														<Effect Name="Octave_Up_(Custom)" ID="{E9DDBB6D-6603-4036-BD03-F589A21DFAC6}" ShortID="367401139" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
 															<PropertyList>
-																<Property Name="DryLevel" Type="Real32" Value="0"/>
+																<Property Name="DryLevel" Type="Real32" Value="-2"/>
 																<Property Name="Pitch" Type="Real32" Value="1200"/>
-																<Property Name="WetLevel" Type="Real32" Value="-6"/>
+																<Property Name="WetLevel" Type="Real32" Value="-4"/>
 															</PropertyList>
 														</Effect>
 													</Custom>
@@ -4176,6 +4182,672 @@ Content provided by Vincent Gagnon
 										</Sound>
 									</ChildrenList>
 								</BlendContainer>
+								<ActorMixer Name="Weapons" ID="{D2B22651-6203-45FE-8CC9-14849EE5155F}" ShortID="991836440">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="Normal Arrow" ID="{F4A40492-FE24-4F50-B30F-9159934013F8}" ShortID="122044287">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<BlendContainer Name="Shoot" ID="{EFC5A3F7-C2B3-475E-9CBC-C75BB34D36ED}" ShortID="564569284">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+												</BlendContainer>
+												<BlendContainer Name="Prepare" ID="{B9DB82A5-C56B-4DA4-B3FB-4346FCA64085}" ShortID="764084022">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Character_Att" ID="{51E40D0D-3145-4FC8-8E90-5A0BDE2A9731}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+												</BlendContainer>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="Open Gauntlet" ID="{2C22B48A-D363-4A2F-B7E2-5887664E08CE}" ShortID="169724790">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Mechanism - Source - Metallic Auto Gun" ID="{C9DD1FBE-3D53-4B28-A4B9-52144E6BEA28}" ShortID="356130077">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>0.4</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Character_Att" ID="{51E40D0D-3145-4FC8-8E90-5A0BDE2A9731}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mechanism - Source - Metallic Auto Gun" ID="{D4606D3C-76DE-48B5-B085-DF951CB8FE73}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.010953487933635"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.00585884238310708"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0361719834087481"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>-6</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="727471767"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mechanism - Source - Metallic Auto Gun" ID="{D4606D3C-76DE-48B5-B085-DF951CB8FE73}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mechanism - Source - Metallic Auto Gun 1" ID="{E7CCD788-F186-4F89-B733-5ECD6FDA2AB7}" ShortID="858653402">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mechanism - Source - Metallic Auto Gun 1" ID="{431008A3-AC9B-4AA5-B135-9781F43436C1}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0075677036199095"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0127842760180995"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.000881674208144795"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.07597092760181"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun 1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="849923224"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mechanism - Source - Metallic Auto Gun 1" ID="{431008A3-AC9B-4AA5-B135-9781F43436C1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mechanism - Source - Metallic Auto Gun 2" ID="{DD532CD3-28AE-4012-962E-6992C54B8C2F}" ShortID="880869334">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>0.51</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mechanism - Source - Metallic Auto Gun 2" ID="{724531FE-3883-4D40-9C84-0D5D1616B0B0}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00878153280542987"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0235970022624434"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0072191742081448"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun 2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="783325049"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mechanism - Source - Metallic Auto Gun 2" ID="{724531FE-3883-4D40-9C84-0D5D1616B0B0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="mechanism_move_bot_small_trasher_03" ID="{FC4E7216-6050-49AB-9FFE-E9F5B52128EE}" ShortID="369807002">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>0.45</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="mechanism_move_bot_small_trasher_03" ID="{F3C8FE8E-1F2E-468F-98FB-3A3A5D577F6D}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0147556561085973"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.097715233785822"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0668923076923077"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.352168325791855"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="784595194"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="mechanism_move_bot_small_trasher_03" ID="{F3C8FE8E-1F2E-468F-98FB-3A3A5D577F6D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Solar Sky - Door - SpaceShip Small_09" ID="{864EED77-C725-4C8D-86B1-C35A26F09A5D}" ShortID="313874780">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>0.3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Solar Sky - Door - SpaceShip Small_09" ID="{6B9F571C-CCF4-4CDC-933D-3A4B4F69FB3E}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0125059860482655"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.183533795248869"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Character\Tibessa\Weapons\ Solar Sky - Door - SpaceShip Small_09.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="302836373"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="3006_Hammer-Mechanism_Erase_05" ID="{AAB8543C-E87D-4137-9AAA-D0E32D830B6B}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Tibessa\Weapons\3006_Hammer-Mechanism_Erase_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="142280962"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Solar Sky - Door - SpaceShip Small_09" ID="{6B9F571C-CCF4-4CDC-933D-3A4B4F69FB3E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<RandomSequenceContainer Name="Mechanism" ID="{6577FC0E-781F-4795-B2C0-4EA62E5C57B6}" ShortID="297446719">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>0.2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="mechanism_move_bot_small_trasher_03 1" ID="{AE0FFD84-7721-41C7-A3D4-D0D1727FA0ED}" ShortID="81136115">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Character_Att" ID="{51E40D0D-3145-4FC8-8E90-5A0BDE2A9731}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="mechanism_move_bot_small_trasher_03 1" ID="{3DE99B5E-2DFE-418B-A169-38346EA64FC7}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0295427978883861"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.195404506033183"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03 1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="87791094"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="mechanism_move_bot_small_trasher_03 1" ID="{3DE99B5E-2DFE-418B-A169-38346EA64FC7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="mechanism_move_bot_small_trasher_03 2" ID="{6F32F02A-8B9B-476B-B1CC-03BD93E5615D}" ShortID="267285922">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Character_Att" ID="{51E40D0D-3145-4FC8-8E90-5A0BDE2A9731}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="mechanism_move_bot_small_trasher_03 2" ID="{C44691F2-7ACB-4F03-B573-7C05392D97A4}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0322149132730015"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.227148010935143"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.0239968231523379"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03 2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="743042691"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="mechanism_move_bot_small_trasher_03 2" ID="{C44691F2-7ACB-4F03-B573-7C05392D97A4}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="Close Gauntlet" ID="{A529D39A-C74F-45AC-BD1B-485296ACA75E}" ShortID="117251543">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Character_Att" ID="{51E40D0D-3145-4FC8-8E90-5A0BDE2A9731}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Mechanism - Source - Metallic Auto Gun" ID="{4E980673-540F-4356-BBB4-BB05F41AA951}" ShortID="333907476">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>0.2</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Character_Att" ID="{51E40D0D-3145-4FC8-8E90-5A0BDE2A9731}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mechanism - Source - Metallic Auto Gun" ID="{07C0C991-9EFD-4EA5-9044-FCDB81CA9D67}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.010953487933635"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.00585884238310708"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0361719834087481"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>-6</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="727471767"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mechanism - Source - Metallic Auto Gun" ID="{07C0C991-9EFD-4EA5-9044-FCDB81CA9D67}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mechanism - Source - Metallic Auto Gun 1" ID="{8DA291CE-FC6A-4A04-80F2-AC7FFD365D34}" ShortID="219316253">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>0.6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mechanism - Source - Metallic Auto Gun 1" ID="{B19E396C-8EFD-431F-BE6E-FAA97B02DA74}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0075677036199095"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0127842760180995"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.000881674208144795"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.07597092760181"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun 1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="849923224"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mechanism - Source - Metallic Auto Gun 1" ID="{B19E396C-8EFD-431F-BE6E-FAA97B02DA74}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mechanism - Source - Metallic Auto Gun 2" ID="{34618CBD-81DF-4DC6-8E14-3FFECE9E2F41}" ShortID="980233235">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>0.09</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mechanism - Source - Metallic Auto Gun 2" ID="{24EBB2E7-0F1F-45B5-A602-50025DC675B5}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00878153280542987"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0235970022624434"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0072191742081448"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Character\Tibessa\Weapons\Mechanism - Source - Metallic Auto Gun 2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="783325049"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mechanism - Source - Metallic Auto Gun 2" ID="{24EBB2E7-0F1F-45B5-A602-50025DC675B5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="mechanism_move_bot_small_trasher_03" ID="{B90FC078-7130-4D70-B4F1-639C7572371E}" ShortID="862720252">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>0.15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="mechanism_move_bot_small_trasher_03" ID="{786A0183-925F-4716-9BA6-BD54C500D43F}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0147556561085973"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.097715233785822"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0668923076923077"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.352168325791855"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="784595194"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="mechanism_move_bot_small_trasher_03" ID="{786A0183-925F-4716-9BA6-BD54C500D43F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<RandomSequenceContainer Name="Mechanism" ID="{2227C383-D97B-4BEB-8F68-204F00A43B62}" ShortID="274135470">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>0.4</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>560</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="mechanism_move_bot_small_trasher_03 1" ID="{3261E006-C962-4AB1-848A-B52FB6BC4E3F}" ShortID="31178059">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Character_Att" ID="{51E40D0D-3145-4FC8-8E90-5A0BDE2A9731}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="mechanism_move_bot_small_trasher_03 1" ID="{D075D64B-C197-4A34-9087-626D023D14A1}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0295427978883861"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.195404506033183"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03 1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="87791094"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="mechanism_move_bot_small_trasher_03 1" ID="{D075D64B-C197-4A34-9087-626D023D14A1}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="mechanism_move_bot_small_trasher_03 2" ID="{F0772107-118B-41AC-B1E3-F0D3D3B67B83}" ShortID="751999031">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Character_Att" ID="{51E40D0D-3145-4FC8-8E90-5A0BDE2A9731}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="mechanism_move_bot_small_trasher_03 2" ID="{4BDC108A-489F-458F-85F8-16D044661532}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0322149132730015"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.227148010935143"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.0239968231523379"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03 2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="743042691"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="mechanism_move_bot_small_trasher_03 2" ID="{4BDC108A-489F-458F-85F8-16D044661532}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<Sound Name="3006_Hammer-Mechanism_Erase_05" ID="{2DE9FDC4-766B-4F7D-AFE6-6BCEEB19D77E}" ShortID="432465950">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>0.3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="3006_Hammer-Mechanism_Erase_05" ID="{D3D0422F-24ED-4996-90A1-317A71476F47}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0340683823529412"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0954663461538461"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.392722341628959"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Character\Tibessa\Weapons\3006_Hammer-Mechanism_Erase_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="904790551"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="3006_Hammer-Mechanism_Erase_05" ID="{D3D0422F-24ED-4996-90A1-317A71476F47}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Agnar" ID="{760ABF43-BC26-496F-BBE4-4FF62CF2B380}" ShortID="653603872">
@@ -4202,6 +4874,7 @@ Content provided by Vincent Gagnon
 							<ChildrenList>
 								<BlendContainer Name="Laser Charge" ID="{DBF8D013-4C17-4267-AFE8-0281269FB45F}" ShortID="49262034">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 										<Property Name="Lowpass" Type="int16">
 											<ModifierList>
@@ -4340,6 +5013,7 @@ Content provided by Vincent Gagnon
 								</BlendContainer>
 								<BlendContainer Name="Laser Shoot" ID="{FBE48CD2-ADFD-4BB5-81C5-D8E7323D6B8D}" ShortID="370303744">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="Highpass" Type="int16">
 											<ModifierList>
 												<ModifierInfo>
@@ -4627,6 +5301,7 @@ Content provided by Vincent Gagnon
 							<ChildrenList>
 								<BlendContainer Name="Shockwave Charge" ID="{95D633B6-5D62-4F8B-8F23-EF9963285E57}" ShortID="999658187">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 										<Property Name="Lowpass" Type="int16">
 											<ModifierList>
@@ -4967,6 +5642,7 @@ Content provided by Vincent Gagnon
 								</BlendContainer>
 								<BlendContainer Name="Shockwave Explode" ID="{1C981865-7A76-46E9-8052-27A340F2708B}" ShortID="1045292364">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 										<Property Name="Lowpass" Type="int16">
 											<ModifierList>
@@ -5461,6 +6137,7 @@ Content provided by Vincent Gagnon
 								</BlendContainer>
 								<BlendContainer Name="Self-Explosion" ID="{5141A05F-D61C-42A6-8A8E-46A47D17FC8A}" ShortID="1030420422">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="BypassEffect" Type="bool">
 											<ValueList>
 												<Value>True</Value>

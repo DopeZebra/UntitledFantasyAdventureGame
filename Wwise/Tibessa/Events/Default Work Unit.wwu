@@ -490,6 +490,72 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="tibessa_normalarrow_shoot" ID="{C08F5D14-4EB3-4A69-AD74-F353513C0B38}">
+							<ChildrenList>
+								<Action Name="" ID="{29C49418-C34E-4867-A865-19664287BD9A}" ShortID="345414053">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shoot" ID="{EFC5A3F7-C2B3-475E-9CBC-C75BB34D36ED}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="tibessa_normalarrow_prepare" ID="{6140374B-F3BA-4CFA-8858-18B4899BE270}">
+							<ChildrenList>
+								<Action Name="" ID="{15832AB6-1958-49EA-B9C0-A0853B917CFF}" ShortID="99299117">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Prepare" ID="{B9DB82A5-C56B-4DA4-B3FB-4346FCA64085}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="tibessa_gauntlet_open" ID="{8D9C29FB-B7BE-4811-831B-55F47F8DE614}">
+							<ChildrenList>
+								<Action Name="" ID="{4F71ADFF-1DC4-4EE5-8FE8-7073E8A5FC85}" ShortID="578217861">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.01"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Close Gauntlet" ID="{A529D39A-C74F-45AC-BD1B-485296ACA75E}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{412BCC65-A2C0-41DD-8499-7C27EFAFAABE}" ShortID="120124228">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Open Gauntlet" ID="{2C22B48A-D363-4A2F-B7E2-5887664E08CE}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="tibessa_gauntlet_close" ID="{2DC9E38E-682B-4710-B021-698055BBC3A7}">
+							<ChildrenList>
+								<Action Name="" ID="{52BB3962-8683-4EB9-A154-D28DCCBFE020}" ShortID="953942889">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.01"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Open Gauntlet" ID="{2C22B48A-D363-4A2F-B7E2-5887664E08CE}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E52BCAF4-C9DD-4DBD-9DEB-F5972B2BBDC8}" ShortID="163867584">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Close Gauntlet" ID="{A529D39A-C74F-45AC-BD1B-485296ACA75E}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
