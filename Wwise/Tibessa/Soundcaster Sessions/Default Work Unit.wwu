@@ -18,6 +18,10 @@
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Self-Explosion" ID="{5141A05F-D61C-42A6-8A8E-46A47D17FC8A}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="oxbaren_shockwave_explode" ID="{E908A70F-1D06-4AE3-B8C5-B6D7F2BBD282}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}"/>
 							<Position X="2" Y="1"/>
 						</Module>
@@ -50,7 +54,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Present" ID="{556F24BA-6297-4232-8F45-E8F06020063B}"/>
-						<CurrentStateRef Name="Explore" ID="{71BEBC05-1BFE-4CAB-B4F6-9B22A4AC1B5C}"/>
+						<CurrentStateRef Name="Combat" ID="{00F90FE2-B726-4469-819A-14383CB04EC6}"/>
 						<CurrentStateRef Name="None" ID="{0A446AEF-F9FA-4436-873B-54845266B6B4}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>

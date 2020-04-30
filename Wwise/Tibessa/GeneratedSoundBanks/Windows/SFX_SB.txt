@@ -1,0 +1,124 @@
+Event	ID	Name			Wwise Object Path	Notes
+	243348140	pillar_rotate_start			\Default Work Unit\Interaction\pillar_rotate_start	
+	354526556	tibessa_normal_time			\Default Work Unit\Characters\tibessa_normal_time	
+	629306210	pillar_retract_stop			\Default Work Unit\Interaction\pillar_retract_stop	
+	853237068	lever_retract_start			\Default Work Unit\Interaction\lever_retract_start	
+	864184553	oxbaren_shockwave_charge			\Default Work Unit\Characters\oxbaren_shockwave_charge	
+	866567142	tibessa_slow_time			\Default Work Unit\Characters\tibessa_slow_time	
+	1189214292	pillar_triangle_rise			\Default Work Unit\Interaction\pillar_triangle_rise	
+	1268222929	time_crystal_nearby			\Default Work Unit\Interaction\time_crystal_nearby	
+	1379722170	oxbaren_explosion			\Default Work Unit\Characters\oxbaren_explosion	
+	1739864800	lever_retract_stop			\Default Work Unit\Interaction\lever_retract_stop	
+	2086680074	pillar_retract_start			\Default Work Unit\Interaction\pillar_retract_start	
+	2118246937	pillar_triangle_rotate_stop			\Default Work Unit\Interaction\pillar_triangle_rotate_stop	
+	2657532751	lever_use			\Default Work Unit\Interaction\lever_use	
+	2667003859	agnar_laser_charge			\Default Work Unit\Characters\agnar_laser_charge	
+	3210416832	pillar_rotate_stop			\Default Work Unit\Interaction\pillar_rotate_stop	
+	3312775127	tibessa_respawn			\Default Work Unit\Characters\tibessa_respawn	
+	3565352627	soul_charge			\Default Work Unit\Interaction\soul_charge	
+	3570432955	pillar_triangle_rotate_start			\Default Work Unit\Interaction\pillar_triangle_rotate_start	
+	3940617192	agnar_laser_shoot			\Default Work Unit\Characters\agnar_laser_shoot	
+	4057998772	oxbaren_shockwave_explode			\Default Work Unit\Characters\oxbaren_shockwave_explode	
+	4130026045	time_change			\Default Work Unit\Interaction\time_change	
+	4217865490	pillar_triangle_lower			\Default Work Unit\Interaction\pillar_triangle_lower	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2654366170	Time			\Default Work Unit\Time	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Time			
+	1627031569	Past	Time			
+	3524519058	Present	Time			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	129	MIDI note velocity			\MIDI note velocity	
+
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	891982363	Modulator LFO (Custom)				
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	260102189	Modulator Envelope (Custom)				
+	278598906	Modulator Envelope (Custom)				
+	506695838	Modulator Envelope (Custom)				
+	626577432	Modulator Envelope (Custom)				
+	884484006	Modulator Envelope (Custom)				
+	886929073	Modulator Envelope (Custom)				
+	913743021	Modulator Envelope (Custom)				
+	1063819344	Modulator Envelope (Custom)				
+
+Modulator Time	ID	Name			Wwise Object Path	Notes
+	24374720	Modulator Time (Custom)				
+	27241930	Modulator Time (Custom)				
+	422699685	Modulator Time (Custom)				
+	472396953	Modulator Time (Custom)				
+	576011354	Modulator Time (Custom)				
+	615420324	Modulator Time (Custom)				
+	698601411	Modulator Time (Custom)				
+	711467359	Modulator Time (Custom)				
+	932913547	Modulator Time (Custom)				
+	976365587	Modulator Time (Custom)				
+	999052303	Modulator Time (Custom)				
+
+Effect plug-ins	ID	Name	Type				Notes
+	936770133	Wwise_Guitar_Distortion_(Custom)	Wwise Guitar Distortion			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	945803	WOOSH 01	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Time\Change Time\Time Switch\WOOSH 01\WOOSH 01	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
+	162601119	WOOSH 02	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Time\Change Time\Time Switch\WOOSH 02\WOOSH 02	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	16413053	Krotos UI Chime Single Hit Mono-002	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-002_663F4B20.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\ChimeHit\Krotos UI Chime Single Hit Mono-002		8921
+	76148055	Explosives - Sweetners_07	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\Explosives - Sweetners_07_18D898E7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Shockwave Explode\Explosives - Sweetners_07		18592
+	117692380	MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Agnar\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02_1F97EB32.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Agnar\Laser Charge\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02		17593
+	128447381	Rocks, Movement, Heavy, Short, Crunchy SND42689_01	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_86809A36.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Debris\Rocks, Movement, Heavy, Short, Crunchy SND42689_01		86597
+	145121621	Sci-Fi, Shield, Power Deflect, Boom 02 SND7092 1	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\Sci-Fi, Shield, Power Deflect, Boom 02 SND7092 1_392F44F8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Self-Explosion\Sci-Fi, Shield, Power Deflect, Boom 02 SND7092 1		12248
+	149479780	Krotos UI Chime Single Hit Mono-003	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-003_E245E243.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\ChimeHit\Krotos UI Chime Single Hit Mono-003		8193
+	159248114	Tension - sizzle drips 1	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Tension - sizzle drips 1_3B0B2760.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\Tension - sizzle drips 1		33251
+	160430172	Rocks, Movement, Heavy, Short, Crunchy SND42689_05	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_D0724BE0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Debris\Rocks, Movement, Heavy, Short, Crunchy SND42689_05		48527
+	170866480	Rock, Large, Movement 5 SND18128 1	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rock, Large, Movement 5 SND18128 1_F40624CD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Pillar Rotate\Rotate\Rock, Large, Movement 5 SND18128 1		14811
+	179580837	Krotos UI Chime Texture Magic Bending Mono-003 1	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Krotos UI Chime Texture Magic Bending Mono-003 1_B738D0FF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\Krotos UI Chime Texture Magic Bending Mono-003 1		19488
+	221966594	Rock, Large, Movement 5 SND18128 3	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rock, Large, Movement 5 SND18128 3_89163DED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Pillar Lever\Rock, Large, Movement 5 SND18128 3		13565
+	231383597	Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246_C885D6EE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Debris\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246		38823
+	282707408	Rock, Large, Movement 6 SND18127_02	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rock, Large, Movement 6 SND18127_178147EC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Pillar Rotate\Rotate\Rock, Large, Movement 6 SND18127_02		14658
+	284953803	Rock, Large, Movement 5 SND18128 2	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rock, Large, Movement 5 SND18128 2_4171FA35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Pillar Lever\Rock, Large, Movement 5 SND18128 2		8822
+	293740931	Ethereal Whoosh-002 2	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Ethereal Whoosh-002 2_F94E72D2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\Ethereal Whoosh-002 2		30692
+	304007232	Rocks, Movement, Heavy, Short, Crunchy SND42689_02	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_3D891CB6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Debris\Rocks, Movement, Heavy, Short, Crunchy SND42689_02		77474
+	331814902	Rocks, Movement, Heavy, Short, Crunchy SND42689_08	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_962EA1EC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Debris\Rocks, Movement, Heavy, Short, Crunchy SND42689_08		80560
+	364374817	Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124_01	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124_7A923566.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Debris\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124_01		28048
+	367984107	Rocks, Stones, Pebbles, Wet, Movement 1 SND20560	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rocks, Stones, Pebbles, Wet, Movement 1 SND20560_C2FED4CE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Pillar Rotate\Rocks, Stones, Pebbles, Wet, Movement 1 SND20560		46007
+	385849276	Malfunction Glitch Rise BRSound-05	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_AE788372.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Shockwave Charge\Malfunction Glitch Rise BRSound-05		43061
+	417463762	Impact_Boom_Distorted_02	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\Impact_Boom_Distorted_02_D1CA316A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Shockwave Explode\Impact_Boom_Distorted_02		14105
+	418762862	Rocks, Movement, Heavy, Short, Crunchy SND42689_04	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_7079C2A4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Debris\Rocks, Movement, Heavy, Short, Crunchy SND42689_04		68306
+	431051856	Rocks, Movement, Heavy, Short, Crunchy SND42689_10	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_C8F2FF66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Debris\Rocks, Movement, Heavy, Short, Crunchy SND42689_10		50243
+	433168068	Terracotta, Roof, Tile, Movement On Top Of Other 1 SND19458	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Terracotta, Roof, Tile, Movement On Top Of Other 1 SND19458_8F7DA808.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Pillar Lever\Terracotta, Roof, Tile, Movement On Top Of Other 1 SND19458		6665
+	443550412	Impact_Drum Hit_03	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\Impact_Drum Hit_03_A028E9DA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Self-Explosion\Impact_Drum Hit_03		10394
+	445686762	Krotos UI Chime Single Hit Mono-001	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Krotos UI Chime Single Hit Mono-001_C3B996B1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\ChimeHit\Krotos UI Chime Single Hit Mono-001		8462
+	447711608	Malfunction Glitch Rise BRSound-05_01	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\Malfunction Glitch Rise BRSound-05_364D4E62.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Shockwave Charge\Malfunction Glitch Rise BRSound-05_01		40192
+	498919310	Rocks, Movement, Heavy, Short, Crunchy SND42689_07	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_A7FA8AC8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Debris\Rocks, Movement, Heavy, Short, Crunchy SND42689_07		64002
+	527719636	Rocks, Movement, Heavy, Short, Crunchy SND42689_12	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_09E9EB40.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Debris\Rocks, Movement, Heavy, Short, Crunchy SND42689_12		45058
+	534062515	Charged Laser by LegoLunatic Id-151243_01	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_5E50DE59.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Shockwave Explode\Charged Laser by LegoLunatic Id-151243_01		21758
+	607903466	SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_3981DD91.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Agnar\Laser Shoot\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1		8211
+	680600256	Rocks, Movement, Heavy, Short, Crunchy SND42689_11	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_8E41CAA6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Debris\Rocks, Movement, Heavy, Short, Crunchy SND42689_11		58824
+	686824068	SW001_8-Bit-Games-017_Explosion	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\SW001_8-Bit-Games-017_Explosion_37BE6D1A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Shockwave Explode\SW001_8-Bit-Games-017_Explosion		10330
+	701127015	SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_01	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Agnar\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_8BA9F690.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Agnar\Laser Shoot\SORCERY - DESIGNED - MAGIC ELECTRIC Cast Large 1_01		8316
+	705550403	Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124_66D5D741.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Debris\Rock, Large, Roll, Move, Beach, Rockpool 2 SND18124		31876
+	710773299	Rocks, Movement, Heavy, Short, Crunchy SND42689_09	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_2D4EFCAA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Debris\Rocks, Movement, Heavy, Short, Crunchy SND42689_09		57228
+	720176364	Rock, Large, Movement 5 SND18128 1_01	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rock, Large, Movement 5 SND18128 1_5E3DE93F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Pillar Rotate\Rotate\Rock, Large, Movement 5 SND18128 1_01		18161
+	735412867	Sci-fi, Weapon, Blaster, Laser, Boom, Zap 4 SND7287	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\Sci-fi, Weapon, Blaster, Laser, Boom, Zap 4 SND7287_2054D5F7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Self-Explosion\Sci-fi, Weapon, Blaster, Laser, Boom, Zap 4 SND7287		8360
+	750396246	Slowdown by DarkoZL Id-101118	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118_8EAC0F22.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Slow Time\Slowdown by DarkoZL Id-101118		45434
+	755604789	Slowdown by DarkoZL Id-101118 1	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Slowdown by DarkoZL Id-101118 1_B5EEBA2D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Normal Time\Slowdown by DarkoZL Id-101118 1		15352
+	776102589	Rocks, Movement, Heavy, Short, Crunchy SND42689_13	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_51C1B280.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Debris\Rocks, Movement, Heavy, Short, Crunchy SND42689_13		54773
+	776430186	Thunder_Very-Close_Rain_08	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\Thunder_Very-Close_Rain_08_0B598045.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Self-Explosion\Thunder_Very-Close_Rain_08		3722
+	780847929	Rock, Large, Movement 6 SND18127	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rock, Large, Movement 6 SND18127_63532E30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Pillar Rotate\Rotate\Rock, Large, Movement 6 SND18127		16763
+	815528195	Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246_01	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246_89C4E888.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Debris\Rocks, Stones, Small, Debris, Rubble, Movement 6 SND18246_01		37808
+	817005111	SORCERY - CK - EFFECT Reverse Explosion 02	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\SORCERY - CK - EFFECT Reverse Explosion 02_DB7A0C62.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Shockwave Explode\SORCERY - CK - EFFECT Reverse Explosion 02		66458
+	818417696	Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065_8A58AAC2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Tibessa\Respawn\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065		38934
+	832383110	Impact_Boom_Distorted_01	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\Impact_Boom_Distorted_02_CA571177.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Shockwave Explode\Impact_Boom_Distorted_01		14105
+	853849093	Cinematic_Riser-003	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\Cinematic_Riser-003_0754675B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Shockwave Charge\Cinematic_Riser-003		23919
+	925299909	BROKEN - CK - EXPLOSION Boomy Crack	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Oxbaren\BROKEN - CK - EXPLOSION Boomy Crack_3101DDC4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oxbaren\Self-Explosion\BROKEN - CK - EXPLOSION Boomy Crack		15943
+	929123293	Rocks, Movement, Heavy, Short, Crunchy SND42689_06	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_6E26FB97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Debris\Rocks, Movement, Heavy, Short, Crunchy SND42689_06		47104
+	1007448769	Rock, Large, Movement 6 SND18127_01	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rock, Large, Movement 6 SND18127_59C6DE9B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Pillar Rotate\Rotate\Rock, Large, Movement 6 SND18127_01		15187
+	1018015412	Rocks, Movement, Heavy, Short, Crunchy SND42689	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_0467D01A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Debris\Rocks, Movement, Heavy, Short, Crunchy SND42689		70822
+	1028182275	Charged Laser by LegoLunatic Id-151243	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Character\Agnar\Charged Laser by LegoLunatic Id-151243_9B5D6060.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Agnar\Laser Shoot\Charged Laser by LegoLunatic Id-151243		16836
+	1071533740	Rocks, Movement, Heavy, Short, Crunchy SND42689_03	F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\.cache\Windows\SFX\Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689_5BA62E0D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Pillar Puzzle\Outer Pillar\Debris\Rocks, Movement, Heavy, Short, Crunchy SND42689_03		91756
+
