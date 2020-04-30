@@ -63,6 +63,13 @@
 						</Event>
 						<Event Name="pillar_retract_start" ID="{8A601E27-F3B5-479F-8360-C27A13C92929}">
 							<ChildrenList>
+								<Action Name="" ID="{F5F704E2-43E4-43FB-8D7A-33076816E9BF}" ShortID="364358320">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pillar Retract" ID="{8D7E1E48-4CD2-4BE9-B6F0-F074FFEC6198}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{A573E5D4-A0A2-46EE-AA21-72CAF9B48BC0}" ShortID="1031960200">
 									<ReferenceList>
 										<Reference Name="Target">
@@ -77,7 +84,7 @@
 								<Action Name="" ID="{5DBFB42F-EDCE-4920-983B-33D5C7CF71DB}" ShortID="167582061">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Pillar Lever" ID="{65F23348-28DA-4233-83F6-79578C51AA93}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+											<ObjectRef Name="Lever Use" ID="{EE5ACB16-8D20-492F-8AC8-F14A9E6C8968}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -102,7 +109,24 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="lever_retract_start" ID="{E32CBBA3-A5A6-4086-B2CA-790B97D7E00C}"/>
+						<Event Name="lever_retract_start" ID="{E32CBBA3-A5A6-4086-B2CA-790B97D7E00C}">
+							<ChildrenList>
+								<Action Name="" ID="{D1B36694-AFBD-4F5C-820F-2510401BA3CF}" ShortID="383385343">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Lever Retract" ID="{CFE20584-D907-492A-87CF-3868AF9AD8F5}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4E143BCA-0CEE-43E8-B81D-06312BDAB5EB}" ShortID="687402127">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Debris" ID="{2A32DDBE-241C-4490-A06A-7CD8B876981F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="pillar_triangle_rotate_start" ID="{70F6600C-5D10-4461-AE8D-9DE87D18495A}">
 							<ChildrenList>
 								<Action Name="" ID="{7E6861C5-D744-4483-86B0-8391A9E7A5F4}" ShortID="836514139">
@@ -185,9 +209,59 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{6C658C4F-8E5B-4EF8-A1B9-7081E94FAD9E}" ShortID="417526067">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pillar Retract" ID="{8D7E1E48-4CD2-4BE9-B6F0-F074FFEC6198}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0E00BCE5-6522-4B9E-9C3C-1F7EEB81BC51}" ShortID="131736568">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pillar Retract Stop" ID="{6291DAEA-E42C-4229-9ACF-67956B69B42A}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="lever_retract_stop" ID="{1A17BEEC-9005-47F2-9052-B225A5F64366}"/>
+						<Event Name="lever_retract_stop" ID="{1A17BEEC-9005-47F2-9052-B225A5F64366}">
+							<ChildrenList>
+								<Action Name="" ID="{AFE465D4-7B31-4B0E-8720-8441914E6E1C}" ShortID="65182933">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Debris" ID="{2A32DDBE-241C-4490-A06A-7CD8B876981F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AAA8FF4D-5072-468D-9018-9FC153F34B6C}" ShortID="776166235">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Lever Retract" ID="{CFE20584-D907-492A-87CF-3868AF9AD8F5}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EC7E2557-ABB0-423B-AAD8-B1C0B8F1F599}" ShortID="899204510">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Lever Retract Stop" ID="{AD7ED942-DAAE-489C-AFDF-2AED2085950C}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="pillar_triangle_rotate_stop" ID="{E2E1EF84-A3DB-41CE-A1DC-79519DE2FCC6}">
 							<ChildrenList>
 								<Action Name="" ID="{8C5B10D6-D814-45CC-82B2-3E32AEE2EA85}" ShortID="95842427">
@@ -411,6 +485,72 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="None" ID="{0A446AEF-F9FA-4436-873B-54845266B6B4}" WorkUnitID="{6DC7A827-3638-4F84-B2DD-74F4E5C7DAF7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="tibessa_normalarrow_shoot" ID="{C08F5D14-4EB3-4A69-AD74-F353513C0B38}">
+							<ChildrenList>
+								<Action Name="" ID="{850F3A1F-A432-4CD8-91B3-56DBD4AB1394}" ShortID="281450471">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shoot" ID="{EFC5A3F7-C2B3-475E-9CBC-C75BB34D36ED}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="tibessa_normalarrow_prepare" ID="{6140374B-F3BA-4CFA-8858-18B4899BE270}">
+							<ChildrenList>
+								<Action Name="" ID="{15832AB6-1958-49EA-B9C0-A0853B917CFF}" ShortID="99299117">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Prepare" ID="{B9DB82A5-C56B-4DA4-B3FB-4346FCA64085}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="tibessa_gauntlet_open" ID="{8D9C29FB-B7BE-4811-831B-55F47F8DE614}">
+							<ChildrenList>
+								<Action Name="" ID="{4F71ADFF-1DC4-4EE5-8FE8-7073E8A5FC85}" ShortID="578217861">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.01"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Close Gauntlet" ID="{A529D39A-C74F-45AC-BD1B-485296ACA75E}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{412BCC65-A2C0-41DD-8499-7C27EFAFAABE}" ShortID="120124228">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Open Gauntlet" ID="{2C22B48A-D363-4A2F-B7E2-5887664E08CE}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="tibessa_gauntlet_close" ID="{2DC9E38E-682B-4710-B021-698055BBC3A7}">
+							<ChildrenList>
+								<Action Name="" ID="{52BB3962-8683-4EB9-A154-D28DCCBFE020}" ShortID="953942889">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.01"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Open Gauntlet" ID="{2C22B48A-D363-4A2F-B7E2-5887664E08CE}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E52BCAF4-C9DD-4DBD-9DEB-F5972B2BBDC8}" ShortID="163867584">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Close Gauntlet" ID="{A529D39A-C74F-45AC-BD1B-485296ACA75E}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
