@@ -32,6 +32,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3161908922	Main			\Default Work Unit\Master Audio Bus\Music\Main	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+	4154630777	Enemy Abilities			\Default Work Unit\Master Audio Bus\SFX\Characters\Enemies\Enemy Abilities	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	894231404	MediumReverb			\Default Work Unit\Master Audio Bus\Reverbs\MediumReverb	
