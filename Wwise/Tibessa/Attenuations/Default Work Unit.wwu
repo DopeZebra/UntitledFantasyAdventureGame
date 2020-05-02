@@ -109,6 +109,11 @@
 				</Attenuation>
 				<Attenuation Name="Character_Att" ID="{51E40D0D-3145-4FC8-8E90-5A0BDE2A9731}" ShortID="169325393">
 					<PropertyList>
+						<Property Name="ConeUse" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 						<Property Name="RadiusMax" Type="Real64" Value="1000"/>
 					</PropertyList>
 					<CurveUsageInfoList>
