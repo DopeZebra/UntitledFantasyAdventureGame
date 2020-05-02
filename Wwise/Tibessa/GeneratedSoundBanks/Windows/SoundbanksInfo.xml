@@ -983,45 +983,93 @@
 				</Event>
 				<Event Id="1233654109" Name="tibessa_lm_footstep" ObjectPath="\Events\Default Work Unit\Characters\tibessa_lm_footstep">
 					<IncludedMemoryFiles>
+						<File Id="6882735" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_01.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_01_B7D19635.wem</Path>
+						</File>
 						<File Id="14333850" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_02.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_02_BDF2EE95.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_02_643592A2.wem</Path>
 						</File>
 						<File Id="46982176" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_01.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_01_6022D5AB.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_01_51A50953.wem</Path>
+						</File>
+						<File Id="111738305" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_05.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_05_930D37E0.wem</Path>
 						</File>
 						<File Id="122353339" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_04.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_04_6EC04ACC.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_04_23A5A77F.wem</Path>
 						</File>
 						<File Id="187644740" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_05.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_05_87DA7B11.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_05_96769D2F.wem</Path>
 						</File>
 						<File Id="281263368" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_03.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_03_E080E844.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_03_42F8A56E.wem</Path>
 						</File>
 						<File Id="401713445" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_06.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_06_D2B65191.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_06_5D3E3C69.wem</Path>
 						</File>
 						<File Id="402274453" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_07.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_07_E971C2CD.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_07_179CBE96.wem</Path>
+						</File>
+						<File Id="429755549" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_07.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_07_877CF2B0.wem</Path>
 						</File>
 						<File Id="455007472" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_08.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_08_6B41EC1E.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_08_D97D55BD.wem</Path>
+						</File>
+						<File Id="548636039" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_01.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_01_75ACB949.wem</Path>
+						</File>
+						<File Id="591638087" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_06.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_06_AC7B20D5.wem</Path>
+						</File>
+						<File Id="707946392" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_04.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_04_B914044A.wem</Path>
+						</File>
+						<File Id="768307776" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_02.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_02_F341E79E.wem</Path>
+						</File>
+						<File Id="794286142" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_08.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_08_D7FB7EE7.wem</Path>
+						</File>
+						<File Id="826703378" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_03.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_03_DE04D2D5.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{867A3C4E-0272-47F9-9F02-18F58EF2DF18}">
 							<Children>
+								<SwitchContainer SwitchValue="{F45C2A6A-1144-419A-BC88-EBBF39F1C624}">
+									<Media>
+										<File Id="281263368"/>
+										<File Id="46982176"/>
+										<File Id="122353339"/>
+										<File Id="187644740"/>
+										<File Id="455007472"/>
+										<File Id="401713445"/>
+										<File Id="14333850"/>
+										<File Id="402274453"/>
+									</Media>
+								</SwitchContainer>
 								<SwitchContainer SwitchValue="{055950D3-257F-419A-833A-60F1C1855D4D}">
 									<Media>
-										<File Id="46982176"/>
+										<File Id="548636039"/>
 										<File Id="14333850"/>
 										<File Id="281263368"/>
 										<File Id="122353339"/>
@@ -1029,14 +1077,158 @@
 										<File Id="401713445"/>
 										<File Id="402274453"/>
 										<File Id="455007472"/>
+										<File Id="6882735"/>
+										<File Id="768307776"/>
+										<File Id="826703378"/>
+										<File Id="707946392"/>
+										<File Id="111738305"/>
+										<File Id="591638087"/>
+										<File Id="429755549"/>
+										<File Id="794286142"/>
 									</Media>
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{B2CB2484-149F-4154-86FA-CB7BAE7A2D99}">
+							<Children/>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{A2593E7D-BE8F-4C9E-9DEC-15B5CEF678EF}">
+							<Children/>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2118249371" Name="tibessa_lm_jump" ObjectPath="\Events\Default Work Unit\Characters\tibessa_lm_jump"/>
-				<Event Id="2022623480" Name="tibessa_lm_land" ObjectPath="\Events\Default Work Unit\Characters\tibessa_lm_land"/>
+				<Event Id="2118249371" Name="tibessa_lm_jump" ObjectPath="\Events\Default Work Unit\Characters\tibessa_lm_jump">
+					<IncludedMemoryFiles>
+						<File Id="6882735" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_01.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_01_B7D19635.wem</Path>
+						</File>
+						<File Id="111738305" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_05.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_05_930D37E0.wem</Path>
+						</File>
+						<File Id="289448298" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_08.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_08_E3005E0E.wem</Path>
+						</File>
+						<File Id="591638087" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_06.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_06_AC7B20D5.wem</Path>
+						</File>
+						<File Id="683801843" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_02.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_02_716E5FA2.wem</Path>
+						</File>
+						<File Id="707946392" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_04.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_04_B914044A.wem</Path>
+						</File>
+						<File Id="870693452" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_03.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_03_B05EC92D.wem</Path>
+						</File>
+						<File Id="888061768" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_07.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_07_F1F2DB70.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{A2593E7D-BE8F-4C9E-9DEC-15B5CEF678EF}">
+							<Children/>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{867A3C4E-0272-47F9-9F02-18F58EF2DF18}">
+							<Children>
+								<SwitchContainer SwitchValue="{055950D3-257F-419A-833A-60F1C1855D4D}">
+									<Media>
+										<File Id="6882735"/>
+										<File Id="683801843"/>
+										<File Id="870693452"/>
+										<File Id="707946392"/>
+										<File Id="111738305"/>
+										<File Id="591638087"/>
+										<File Id="888061768"/>
+										<File Id="289448298"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{B2CB2484-149F-4154-86FA-CB7BAE7A2D99}">
+							<Children/>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2022623480" Name="tibessa_lm_land" ObjectPath="\Events\Default Work Unit\Characters\tibessa_lm_land">
+					<IncludedMemoryFiles>
+						<File Id="6882735" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_01.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_01_B7D19635.wem</Path>
+						</File>
+						<File Id="111738305" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_05.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_05_930D37E0.wem</Path>
+						</File>
+						<File Id="289448298" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_08.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_08_E3005E0E.wem</Path>
+						</File>
+						<File Id="591638087" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_06.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_06_AC7B20D5.wem</Path>
+						</File>
+						<File Id="683801843" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_02.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_02_716E5FA2.wem</Path>
+						</File>
+						<File Id="707946392" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_04.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_04_B914044A.wem</Path>
+						</File>
+						<File Id="870693452" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_03.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_03_B05EC92D.wem</Path>
+						</File>
+						<File Id="888061768" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_07.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_07_F1F2DB70.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{A2593E7D-BE8F-4C9E-9DEC-15B5CEF678EF}">
+							<Children/>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{867A3C4E-0272-47F9-9F02-18F58EF2DF18}">
+							<Children>
+								<SwitchContainer SwitchValue="{F45C2A6A-1144-419A-BC88-EBBF39F1C624}">
+									<Media>
+										<File Id="707946392"/>
+										<File Id="111738305"/>
+										<File Id="6882735"/>
+										<File Id="683801843"/>
+										<File Id="870693452"/>
+										<File Id="289448298"/>
+										<File Id="591638087"/>
+										<File Id="888061768"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{055950D3-257F-419A-833A-60F1C1855D4D}">
+									<Media>
+										<File Id="6882735"/>
+										<File Id="683801843"/>
+										<File Id="870693452"/>
+										<File Id="707946392"/>
+										<File Id="111738305"/>
+										<File Id="591638087"/>
+										<File Id="888061768"/>
+										<File Id="289448298"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{B2CB2484-149F-4154-86FA-CB7BAE7A2D99}">
+							<Children/>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="354526556" Name="tibessa_normal_time" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normal_time">
 					<IncludedMemoryFiles>
 						<File Id="755604789" Language="SFX">
