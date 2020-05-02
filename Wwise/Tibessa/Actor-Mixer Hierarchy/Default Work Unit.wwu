@@ -3781,407 +3781,6 @@ Content provided by Vincent Gagnon
 										</Sound>
 									</ChildrenList>
 								</BlendContainer>
-								<BlendContainer Name="Slow Time" ID="{33DBED33-E015-4557-AB27-022E42418246}" ShortID="635360873">
-									<PropertyList>
-										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-										<Property Name="Highpass" Type="int16">
-											<RTPCList>
-												<RTPC Name="" ID="{41161F61-FE17-4ADC-A1F2-50F7385B5203}" ShortID="841973760">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<Custom>
-																<ModulatorTime Name="Modulator Time (Custom)" ID="{41515345-D564-43BA-B8B0-2A817198EEB9}" ShortID="576011354">
-																	<PropertyList>
-																		<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
-																	</PropertyList>
-																</ModulatorTime>
-															</Custom>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{B9554B2F-21F6-4B0E-8C22-B6C9C922210F}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>50</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Log2</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>-100</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-										<Property Name="Lowpass" Type="int16">
-											<RTPCList>
-												<RTPC Name="" ID="{4BABF8DF-E55D-42F8-80E0-21409E8F8902}" ShortID="678987377">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<Custom>
-																<ModulatorTime Name="Modulator Time (Custom)" ID="{D63EB2CB-3196-4379-BA0D-994DDFEB55CC}" ShortID="27241930">
-																	<PropertyList>
-																		<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
-																	</PropertyList>
-																</ModulatorTime>
-															</Custom>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{B1C334FF-B366-4553-95B8-DC3BA720B007}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-75</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Log2</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>75</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="MaxSoundPerInstance" Type="int16">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<RTPCList>
-												<RTPC Name="" ID="{DBF1301D-CD71-400A-9E7E-03199AF68602}" ShortID="823522287">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<Custom>
-																<ModulatorTime Name="Modulator Time (Custom)" ID="{FF711C20-2BE5-4A1F-92FE-680D236AF4BB}" ShortID="698601411">
-																	<PropertyList>
-																		<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
-																		<Property Name="TimeModDuration" Type="Real64" Value="2"/>
-																	</PropertyList>
-																</ModulatorTime>
-															</Custom>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{41EDD3C4-94FC-4210-B024-15BC3F861B7F}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>0</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Exp2</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>2</XPos>
-																<YPos>-1200</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Slowdown by DarkoZL Id-101118" ID="{A66B241E-5BDE-47C8-BE54-3B91690EFB22}" ShortID="618515987">
-											<PropertyList>
-												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-												<Property Name="OverrideEffect" Type="bool" Value="True"/>
-												<Property Name="RenderEffect0" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="RenderEffect1" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
-												</Reference>
-												<Reference Name="Effect0">
-													<Custom CreatedFrom="{A98F423C-EC97-49D8-8698-445CE91F24B7}">
-														<Effect Name="Octave_Up_(Custom)" ID="{BC271871-67AD-4C78-A1EE-85BF780ACAB7}" ShortID="535980521" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
-															<PropertyList>
-																<Property Name="DryLevel" Type="Real32" Value="-4"/>
-																<Property Name="Pitch" Type="Real32" Value="1200"/>
-																<Property Name="WetLevel" Type="Real32" Value="3"/>
-															</PropertyList>
-														</Effect>
-													</Custom>
-												</Reference>
-												<Reference Name="Effect1">
-													<Custom CreatedFrom="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}">
-														<Effect Name="Brick_Wall_Minus_1dB_Peak_Fast_Release_(Custom)" ID="{0536C0F1-839D-4A90-A39D-EB63E1F1D963}" ShortID="94300911" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
-															<PropertyList>
-																<Property Name="Ratio" Type="Real32" Value="50"/>
-																<Property Name="ReleaseTime" Type="Real32" Value="0.02"/>
-																<Property Name="Threshold" Type="Real32" Value="-1"/>
-															</PropertyList>
-														</Effect>
-													</Custom>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Slowdown by DarkoZL Id-101118" ID="{E7089B6E-C14B-4787-BD3D-75D9824F0F03}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.260717909489272"/>
-														<Property Name="FadeInShape" Type="int16" Value="2"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="2.17716336609911"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.242737364007253"/>
-														<Property Name="TrimEnd" Type="Real64" Value="3.16640660335722"/>
-														<Property Name="VolumeOffset" Type="Real64">
-															<ValueList>
-																<Value>6</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Character\Tibessa\Slowdown by DarkoZL Id-101118.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="750396246"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Slowdown by DarkoZL Id-101118" ID="{E7089B6E-C14B-4787-BD3D-75D9824F0F03}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</BlendContainer>
-								<BlendContainer Name="Normal Time" ID="{CB47A8CE-9A6B-4EDB-A383-2299A7AB1AB2}" ShortID="1006492075">
-									<PropertyList>
-										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-										<Property Name="Highpass" Type="int16">
-											<RTPCList>
-												<RTPC Name="" ID="{6549148E-D924-4E75-8AA7-7B7053B57A7D}" ShortID="1008990448">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<Custom>
-																<ModulatorTime Name="Modulator Time (Custom)" ID="{FC0791F8-90CF-446B-A6E3-47D1E901EA42}" ShortID="24374720">
-																	<PropertyList>
-																		<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
-																	</PropertyList>
-																</ModulatorTime>
-															</Custom>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{BF4492C5-4CE4-4B76-AC7E-FD7AD843FC0E}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-100</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Exp2</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>100</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-										<Property Name="Lowpass" Type="int16">
-											<RTPCList>
-												<RTPC Name="" ID="{F6F849BD-44F6-4E3C-B8E9-092F6A9D7C4E}" ShortID="914738468">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<Custom>
-																<ModulatorTime Name="Modulator Time (Custom)" ID="{D0B59EB9-A37D-489D-A6B1-57CA29924763}" ShortID="999052303">
-																	<PropertyList>
-																		<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
-																	</PropertyList>
-																</ModulatorTime>
-															</Custom>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{3CC9B935-B2FC-4302-8C1E-D3D9EF2B11E5}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>73</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Exp2</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>-100</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="MaxSoundPerInstance" Type="int16">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<RTPCList>
-												<RTPC Name="" ID="{EB63441E-204B-49E0-8F71-07399214683E}" ShortID="1067582849">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<Custom>
-																<ModulatorTime Name="Modulator Time (Custom)" ID="{671A4D5E-7BA0-4D6F-91CB-05A1F1172E52}" ShortID="932913547">
-																	<PropertyList>
-																		<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
-																	</PropertyList>
-																</ModulatorTime>
-															</Custom>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{67D293A3-E6EB-4581-ADA8-F532CF4BBEC9}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>0</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Exp2</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>1200</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Slowdown by DarkoZL Id-101118 1" ID="{28A5F0B9-F8E8-405B-9FDF-479394CA3E23}" ShortID="976697078">
-											<PropertyList>
-												<Property Name="OverrideEffect" Type="bool" Value="True"/>
-												<Property Name="RenderEffect0" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
-												</Reference>
-												<Reference Name="Effect0">
-													<Custom CreatedFrom="{A98F423C-EC97-49D8-8698-445CE91F24B7}">
-														<Effect Name="Octave_Up_(Custom)" ID="{E9DDBB6D-6603-4036-BD03-F589A21DFAC6}" ShortID="367401139" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
-															<PropertyList>
-																<Property Name="DryLevel" Type="Real32" Value="-2"/>
-																<Property Name="Pitch" Type="Real32" Value="1200"/>
-																<Property Name="WetLevel" Type="Real32" Value="-4"/>
-															</PropertyList>
-														</Effect>
-													</Custom>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Slowdown by DarkoZL Id-101118 1" ID="{738A7FA1-92FF-4151-B434-17D13D9441E1}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.578532411604714"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.17059289060139"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="1.78116459426575"/>
-														<Property Name="TrimEnd" Type="Real64" Value="2.99942959101535"/>
-														<Property Name="VolumeOffset" Type="Real64">
-															<ValueList>
-																<Value>12</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Character\Tibessa\Slowdown by DarkoZL Id-101118 1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="755604789"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Slowdown by DarkoZL Id-101118 1" ID="{738A7FA1-92FF-4151-B434-17D13D9441E1}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</BlendContainer>
 								<ActorMixer Name="Weapons" ID="{D2B22651-6203-45FE-8CC9-14849EE5155F}" ShortID="991836440">
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -5139,6 +4738,814 @@ Content provided by Vincent Gagnon
 										</BlendContainer>
 									</ChildrenList>
 								</ActorMixer>
+								<BlendContainer Name="Time Control" ID="{46762162-7A7E-4677-9251-28F6777669A6}" ShortID="869979510">
+									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="Normal Time" ID="{CB47A8CE-9A6B-4EDB-A383-2299A7AB1AB2}" ShortID="1006492075">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="Highpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{6549148E-D924-4E75-8AA7-7B7053B57A7D}" ShortID="1008990448">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{FC0791F8-90CF-446B-A6E3-47D1E901EA42}" ShortID="24374720">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{BF4492C5-4CE4-4B76-AC7E-FD7AD843FC0E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-100</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>100</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="Lowpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{F6F849BD-44F6-4E3C-B8E9-092F6A9D7C4E}" ShortID="914738468">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{D0B59EB9-A37D-489D-A6B1-57CA29924763}" ShortID="999052303">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{3CC9B935-B2FC-4302-8C1E-D3D9EF2B11E5}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>73</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-100</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{EB63441E-204B-49E0-8F71-07399214683E}" ShortID="1067582849">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{671A4D5E-7BA0-4D6F-91CB-05A1F1172E52}" ShortID="932913547">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{67D293A3-E6EB-4581-ADA8-F532CF4BBEC9}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>1200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Slowdown by DarkoZL Id-101118 1" ID="{28A5F0B9-F8E8-405B-9FDF-479394CA3E23}" ShortID="976697078">
+													<PropertyList>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="RenderEffect0" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{A98F423C-EC97-49D8-8698-445CE91F24B7}">
+																<Effect Name="Octave_Up_(Custom)" ID="{E9DDBB6D-6603-4036-BD03-F589A21DFAC6}" ShortID="367401139" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DryLevel" Type="Real32" Value="-2"/>
+																		<Property Name="Pitch" Type="Real32" Value="1200"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-4"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Slowdown by DarkoZL Id-101118 1" ID="{738A7FA1-92FF-4151-B434-17D13D9441E1}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.578532411604714"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.17059289060139"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.78116459426575"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.99942959101535"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>12</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Character\Tibessa\Slowdown by DarkoZL Id-101118 1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="755604789"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Slowdown by DarkoZL Id-101118 1" ID="{738A7FA1-92FF-4151-B434-17D13D9441E1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="Slow Time" ID="{33DBED33-E015-4557-AB27-022E42418246}" ShortID="635360873">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="Highpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{41161F61-FE17-4ADC-A1F2-50F7385B5203}" ShortID="841973760">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{41515345-D564-43BA-B8B0-2A817198EEB9}" ShortID="576011354">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{B9554B2F-21F6-4B0E-8C22-B6C9C922210F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>50</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-100</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="Lowpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{4BABF8DF-E55D-42F8-80E0-21409E8F8902}" ShortID="678987377">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{D63EB2CB-3196-4379-BA0D-994DDFEB55CC}" ShortID="27241930">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{B1C334FF-B366-4553-95B8-DC3BA720B007}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-75</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>75</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{DBF1301D-CD71-400A-9E7E-03199AF68602}" ShortID="823522287">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{FF711C20-2BE5-4A1F-92FE-680D236AF4BB}" ShortID="698601411">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																				<Property Name="TimeModDuration" Type="Real64" Value="2"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{41EDD3C4-94FC-4210-B024-15BC3F861B7F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>2</XPos>
+																		<YPos>-1200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Slowdown by DarkoZL Id-101118" ID="{A66B241E-5BDE-47C8-BE54-3B91690EFB22}" ShortID="618515987">
+													<PropertyList>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="RenderEffect0" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="RenderEffect1" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{A98F423C-EC97-49D8-8698-445CE91F24B7}">
+																<Effect Name="Octave_Up_(Custom)" ID="{BC271871-67AD-4C78-A1EE-85BF780ACAB7}" ShortID="535980521" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DryLevel" Type="Real32" Value="-4"/>
+																		<Property Name="Pitch" Type="Real32" Value="1200"/>
+																		<Property Name="WetLevel" Type="Real32" Value="3"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="Effect1">
+															<Custom CreatedFrom="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}">
+																<Effect Name="Brick_Wall_Minus_1dB_Peak_Fast_Release_(Custom)" ID="{0536C0F1-839D-4A90-A39D-EB63E1F1D963}" ShortID="94300911" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+																	<PropertyList>
+																		<Property Name="Ratio" Type="Real32" Value="50"/>
+																		<Property Name="ReleaseTime" Type="Real32" Value="0.02"/>
+																		<Property Name="Threshold" Type="Real32" Value="-1"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Slowdown by DarkoZL Id-101118" ID="{E7089B6E-C14B-4787-BD3D-75D9824F0F03}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.260717909489272"/>
+																<Property Name="FadeInShape" Type="int16" Value="2"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="2.17716336609911"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.242737364007253"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.16640660335722"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>6</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Character\Tibessa\Slowdown by DarkoZL Id-101118.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="750396246"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Slowdown by DarkoZL Id-101118" ID="{E7089B6E-C14B-4787-BD3D-75D9824F0F03}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+								</BlendContainer>
+								<SwitchContainer Name="Footsteps" ID="{E36C11EF-5F05-4E03-8024-F516C73511A1}" ShortID="148124307">
+									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Character_Att" ID="{51E40D0D-3145-4FC8-8E90-5A0BDE2A9731}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Grass" ID="{867A3C4E-0272-47F9-9F02-18F58EF2DF18}" WorkUnitID="{1B5B2976-3800-4C54-B4DF-D661F3EF74A2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Surface" ID="{816CEECE-0F51-4AD8-89AC-28765CB4F621}" WorkUnitID="{1B5B2976-3800-4C54-B4DF-D661F3EF74A2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SwitchContainer Name="Grass" ID="{417BC427-1230-4141-B349-B73290D7D619}" ShortID="239232496">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Walk" ID="{055950D3-257F-419A-833A-60F1C1855D4D}" WorkUnitID="{1B5B2976-3800-4C54-B4DF-D661F3EF74A2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Locomotion" ID="{9BFCFDDF-9A18-4509-B3A8-C52BEBF4B9D5}" WorkUnitID="{1B5B2976-3800-4C54-B4DF-D661F3EF74A2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Grass Walk" ID="{A5857D5E-11C4-488C-ACE3-53A9652DA82E}" ShortID="607914161">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{FA621633-F726-4FA6-857F-86816B142ECD}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="2"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.05"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{4EF0C1E8-7165-4034-98D9-E409CBBD47BD}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="3"/>
+																			<Property Name="Min" Type="Real64" Value="-3"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Character_Att" ID="{51E40D0D-3145-4FC8-8E90-5A0BDE2A9731}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Grass_Boots_FullStep_01" ID="{422E2A36-8312-4774-8101-7B3ED6FB7CE4}" ShortID="100621024">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Grass_Boots_FullStep_01" ID="{F4511E95-32FF-4F9B-9124-B2C3452B8197}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.00786229166666666"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0804372916666667"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.189299791666667"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Tibessa\Footsteps\Grass_Boots_FullStep_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="46982176"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Grass_Boots_FullStep_01" ID="{F4511E95-32FF-4F9B-9124-B2C3452B8197}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Grass_Boots_FullStep_02" ID="{10329175-577E-497A-BC44-20292848928F}" ShortID="151147259">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Grass_Boots_FullStep_02" ID="{62D5961C-4E35-4797-BAF0-36E8E9B97C47}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0117876420454545"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0387308238636364"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.161659090909091"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Tibessa\Footsteps\Grass_Boots_FullStep_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="14333850"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Grass_Boots_FullStep_02" ID="{62D5961C-4E35-4797-BAF0-36E8E9B97C47}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Grass_Boots_FullStep_03" ID="{CF555596-6A17-41E2-94E5-586AB40543EE}" ShortID="82251028">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Grass_Boots_FullStep_03" ID="{2A7156FE-B225-4CD4-9A93-CAD8CDAA0C01}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0197076704545454"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.056495321969697"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.21547053030303"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Tibessa\Footsteps\Grass_Boots_FullStep_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="281263368"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Grass_Boots_FullStep_03" ID="{2A7156FE-B225-4CD4-9A93-CAD8CDAA0C01}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Grass_Boots_FullStep_04" ID="{C1DD013A-8ABF-4D6E-B91B-7B83E3C77158}" ShortID="183688474">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Grass_Boots_FullStep_04" ID="{AE7B702C-E3B7-46DF-8B6F-6678C9655F1B}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.00884439393939394"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0348248011363637"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.140957528409091"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Tibessa\Footsteps\Grass_Boots_FullStep_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="122353339"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Grass_Boots_FullStep_04" ID="{AE7B702C-E3B7-46DF-8B6F-6678C9655F1B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Grass_Boots_FullStep_05" ID="{C986ABCA-7657-4C50-908C-16D88BF9ED9C}" ShortID="157544000">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Grass_Boots_FullStep_05" ID="{7F31325E-D09F-491B-A4C6-D99CCD2328E9}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0173928125"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0426914488636364"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.115952083333333"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Tibessa\Footsteps\Grass_Boots_FullStep_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="187644740"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Grass_Boots_FullStep_05" ID="{7F31325E-D09F-491B-A4C6-D99CCD2328E9}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Grass_Boots_FullStep_06" ID="{C8C0AB26-413A-4241-B623-99A09D2E3905}" ShortID="33268030">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Grass_Boots_FullStep_06" ID="{BB626052-B4AB-44C3-B86E-93A83B998EF4}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0143302556818182"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0957261079545454"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.0871279545454546"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Tibessa\Footsteps\Grass_Boots_FullStep_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="401713445"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Grass_Boots_FullStep_06" ID="{BB626052-B4AB-44C3-B86E-93A83B998EF4}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Grass_Boots_FullStep_07" ID="{B92A8230-9036-4583-A950-F3ADB19F431C}" ShortID="102323488">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Grass_Boots_FullStep_07" ID="{8F43C92F-57D1-40FC-B2F4-E8F1ADED3C7E}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.02966625"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.10657875"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.120313125"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Tibessa\Footsteps\Grass_Boots_FullStep_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="402274453"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Grass_Boots_FullStep_07" ID="{8F43C92F-57D1-40FC-B2F4-E8F1ADED3C7E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Grass_Boots_FullStep_08" ID="{21E1EC4F-C8BD-469B-95AF-C2FAAD060F22}" ShortID="581126983">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Grass_Boots_FullStep_08" ID="{B9A8BFE6-9060-496A-8406-0F99321866CF}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0319746212121212"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0278488636363636"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.100049621212121"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Tibessa\Footsteps\Grass_Boots_FullStep_08.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="455007472"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Grass_Boots_FullStep_08" ID="{B9A8BFE6-9060-496A-8406-0F99321866CF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Grass Walk" ID="{A5857D5E-11C4-488C-ACE3-53A9652DA82E}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Walk" ID="{055950D3-257F-419A-833A-60F1C1855D4D}"/>
+														<ItemList>
+															<ItemRef Name="Grass Walk" ID="{A5857D5E-11C4-488C-ACE3-53A9652DA82E}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Grass" ID="{417BC427-1230-4141-B349-B73290D7D619}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Grass" ID="{867A3C4E-0272-47F9-9F02-18F58EF2DF18}"/>
+												<ItemList>
+													<ItemRef Name="Grass" ID="{417BC427-1230-4141-B349-B73290D7D619}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="Jump" ID="{7F253B7A-084C-4F4C-8F2D-357F2EC89576}" ShortID="69869215">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Grass" ID="{867A3C4E-0272-47F9-9F02-18F58EF2DF18}" WorkUnitID="{1B5B2976-3800-4C54-B4DF-D661F3EF74A2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Surface" ID="{816CEECE-0F51-4AD8-89AC-28765CB4F621}" WorkUnitID="{1B5B2976-3800-4C54-B4DF-D661F3EF74A2}"/>
+										</Reference>
+									</ReferenceList>
+									<GroupingInfo/>
+								</SwitchContainer>
+								<SwitchContainer Name="Land" ID="{FCC8CFA3-5C68-4858-B29B-6F7FD9B39D03}" ShortID="902211250">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Character_Att" ID="{51E40D0D-3145-4FC8-8E90-5A0BDE2A9731}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Grass" ID="{867A3C4E-0272-47F9-9F02-18F58EF2DF18}" WorkUnitID="{1B5B2976-3800-4C54-B4DF-D661F3EF74A2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Surface" ID="{816CEECE-0F51-4AD8-89AC-28765CB4F621}" WorkUnitID="{1B5B2976-3800-4C54-B4DF-D661F3EF74A2}"/>
+										</Reference>
+									</ReferenceList>
+									<GroupingInfo/>
+								</SwitchContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Agnar" ID="{760ABF43-BC26-496F-BBE4-4FF62CF2B380}" ShortID="653603872">

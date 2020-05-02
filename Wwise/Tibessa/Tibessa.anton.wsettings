@@ -3,6 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{DD8F37EF-DEBE-482D-BC1F-FDB400BA7B7D}">
 			<PropertyList>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="F:\Git\GitHub\UntitledFantasyAdventureGame\Wwise\Tibessa\Originals\SFX\Character\Tibessa\Footsteps\"/>
 				<Property Name="Event Action List\{0DE9D7D1-7C91-4288-BBC3-322DD079801C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{18279C3C-A590-4555-B884-8A38E19863D9}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{1A17BEEC-9005-47F2-9052-B225A5F64366}\x64_Expand States" Type="string" Value=""/>
@@ -10,9 +11,11 @@
 				<Property Name="Event Action List\{345BB24B-3B6C-47CE-AF31-A22A659C6744}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{35B3BBA4-CBF3-4983-8A65-0F625A704055}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3F52F813-FFE7-443E-BE07-40D4FC8DA12C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{43F2DEAD-D387-424A-83FD-AFA20A9B5FFB}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5085AB8E-F7FE-4157-9B5E-B264F60CD5BA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6140374B-F3BA-4CFA-8858-18B4899BE270}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{70F6600C-5D10-4461-AE8D-9DE87D18495A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{72B811AD-B6CC-4007-A647-7630807BF590}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7F770696-9B21-4666-B7B9-B0857172CE24}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8A601E27-F3B5-479F-8360-C27A13C92929}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8D9C29FB-B7BE-4811-831B-55F47F8DE614}\x64_Expand States" Type="string" Value=""/>
@@ -27,6 +30,7 @@
 				<Property Name="Event Action List\{CE5559E7-C9AE-459D-B7F4-E335547E0DCB}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{DAB4DF55-D368-4D8D-977C-EBCF6CD4D95A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{DB93E6B1-A7EE-41C6-96B3-8658B99A65C6}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E0CBE594-2FAF-47BF-BD59-179828FA9AEC}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E2E1EF84-A3DB-41CE-A1DC-79519DE2FCC6}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E32CBBA3-A5A6-4086-B2CA-790B97D7E00C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E908A70F-1D06-4AE3-B8C5-B6D7F2BBD282}\x64_Expand States" Type="string" Value=""/>

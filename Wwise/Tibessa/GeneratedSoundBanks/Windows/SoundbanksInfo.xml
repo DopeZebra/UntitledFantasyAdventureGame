@@ -981,6 +981,62 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1233654109" Name="tibessa_lm_footstep" ObjectPath="\Events\Default Work Unit\Characters\tibessa_lm_footstep">
+					<IncludedMemoryFiles>
+						<File Id="14333850" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_02.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_02_BDF2EE95.wem</Path>
+						</File>
+						<File Id="46982176" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_01.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_01_6022D5AB.wem</Path>
+						</File>
+						<File Id="122353339" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_04.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_04_6EC04ACC.wem</Path>
+						</File>
+						<File Id="187644740" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_05.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_05_87DA7B11.wem</Path>
+						</File>
+						<File Id="281263368" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_03.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_03_E080E844.wem</Path>
+						</File>
+						<File Id="401713445" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_06.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_06_D2B65191.wem</Path>
+						</File>
+						<File Id="402274453" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_07.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_07_E971C2CD.wem</Path>
+						</File>
+						<File Id="455007472" Language="SFX">
+							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_08.wav</ShortName>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_08_6B41EC1E.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{867A3C4E-0272-47F9-9F02-18F58EF2DF18}">
+							<Children>
+								<SwitchContainer SwitchValue="{055950D3-257F-419A-833A-60F1C1855D4D}">
+									<Media>
+										<File Id="46982176"/>
+										<File Id="14333850"/>
+										<File Id="281263368"/>
+										<File Id="122353339"/>
+										<File Id="187644740"/>
+										<File Id="401713445"/>
+										<File Id="402274453"/>
+										<File Id="455007472"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2118249371" Name="tibessa_lm_jump" ObjectPath="\Events\Default Work Unit\Characters\tibessa_lm_jump"/>
+				<Event Id="2022623480" Name="tibessa_lm_land" ObjectPath="\Events\Default Work Unit\Characters\tibessa_lm_land"/>
 				<Event Id="354526556" Name="tibessa_normal_time" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normal_time">
 					<IncludedMemoryFiles>
 						<File Id="755604789" Language="SFX">
@@ -1070,6 +1126,22 @@
 					</States>
 				</StateGroup>
 			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="556887514" Name="Locomotion" ObjectPath="\Switches\Default Work Unit\Locomotion">
+					<Switches>
+						<Switch Id="2108779966" Name="Walk" ObjectPath="\Switches\Default Work Unit\Locomotion\Walk"/>
+						<Switch Id="712161704" Name="Run" ObjectPath="\Switches\Default Work Unit\Locomotion\Run"/>
+						<Switch Id="2655407367" Name="Crouch" ObjectPath="\Switches\Default Work Unit\Locomotion\Crouch"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="1834394558" Name="Surface" ObjectPath="\Switches\Default Work Unit\Surface">
+					<Switches>
+						<Switch Id="4248645337" Name="Grass" ObjectPath="\Switches\Default Work Unit\Surface\Grass"/>
+						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\Default Work Unit\Surface\Stone"/>
+						<Switch Id="2195636714" Name="Dirt" ObjectPath="\Switches\Default Work Unit\Surface\Dirt"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
