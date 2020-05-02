@@ -59,6 +59,70 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
+				<SoundcasterSession Name="Pillars" ID="{F5607024-20D5-456D-BFD1-68938B4C8E14}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="pillar_rotate_start" ID="{DAB4DF55-D368-4D8D-977C-EBCF6CD4D95A}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="pillar_retract_start" ID="{8A601E27-F3B5-479F-8360-C27A13C92929}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="pillar_triangle_rotate_start" ID="{70F6600C-5D10-4461-AE8D-9DE87D18495A}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="pillar_rotate_stop" ID="{DB93E6B1-A7EE-41C6-96B3-8658B99A65C6}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="pillar_retract_stop" ID="{35B3BBA4-CBF3-4983-8A65-0F625A704055}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="pillar_triangle_rotate_stop" ID="{E2E1EF84-A3DB-41CE-A1DC-79519DE2FCC6}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="lever_retract_start" ID="{E32CBBA3-A5A6-4086-B2CA-790B97D7E00C}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="lever_use" ID="{345BB24B-3B6C-47CE-AF31-A22A659C6744}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="lever_retract_stop" ID="{1A17BEEC-9005-47F2-9052-B225A5F64366}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="pillar_triangle_rise" ID="{B4E2D6FE-C9EE-493F-9604-9BFF5F11CEB3}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="pillar_triangle_lower" ID="{0DE9D7D1-7C91-4288-BBC3-322DD079801C}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}"/>
+							<Position X="4" Y="2"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Stinger_sidechain" ID="{141EFA41-3746-4569-AF4A-51FD957C7293}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="PlayerHealth" ID="{4380712B-C9FB-49D5-87C6-DBDA6E73E056}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Present" ID="{556F24BA-6297-4232-8F45-E8F06020063B}"/>
+						<CurrentStateRef Name="Combat" ID="{00F90FE2-B726-4469-819A-14383CB04EC6}"/>
+						<CurrentStateRef Name="None" ID="{0A446AEF-F9FA-4436-873B-54845266B6B4}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>

@@ -18,7 +18,7 @@
 											<PropertyList>
 												<Property Name="AttackTime" Type="Real32" Value="0.3"/>
 												<Property Name="Ratio" Type="Real32" Value="5"/>
-												<Property Name="Threshold" Type="Real32" Value="-16"/>
+												<Property Name="Threshold" Type="Real32" Value="-19"/>
 											</PropertyList>
 										</Effect>
 									</Custom>
@@ -127,6 +127,21 @@
 								<Bus Name="Characters" ID="{3063A728-00DE-4ADE-86FD-A0AD83ACEA69}">
 									<ChildrenList>
 										<Bus Name="Enemies" ID="{6A9F43E9-4143-4886-879E-E82059D83D02}">
+											<ChildrenList>
+												<Bus Name="Enemy Abilities" ID="{EFB115F9-9821-4E84-AE64-B5B80BA0718B}">
+													<DuckingList>
+														<DuckItem>
+															<BusRef Name="Combat" ID="{21D47A20-5739-4D59-BE16-C526F0A6DA1C}"/>
+															<DuckingParam>
+																<Volume>-6</Volume>
+																<FadeInTime>1</FadeInTime>
+																<FadeOutTime>1</FadeOutTime>
+																<FadeCurve>FadeLinear</FadeCurve>
+															</DuckingParam>
+														</DuckItem>
+													</DuckingList>
+												</Bus>
+											</ChildrenList>
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>

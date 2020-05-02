@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Attenuation Name="Enemy_Ability_Att" ID="{BB1A6B0E-5898-49DD-963F-23B51A7CF66B}" ShortID="6535358">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="3500"/>
+						<Property Name="RadiusMax" Type="Real64" Value="7000"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -19,10 +19,10 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>Exp3</SegmentShape>
+											<SegmentShape>Exp2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>3500</XPos>
+											<XPos>7000</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -47,10 +47,10 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>Exp3</SegmentShape>
+											<SegmentShape>Exp2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>3500</XPos>
+											<XPos>7000</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -75,7 +75,7 @@
 											<SegmentShape>Exp2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>3500</XPos>
+											<XPos>7000</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -97,7 +97,7 @@
 											<SegmentShape>Exp2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>3500</XPos>
+											<XPos>7000</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>
