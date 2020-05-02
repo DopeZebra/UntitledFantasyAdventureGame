@@ -123,7 +123,7 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Walk" ID="{055950D3-257F-419A-833A-60F1C1855D4D}"/>
-						<CurrentSwitchRef Name="Grass" ID="{867A3C4E-0272-47F9-9F02-18F58EF2DF18}"/>
+						<CurrentSwitchRef Name="Dirt" ID="{B2CB2484-149F-4154-86FA-CB7BAE7A2D99}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
