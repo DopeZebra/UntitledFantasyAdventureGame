@@ -556,6 +556,61 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="tibessa_lm_footstep" ID="{43F2DEAD-D387-424A-83FD-AFA20A9B5FFB}">
+							<ChildrenList>
+								<Action Name="" ID="{DC4D6AA8-4CAE-4F2A-93F5-6CA369F17D11}" ShortID="599212126">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{E36C11EF-5F05-4E03-8024-F516C73511A1}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="tibessa_lm_jump" ID="{72B811AD-B6CC-4007-A647-7630807BF590}">
+							<ChildrenList>
+								<Action Name="" ID="{005062D2-E8FF-41BD-B5FD-77749C8AED6D}" ShortID="979409548">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{E36C11EF-5F05-4E03-8024-F516C73511A1}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A6CDE6C7-C2DE-4340-B5E8-1F9AB1FFFEFB}" ShortID="549532965">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jump" ID="{DAB85D99-7E71-4991-8776-DD6BE74E7C0F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="tibessa_lm_land" ID="{E0CBE594-2FAF-47BF-BD59-179828FA9AEC}">
+							<ChildrenList>
+								<Action Name="" ID="{89C03406-FE07-43DC-B99D-7C9E4716F827}" ShortID="202214268">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jump" ID="{DAB85D99-7E71-4991-8776-DD6BE74E7C0F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7068740E-A4EB-44F4-8913-F606CE2C3F0D}" ShortID="481025777">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Land" ID="{FCC8CFA3-5C68-4858-B29B-6F7FD9B39D03}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
