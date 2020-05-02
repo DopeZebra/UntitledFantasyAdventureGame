@@ -5158,6 +5158,7 @@ Content provided by Vincent Gagnon
 								</BlendContainer>
 								<SwitchContainer Name="Footsteps" ID="{E36C11EF-5F05-4E03-8024-F516C73511A1}" ShortID="148124307">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -5197,6 +5198,7 @@ Content provided by Vincent Gagnon
 												<RandomSequenceContainer Name="Grass Walk" ID="{A5857D5E-11C4-488C-ACE3-53A9652DA82E}" ShortID="607914161">
 													<PropertyList>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 														<Property Name="Pitch" Type="int32">
 															<ModifierList>
 																<ModifierInfo>
@@ -5214,6 +5216,7 @@ Content provided by Vincent Gagnon
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="2"/>
 														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.05"/>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
@@ -5470,11 +5473,123 @@ Content provided by Vincent Gagnon
 														</Sound>
 													</ChildrenList>
 												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Grass Run" ID="{B6D25FB3-98D2-4B66-AAB3-76F3B5AD0489}" ShortID="883720844">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{A961F39B-01AB-4F71-8097-6BA90DE8E182}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="2"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.05"/>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{FDB12635-638F-47C7-A3DF-DF50B6439D51}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="3"/>
+																			<Property Name="Min" Type="Real64" Value="-3"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Character_Att" ID="{51E40D0D-3145-4FC8-8E90-5A0BDE2A9731}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Grass Crouch" ID="{8BA4E8F8-80B3-410F-818D-8A541EB37BFB}" ShortID="525919093">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{30B7C8E0-76D6-45E2-99C4-26F9327899D3}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="2"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.05"/>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{6C150342-B513-406C-A7C2-07EBF4F120A1}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="3"/>
+																			<Property Name="Min" Type="Real64" Value="-3"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Character_Att" ID="{51E40D0D-3145-4FC8-8E90-5A0BDE2A9731}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
 											</ChildrenList>
 											<GroupingInfo>
 												<GroupingBehaviorList>
 													<GroupingBehavior>
 														<ItemRef Name="Grass Walk" ID="{A5857D5E-11C4-488C-ACE3-53A9652DA82E}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Grass Run" ID="{B6D25FB3-98D2-4B66-AAB3-76F3B5AD0489}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Grass Crouch" ID="{8BA4E8F8-80B3-410F-818D-8A541EB37BFB}"/>
 													</GroupingBehavior>
 												</GroupingBehaviorList>
 												<GroupingList>
