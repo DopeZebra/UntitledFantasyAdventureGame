@@ -3735,7 +3735,7 @@ Content provided by Vincent Gagnon
 											<ChildrenList>
 												<AudioFileSource Name="Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065" ID="{FFAC79B8-6112-48F4-B846-BE4A81BADB07}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="1.08348496203038"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.659580418126831"/>
 														<Property Name="FadeInShape" Type="int16" Value="9"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.190511465827338"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
@@ -3764,9 +3764,10 @@ Content provided by Vincent Gagnon
 											<ChildrenList>
 												<AudioFileSource Name="Ethereal Whoosh-002 2" ID="{EC89A583-FA78-4B3C-9C26-4ED6C5678838}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0761016786570743"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.477654453907302"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0879806642402183"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.293704916067147"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.575694224529385"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Character\Tibessa\Ethereal Whoosh-002 2.wav</AudioFile>

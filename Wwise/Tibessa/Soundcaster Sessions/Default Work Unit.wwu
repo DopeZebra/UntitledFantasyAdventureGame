@@ -122,7 +122,7 @@
 						<CurrentStateRef Name="None" ID="{0A446AEF-F9FA-4436-873B-54845266B6B4}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Walk" ID="{055950D3-257F-419A-833A-60F1C1855D4D}"/>
+						<CurrentSwitchRef Name="Run" ID="{F45C2A6A-1144-419A-BC88-EBBF39F1C624}"/>
 						<CurrentSwitchRef Name="Dirt" ID="{B2CB2484-149F-4154-86FA-CB7BAE7A2D99}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
