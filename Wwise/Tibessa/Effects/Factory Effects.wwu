@@ -19,10 +19,8 @@
 						</Effect>
 						<Effect Name="Hard_Knee_Minus_3dB_RMS" ID="{D083BAE5-F9EF-426B-A311-D9DF8DFE8807}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 							<PropertyList>
-								<Property Name="AttackTime" Type="Real32" Value="0.3"/>
-								<Property Name="OutputGain" Type="Real32" Value="2"/>
-								<Property Name="Ratio" Type="Real32" Value="5"/>
-								<Property Name="Threshold" Type="Real32" Value="-23.8"/>
+								<Property Name="Ratio" Type="Real32" Value="8"/>
+								<Property Name="Threshold" Type="Real32" Value="-3"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Dialog_Leveler_Soft" ID="{9C1D0FCF-896E-4739-A8E8-B1E908F51CE6}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
@@ -55,10 +53,9 @@
 						<Effect Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 							<PropertyList>
 								<Property Name="AttackTime" Type="Real32" Value="0.001"/>
-								<Property Name="OutputGain" Type="Real32" Value="24"/>
 								<Property Name="Ratio" Type="Real32" Value="20"/>
 								<Property Name="ReleaseTime" Type="Real32" Value="0.5"/>
-								<Property Name="Threshold" Type="Real32" Value="-47.6"/>
+								<Property Name="Threshold" Type="Real32" Value="-25"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Pumping_and_Breathing_1" ID="{87BE3270-3D27-45BB-9E46-7F2D9380F523}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
@@ -711,8 +708,7 @@
 								<Property Name="HFRatio" Type="Real32" Value="6"/>
 								<Property Name="NumberOfDelays" Type="int32" Value="12"/>
 								<Property Name="PreDelay" Type="Real32" Value="0.1"/>
-								<Property Name="ReverbTime" Type="Real32" Value="6.2"/>
-								<Property Name="WetLevel" Type="Real32" Value="-11"/>
+								<Property Name="WetLevel" Type="Real32" Value="-30"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Medium_Room1" ID="{71B802A7-03E2-4998-B241-B2B84FE9DDFF}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
@@ -758,44 +754,11 @@
 						</Effect>
 						<Effect Name="Underground_Parking1" ID="{8DA66AA3-6CA0-41A0-B7A2-BB6FCABFCDA8}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 							<PropertyList>
-								<Property Name="DryLevel" Type="Real32" Value="0"/>
 								<Property Name="HFRatio" Type="Real32" Value="7.5"/>
 								<Property Name="NumberOfDelays" Type="int32" Value="12"/>
 								<Property Name="PreDelay" Type="Real32" Value="0.02"/>
 								<Property Name="ReverbTime" Type="Real32" Value="4.5"/>
-								<Property Name="WetLevel" Type="Real32" Value="-30">
-									<RTPCList>
-										<RTPC Name="" ID="{4B94F027-855D-4F62-BF74-F1BD9475AABD}" ShortID="172977328">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="PlayerHealth" ID="{4380712B-C9FB-49D5-87C6-DBDA6E73E056}" WorkUnitID="{87CE6915-7599-414E-83C8-8B4A35390FBE}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{ED51C693-384F-46EC-8558-2817067D0756}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-25</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>15</XPos>
-														<YPos>-96.3</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>100</XPos>
-														<YPos>-96.3</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
+								<Property Name="WetLevel" Type="Real32" Value="-30"/>
 							</PropertyList>
 						</Effect>
 					</ChildrenList>
@@ -1455,7 +1418,6 @@
 										<Property Name="DecayTime" Type="Real32" Value="10"/>
 										<Property Name="Density" Type="Real32" Value="100"/>
 										<Property Name="Diffusion" Type="Real32" Value="53"/>
-										<Property Name="DryLevel" Type="Real32" Value="-8.3"/>
 										<Property Name="ERLevel" Type="Real32" Value="-25"/>
 										<Property Name="ERPattern" Type="int32" Value="30"/>
 										<Property Name="Filter1Freq" Type="Real32" Value="490"/>
@@ -1641,7 +1603,6 @@
 								<Property Name="ModDepth" Type="Real32" Value="10"/>
 								<Property Name="ModFrequency" Type="Real32" Value="5.5"/>
 								<Property Name="ModPWM" Type="Real32" Value="0"/>
-								<Property Name="WetDryMix" Type="Real32" Value="73"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Special_Effect_1" ID="{83317D8A-9D4C-438E-BE8C-BC7D27CAD1B0}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
@@ -1815,15 +1776,16 @@
 						</Effect>
 						<Effect Name="Blue_Distant_Echoes" ID="{ABFA9875-521E-451F-AAB9-AB148847B9C0}" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
 							<PropertyList>
+								<Property Name="DryLevel" Type="Real32" Value="-96"/>
 								<Property Name="EnableCrossFeed" Type="bool" Value="True"/>
 								<Property Name="EnableFeedback" Type="bool" Value="True"/>
 								<Property Name="FilterFrequency" Type="Real32" Value="2507"/>
 								<Property Name="FilterGain" Type="Real32" Value="-24"/>
 								<Property Name="FilterType" Type="int32" Value="3"/>
 								<Property Name="LeftCrossfeed" Type="Real32" Value="-10"/>
-								<Property Name="LeftDelayTime" Type="Real32" Value="1.2"/>
+								<Property Name="LeftDelayTime" Type="Real32" Value="0.29"/>
 								<Property Name="RightCrossfeed" Type="Real32" Value="-8"/>
-								<Property Name="RightDelayTime" Type="Real32" Value="1.85"/>
+								<Property Name="RightDelayTime" Type="Real32" Value="0.43"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Personnel_Advisor" ID="{B78063AF-DC4F-4D1D-B4AB-B3487BE02D7F}" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
