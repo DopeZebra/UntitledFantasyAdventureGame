@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1B5B2976-3800-4C54-B4DF-D661F3EF74A2}" SchemaVersion="97">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{1B5B2976-3800-4C54-B4DF-D661F3EF74A2}" PersistMode="Standalone">
-			<ChildrenList>
-				<SwitchGroup Name="Surface" ID="{816CEECE-0F51-4AD8-89AC-28765CB4F621}">
-					<ChildrenList>
-						<Switch Name="Grass" ID="{867A3C4E-0272-47F9-9F02-18F58EF2DF18}"/>
-						<Switch Name="Stone" ID="{A2593E7D-BE8F-4C9E-9DEC-15B5CEF678EF}"/>
-						<Switch Name="Dirt" ID="{B2CB2484-149F-4154-86FA-CB7BAE7A2D99}"/>
-					</ChildrenList>
-				</SwitchGroup>
-				<SwitchGroup Name="Locomotion" ID="{9BFCFDDF-9A18-4509-B3A8-C52BEBF4B9D5}">
-					<ChildrenList>
-						<Switch Name="Walk" ID="{055950D3-257F-419A-833A-60F1C1855D4D}"/>
-						<Switch Name="Run" ID="{F45C2A6A-1144-419A-BC88-EBBF39F1C624}"/>
-						<Switch Name="Crouch" ID="{661B43FA-C222-4A38-911E-2F44A2FEFEC8}"/>
-					</ChildrenList>
-				</SwitchGroup>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{1B5B2976-3800-4C54-B4DF-D661F3EF74A2}" PersistMode="Standalone"/>
 	</Switches>
 </WwiseDocument>

@@ -17,7 +17,7 @@
 						</Property>
 						<Property Name="MaxSampleRate" Type="int32">
 							<ValueList>
-								<Value Platform="Windows">48000</Value>
+								<Value Platform="Windows">0</Value>
 							</ValueList>
 						</Property>
 						<Property Name="MinSampleRate" Type="int32">
@@ -33,11 +33,7 @@
 					</PropertyList>
 					<ConversionPluginInfoList>
 						<ConversionPluginInfo Platform="Windows">
-							<ConversionPlugin Name="" ID="{A20ECBB4-4A26-42C8-978A-A51E11B32D7A}" PluginName="Vorbis" CompanyID="0" PluginID="4">
-								<PropertyList>
-									<Property Name="QualityFactor" Type="Real32" Value="5"/>
-								</PropertyList>
-							</ConversionPlugin>
+							<ConversionPlugin Name="" ID="{A9768D12-2960-4074-BC68-2C1D1839F32C}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 					</ConversionPluginInfoList>
 				</Conversion>
