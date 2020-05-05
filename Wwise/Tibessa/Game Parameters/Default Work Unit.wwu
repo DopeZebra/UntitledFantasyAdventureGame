@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{87CE6915-7599-414E-83C8-8B4A35390FBE}" SchemaVersion="97">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{87CE6915-7599-414E-83C8-8B4A35390FBE}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{87CE6915-7599-414E-83C8-8B4A35390FBE}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="PlayerHealth" ID="{4380712B-C9FB-49D5-87C6-DBDA6E73E056}"/>
+				<GameParameter Name="Stinger_sidechain" ID="{141EFA41-3746-4569-AF4A-51FD957C7293}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="6"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

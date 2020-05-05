@@ -5,12 +5,12 @@
 			<ChildrenList>
 				<Folder Name="Music" ID="{D6AC7BC9-43C4-4D02-8B51-DD1CD1FAF0AE}" ShortID="282477926">
 					<ChildrenList>
-						<Event Name="EvilMusic" ID="{8FF6FB1B-DC44-48DB-8AED-6AB230C00B1F}">
+						<Event Name="music" ID="{8FF6FB1B-DC44-48DB-8AED-6AB230C00B1F}">
 							<ChildrenList>
 								<Action Name="" ID="{ACA48BC1-7D8B-4906-B015-0F548BBC4018}" ShortID="92363418">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Evil Music" ID="{CF02B4A2-E571-414E-8D3D-20BFD4AAFC4E}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+											<ObjectRef Name="Music" ID="{260B69B1-FD92-4626-B3CF-431FAC3853E7}" WorkUnitID="{C2974EF7-2154-4AFB-8D2A-D09C7AE9FAE4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -24,6 +24,16 @@
 						<Event Name="time_change" ID="{5085AB8E-F7FE-4157-9B5E-B264F60CD5BA}">
 							<ChildrenList>
 								<Action Name="" ID="{05276CBE-9520-448B-A46D-D59089199663}" ShortID="1063959942">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Change Time" ID="{DC6086E0-DAAF-4030-9B97-1A4691A63677}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DA6DAF03-4C6A-4976-8FE0-1E31D9B64E2F}" ShortID="455612522">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Change Time" ID="{DC6086E0-DAAF-4030-9B97-1A4691A63677}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
@@ -32,9 +42,577 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="soul_charge" ID="{3F52F813-FFE7-443E-BE07-40D4FC8DA12C}"/>
+						<Event Name="pillar_rotate_start" ID="{DAB4DF55-D368-4D8D-977C-EBCF6CD4D95A}">
+							<ChildrenList>
+								<Action Name="" ID="{EDE0758B-0FD7-4CCD-839F-6FE1E5CC40E0}" ShortID="1058908079">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pillar Rotate" ID="{A5BFE958-8D59-444F-AA5B-975076011DD3}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4F07597B-2B54-4289-A394-EA27A54C69E9}" ShortID="134545653">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Debris" ID="{2A32DDBE-241C-4490-A06A-7CD8B876981F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="pillar_retract_start" ID="{8A601E27-F3B5-479F-8360-C27A13C92929}">
+							<ChildrenList>
+								<Action Name="" ID="{F5F704E2-43E4-43FB-8D7A-33076816E9BF}" ShortID="364358320">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pillar Retract" ID="{8D7E1E48-4CD2-4BE9-B6F0-F074FFEC6198}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A573E5D4-A0A2-46EE-AA21-72CAF9B48BC0}" ShortID="1031960200">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Debris" ID="{2A32DDBE-241C-4490-A06A-7CD8B876981F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="lever_use" ID="{345BB24B-3B6C-47CE-AF31-A22A659C6744}">
+							<ChildrenList>
+								<Action Name="" ID="{5DBFB42F-EDCE-4920-983B-33D5C7CF71DB}" ShortID="167582061">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Lever Use" ID="{EE5ACB16-8D20-492F-8AC8-F14A9E6C8968}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D6F3F821-ED37-459F-BA92-F3D46B2E9939}" ShortID="677071410">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Debris" ID="{2A32DDBE-241C-4490-A06A-7CD8B876981F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{91B6575E-06A8-4CDD-AD52-F976CB9FAB5B}" ShortID="277218931">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="1.2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Debris" ID="{2A32DDBE-241C-4490-A06A-7CD8B876981F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="lever_retract_start" ID="{E32CBBA3-A5A6-4086-B2CA-790B97D7E00C}">
+							<ChildrenList>
+								<Action Name="" ID="{D1B36694-AFBD-4F5C-820F-2510401BA3CF}" ShortID="383385343">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Lever Retract" ID="{CFE20584-D907-492A-87CF-3868AF9AD8F5}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4E143BCA-0CEE-43E8-B81D-06312BDAB5EB}" ShortID="687402127">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Debris" ID="{2A32DDBE-241C-4490-A06A-7CD8B876981F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="pillar_triangle_rotate_start" ID="{70F6600C-5D10-4461-AE8D-9DE87D18495A}">
+							<ChildrenList>
+								<Action Name="" ID="{7E6861C5-D744-4483-86B0-8391A9E7A5F4}" ShortID="836514139">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="13"/>
+										<Property Name="Pitch" Type="int32" Value="600"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pillar Rotate" ID="{A5BFE958-8D59-444F-AA5B-975076011DD3}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{86E646A3-3BB3-41EE-9DA6-CF2E2C2BBB1B}" ShortID="716454804">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="29"/>
+										<Property Name="Highpass" Type="int16" Value="25"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pillar Rotate" ID="{A5BFE958-8D59-444F-AA5B-975076011DD3}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{28A3553A-B64C-417E-97BD-BABE812CE275}" ShortID="77486840">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Debris" ID="{2A32DDBE-241C-4490-A06A-7CD8B876981F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{148322B6-533B-4247-BA46-A3540647B6CC}" ShortID="957979169">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pillar Rotate" ID="{A5BFE958-8D59-444F-AA5B-975076011DD3}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="pillar_triangle_rise" ID="{B4E2D6FE-C9EE-493F-9604-9BFF5F11CEB3}"/>
+						<Event Name="pillar_triangle_lower" ID="{0DE9D7D1-7C91-4288-BBC3-322DD079801C}"/>
+						<Event Name="time_crystal_nearby" ID="{7F770696-9B21-4666-B7B9-B0857172CE24}"/>
+						<Event Name="pillar_rotate_stop" ID="{DB93E6B1-A7EE-41C6-96B3-8658B99A65C6}">
+							<ChildrenList>
+								<Action Name="" ID="{99E4FA83-BC7E-43FA-AE8A-9CF1C1B6AE99}" ShortID="326957543">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pillar Rotate" ID="{A5BFE958-8D59-444F-AA5B-975076011DD3}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A42A45A5-121F-49CD-B111-2C840C3D680A}" ShortID="566300875">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Debris" ID="{2A32DDBE-241C-4490-A06A-7CD8B876981F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="pillar_retract_stop" ID="{35B3BBA4-CBF3-4983-8A65-0F625A704055}">
+							<ChildrenList>
+								<Action Name="" ID="{3738F11C-0F60-4881-B95D-337E5E8454EA}" ShortID="946682017">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Debris" ID="{2A32DDBE-241C-4490-A06A-7CD8B876981F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6C658C4F-8E5B-4EF8-A1B9-7081E94FAD9E}" ShortID="417526067">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pillar Retract" ID="{8D7E1E48-4CD2-4BE9-B6F0-F074FFEC6198}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0E00BCE5-6522-4B9E-9C3C-1F7EEB81BC51}" ShortID="131736568">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pillar Retract Stop" ID="{6291DAEA-E42C-4229-9ACF-67956B69B42A}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="lever_retract_stop" ID="{1A17BEEC-9005-47F2-9052-B225A5F64366}">
+							<ChildrenList>
+								<Action Name="" ID="{AFE465D4-7B31-4B0E-8720-8441914E6E1C}" ShortID="65182933">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Debris" ID="{2A32DDBE-241C-4490-A06A-7CD8B876981F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AAA8FF4D-5072-468D-9018-9FC153F34B6C}" ShortID="776166235">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Lever Retract" ID="{CFE20584-D907-492A-87CF-3868AF9AD8F5}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EC7E2557-ABB0-423B-AAD8-B1C0B8F1F599}" ShortID="899204510">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Lever Retract Stop" ID="{AD7ED942-DAAE-489C-AFDF-2AED2085950C}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="pillar_triangle_rotate_stop" ID="{E2E1EF84-A3DB-41CE-A1DC-79519DE2FCC6}">
+							<ChildrenList>
+								<Action Name="" ID="{8C5B10D6-D814-45CC-82B2-3E32AEE2EA85}" ShortID="95842427">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Debris" ID="{2A32DDBE-241C-4490-A06A-7CD8B876981F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{832003D0-244B-44BF-BC58-E321B1150567}" ShortID="937487142">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pillar Rotate" ID="{A5BFE958-8D59-444F-AA5B-975076011DD3}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Characters" ID="{20CB9DA4-7050-4DDD-BD9D-32D3B00A5D3D}" ShortID="737686189"/>
+				<Folder Name="Characters" ID="{20CB9DA4-7050-4DDD-BD9D-32D3B00A5D3D}" ShortID="737686189">
+					<ChildrenList>
+						<Event Name="tibessa_respawn" ID="{95FC6B90-7438-49C3-86CE-2E4B3A059660}">
+							<ChildrenList>
+								<Action Name="" ID="{BE259E63-507D-4BDD-B39E-184089A83DB3}" ShortID="1017009140">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Respawn" ID="{CB473686-BEE8-4D19-AB3A-360EAD355D47}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5CD2CEEE-8EA6-49F6-992E-D876716624F5}" ShortID="923378136">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Respawn" ID="{CB473686-BEE8-4D19-AB3A-360EAD355D47}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="tibessa_slow_time" ID="{CE5559E7-C9AE-459D-B7F4-E335547E0DCB}">
+							<ChildrenList>
+								<Action Name="" ID="{E23CEA37-7221-4B89-A7A5-6896D49E9599}" ShortID="884800582">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Slow Time" ID="{33DBED33-E015-4557-AB27-022E42418246}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{BA32164A-FF31-423A-AC55-7725DB44806D}" ShortID="463179624">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Slowdown" ID="{DF38D340-42F5-4A03-B69A-0B740B0547D2}" WorkUnitID="{6DC7A827-3638-4F84-B2DD-74F4E5C7DAF7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="agnar_laser_shoot" ID="{18279C3C-A590-4555-B884-8A38E19863D9}">
+							<ChildrenList>
+								<Action Name="" ID="{3BD481C5-A092-4DB0-A68E-60E1CE7E48F0}" ShortID="1049192685">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Laser Charge" ID="{DBF8D013-4C17-4267-AFE8-0281269FB45F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E92EBEEC-1AB1-4B4E-8EAA-74679939B033}" ShortID="226468511">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Laser Shoot" ID="{FBE48CD2-ADFD-4BB5-81C5-D8E7323D6B8D}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C776CE3C-B2C1-4A19-9ECC-32EF4528582F}" ShortID="688398872">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Laser Shoot" ID="{FBE48CD2-ADFD-4BB5-81C5-D8E7323D6B8D}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="oxbaren_shockwave_charge" ID="{CACF39EF-7739-4B10-A2E0-FE18DF77BD49}">
+							<ChildrenList>
+								<Action Name="" ID="{038DC6B4-7204-488A-83B5-B577A57671B1}" ShortID="939492882">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shockwave Charge" ID="{95D633B6-5D62-4F8B-8F23-EF9963285E57}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{70E6A4EB-387B-4E37-B4D8-032C6C9E1C57}" ShortID="141718339">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shockwave Charge" ID="{95D633B6-5D62-4F8B-8F23-EF9963285E57}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="oxbaren_shockwave_explode" ID="{E908A70F-1D06-4AE3-B8C5-B6D7F2BBD282}">
+							<ChildrenList>
+								<Action Name="" ID="{F1D07695-A55D-4DCC-BFE0-9F61192F4220}" ShortID="256827027">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shockwave Charge" ID="{95D633B6-5D62-4F8B-8F23-EF9963285E57}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{FEEADB5B-023F-4678-8B4D-458D4E1AB55C}" ShortID="99386688">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shockwave Explode" ID="{1C981865-7A76-46E9-8052-27A340F2708B}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{95A000DB-98A9-428C-82F2-D3824511F134}" ShortID="820538795">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shockwave Explode" ID="{1C981865-7A76-46E9-8052-27A340F2708B}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="oxbaren_explosion" ID="{F3A520E4-3669-4574-9587-7CF54E469CBE}">
+							<ChildrenList>
+								<Action Name="" ID="{4EFC9B75-567A-40E0-A92F-206838D42C97}" ShortID="778049186">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Self-Explosion" ID="{5141A05F-D61C-42A6-8A8E-46A47D17FC8A}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{19234AD7-D10F-45B0-B60C-A4889D924747}" ShortID="119228094">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Self-Explosion" ID="{5141A05F-D61C-42A6-8A8E-46A47D17FC8A}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="agnar_laser_charge" ID="{B715FCAA-3EAD-4EA6-AD13-4EE6DDB9E5AB}">
+							<ChildrenList>
+								<Action Name="" ID="{E48E7296-F22B-41F5-B4D3-BE307CBFC099}" ShortID="989273161">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Laser Charge" ID="{DBF8D013-4C17-4267-AFE8-0281269FB45F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EB281458-0A4F-46B7-B719-668093CC3AB8}" ShortID="988887917">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Laser Charge" ID="{DBF8D013-4C17-4267-AFE8-0281269FB45F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="tibessa_normal_time" ID="{CCDD3C51-62AC-4D2F-91CE-654BB3C4134B}">
+							<ChildrenList>
+								<Action Name="" ID="{59EE5CBE-0C43-460A-AA0E-270B253425CF}" ShortID="103093771">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Slow Time" ID="{33DBED33-E015-4557-AB27-022E42418246}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{BB797600-8892-47E8-822F-5F80A9CC0D74}" ShortID="428200720">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Normal Time" ID="{CB47A8CE-9A6B-4EDB-A383-2299A7AB1AB2}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D49D4BD1-B551-4F95-A1DC-1083E679AD88}" ShortID="238166973">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="None" ID="{0A446AEF-F9FA-4436-873B-54845266B6B4}" WorkUnitID="{6DC7A827-3638-4F84-B2DD-74F4E5C7DAF7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="tibessa_normalarrow_shoot" ID="{C08F5D14-4EB3-4A69-AD74-F353513C0B38}">
+							<ChildrenList>
+								<Action Name="" ID="{850F3A1F-A432-4CD8-91B3-56DBD4AB1394}" ShortID="281450471">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shoot" ID="{EFC5A3F7-C2B3-475E-9CBC-C75BB34D36ED}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="tibessa_normalarrow_prepare" ID="{6140374B-F3BA-4CFA-8858-18B4899BE270}">
+							<ChildrenList>
+								<Action Name="" ID="{15832AB6-1958-49EA-B9C0-A0853B917CFF}" ShortID="99299117">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Prepare" ID="{B9DB82A5-C56B-4DA4-B3FB-4346FCA64085}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="tibessa_gauntlet_open" ID="{8D9C29FB-B7BE-4811-831B-55F47F8DE614}">
+							<ChildrenList>
+								<Action Name="" ID="{4F71ADFF-1DC4-4EE5-8FE8-7073E8A5FC85}" ShortID="578217861">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.01"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Close Gauntlet" ID="{A529D39A-C74F-45AC-BD1B-485296ACA75E}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{412BCC65-A2C0-41DD-8499-7C27EFAFAABE}" ShortID="120124228">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Open Gauntlet" ID="{2C22B48A-D363-4A2F-B7E2-5887664E08CE}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="tibessa_gauntlet_close" ID="{2DC9E38E-682B-4710-B021-698055BBC3A7}">
+							<ChildrenList>
+								<Action Name="" ID="{52BB3962-8683-4EB9-A154-D28DCCBFE020}" ShortID="953942889">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.01"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Open Gauntlet" ID="{2C22B48A-D363-4A2F-B7E2-5887664E08CE}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E52BCAF4-C9DD-4DBD-9DEB-F5972B2BBDC8}" ShortID="163867584">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Close Gauntlet" ID="{A529D39A-C74F-45AC-BD1B-485296ACA75E}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="tibessa_lm_footstep" ID="{43F2DEAD-D387-424A-83FD-AFA20A9B5FFB}">
+							<ChildrenList>
+								<Action Name="" ID="{DC4D6AA8-4CAE-4F2A-93F5-6CA369F17D11}" ShortID="599212126">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{E36C11EF-5F05-4E03-8024-F516C73511A1}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="tibessa_lm_jump" ID="{72B811AD-B6CC-4007-A647-7630807BF590}">
+							<ChildrenList>
+								<Action Name="" ID="{005062D2-E8FF-41BD-B5FD-77749C8AED6D}" ShortID="979409548">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{E36C11EF-5F05-4E03-8024-F516C73511A1}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A6CDE6C7-C2DE-4340-B5E8-1F9AB1FFFEFB}" ShortID="549532965">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jump" ID="{DAB85D99-7E71-4991-8776-DD6BE74E7C0F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="tibessa_lm_land" ID="{E0CBE594-2FAF-47BF-BD59-179828FA9AEC}">
+							<ChildrenList>
+								<Action Name="" ID="{89C03406-FE07-43DC-B99D-7C9E4716F827}" ShortID="202214268">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jump" ID="{DAB85D99-7E71-4991-8776-DD6BE74E7C0F}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7068740E-A4EB-44F4-8913-F606CE2C3F0D}" ShortID="481025777">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Land" ID="{FCC8CFA3-5C68-4858-B29B-6F7FD9B39D03}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
