@@ -916,7 +916,8 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2118246937" Name="pillar_triangle_rotate_stop" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rotate_stop"/>
-				<Event Id="3565352627" Name="soul_charge" ObjectPath="\Events\Default Work Unit\Interaction\soul_charge"/>
+				<Event Id="3038994725" Name="soul_generator_charge" ObjectPath="\Events\Default Work Unit\Interaction\soul_generator_charge"/>
+				<Event Id="743707040" Name="soul_generator_nearby" ObjectPath="\Events\Default Work Unit\Interaction\soul_generator_nearby"/>
 				<Event Id="3198794998" Name="tibessa_gauntlet_close" ObjectPath="\Events\Default Work Unit\Characters\tibessa_gauntlet_close">
 					<IncludedMemoryFiles>
 						<File Id="87791094" Language="SFX">
@@ -985,99 +986,99 @@
 					<IncludedMemoryFiles>
 						<File Id="2652769" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_01.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_01_F8A20017.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_01_40CA518B.wem</Path>
 						</File>
 						<File Id="6882735" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_01.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_01_B7D19635.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_01_7BD8D928.wem</Path>
 						</File>
 						<File Id="14333850" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_02.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_02_643592A2.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_02_D78B9247.wem</Path>
 						</File>
 						<File Id="30206668" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_03.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_03_E33A9217.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_03_AFE0DA03.wem</Path>
 						</File>
 						<File Id="31898116" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_04.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_04_540072D7.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_04_EC3A37C1.wem</Path>
 						</File>
 						<File Id="37281748" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_06.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_06_BAA115B3.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_06_C2C61000.wem</Path>
 						</File>
 						<File Id="46982176" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_01.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_01_51A50953.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_01_D1D05958.wem</Path>
 						</File>
 						<File Id="63537264" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_01.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_01_150BE103.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_01_C3237C47.wem</Path>
 						</File>
 						<File Id="78087801" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_03.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_03_EAC1762C.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_03_0B0BF646.wem</Path>
 						</File>
 						<File Id="82334279" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_01.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_01_40A8F6D9.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_01_F5D9A283.wem</Path>
 						</File>
 						<File Id="101752828" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_04.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_04_9355E3C8.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_04_1FBC3C35.wem</Path>
 						</File>
 						<File Id="111738305" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_05.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_05_930D37E0.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_05_C6FFA20E.wem</Path>
 						</File>
 						<File Id="121237252" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_02.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_02_CFB143F5.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_02_BEF95D02.wem</Path>
 						</File>
 						<File Id="122353339" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_04.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_04_23A5A77F.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_04_DD549BA2.wem</Path>
 						</File>
 						<File Id="135230163" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_02.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_02_37BE5ED1.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_02_B97621AC.wem</Path>
 						</File>
 						<File Id="151323413" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_07.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_07_D2149DC1.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_07_613D3BB1.wem</Path>
 						</File>
 						<File Id="183826514" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_07.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_07_A7ADDCDC.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_07_B6BDB1F5.wem</Path>
 						</File>
 						<File Id="187644740" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_05.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_05_96769D2F.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_05_27428898.wem</Path>
 						</File>
 						<File Id="243224987" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_06.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_06_AD4C70E6.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_06_E7529052.wem</Path>
 						</File>
 						<File Id="281263368" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_03.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_03_42F8A56E.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_03_2F9E0F54.wem</Path>
 						</File>
 						<File Id="294064942" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_04.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_04_95985C95.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_04_C9740A4A.wem</Path>
 						</File>
 						<File Id="327155244" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_08.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_08_3EAA6C29.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_08_C6A2C73F.wem</Path>
 						</File>
 						<File Id="346526018" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_06.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_06_39804C99.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_06_1F57474A.wem</Path>
 						</File>
 						<File Id="401713445" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_06.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_06_5D3E3C69.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_06_FDD1D1E5.wem</Path>
 						</File>
 						<File Id="402274453" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_07.wav</ShortName>
@@ -1085,99 +1086,99 @@
 						</File>
 						<File Id="409849508" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_06.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_06_D7FD8D22.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_06_4279FF82.wem</Path>
 						</File>
 						<File Id="416420642" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_05.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_05_1C0BE4AA.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_05_C54DD71C.wem</Path>
 						</File>
 						<File Id="429755549" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_07.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_07_877CF2B0.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_07_E98EB147.wem</Path>
 						</File>
 						<File Id="455007472" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_08.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_08_D97D55BD.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_08_6BDCFD4C.wem</Path>
 						</File>
 						<File Id="457229656" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_07.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_07_D947735B.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_07_4C41667E.wem</Path>
 						</File>
 						<File Id="475580101" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_08.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_08_8594C561.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_08_5597335E.wem</Path>
 						</File>
 						<File Id="493290809" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_02.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_02_D5BAE2C6.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_02_C8955E9E.wem</Path>
 						</File>
 						<File Id="536256235" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_05.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_05_44090D35.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_05_9C6180F4.wem</Path>
 						</File>
 						<File Id="548636039" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_01.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_01_75ACB949.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_01_0220860F.wem</Path>
 						</File>
 						<File Id="555141439" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_05.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_05_1478AC7E.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_05_CB667B8E.wem</Path>
 						</File>
 						<File Id="591638087" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_06.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_06_AC7B20D5.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_06_A3C38410.wem</Path>
 						</File>
 						<File Id="707946392" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_04.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_04_B914044A.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_04_2C93144E.wem</Path>
 						</File>
 						<File Id="708012341" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_03.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_03_E3DACEE9.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_03_1645FFDA.wem</Path>
 						</File>
 						<File Id="758054694" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_05.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_05_CCCEB9A3.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_05_0CC8BAE3.wem</Path>
 						</File>
 						<File Id="768307776" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_02.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_02_F341E79E.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_02_154D49DF.wem</Path>
 						</File>
 						<File Id="790240333" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_02.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_02_ABDF0E69.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_02_40AF27ED.wem</Path>
 						</File>
 						<File Id="794286142" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_08.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_08_D7FB7EE7.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_08_448F3108.wem</Path>
 						</File>
 						<File Id="826703378" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_03.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_03_DE04D2D5.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_03_291298D2.wem</Path>
 						</File>
 						<File Id="847131852" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_07.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_07_17ED181A.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_07_D15ED2FD.wem</Path>
 						</File>
 						<File Id="883387115" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_01.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_01_6BF5B60B.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_01_F5C7D950.wem</Path>
 						</File>
 						<File Id="890093195" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_08.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_08_600BC509.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_08_013BB85A.wem</Path>
 						</File>
 						<File Id="904648709" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_03.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_03_BE0448D1.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_03_562F3B4C.wem</Path>
 						</File>
 						<File Id="986712106" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_04.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_04_EF06AE20.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_04_62ADCC1E.wem</Path>
 						</File>
 						<File Id="1012123819" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_08.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_08_EE4AC043.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_08_582486A3.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -1308,99 +1309,99 @@
 					<IncludedMemoryFiles>
 						<File Id="6882735" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_01.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_01_B7D19635.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_01_7BD8D928.wem</Path>
 						</File>
 						<File Id="63537264" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_01.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_01_150BE103.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_01_C3237C47.wem</Path>
 						</File>
 						<File Id="78087801" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_03.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_03_EAC1762C.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_03_0B0BF646.wem</Path>
 						</File>
 						<File Id="101752828" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_04.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_04_9355E3C8.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_04_1FBC3C35.wem</Path>
 						</File>
 						<File Id="111738305" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_05.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_05_930D37E0.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_05_C6FFA20E.wem</Path>
 						</File>
 						<File Id="121237252" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_02.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_02_CFB143F5.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_02_BEF95D02.wem</Path>
 						</File>
 						<File Id="151323413" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_07.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_07_D2149DC1.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_07_613D3BB1.wem</Path>
 						</File>
 						<File Id="183826514" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_07.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_07_A7ADDCDC.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_07_B6BDB1F5.wem</Path>
 						</File>
 						<File Id="243224987" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_06.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_06_AD4C70E6.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_06_E7529052.wem</Path>
 						</File>
 						<File Id="289448298" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_08.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_08_E3005E0E.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_08_710433E0.wem</Path>
 						</File>
 						<File Id="294064942" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_04.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_04_95985C95.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_04_C9740A4A.wem</Path>
 						</File>
 						<File Id="346526018" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_06.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_06_39804C99.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_06_1F57474A.wem</Path>
 						</File>
 						<File Id="416420642" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_05.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_05_1C0BE4AA.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_05_C54DD71C.wem</Path>
 						</File>
 						<File Id="475580101" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_08.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_08_8594C561.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_08_5597335E.wem</Path>
 						</File>
 						<File Id="493290809" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_02.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_02_D5BAE2C6.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_02_C8955E9E.wem</Path>
 						</File>
 						<File Id="555141439" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_05.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_05_1478AC7E.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_05_CB667B8E.wem</Path>
 						</File>
 						<File Id="591638087" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_06.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_06_AC7B20D5.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_06_A3C38410.wem</Path>
 						</File>
 						<File Id="683801843" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_02.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_02_716E5FA2.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_02_EAA25887.wem</Path>
 						</File>
 						<File Id="707946392" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_04.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_04_B914044A.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_04_2C93144E.wem</Path>
 						</File>
 						<File Id="708012341" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Carpet_Boots_FullStep_03.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_03_E3DACEE9.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Carpet_Boots_FullStep_03_1645FFDA.wem</Path>
 						</File>
 						<File Id="870693452" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_03.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_03_B05EC92D.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_03_60F967B2.wem</Path>
 						</File>
 						<File Id="883387115" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_01.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_01_6BF5B60B.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_01_F5C7D950.wem</Path>
 						</File>
 						<File Id="888061768" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_07.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_07_F1F2DB70.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Grass_Boots_FullStep_07_E6D1A75A.wem</Path>
 						</File>
 						<File Id="1012123819" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_08.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_08_EE4AC043.wem</Path>
+							<Path>SFX\Character\Tibessa\Footsteps\Gravel_Boots_FullStep_08_582486A3.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -1542,7 +1543,7 @@
 						</File>
 						<File Id="293740931" Language="SFX">
 							<ShortName>Character\Tibessa\Ethereal Whoosh-002 2.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Ethereal Whoosh-002 2_F94E72D2.wem</Path>
+							<Path>SFX\Character\Tibessa\Ethereal Whoosh-002 2_EA74E582.wem</Path>
 						</File>
 						<File Id="445686762" Language="SFX">
 							<ShortName>Character\Tibessa\Krotos UI Chime Single Hit Mono-001.wav</ShortName>
@@ -1550,7 +1551,7 @@
 						</File>
 						<File Id="818417696" Language="SFX">
 							<ShortName>Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065_8A58AAC2.wem</Path>
+							<Path>SFX\Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065_8F0BF5F3.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -1562,10 +1563,12 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4130026045" Name="time_change" ObjectPath="\Events\Default Work Unit\Interaction\time_change">
+				<Event Id="3749323690" Name="time_bubble_change" ObjectPath="\Events\Default Work Unit\Interaction\time_bubble_change">
 					<SwitchContainers/>
 				</Event>
+				<Event Id="3912153419" Name="time_bubble_nearby" ObjectPath="\Events\Default Work Unit\Interaction\time_bubble_nearby"/>
 				<Event Id="1268222929" Name="time_crystal_nearby" ObjectPath="\Events\Default Work Unit\Interaction\time_crystal_nearby"/>
+				<Event Id="4262142211" Name="time_crystal_shatter" ObjectPath="\Events\Default Work Unit\Interaction\time_crystal_shatter"/>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="129" Name="MIDI note velocity" ObjectPath="MIDI\MIDI note velocity"/>

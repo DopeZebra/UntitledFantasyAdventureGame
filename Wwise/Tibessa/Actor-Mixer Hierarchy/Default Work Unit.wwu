@@ -5,11 +5,14 @@
 			<ChildrenList>
 				<ActorMixer Name="Interaction" ID="{7568CB29-D999-4744-8E17-D4CCDF5643CD}" ShortID="1063751151">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
 						</Reference>
@@ -18,7 +21,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<ActorMixer Name="Time" ID="{5672BFF3-D420-48AF-8C48-21A9D4D0A2B5}" ShortID="320699244">
+						<ActorMixer Name="Time Bubble" ID="{5672BFF3-D420-48AF-8C48-21A9D4D0A2B5}" ShortID="320699244">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
@@ -30,6 +33,8 @@
 							<ChildrenList>
 								<BlendContainer Name="Change Time" ID="{DC6086E0-DAAF-4030-9B97-1A4691A63677}" ShortID="12991761">
 									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -579,7 +584,7 @@ Content provided by Vincent Gagnon
 										</SwitchContainer>
 									</ChildrenList>
 								</BlendContainer>
-								<BlendContainer Name="Time Crystal" ID="{BF60079C-A94B-4600-8620-B1CD9391BBED}" ShortID="601139671">
+								<BlendContainer Name="Bubble Nearby" ID="{BF60079C-A94B-4600-8620-B1CD9391BBED}" ShortID="601139671">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
@@ -3318,15 +3323,114 @@ Content provided by Vincent Gagnon
 								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
+						<ActorMixer Name="Time Crystal" ID="{DEE798D8-8EDE-45E8-88E2-313D647DCB4C}" ShortID="214957814">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="Crystal Nearby" ID="{DB698152-C881-4F8F-A4DB-C989478D9D53}" ShortID="7120612">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+										</Reference>
+									</ReferenceList>
+								</BlendContainer>
+								<BlendContainer Name="Crystal Shatter" ID="{A9FA0983-86A6-4075-9D9F-5611EF1AF5D8}" ShortID="1055965800">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+										</Reference>
+									</ReferenceList>
+								</BlendContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Soul Generator" ID="{738E33A2-B009-48EB-9A06-F5535A8BEEBC}" ShortID="181069115">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="Soul Charge" ID="{4EF88611-5967-4606-B8D2-9888ACBD521B}" ShortID="296390286">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+										</Reference>
+									</ReferenceList>
+								</BlendContainer>
+								<BlendContainer Name="Soul Generator Nearby" ID="{9605AFA3-5D7E-4224-A03F-07FAA0E195F6}" ShortID="237965703">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+										</Reference>
+									</ReferenceList>
+								</BlendContainer>
+							</ChildrenList>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Atmosphere" ID="{7BC9EC9F-D1B6-4F34-842F-059009CB5B44}" ShortID="440963598">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Atmosphere_Att" ID="{23D93DCE-2C64-4B40-B9F7-5695996B2ABB}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
 						</Reference>

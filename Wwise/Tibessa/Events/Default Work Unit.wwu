@@ -21,7 +21,7 @@
 				<Folder Name="Atmosphere" ID="{023B7A0C-716C-41B3-8931-D11EBE004F5B}" ShortID="872675877"/>
 				<Folder Name="Interaction" ID="{B6D07F8C-847D-4E13-826B-13628EA08F33}" ShortID="368284147">
 					<ChildrenList>
-						<Event Name="time_change" ID="{5085AB8E-F7FE-4157-9B5E-B264F60CD5BA}">
+						<Event Name="time_bubble_change" ID="{5085AB8E-F7FE-4157-9B5E-B264F60CD5BA}">
 							<ChildrenList>
 								<Action Name="" ID="{05276CBE-9520-448B-A46D-D59089199663}" ShortID="1063959942">
 									<PropertyList>
@@ -42,7 +42,27 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="soul_charge" ID="{3F52F813-FFE7-443E-BE07-40D4FC8DA12C}"/>
+						<Event Name="soul_generator_charge" ID="{3F52F813-FFE7-443E-BE07-40D4FC8DA12C}">
+							<ChildrenList>
+								<Action Name="" ID="{D2AA5FD5-26D1-4AC7-8D2D-E1A787BFE62D}" ShortID="55472367">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Soul Charge" ID="{4EF88611-5967-4606-B8D2-9888ACBD521B}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{71E0D269-E57B-47BF-A716-20D0A52634CE}" ShortID="344258346">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Soul Charge" ID="{4EF88611-5967-4606-B8D2-9888ACBD521B}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="pillar_rotate_start" ID="{DAB4DF55-D368-4D8D-977C-EBCF6CD4D95A}">
 							<ChildrenList>
 								<Action Name="" ID="{EDE0758B-0FD7-4CCD-839F-6FE1E5CC40E0}" ShortID="1058908079">
@@ -169,7 +189,17 @@
 						</Event>
 						<Event Name="pillar_triangle_rise" ID="{B4E2D6FE-C9EE-493F-9604-9BFF5F11CEB3}"/>
 						<Event Name="pillar_triangle_lower" ID="{0DE9D7D1-7C91-4288-BBC3-322DD079801C}"/>
-						<Event Name="time_crystal_nearby" ID="{7F770696-9B21-4666-B7B9-B0857172CE24}"/>
+						<Event Name="time_crystal_nearby" ID="{7F770696-9B21-4666-B7B9-B0857172CE24}">
+							<ChildrenList>
+								<Action Name="" ID="{142E73E7-7780-4CC7-B3A6-B4748D754957}" ShortID="58264360">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Crystal Nearby" ID="{DB698152-C881-4F8F-A4DB-C989478D9D53}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="pillar_rotate_stop" ID="{DB93E6B1-A7EE-41C6-96B3-8658B99A65C6}">
 							<ChildrenList>
 								<Action Name="" ID="{99E4FA83-BC7E-43FA-AE8A-9CF1C1B6AE99}" ShortID="326957543">
@@ -281,6 +311,49 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Pillar Rotate" ID="{A5BFE958-8D59-444F-AA5B-975076011DD3}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="time_bubble_nearby" ID="{441BC8F1-86B6-4752-AE9A-FCC6E83632D5}">
+							<ChildrenList>
+								<Action Name="" ID="{FF4AE4BF-775A-434C-B13B-5B666098AC09}" ShortID="198604489">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bubble Nearby" ID="{BF60079C-A94B-4600-8620-B1CD9391BBED}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="time_crystal_shatter" ID="{2A1D4D5B-5A76-489D-8BC4-672A42E83D6C}">
+							<ChildrenList>
+								<Action Name="" ID="{610FCCAA-1D77-46FA-8556-3BE6454E301A}" ShortID="1051958956">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Crystal Shatter" ID="{A9FA0983-86A6-4075-9D9F-5611EF1AF5D8}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D75712F4-FFA7-4865-8E86-5597E34608C9}" ShortID="140015297">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Crystal Shatter" ID="{A9FA0983-86A6-4075-9D9F-5611EF1AF5D8}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="soul_generator_nearby" ID="{DEF81C79-F1CF-4B27-A8A4-E032C03F14C4}">
+							<ChildrenList>
+								<Action Name="" ID="{F8372200-4A23-446C-ACFA-3C6880044C83}" ShortID="1041321011">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Soul Generator Nearby" ID="{9605AFA3-5D7E-4224-A03F-07FAA0E195F6}" WorkUnitID="{1840D29A-E633-461B-972D-9E32208C8847}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
