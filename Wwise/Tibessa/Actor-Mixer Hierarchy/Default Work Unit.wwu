@@ -3355,7 +3355,44 @@ Content provided by Vincent Gagnon
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{9A9404C9-6A1A-46A1-87B4-1079AADFEED3}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="300"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RenderEffect0" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F1F1ADB6-9705-4222-BADF-40F1F529CD72}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -3364,10 +3401,649 @@ Content provided by Vincent Gagnon
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
 										</Reference>
+										<Reference Name="Effect0">
+											<Custom CreatedFrom="{D4A5BBF1-6A59-47A7-BB97-E7695900B72F}">
+												<Effect Name="Plate_Sizzle_(Custom)" ID="{5406DC4A-68DD-4E4D-B4A8-1E470CB19627}" ShortID="99495644" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="DecayTime" Type="Real32" Value="0.5"/>
+														<Property Name="Density" Type="Real32" Value="60"/>
+														<Property Name="Diffusion" Type="Real32" Value="74"/>
+														<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+														<Property Name="ERLevel" Type="Real32" Value="-46"/>
+														<Property Name="ERPattern" Type="int32" Value="21"/>
+														<Property Name="Filter1Freq" Type="Real32" Value="590"/>
+														<Property Name="Filter1Gain" Type="Real32" Value="-2.5"/>
+														<Property Name="Filter2Freq" Type="Real32" Value="780"/>
+														<Property Name="Filter3Freq" Type="Real32" Value="7210"/>
+														<Property Name="Filter3Gain" Type="Real32" Value="5"/>
+														<Property Name="HFDamping" Type="Real32" Value="1.75"/>
+														<Property Name="PreDelay" Type="Real32" Value="40"/>
+														<Property Name="Quality" Type="int32" Value="10"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-18"/>
+														<Property Name="RoomShape" Type="Real32" Value="0"/>
+														<Property Name="RoomSize" Type="Real32" Value="20"/>
+														<Property Name="StereoWidth" Type="Real32" Value="155"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Mid" ID="{46A21C10-E1B7-4FD6-81F5-5F2887F971A5}" ShortID="172022497">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.2</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C369EAA0-7FBA-47A5-BEF5-DD09F0B23EBB}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="0.1"/>
+																	<Property Name="Min" Type="Real64" Value="-0.1"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Glass, Broken Bottle, Pieces, Crush, Grind 5 SND17509" ID="{52B8A32D-3CF7-453C-A139-F7EAD0914531}" ShortID="578573746">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Glass, Broken Bottle, Pieces, Crush, Grind 5 SND17509" ID="{2278F999-A5BB-4632-8B1B-CEED0DA5720C}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.258349513825585"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.178428441203282"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Time Crystal\Glass, Broken Bottle, Pieces, Crush, Grind 5 SND17509.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="252464555"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Glass, Broken Bottle, Pieces, Crush, Grind 5 SND17509" ID="{2278F999-A5BB-4632-8B1B-CEED0DA5720C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Glass, Broken Bottle, Pieces, Crush, Grind 6 SND17545" ID="{FCBEE90D-0EA4-4D83-828C-EF3698F1D727}" ShortID="417625436">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Glass, Broken Bottle, Pieces, Crush, Grind 6 SND17545" ID="{2ECBF582-0333-4A79-967C-1BA2B78EE2C2}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.190273131267092"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.419576648435126"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.23906111364327"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.50266985718627"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Time Crystal\Glass, Broken Bottle, Pieces, Crush, Grind 6 SND17545.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="207087268"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Glass, Broken Bottle, Pieces, Crush, Grind 6 SND17545" ID="{2ECBF582-0333-4A79-967C-1BA2B78EE2C2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Glass, Broken Bottle, Pieces, Crush, Grind 6 SND17545_01" ID="{4A2A8370-80A6-4585-BF13-202E2146E6F8}" ShortID="503653066">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Glass, Broken Bottle, Pieces, Crush, Grind 6 SND17545" ID="{F35499A3-B487-44F1-81C3-A45ABF66428F}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.234182315405652"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.419576648435126"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.8685797250076"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.14194606502583"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Time Crystal\Glass, Broken Bottle, Pieces, Crush, Grind 6 SND17545.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="5369214"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Glass, Broken Bottle, Pieces, Crush, Grind 6 SND17545" ID="{F35499A3-B487-44F1-81C3-A45ABF66428F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Glass, Broken Bottle, Pieces, Crush, Grind 6 SND17545_02" ID="{7C610B36-BCDC-4527-82F8-F4B80EA41C4C}" ShortID="456781965">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Glass, Broken Bottle, Pieces, Crush, Grind 6 SND17545" ID="{C1138259-44EB-4002-9799-4BE7984F4E0C}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.175636736554239"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.419576648435126"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.91264254785779"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.29822124734123"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Time Crystal\Glass, Broken Bottle, Pieces, Crush, Grind 6 SND17545.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="641552853"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Glass, Broken Bottle, Pieces, Crush, Grind 6 SND17545" ID="{C1138259-44EB-4002-9799-4BE7984F4E0C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Tail" ID="{68AFF06A-82F1-4ABB-A627-8E0F8A1DFEEE}" ShortID="448151891">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.5</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{ABCD9F3A-B72B-433B-A063-77173F98A8CC}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="0.1"/>
+																	<Property Name="Min" Type="Real64" Value="-0.1"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Glass, Sledgehammer, Shatters SND4363" ID="{04073793-91AE-4053-A0CF-361D591462A0}" ShortID="367937054">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Glass, Sledgehammer, Shatters SND4363" ID="{C5065264-6D5E-4023-B493-3F68177B9085}">
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Time Crystal\Glass, Sledgehammer, Shatters SND4363.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="658286123"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Glass, Sledgehammer, Shatters SND4363" ID="{C5065264-6D5E-4023-B493-3F68177B9085}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Icy Debris 1 bright shards-001_02" ID="{F9E44120-7CEB-4806-B3E7-9DAF45843E9E}" ShortID="758708164">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Icy Debris 1 bright shards-001" ID="{51B1C2BF-F12A-41F1-96CC-DF3EA52F069E}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.185983202294136"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.605434679808569"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="3.3358263730629"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Time Crystal\Icy Debris 1 bright shards-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1031949602"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Icy Debris 1 bright shards-001" ID="{51B1C2BF-F12A-41F1-96CC-DF3EA52F069E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Icy Debris 1 bright shards-001_01" ID="{21B1FFDA-7D96-4548-93E3-7B0889A18A14}" ShortID="66850288">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Icy Debris 1 bright shards-001" ID="{511047F3-2B87-4BCD-A39E-6B053BD91126}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.340309689304163"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.605434679808569"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.51952233363719"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.55627975919174"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>-2.1</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Time Crystal\Icy Debris 1 bright shards-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="468296281"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Icy Debris 1 bright shards-001" ID="{511047F3-2B87-4BCD-A39E-6B053BD91126}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Glass Shards, Small, Drop Into Container, Break 2 SND28496_01" ID="{D9762A89-B9D0-4260-8704-F2F60B166DC6}" ShortID="991947839">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Glass Shards, Small, Drop Into Container, Break 2 SND28496" ID="{E2C8B584-1EF9-426B-9F66-A5EE400E47D2}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.70075307657247"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.787077730932847"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.16538283386509"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.78270062291097"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Time Crystal\Glass Shards, Small, Drop Into Container, Break 2 SND28496.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="895286819"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Glass Shards, Small, Drop Into Container, Break 2 SND28496" ID="{E2C8B584-1EF9-426B-9F66-A5EE400E47D2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="High" ID="{7C50376E-178A-4901-AB03-ACDEB231D477}" ShortID="135566202">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B6B164EE-580A-4D21-8F2E-77ABBD6B3D20}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="0.2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Glass Shards, Small, Drop Into Container, Break 2 SND28496" ID="{85899310-9DDF-42BA-BC0D-4B467EAC6898}" ShortID="853642177">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>63</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Glass Shards, Small, Drop Into Container, Break 2 SND28496" ID="{D08236A0-89E1-479E-B6FD-3E7636082271}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.142181783652385"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.408772628000607"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.121870100273473"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.33041526131875"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Time Crystal\Glass Shards, Small, Drop Into Container, Break 2 SND28496.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="937145060"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Glass Shards, Small, Drop Into Container, Break 2 SND28496" ID="{D08236A0-89E1-479E-B6FD-3E7636082271}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Glass, Broken Bottle, Pieces, Crush, Grind 4 SND17510" ID="{CD95AAD0-F49D-4586-8141-3317B0038F66}" ShortID="946559119">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Glass, Broken Bottle, Pieces, Crush, Grind 4 SND17510" ID="{53D4028F-4EA3-490E-8612-24FF0AAC8F25}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0465925060771802"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.220848478805834"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Time Crystal\Glass, Broken Bottle, Pieces, Crush, Grind 4 SND17510.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="579156118"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Glass, Broken Bottle, Pieces, Crush, Grind 4 SND17510" ID="{53D4028F-4EA3-490E-8612-24FF0AAC8F25}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Low" ID="{9FA3BD3F-D60B-49BC-A143-99DABE20CFFC}" ShortID="511792586">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Icy Chunks Large-001" ID="{9DE6CA14-3838-4E48-89B3-6FA532314595}" ShortID="490400852">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Icy Chunks Large-001" ID="{27A621C1-7893-4C7A-BB17-460E4AE642A6}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.183470658614403"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.304236155423883"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.173019798313582"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Time Crystal\Icy Chunks Large-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="987869510"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Icy Chunks Large-001" ID="{27A621C1-7893-4C7A-BB17-460E4AE642A6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Icy Chunks Large-003" ID="{D06D0E7D-6A1B-4E5E-87C5-8C9C82F10C52}" ShortID="310422215">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Icy Chunks Large-003" ID="{1A37F5C3-6D25-43CE-AAF8-DB2DE22197C2}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.192587074597387"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.204499677149802"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Time Crystal\Icy Chunks Large-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="868654045"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Icy Chunks Large-003" ID="{1A37F5C3-6D25-43CE-AAF8-DB2DE22197C2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Icy Debris 1 bright shards-001_01" ID="{339C6A4C-600B-4AEC-9F1D-A410F4DBE805}" ShortID="753874818">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Icy Debris 1 bright shards-001" ID="{E7FF7726-2A54-4194-97B4-4B95C6422179}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.185983202294136"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.605434679808569"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.52858013331814"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.46245323419933"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Time Crystal\Icy Debris 1 bright shards-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1058137921"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Icy Debris 1 bright shards-001" ID="{E7FF7726-2A54-4194-97B4-4B95C6422179}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Icy Debris 1 bright shards-001" ID="{3A5A0AC9-D177-4BEA-A7F4-3A5A79D7D31E}" ShortID="693378866">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Icy Debris 1 bright shards-001" ID="{C1D17DB3-5C5B-4BE1-A526-0F841631BA2B}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.102884324673352"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.605434679808569"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.672705199787299"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.65406337359465"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Time Crystal\Icy Debris 1 bright shards-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="232408826"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Icy Debris 1 bright shards-001" ID="{C1D17DB3-5C5B-4BE1-A526-0F841631BA2B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
 								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
