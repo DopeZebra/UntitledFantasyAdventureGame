@@ -916,7 +916,8 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2118246937" Name="pillar_triangle_rotate_stop" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rotate_stop"/>
-				<Event Id="3565352627" Name="soul_charge" ObjectPath="\Events\Default Work Unit\Interaction\soul_charge"/>
+				<Event Id="3038994725" Name="soul_generator_charge" ObjectPath="\Events\Default Work Unit\Interaction\soul_generator_charge"/>
+				<Event Id="743707040" Name="soul_generator_nearby" ObjectPath="\Events\Default Work Unit\Interaction\soul_generator_nearby"/>
 				<Event Id="3198794998" Name="tibessa_gauntlet_close" ObjectPath="\Events\Default Work Unit\Characters\tibessa_gauntlet_close">
 					<IncludedMemoryFiles>
 						<File Id="87791094" Language="SFX">
@@ -1542,7 +1543,7 @@
 						</File>
 						<File Id="293740931" Language="SFX">
 							<ShortName>Character\Tibessa\Ethereal Whoosh-002 2.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Ethereal Whoosh-002 2_F94E72D2.wem</Path>
+							<Path>SFX\Character\Tibessa\Ethereal Whoosh-002 2_EA74E582.wem</Path>
 						</File>
 						<File Id="445686762" Language="SFX">
 							<ShortName>Character\Tibessa\Krotos UI Chime Single Hit Mono-001.wav</ShortName>
@@ -1550,7 +1551,7 @@
 						</File>
 						<File Id="818417696" Language="SFX">
 							<ShortName>Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065.wav</ShortName>
-							<Path>SFX\Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065_8A58AAC2.wem</Path>
+							<Path>SFX\Character\Tibessa\Sound Design, Sweep, White Noise Filter, Resonance, Crescendo SND35065_8F0BF5F3.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -1562,10 +1563,71 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4130026045" Name="time_change" ObjectPath="\Events\Default Work Unit\Interaction\time_change">
+				<Event Id="3749323690" Name="time_bubble_change" ObjectPath="\Events\Default Work Unit\Interaction\time_bubble_change">
 					<SwitchContainers/>
 				</Event>
+				<Event Id="3912153419" Name="time_bubble_nearby" ObjectPath="\Events\Default Work Unit\Interaction\time_bubble_nearby"/>
 				<Event Id="1268222929" Name="time_crystal_nearby" ObjectPath="\Events\Default Work Unit\Interaction\time_crystal_nearby"/>
+				<Event Id="4262142211" Name="time_crystal_shatter" ObjectPath="\Events\Default Work Unit\Interaction\time_crystal_shatter">
+					<IncludedMemoryFiles>
+						<File Id="5369214" Language="SFX">
+							<ShortName>Interaction\Time Crystal\Glass, Broken Bottle, Pieces, Crush, Grind 6 SND17545.wav</ShortName>
+							<Path>SFX\Interaction\Time Crystal\Glass, Broken Bottle, Pieces, Crush, Grind 6 SND17545_65080A5A.wem</Path>
+						</File>
+						<File Id="207087268" Language="SFX">
+							<ShortName>Interaction\Time Crystal\Glass, Broken Bottle, Pieces, Crush, Grind 6 SND17545.wav</ShortName>
+							<Path>SFX\Interaction\Time Crystal\Glass, Broken Bottle, Pieces, Crush, Grind 6 SND17545_60E9C335.wem</Path>
+						</File>
+						<File Id="232408826" Language="SFX">
+							<ShortName>Interaction\Time Crystal\Icy Debris 1 bright shards-001.wav</ShortName>
+							<Path>SFX\Interaction\Time Crystal\Icy Debris 1 bright shards-001_CFFFA6D0.wem</Path>
+						</File>
+						<File Id="252464555" Language="SFX">
+							<ShortName>Interaction\Time Crystal\Glass, Broken Bottle, Pieces, Crush, Grind 5 SND17509.wav</ShortName>
+							<Path>SFX\Interaction\Time Crystal\Glass, Broken Bottle, Pieces, Crush, Grind 5 SND17509_E723D0C6.wem</Path>
+						</File>
+						<File Id="468296281" Language="SFX">
+							<ShortName>Interaction\Time Crystal\Icy Debris 1 bright shards-001.wav</ShortName>
+							<Path>SFX\Interaction\Time Crystal\Icy Debris 1 bright shards-001_63C2DB14.wem</Path>
+						</File>
+						<File Id="579156118" Language="SFX">
+							<ShortName>Interaction\Time Crystal\Glass, Broken Bottle, Pieces, Crush, Grind 4 SND17510.wav</ShortName>
+							<Path>SFX\Interaction\Time Crystal\Glass, Broken Bottle, Pieces, Crush, Grind 4 SND17510_C3B7D406.wem</Path>
+						</File>
+						<File Id="641552853" Language="SFX">
+							<ShortName>Interaction\Time Crystal\Glass, Broken Bottle, Pieces, Crush, Grind 6 SND17545.wav</ShortName>
+							<Path>SFX\Interaction\Time Crystal\Glass, Broken Bottle, Pieces, Crush, Grind 6 SND17545_B417CEF2.wem</Path>
+						</File>
+						<File Id="658286123" Language="SFX">
+							<ShortName>Interaction\Time Crystal\Glass, Sledgehammer, Shatters SND4363.wav</ShortName>
+							<Path>SFX\Interaction\Time Crystal\Glass, Sledgehammer, Shatters SND4363_08149DE1.wem</Path>
+						</File>
+						<File Id="868654045" Language="SFX">
+							<ShortName>Interaction\Time Crystal\Icy Chunks Large-003.wav</ShortName>
+							<Path>SFX\Interaction\Time Crystal\Icy Chunks Large-003_D272BA41.wem</Path>
+						</File>
+						<File Id="895286819" Language="SFX">
+							<ShortName>Interaction\Time Crystal\Glass Shards, Small, Drop Into Container, Break 2 SND28496.wav</ShortName>
+							<Path>SFX\Interaction\Time Crystal\Glass Shards, Small, Drop Into Container, Break 2 SND28496_513F7554.wem</Path>
+						</File>
+						<File Id="937145060" Language="SFX">
+							<ShortName>Interaction\Time Crystal\Glass Shards, Small, Drop Into Container, Break 2 SND28496.wav</ShortName>
+							<Path>SFX\Interaction\Time Crystal\Glass Shards, Small, Drop Into Container, Break 2 SND28496_509596DC.wem</Path>
+						</File>
+						<File Id="987869510" Language="SFX">
+							<ShortName>Interaction\Time Crystal\Icy Chunks Large-001.wav</ShortName>
+							<Path>SFX\Interaction\Time Crystal\Icy Chunks Large-001_BFC0B001.wem</Path>
+						</File>
+						<File Id="1031949602" Language="SFX">
+							<ShortName>Interaction\Time Crystal\Icy Debris 1 bright shards-001.wav</ShortName>
+							<Path>SFX\Interaction\Time Crystal\Icy Debris 1 bright shards-001_8DC54FF8.wem</Path>
+						</File>
+						<File Id="1058137921" Language="SFX">
+							<ShortName>Interaction\Time Crystal\Icy Debris 1 bright shards-001.wav</ShortName>
+							<Path>SFX\Interaction\Time Crystal\Icy Debris 1 bright shards-001_61E47112.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="129" Name="MIDI note velocity" ObjectPath="MIDI\MIDI note velocity"/>

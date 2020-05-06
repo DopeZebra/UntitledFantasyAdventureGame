@@ -3,8 +3,32 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{5251E533-B2CB-4EBF-8675-DA5B6787BCF7}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Soundbank" ID="{8E9EA8DA-C10B-4736-AF2A-36FE31130158}">
-					<ObjectInclusionList/>
+				<SoundBank Name="SFX_SB" ID="{8E9EA8DA-C10B-4736-AF2A-36FE31130158}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Characters" ID="{20CB9DA4-7050-4DDD-BD9D-32D3B00A5D3D}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Interaction" ID="{B6D07F8C-847D-4E13-826B-13628EA08F33}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Music_SB" ID="{A353236B-2D58-4993-AECB-698B21DCD07B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Music" ID="{D6AC7BC9-43C4-4D02-8B51-DD1CD1FAF0AE}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Atmosphere_SB" ID="{F095798D-2B11-4D23-9112-A01F52E8E1BC}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Atmosphere" ID="{023B7A0C-716C-41B3-8931-D11EBE004F5B}" WorkUnitID="{0733037F-2C68-4732-AE18-9992719C01CE}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Aux_SB" ID="{2C2023B4-713F-4CBC-924B-68E026D8BDBB}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Reverbs" ID="{FB150F2B-6FB6-489E-8344-DC21A313175D}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
