@@ -3358,6 +3358,11 @@ Content provided by Vincent Gagnon
 									<ChildrenList>
 										<RandomSequenceContainer Name="CrystalNearby" ID="{52DC5CFD-625D-4202-A8FC-5DC3CAFDDA2C}" ShortID="371788305">
 											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>25</Value>
+													</ValueList>
+												</Property>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
@@ -3592,6 +3597,267 @@ Content provided by Vincent Gagnon
 													</ChildrenList>
 													<ActiveSourceList>
 														<ActiveSource Name="crystalNearby" ID="{BBD1280B-3795-44DF-8465-D45BC042A7B3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="CrystalNearby_01" ID="{75F9166E-1AED-48F8-8D5A-08E585B74568}" ShortID="817354937">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>50</Value>
+													</ValueList>
+												</Property>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-1200</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.2"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="crystalNearby" ID="{F0DBCE01-A877-4E4C-8B42-6238867B3ABE}" ShortID="109976537">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="crystalNearby" ID="{B9761926-6952-43CC-A270-F73BF2E3BB07}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.995063923824641"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.997123313777158"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="5.02001761760957"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Time Crystal\crystalNearby.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="333533147"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="crystalNearby" ID="{B9761926-6952-43CC-A270-F73BF2E3BB07}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="crystalNearby_01" ID="{A7908E20-5FC8-45BB-8E91-C490B812D857}" ShortID="265536790">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="crystalNearby" ID="{D98D9D97-7A95-41C2-BFFB-FF5E77AB8C90}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.995063923824641"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.997123313777158"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="4.96353691886965"/>
+																<Property Name="TrimEnd" Type="Real64" Value="9.98723792160438"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Time Crystal\crystalNearby.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="170285477"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="crystalNearby" ID="{D98D9D97-7A95-41C2-BFFB-FF5E77AB8C90}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="crystalNearby_02" ID="{3A3D4194-B756-4B23-9E90-BFED5B8FF9BD}" ShortID="684306761">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="crystalNearby" ID="{B85268FF-DDB4-4C88-97D5-7FC61C5E4D3F}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.995063923824641"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.997123313777158"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="10.0173199635369"/>
+																<Property Name="TrimEnd" Type="Real64" Value="14.9808568824066"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Time Crystal\crystalNearby.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="9803507"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="crystalNearby" ID="{B85268FF-DDB4-4C88-97D5-7FC61C5E4D3F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="crystalNearby_03" ID="{01805A3C-2A6C-43A0-AD2A-692D50850E7F}" ShortID="858814614">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="crystalNearby" ID="{682B9D54-1138-4E67-B9A1-289D137C5A87}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.995063923824641"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.997123313777158"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="15.0711030082042"/>
+																<Property Name="TrimEnd" Type="Real64" Value="20.1850501367366"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Time Crystal\crystalNearby.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="776889481"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="crystalNearby" ID="{682B9D54-1138-4E67-B9A1-289D137C5A87}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="crystalNearby_04" ID="{D311006B-7140-4164-A014-A39CC0D5E466}" ShortID="494958446">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="crystalNearby" ID="{5D802B7C-F259-4D52-ACBB-14585ACFA297}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.995063923824641"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.997123313777158"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="20.0045578851413"/>
+																<Property Name="TrimEnd" Type="Real64" Value="25.0884229717411"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Time Crystal\crystalNearby.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="547180059"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="crystalNearby" ID="{5D802B7C-F259-4D52-ACBB-14585ACFA297}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="crystalNearby_05" ID="{550A5381-C091-4ABA-85DA-F219B1FB8B05}" ShortID="750253749">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Interaction_Att" ID="{F7A7C69D-CF0B-4147-A5BF-7A09A8CCAD00}" WorkUnitID="{2F0F45A7-9348-45F8-8FC8-0B4181401F31}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{40C83FBF-6EDB-4FF0-AF38-CF99AAE4318E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="crystalNearby" ID="{2B12B9E8-071E-4D93-9F8F-0EFEAE23C9DA}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.995063923824641"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.997123313777158"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="25.0583409298086"/>
+																<Property Name="TrimEnd" Type="Real64" Value="30.0218778486782"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Interaction\Time Crystal\crystalNearby.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="444634591"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="crystalNearby" ID="{2B12B9E8-071E-4D93-9F8F-0EFEAE23C9DA}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
