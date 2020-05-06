@@ -1571,27 +1571,27 @@
 					<IncludedMemoryFiles>
 						<File Id="9803507" Language="SFX">
 							<ShortName>Interaction\Time Crystal\crystalNearby.wav</ShortName>
-							<Path>SFX\Interaction\Time Crystal\crystalNearby_3B43038E.wem</Path>
+							<Path>SFX\Interaction\Time Crystal\crystalNearby_7E994462.wem</Path>
 						</File>
 						<File Id="170285477" Language="SFX">
 							<ShortName>Interaction\Time Crystal\crystalNearby.wav</ShortName>
-							<Path>SFX\Interaction\Time Crystal\crystalNearby_05B1062E.wem</Path>
+							<Path>SFX\Interaction\Time Crystal\crystalNearby_03053A65.wem</Path>
 						</File>
 						<File Id="333533147" Language="SFX">
 							<ShortName>Interaction\Time Crystal\crystalNearby.wav</ShortName>
-							<Path>SFX\Interaction\Time Crystal\crystalNearby_F7B2ED40.wem</Path>
+							<Path>SFX\Interaction\Time Crystal\crystalNearby_01FB0B76.wem</Path>
 						</File>
 						<File Id="444634591" Language="SFX">
 							<ShortName>Interaction\Time Crystal\crystalNearby.wav</ShortName>
-							<Path>SFX\Interaction\Time Crystal\crystalNearby_EE0C391D.wem</Path>
+							<Path>SFX\Interaction\Time Crystal\crystalNearby_4063CCEC.wem</Path>
 						</File>
 						<File Id="547180059" Language="SFX">
 							<ShortName>Interaction\Time Crystal\crystalNearby.wav</ShortName>
-							<Path>SFX\Interaction\Time Crystal\crystalNearby_AA10DF88.wem</Path>
+							<Path>SFX\Interaction\Time Crystal\crystalNearby_D94341AF.wem</Path>
 						</File>
 						<File Id="776889481" Language="SFX">
 							<ShortName>Interaction\Time Crystal\crystalNearby.wav</ShortName>
-							<Path>SFX\Interaction\Time Crystal\crystalNearby_AF617AAE.wem</Path>
+							<Path>SFX\Interaction\Time Crystal\crystalNearby_6A0B8FE8.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -1631,7 +1631,7 @@
 						</File>
 						<File Id="868654045" Language="SFX">
 							<ShortName>Interaction\Time Crystal\Icy Chunks Large-003.wav</ShortName>
-							<Path>SFX\Interaction\Time Crystal\Icy Chunks Large-003_EB73E096.wem</Path>
+							<Path>SFX\Interaction\Time Crystal\Icy Chunks Large-003_48378710.wem</Path>
 						</File>
 						<File Id="895286819" Language="SFX">
 							<ShortName>Interaction\Time Crystal\Glass Shards, Small, Drop Into Container, Break 2 SND28496.wav</ShortName>
@@ -1643,7 +1643,7 @@
 						</File>
 						<File Id="987869510" Language="SFX">
 							<ShortName>Interaction\Time Crystal\Icy Chunks Large-001.wav</ShortName>
-							<Path>SFX\Interaction\Time Crystal\Icy Chunks Large-001_DFCBBCB6.wem</Path>
+							<Path>SFX\Interaction\Time Crystal\Icy Chunks Large-001_837C4FAA.wem</Path>
 						</File>
 						<File Id="1031949602" Language="SFX">
 							<ShortName>Interaction\Time Crystal\Icy Debris 1 bright shards-001.wav</ShortName>
