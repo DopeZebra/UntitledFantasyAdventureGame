@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{FACB520D-9F4C-4835-B688-23C7CF0C0393}" SchemaVersion="97">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{FACB520D-9F4C-4835-B688-23C7CF0C0393}" PersistMode="Standalone">
-			<ChildrenList>
-				<MixingSession Name="Music" ID="{C4231216-83F5-4EAA-A4D9-81218711A85D}">
-					<ObjectList>
-						<ObjectRef Name="Music" ID="{1341993A-9A29-4750-AA61-9268EEFE8617}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
-						<ObjectRef Name="Main" ID="{7695E774-DCB7-42B8-BD3E-B314301FFE2B}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
-						<ObjectRef Name="Stingers" ID="{5003FE03-3832-4F2A-BAF5-57D9CFF3BB22}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
-						<ObjectRef Name="Combat" ID="{21D47A20-5739-4D59-BE16-C526F0A6DA1C}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
-						<ObjectRef Name="Explore" ID="{6A98E1B3-B32E-4B3C-9034-ED0B078D200D}" WorkUnitID="{88562B2E-0FE5-4531-A7F5-BE97BFE0A909}"/>
-					</ObjectList>
-				</MixingSession>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{FACB520D-9F4C-4835-B688-23C7CF0C0393}" PersistMode="Standalone"/>
 	</MixingSessions>
 </WwiseDocument>
