@@ -19,3 +19,4 @@ TempDefinitionFile.txt
 *.wem
 *.prof
 IncrementalSoundBankData.xml
+*.validationcache
