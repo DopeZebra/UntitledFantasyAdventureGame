@@ -10,9 +10,188 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Music" ID="{1341993A-9A29-4750-AA61-9268EEFE8617}"/>
-						<Bus Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}"/>
+						<Bus Name="Music" ID="{1341993A-9A29-4750-AA61-9268EEFE8617}">
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom CreatedFrom="{D083BAE5-F9EF-426B-A311-D9DF8DFE8807}">
+										<Effect Name="Hard_Knee_Minus_3dB_RMS_(Custom)" ID="{01831067-9D1D-400A-952E-FF3E92030ECD}" ShortID="768507657" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+											<PropertyList>
+												<Property Name="AttackTime" Type="Real32" Value="0.3"/>
+												<Property Name="Ratio" Type="Real32" Value="5"/>
+												<Property Name="Threshold" Type="Real32" Value="-19"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+									<ObjectRef Name="Underground_Parking1" ID="{8DA66AA3-6CA0-41A0-B7A2-BB6FCABFCDA8}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect3">
+									<Custom>
+										<Effect Name="Wwise Gain (Custom)" ID="{E5A8E51A-9413-4246-95C6-8FD82A8B79D1}" ShortID="647881068" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3"/>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Bus Name="Main" ID="{7695E774-DCB7-42B8-BD3E-B314301FFE2B}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{557D9E4A-5FA7-480A-ACAA-D7AFFD94F803}" ShortID="908396853">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Stinger_sidechain" ID="{141EFA41-3746-4569-AF4A-51FD957C7293}" WorkUnitID="{87CE6915-7599-414E-83C8-8B4A35390FBE}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{63E46922-EF11-4DBF-A7B7-F01B9F66220D}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-48</XPos>
+																<YPos>6</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>-20</XPos>
+																<YPos>-15</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>6</XPos>
+																<YPos>-15</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect3">
+											<Custom>
+												<Effect Name="Wwise Gain (Custom)" ID="{B3D166BB-B6C3-4EBB-B478-9E5E99AE0354}" ShortID="46703073" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3"/>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Bus Name="Combat" ID="{21D47A20-5739-4D59-BE16-C526F0A6DA1C}">
+											<ReferenceList>
+												<Reference Name="AudioDevice">
+													<ObjectRef Name="System" ID="{C8E406CC-6B7F-48F8-80BD-779CC382CC94}" WorkUnitID="{49D7FD16-E672-4B73-9DC0-0B6935FBC021}"/>
+												</Reference>
+												<Reference Name="Effect3">
+													<Custom>
+														<Effect Name="Wwise Gain (Custom)" ID="{620D8AF1-AC65-4E06-A592-4D14E16CFE7B}" ShortID="38536357" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3"/>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+										</Bus>
+										<Bus Name="Explore" ID="{6A98E1B3-B32E-4B3C-9034-ED0B078D200D}">
+											<ReferenceList>
+												<Reference Name="AudioDevice">
+													<ObjectRef Name="System" ID="{C8E406CC-6B7F-48F8-80BD-779CC382CC94}" WorkUnitID="{49D7FD16-E672-4B73-9DC0-0B6935FBC021}"/>
+												</Reference>
+												<Reference Name="Effect3">
+													<Custom>
+														<Effect Name="Wwise Gain (Custom)" ID="{F06C94BD-1BC8-467E-89E1-BCA7B840634E}" ShortID="720889453" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3"/>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+										</Bus>
+									</ChildrenList>
+								</Bus>
+								<Bus Name="Stingers" ID="{5003FE03-3832-4F2A-BAF5-57D9CFF3BB22}">
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_Meter_(Custom)" ID="{2AE50C74-9092-485A-A848-2DC422716D77}" ShortID="730552204" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="Max" Type="Real32" Value="6"/>
+														<Property Name="ReleaseTime" Type="Real32" Value="0.5"/>
+													</PropertyList>
+													<PluginData>
+	<GameParameter Name="Stinger_sidechain" ID="{141EFA41-3746-4569-AF4A-51FD957C7293}"/>
+</PluginData>
+												</Effect>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="SFX" ID="{2F5A621C-AEDD-49E2-819A-91B0E4387320}">
+							<ChildrenList>
+								<Bus Name="Characters" ID="{3063A728-00DE-4ADE-86FD-A0AD83ACEA69}">
+									<ChildrenList>
+										<Bus Name="Enemies" ID="{6A9F43E9-4143-4886-879E-E82059D83D02}">
+											<ChildrenList>
+												<Bus Name="Enemy Abilities" ID="{EFB115F9-9821-4E84-AE64-B5B80BA0718B}">
+													<DuckingList>
+														<DuckItem>
+															<BusRef Name="Combat" ID="{21D47A20-5739-4D59-BE16-C526F0A6DA1C}"/>
+															<DuckingParam>
+																<Volume>-6</Volume>
+																<FadeInTime>1</FadeInTime>
+																<FadeOutTime>1</FadeOutTime>
+																<FadeCurve>FadeLinear</FadeCurve>
+															</DuckingParam>
+														</DuckItem>
+													</DuckingList>
+												</Bus>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Slowdown" ID="{098283C2-189E-4EA6-AFBD-2D5640D3B5AA}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Slowdown" ID="{DF38D340-42F5-4A03-B69A-0B740B0547D2}"/>
+														<CustomState Name="" ID="{61EF084E-BDA8-4D92-A705-4464F467208A}" ShortID="760837324">
+															<PropertyList>
+																<Property Name="BusVolume" Type="Real64" Value="-12"/>
+																<Property Name="Lowpass" Type="int16" Value="50"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+										</Bus>
+										<Bus Name="Tibessa" ID="{08DC2ECA-C449-488F-817E-B1C4C48FFBC6}"/>
+									</ChildrenList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
 						<Bus Name="Atmosphere" ID="{6D7DE35A-259E-48E6-9A33-86434B4B4155}"/>
+						<AuxBus Name="Reverbs" ID="{FB150F2B-6FB6-489E-8344-DC21A313175D}">
+							<ChildrenList>
+								<AuxBus Name="MediumReverb" ID="{FE52EF90-A118-493E-A2C3-6C3C6ECF193A}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<AuxBus Name="SmallReverb" ID="{AD7537CD-734E-48D0-A5AE-E6D4C652E6F8}">
+									<ReferenceList>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<AuxBus Name="LargeReverb" ID="{D2E91996-4255-4BC0-9C9D-532524C4FE31}">
+									<ReferenceList>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Room_Large" ID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+							</ChildrenList>
+						</AuxBus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

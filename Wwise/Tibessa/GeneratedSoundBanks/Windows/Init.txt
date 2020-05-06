@@ -1,16 +1,56 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	2654366170	Time			\Default Work Unit\Time	
+	2764240573	Combat			\Default Work Unit\Combat	
+	3101299514	Slowdown			\Default Work Unit\Slowdown	
 
 State	ID	Name	State Group			Notes
 	748895195	None	Time			
 	1627031569	Past	Time			
 	3524519058	Present	Time			
+	579523862	Explore	Combat			
+	748895195	None	Combat			
+	2764240573	Combat	Combat			
+	748895195	None	Slowdown			
+	3101299514	Slowdown	Slowdown			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	760837324	Slowdown	Slowdown	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Characters\Enemies		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	151362964	PlayerHealth			\Default Work Unit\PlayerHealth	
+	4122641472	Stinger_sidechain			\Default Work Unit\Stinger_sidechain	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	579523862	Explore			\Default Work Unit\Master Audio Bus\Music\Main\Explore	
+	1557941045	Characters			\Default Work Unit\Master Audio Bus\SFX\Characters	
 	2145253833	Atmosphere			\Default Work Unit\Master Audio Bus\Atmosphere	
+	2242381963	Enemies			\Default Work Unit\Master Audio Bus\SFX\Characters\Enemies	
+	2764240573	Combat			\Default Work Unit\Master Audio Bus\Music\Main\Combat	
+	2845953950	Tibessa			\Default Work Unit\Master Audio Bus\SFX\Characters\Tibessa	
+	2940432316	Stingers			\Default Work Unit\Master Audio Bus\Music\Stingers	
+	3161908922	Main			\Default Work Unit\Master Audio Bus\Music\Main	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+	4154630777	Enemy Abilities			\Default Work Unit\Master Audio Bus\SFX\Characters\Enemies\Enemy Abilities	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	894231404	MediumReverb			\Default Work Unit\Master Audio Bus\Reverbs\MediumReverb	
+	2134960294	SmallReverb			\Default Work Unit\Master Audio Bus\Reverbs\SmallReverb	
+	3545700988	Reverbs			\Default Work Unit\Master Audio Bus\Reverbs	
+	3684725634	LargeReverb			\Default Work Unit\Master Audio Bus\Reverbs\LargeReverb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	38536357	Wwise Gain (Custom)	Wwise Gain			
+	46703073	Wwise Gain (Custom)	Wwise Gain			
+	602546716	Room_Large	Wwise RoomVerb			
+	647881068	Wwise Gain (Custom)	Wwise Gain			
+	720889453	Wwise Gain (Custom)	Wwise Gain			
+	730552204	Wwise_Meter_(Custom)	Wwise Meter			
+	768507657	Hard_Knee_Minus_3dB_RMS_(Custom)	Wwise Compressor			
+	1990128658	Room_Medium	Wwise RoomVerb			
+	2098638826	Underground_Parking1	Wwise Matrix Reverb			
+	2995775460	Room_Small	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
