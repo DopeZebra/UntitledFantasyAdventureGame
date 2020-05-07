@@ -47,7 +47,7 @@
 			<ShortName>Music_SB</ShortName>
 			<Path>Music_SB.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3991942870" Name="music" ObjectPath="\Events\Default Work Unit\Music\music">
+				<Event Id="3991942870" Name="music" ObjectPath="\Events\Default Work Unit\Music\music" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="449021" Language="SFX">
 							<ShortName>Music\BrondanCombat\Broken Oath_BrondanCombat_1P - WildWind.wav</ShortName>
@@ -256,7 +256,7 @@
 			<ShortName>SFX_SB</ShortName>
 			<Path>SFX_SB.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2667003859" Name="agnar_laser_charge" ObjectPath="\Events\Default Work Unit\Characters\agnar_laser_charge">
+				<Event Id="2667003859" Name="agnar_laser_charge" ObjectPath="\Events\Default Work Unit\Characters\agnar_laser_charge" MaxAttenuation="7000.000000" DurationType="OneShot" DurationMin="1.308849" DurationMax="1.798299">
 					<IncludedMemoryFiles>
 						<File Id="117692380" Language="SFX">
 							<ShortName>Character\Agnar\MAGIC ENERGY Spell, Electricity, Large, Cast, Charge, Projectile 02.wav</ShortName>
@@ -264,7 +264,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3940617192" Name="agnar_laser_shoot" ObjectPath="\Events\Default Work Unit\Characters\agnar_laser_shoot">
+				<Event Id="3940617192" Name="agnar_laser_shoot" ObjectPath="\Events\Default Work Unit\Characters\agnar_laser_shoot" MaxAttenuation="7000.000000" DurationType="OneShot" DurationMin="1.242085" DurationMax="1.706567">
 					<IncludedMemoryFiles>
 						<File Id="534062515" Language="SFX">
 							<ShortName>Character\Agnar\Charged Laser by LegoLunatic Id-151243.wav</ShortName>
@@ -284,7 +284,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="853237068" Name="lever_retract_start" ObjectPath="\Events\Default Work Unit\Interaction\lever_retract_start">
+				<Event Id="853237068" Name="lever_retract_start" ObjectPath="\Events\Default Work Unit\Interaction\lever_retract_start" MaxAttenuation="1500.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="13719879" Language="SFX">
 							<ShortName>Interaction\Pillar Puzzle\Slab Stone, Large, Drag On Stone 01 SND38120 1.wav</ShortName>
@@ -392,7 +392,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1739864800" Name="lever_retract_stop" ObjectPath="\Events\Default Work Unit\Interaction\lever_retract_stop">
+				<Event Id="1739864800" Name="lever_retract_stop" ObjectPath="\Events\Default Work Unit\Interaction\lever_retract_stop" MaxAttenuation="1500.000000" DurationType="OneShot" DurationMin="0.439761" DurationMax="0.728495">
 					<IncludedMemoryFiles>
 						<File Id="20355564" Language="SFX">
 							<ShortName>Interaction\Pillar Puzzle\GEAR SHIFT CLUNKER_F9A1AFD0.wav</ShortName>
@@ -412,7 +412,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2657532751" Name="lever_use" ObjectPath="\Events\Default Work Unit\Interaction\lever_use">
+				<Event Id="2657532751" Name="lever_use" ObjectPath="\Events\Default Work Unit\Interaction\lever_use" MaxAttenuation="1500.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="128447381" Language="SFX">
 							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
@@ -500,7 +500,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1379722170" Name="oxbaren_explosion" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_explosion">
+				<Event Id="1379722170" Name="oxbaren_explosion" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_explosion" MaxAttenuation="7000.000000" DurationType="OneShot" DurationMin="1.494809" DurationMax="1.878143">
 					<IncludedMemoryFiles>
 						<File Id="145121621" Language="SFX">
 							<ShortName>Character\Oxbaren\Sci-Fi, Shield, Power Deflect, Boom 02 SND7092 1.wav</ShortName>
@@ -524,7 +524,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="864184553" Name="oxbaren_shockwave_charge" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_charge">
+				<Event Id="864184553" Name="oxbaren_shockwave_charge" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_charge" MaxAttenuation="7000.000000" DurationType="OneShot" DurationMin="6.290051" DurationMax="8.642238">
 					<IncludedMemoryFiles>
 						<File Id="385849276" Language="SFX">
 							<ShortName>Character\Oxbaren\Malfunction Glitch Rise BRSound-05.wav</ShortName>
@@ -540,7 +540,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4057998772" Name="oxbaren_shockwave_explode" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_explode">
+				<Event Id="4057998772" Name="oxbaren_shockwave_explode" ObjectPath="\Events\Default Work Unit\Characters\oxbaren_shockwave_explode" MaxAttenuation="7000.000000" DurationType="OneShot" DurationMin="2.389161" DurationMax="3.095620">
 					<IncludedMemoryFiles>
 						<File Id="76148055" Language="SFX">
 							<ShortName>Character\Oxbaren\Explosives - Sweetners_07.wav</ShortName>
@@ -568,7 +568,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2086680074" Name="pillar_retract_start" ObjectPath="\Events\Default Work Unit\Interaction\pillar_retract_start">
+				<Event Id="2086680074" Name="pillar_retract_start" ObjectPath="\Events\Default Work Unit\Interaction\pillar_retract_start" MaxAttenuation="1500.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="13719879" Language="SFX">
 							<ShortName>Interaction\Pillar Puzzle\Slab Stone, Large, Drag On Stone 01 SND38120 1.wav</ShortName>
@@ -676,7 +676,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="629306210" Name="pillar_retract_stop" ObjectPath="\Events\Default Work Unit\Interaction\pillar_retract_stop">
+				<Event Id="629306210" Name="pillar_retract_stop" ObjectPath="\Events\Default Work Unit\Interaction\pillar_retract_stop" MaxAttenuation="1500.000000" DurationType="OneShot" DurationMin="1.079179" DurationMax="1.768929">
 					<IncludedMemoryFiles>
 						<File Id="44786589" Language="SFX">
 							<ShortName>Interaction\Pillar Puzzle\GEAR SHIFT CLUNKER_F9A1AFD0 1.wav</ShortName>
@@ -696,7 +696,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="243348140" Name="pillar_rotate_start" ObjectPath="\Events\Default Work Unit\Interaction\pillar_rotate_start">
+				<Event Id="243348140" Name="pillar_rotate_start" ObjectPath="\Events\Default Work Unit\Interaction\pillar_rotate_start" MaxAttenuation="1500.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="128447381" Language="SFX">
 							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
@@ -804,10 +804,10 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3210416832" Name="pillar_rotate_stop" ObjectPath="\Events\Default Work Unit\Interaction\pillar_rotate_stop"/>
-				<Event Id="4217865490" Name="pillar_triangle_lower" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_lower"/>
-				<Event Id="1189214292" Name="pillar_triangle_rise" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rise"/>
-				<Event Id="3570432955" Name="pillar_triangle_rotate_start" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rotate_start">
+				<Event Id="3210416832" Name="pillar_rotate_stop" ObjectPath="\Events\Default Work Unit\Interaction\pillar_rotate_stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4217865490" Name="pillar_triangle_lower" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_lower" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1189214292" Name="pillar_triangle_rise" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rise" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3570432955" Name="pillar_triangle_rotate_start" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rotate_start" MaxAttenuation="1500.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="128447381" Language="SFX">
 							<ShortName>Interaction\Pillar Puzzle\Rocks, Movement, Heavy, Short, Crunchy SND42689.wav</ShortName>
@@ -915,10 +915,10 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2118246937" Name="pillar_triangle_rotate_stop" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rotate_stop"/>
-				<Event Id="3038994725" Name="soul_generator_charge" ObjectPath="\Events\Default Work Unit\Interaction\soul_generator_charge"/>
-				<Event Id="743707040" Name="soul_generator_nearby" ObjectPath="\Events\Default Work Unit\Interaction\soul_generator_nearby"/>
-				<Event Id="3198794998" Name="tibessa_gauntlet_close" ObjectPath="\Events\Default Work Unit\Characters\tibessa_gauntlet_close">
+				<Event Id="2118246937" Name="pillar_triangle_rotate_stop" ObjectPath="\Events\Default Work Unit\Interaction\pillar_triangle_rotate_stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3038994725" Name="soul_generator_charge" ObjectPath="\Events\Default Work Unit\Interaction\soul_generator_charge" MaxAttenuation="1500.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="743707040" Name="soul_generator_nearby" ObjectPath="\Events\Default Work Unit\Interaction\soul_generator_nearby" MaxAttenuation="1500.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3198794998" Name="tibessa_gauntlet_close" ObjectPath="\Events\Default Work Unit\Characters\tibessa_gauntlet_close" MaxAttenuation="1000.000000" DurationType="OneShot" DurationMin="0.692722" DurationMax="0.737470">
 					<IncludedMemoryFiles>
 						<File Id="87791094" Language="SFX">
 							<ShortName>Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03 1.wav</ShortName>
@@ -950,7 +950,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2314145186" Name="tibessa_gauntlet_open" ObjectPath="\Events\Default Work Unit\Characters\tibessa_gauntlet_open">
+				<Event Id="2314145186" Name="tibessa_gauntlet_open" ObjectPath="\Events\Default Work Unit\Characters\tibessa_gauntlet_open" MaxAttenuation="1000.000000" DurationType="OneShot" DurationMin="0.735276" DurationMax="0.735276">
 					<IncludedMemoryFiles>
 						<File Id="87791094" Language="SFX">
 							<ShortName>Character\Tibessa\Weapons\mechanism_move_bot_small_trasher_03 1.wav</ShortName>
@@ -982,7 +982,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1233654109" Name="tibessa_lm_footstep" ObjectPath="\Events\Default Work Unit\Characters\tibessa_lm_footstep">
+				<Event Id="1233654109" Name="tibessa_lm_footstep" ObjectPath="\Events\Default Work Unit\Characters\tibessa_lm_footstep" MaxAttenuation="1000.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.610740">
 					<IncludedMemoryFiles>
 						<File Id="2652769" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Gravel_Boots_FullStep_01.wav</ShortName>
@@ -1292,7 +1292,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2118249371" Name="tibessa_lm_jump" ObjectPath="\Events\Default Work Unit\Characters\tibessa_lm_jump">
+				<Event Id="2118249371" Name="tibessa_lm_jump" ObjectPath="\Events\Default Work Unit\Characters\tibessa_lm_jump" MaxAttenuation="1000.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{A2593E7D-BE8F-4C9E-9DEC-15B5CEF678EF}">
 							<Children/>
@@ -1305,7 +1305,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2022623480" Name="tibessa_lm_land" ObjectPath="\Events\Default Work Unit\Characters\tibessa_lm_land">
+				<Event Id="2022623480" Name="tibessa_lm_land" ObjectPath="\Events\Default Work Unit\Characters\tibessa_lm_land" MaxAttenuation="1000.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.374914">
 					<IncludedMemoryFiles>
 						<File Id="6882735" Language="SFX">
 							<ShortName>Character\Tibessa\Footsteps\Grass_Boots_FullStep_01.wav</ShortName>
@@ -1491,7 +1491,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="354526556" Name="tibessa_normal_time" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normal_time">
+				<Event Id="354526556" Name="tibessa_normal_time" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normal_time" DurationType="OneShot" DurationMin="1.218265" DurationMax="1.218265">
 					<IncludedMemoryFiles>
 						<File Id="755604789" Language="SFX">
 							<ShortName>Character\Tibessa\Slowdown by DarkoZL Id-101118 1.wav</ShortName>
@@ -1499,7 +1499,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1997688715" Name="tibessa_normalarrow_prepare" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normalarrow_prepare">
+				<Event Id="1997688715" Name="tibessa_normalarrow_prepare" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normalarrow_prepare" MaxAttenuation="1000.000000" DurationType="OneShot" DurationMin="0.406788" DurationMax="0.406788">
 					<IncludedMemoryFiles>
 						<File Id="611887373" Language="SFX">
 							<ShortName>Arrow Fletching.wav</ShortName>
@@ -1511,7 +1511,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1175194179" Name="tibessa_normalarrow_shoot" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normalarrow_shoot">
+				<Event Id="1175194179" Name="tibessa_normalarrow_shoot" ObjectPath="\Events\Default Work Unit\Characters\tibessa_normalarrow_shoot" MaxAttenuation="1000.000000" DurationType="OneShot" DurationMin="0.125470" DurationMax="0.158082">
 					<IncludedMemoryFiles>
 						<File Id="738926301" Language="SFX">
 							<ShortName>Scythian Recurve Arrow Passby.wav</ShortName>
@@ -1523,7 +1523,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3312775127" Name="tibessa_respawn" ObjectPath="\Events\Default Work Unit\Characters\tibessa_respawn">
+				<Event Id="3312775127" Name="tibessa_respawn" ObjectPath="\Events\Default Work Unit\Characters\tibessa_respawn" DurationType="OneShot" DurationMin="2.558902" DurationMax="2.664504">
 					<IncludedMemoryFiles>
 						<File Id="16413053" Language="SFX">
 							<ShortName>Character\Tibessa\Krotos UI Chime Single Hit Mono-002.wav</ShortName>
@@ -1555,7 +1555,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="866567142" Name="tibessa_slow_time" ObjectPath="\Events\Default Work Unit\Characters\tibessa_slow_time">
+				<Event Id="866567142" Name="tibessa_slow_time" ObjectPath="\Events\Default Work Unit\Characters\tibessa_slow_time" DurationType="OneShot" DurationMin="2.923669" DurationMax="2.923669">
 					<IncludedMemoryFiles>
 						<File Id="750396246" Language="SFX">
 							<ShortName>Character\Tibessa\Slowdown by DarkoZL Id-101118.wav</ShortName>
@@ -1563,11 +1563,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3749323690" Name="time_bubble_change" ObjectPath="\Events\Default Work Unit\Interaction\time_bubble_change">
+				<Event Id="3749323690" Name="time_bubble_change" ObjectPath="\Events\Default Work Unit\Interaction\time_bubble_change" DurationType="Unknown">
 					<SwitchContainers/>
 				</Event>
-				<Event Id="3912153419" Name="time_bubble_nearby" ObjectPath="\Events\Default Work Unit\Interaction\time_bubble_nearby"/>
-				<Event Id="1268222929" Name="time_crystal_nearby" ObjectPath="\Events\Default Work Unit\Interaction\time_crystal_nearby">
+				<Event Id="3912153419" Name="time_bubble_nearby" ObjectPath="\Events\Default Work Unit\Interaction\time_bubble_nearby" MaxAttenuation="1500.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1268222929" Name="time_crystal_nearby" ObjectPath="\Events\Default Work Unit\Interaction\time_crystal_nearby" MaxAttenuation="1500.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="9803507" Language="SFX">
 							<ShortName>Interaction\Time Crystal\crystalNearby.wav</ShortName>
@@ -1595,7 +1595,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4262142211" Name="time_crystal_shatter" ObjectPath="\Events\Default Work Unit\Interaction\time_crystal_shatter">
+				<Event Id="4262142211" Name="time_crystal_shatter" ObjectPath="\Events\Default Work Unit\Interaction\time_crystal_shatter" MaxAttenuation="1500.000000" DurationType="OneShot" DurationMin="1.245186" DurationMax="2.460157">
 					<IncludedMemoryFiles>
 						<File Id="5369214" Language="SFX">
 							<ShortName>Interaction\Time Crystal\Glass, Broken Bottle, Pieces, Crush, Grind 6 SND17545.wav</ShortName>
