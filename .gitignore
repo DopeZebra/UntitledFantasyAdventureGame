@@ -20,3 +20,4 @@ TempDefinitionFile.txt
 *.prof
 IncrementalSoundBankData.xml
 *.validationcache
+*.wsettings
